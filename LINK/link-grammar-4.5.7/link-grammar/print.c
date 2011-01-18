@@ -324,9 +324,9 @@ char * linkage_print_disjuncts(Linkage linkage)
                relcp=malloc(sizeof(char)*50);
                p=malloc(sizeof(char)*15);
                if(( p=strchr(linkage->word[j],'.'))!=NULL)
-                 { *p= ' '; fprintf(fp3, "(linkid-word-node_cat\tL%d\t%s)\n",j,linkage->word[j]); }
+                 { *p= ' '; fprintf(fp3, "(linkid-word-node_cat\tP%d\t%s)\n",j,linkage->word[j]); }
                if(( p=strchr(linkage->word[j],' '))!=NULL)
-                 { *p= '\0';fprintf(fp1, "(parserid-word\tL%d\t%s)\n",j,linkage->word[j]);
+                 { *p= '\0';fprintf(fp1, "(parserid-word\tP%d\t%s)\n",j,linkage->word[j]);
                     fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",j,linkage->word[j]); }
                else { 	strcpy(relcp,linkage->word[j]);
                     	if(strcmp(relcp,"?")==0){
@@ -341,9 +341,9 @@ char * linkage_print_disjuncts(Linkage linkage)
               		if(strcmp(relcp,";")==0){
                   		strcpy(relcp,"semi_colon");
                		}
-                	fprintf(fp1,"(parserid-word\tL%d\t%s)\n",j, relcp);
+                	fprintf(fp1,"(parserid-word\tP%d\t%s)\n",j, relcp);
                 	fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",j, relcp);
-                	fprintf(fp3,"(linkid-word-node_cat\tL%d\t%s -)\n",j, relcp);
+                	fprintf(fp3,"(linkid-word-node_cat\tP%d\t%s -)\n",j, relcp);
              	}
            /*##############################################################################################################*/
 
@@ -369,7 +369,7 @@ char * linkage_print_disjuncts(Linkage linkage)
                    fprintf(fp5,"(link_name-link_lnode-link_rnode %5s\t", ppla[link]->name);
                      }
                     else { fprintf(fp5," ()"); }
-                                                                                                                                                 fprintf(fp5,"L%d\tL%d)\n", ppla[link]->l-d, ppla[link]->r-d);
+                                                                                                                                                 fprintf(fp5,"P%d\tP%d)\n", ppla[link]->l-d, ppla[link]->r-d);
              /*#################################################################################################*/
 
 			append_string(string," (%s)]", ppla[link]->name);
