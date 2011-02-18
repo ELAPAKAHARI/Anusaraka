@@ -22,7 +22,7 @@ Rama ladake ko pIta rahA hE.
 Hindi meaning using Link parser 2.3
 (Found maximum of 2 linkages )
 This is a sample sentence for Anusaraka. 
-yaha Anusaraka ke liye namUnA vAkya hE.
+yaha Anusaraka ke liye eka namUnA vAkya hE.
 
 Hindi meaning using Link parser 2.4
 (Found maximum of 10 linkages )
@@ -132,7 +132,7 @@ mEM yaha nahIM karUzgA.
 Hindi meaning using Link parser 2.25
 (Found maximum of 38 linkages )
 He wasted his golden opportunity to play in the national team. 
-usane rARtrIya tIma meM Kelane kA usakA sunaharA mOkA vyarWa_meM_barabAxa kiyA.
+usane rARtriya tIma meM Kelane kA usakA sunaharA mOkA vyarWa_meM_barabAxa kiyA.
 
 Hindi meaning using Link parser 2.26
 (Found maximum of 2 linkages )
@@ -502,7 +502,7 @@ loga anya kOYPI_peya_yA Sarabawa banAne ke liye espreso kOYPI kA upayoga karawe 
 Hindi meaning using Link parser 2.99
 (Found maximum of 2 linkages )
 Espresso is a coffee drink. 
-espreso kOYPI kOYPI peya_yA Sarabawa hE.
+espreso kOYPI eka kOYPI peya_yA Sarabawa hE.
 
 Hindi meaning using Link parser 2.100
 (Found maximum of 8 linkages )
@@ -1337,7 +1337,7 @@ mEM kahawA hUz ki yaha awyanwa lajjAspaxa hE ki vaha calA gayA.
 Hindi meaning using Link parser 2.266
 (Found maximum of 4 linkages )
 He would play a football match against his former champions. 
-vaha usake BUwapUrva KilAdiyoM ke viruxXa PutabAla mEca KelegA.
+vaha usake BUwapUrva KilAdiyoM ke viruxXa eka PutabAla mEca KelegA.
 
 Hindi meaning using Link parser 2.267
 (Found maximum of 7 linkages )
@@ -1452,7 +1452,7 @@ vaha Lata kI eka badI praSaMsaka hE.
 Hindi meaning using Link parser 2.289
 (Found maximum of 1 linkages )
 He was a football fan. 
-vaha PutabOYla praSaMsaka WA.
+vaha eka PutabOYla praSaMsaka WA.
 
 Hindi meaning using Link parser 2.290
 (Found maximum of 6 linkages )
@@ -1922,17 +1922,17 @@ rakRA viRayoM meM rAjanEwika haswakRepa awyanwa avAzCanIya hE.
 Hindi meaning using Link parser 3.83
 (Found maximum of 4 linkages )
 The company made him a tempting offer of a high salary. 
-kaMpanI ne usako/use Uzce vewana kA praloBaka praswAva xiyA.
+kaMpanI ne usako/use aXika vewana kA praloBaka praswAva xiyA.
 
 Hindi meaning using Link parser 3.84
 (Found maximum of 6 linkages )
 Food must be heated to a high temperature to kill harmful bacteria. 
-AhAra hAnikAraka jIvANuoM ko mArane ke liye eka Uzce wApamAna para garama karanA hogA.
+AhAra hAnikAraka jIvANuoM ko mArane ke liye eka aXika wApamAna para garama karanA hogA.
 
 Hindi meaning using Link parser 3.85
 (Found maximum of 1 linkages )
 Her parents were killed in a plane crash. 
-usake mAz bApa vimAna xurGatanA meM mAre gaye We.
+usake mAz bApa eka vimAna xurGatanA meM mAre gaye We.
 
 Hindi meaning using Link parser 3.86
 (Found maximum of 1 linkages )
@@ -2017,7 +2017,7 @@ vaha eka pUrI_waraha se nirarWaka yAwrA WI.
 Hindi meaning using Link parser 4.2
 (Found maximum of 4 linkages )
 The planet that we will live on will be of medium size. 
-jisapara hama raheMge vaha graha mAXyama AkAra kA hogA.
+jisapara hama raheMge vaha graha maXyama AkAra kA hogA.
 
 Hindi meaning using Link parser 4.3
 (Found maximum of 2 linkages )
@@ -2667,7 +2667,7 @@ vaha Nobel Prize jIwane vAlA praWama eSiyAvAsI vEjFAnika WA.
 Hindi meaning using Link parser 5.33
 (Found maximum of 4 linkages )
 Go straight and take a right turn. 
-sIXA jAiye Ora xAzyA moda lIjiye.
+sIXA jAiye Ora eka xAzyA moda lIjiye.
 
 Hindi meaning using Link parser 5.34
 (Found maximum of 8 linkages )
@@ -2931,7 +2931,7 @@ wErAka ne naxI meM wErA.
 Hindi meaning using Link parser 5.86
 (Found maximum of 5 linkages )
 There was a football match in the school yesterday. 
-kala vixyAlaya meM PutabAla mEca WI.
+kala vixyAlaya meM eka PutabAla mEca WA. 
 
 Hindi meaning using Link parser 5.87
 (Found maximum of 2 linkages )
@@ -2962,5 +2962,10 @@ Hindi meaning using Link parser 5.92
 (Found maximum of 2 linkages )
 They told me that the teacher was absent that day. 
 unhoMne muJe/muJako bawAyA ki SikRaka usa xina anupasWiwa WA.
+
+Hindi meaning using Link parser 5.93
+(Found maximum of 12 linkages )
+Shivaji was one of the most powerful rulers in 1600. 
+Shivaji 1600 meM sabase_jyAxA SakwiSAlI SAsakoM meM se eka WA.
 
 Calling Interface related programs
