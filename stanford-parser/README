@@ -17,7 +17,6 @@
         2.   Copy the files listed below from the existing Stanford-parser directory to the new Stanford-parser version.
                 	compile.sh
 			comp.sh
-			run_category.sh
 			run_stanford-parser.sh
 			run_stanford.sh
 			sd_category.py
