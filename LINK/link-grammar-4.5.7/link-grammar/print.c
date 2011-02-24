@@ -253,7 +253,7 @@ char * linkage_print_disjuncts(Linkage linkage)
        fp2 = fopen(filename,"a");
        if(fp2==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
-       sprintf(filename,"%s/%s_tmp/link_word_cat.txt",tmp_path,file_name);
+       sprintf(filename,"%s/%s_tmp/linkid_cat.txt",tmp_path,file_name);
        fp3 = fopen(filename,"a");
        if(fp3==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
@@ -324,7 +324,13 @@ char * linkage_print_disjuncts(Linkage linkage)
                relcp=malloc(sizeof(char)*50);
                p=malloc(sizeof(char)*15);
                if(( p=strchr(linkage->word[j],'.'))!=NULL)
-                 { *p= ' '; fprintf(fp3, "(linkid-word-node_cat\tP%d\t%s)\n",j,linkage->word[j]); }
+                 { *p= ' '; //printf("%s\n",p);
+			if (strcmp(p," g")==0 )
+                                       fprintf(fp3, "(linkid-node_cat\tP%d\tverbal_noun)\n",j);
+                                else
+                                       fprintf(fp3, "(linkid-node_cat\tP%d\t-)\n",j);
+			//		 fprintf(fp3, "(linkid-node_cat\tP%d\t%s)\n",j,linkage->word[j]);
+		 }
                if(( p=strchr(linkage->word[j],' '))!=NULL)
                  { *p= '\0';fprintf(fp1, "(parserid-word\tP%d\t%s)\n",j,linkage->word[j]);
                     fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",j,linkage->word[j]); }
@@ -343,7 +349,7 @@ char * linkage_print_disjuncts(Linkage linkage)
                		}
                 	fprintf(fp1,"(parserid-word\tP%d\t%s)\n",j, relcp);
                 	fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",j, relcp);
-                	fprintf(fp3,"(linkid-word-node_cat\tP%d\t%s -)\n",j, relcp);
+                	fprintf(fp3,"(linkid-node_cat\tP%d\t -)\n",j);
              	}
            /*##############################################################################################################*/
 
@@ -369,7 +375,7 @@ char * linkage_print_disjuncts(Linkage linkage)
                    fprintf(fp5,"(link_name-link_lnode-link_rnode %5s\t", ppla[link]->name);
                      }
                     else { fprintf(fp5," ()"); }
-                                                                                                                                                 fprintf(fp5,"P%d\tP%d)\n", ppla[link]->l-d, ppla[link]->r-d);
+                                                                                                                                                  fprintf(fp5,"P%d\tP%d)\n", ppla[link]->l-d, ppla[link]->r-d);
              /*#################################################################################################*/
 
 			append_string(string," (%s)]", ppla[link]->name);
