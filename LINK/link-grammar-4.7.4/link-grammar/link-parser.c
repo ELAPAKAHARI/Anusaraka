@@ -767,7 +767,7 @@ int main(int argc, char * argv[])
 		//#####################  Added newly  ########################
 		if(num+1>num_linkages && num_linkages != 0)
                 {
-                 sprintf(link_info_filename,"%s/%s_tmp/link_word_cat.txt",argv[2],argv[3]);
+                 sprintf(link_info_filename,"%s/%s_tmp/linkid_cat.txt",argv[2],argv[3]);
                  fp2 = fopen(link_info_filename,"a");
                  if(fp2==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
                  fprintf(fp2,";~~~~~~~~~~\n");
@@ -873,7 +873,7 @@ int main(int argc, char * argv[])
 	         fp_word_info= fopen(link_info_filename, "a");
         	 if(fp_word_info==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
 
-	         sprintf(link_info_filename,"%s/%s_tmp/link_word_cat.txt",argv[2],argv[3]);
+	         sprintf(link_info_filename,"%s/%s_tmp/linkid_cat.txt",argv[2],argv[3]);
         	 fp_word_cat= fopen(link_info_filename, "a");
 	         if(fp_word_cat==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
 

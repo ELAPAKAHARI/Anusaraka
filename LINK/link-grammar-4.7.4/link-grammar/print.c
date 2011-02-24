@@ -218,13 +218,13 @@ char * linkage_print_disjuncts(Linkage linkage)
 
         len=(strlen(link_name));
         split_lname=malloc(sizeof(char)*len*2+1);
-          for(j=0;j<len;j++)
-              {
-                    split_lname[2*j]=link_name[j];
-                          split_lname[2*j+1]=' ';
-                              }
-                                   split_lname[2*j-1]='\0';
-                                        return split_lname;
+        for(j=0;j<len;j++)
+        {
+		split_lname[2*j]=link_name[j];
+                split_lname[2*j+1]=' ';
+	}
+        split_lname[2*j-1]='\0';
+        return split_lname;
    }
 
 
@@ -250,10 +250,10 @@ char * linkage_print_disjuncts(Linkage linkage)
 	/*############################ Added newly #########################################*/
        /*  This part of the code written by Maha Laxmi and Shirisha Manju.
         *  opens link_ps_info.clp and link_ps_word.clp files in write mode */
-
         FILE        *fp1,*fp2,*fp3,*fp4,*fp5;
-        char        *relcp,*p;
+        char        *p,*relcp1;
         char        filename[1000];
+
        sprintf(filename,"%s/%s_tmp/linkid_word.txt",tmp_path,file_name);
        fp1 = fopen(filename,"a");
        if(fp1==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
@@ -262,7 +262,7 @@ char * linkage_print_disjuncts(Linkage linkage)
        fp2 = fopen(filename,"a");
        if(fp2==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
-       sprintf(filename,"%s/%s_tmp/link_word_cat.txt",tmp_path,file_name);
+       sprintf(filename,"%s/%s_tmp/linkid_cat.txt",tmp_path,file_name);
        fp3 = fopen(filename,"a");
        if(fp3==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
@@ -325,35 +325,6 @@ char * linkage_print_disjuncts(Linkage linkage)
 		if ((i%10 == 0) && (i>0)) append_string(string, "\n");
 		i++;
 		append_string(string, "(%s)", linkage->word[j]);
-                /*############################### Added newly ##################################################*/
-               /*  This part of the code written by Shirisha Manju and Maha Laxmi.
-                *  replacing the word "?" with question_mark , "(" with with left_paren, ")" with right_parene and 
-                   ";" with semi_colon */
-               relcp=malloc(sizeof(char)*50);
-               p=malloc(sizeof(char)*15);
-               if(( p=strchr(linkage->word[j],'.'))!=NULL)
-                 { *p= ' '; fprintf(fp3, "(linkid-word-node_cat\tP%d\t%s)\n",j,linkage->word[j]); }
-               if(( p=strchr(linkage->word[j],' '))!=NULL)
-                 { *p= '\0';fprintf(fp1, "(parserid-word\tP%d\t%s)\n",j,linkage->word[j]);
-                    fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",j,linkage->word[j]); }
-               else {   strcpy(relcp,linkage->word[j]);
-                        if(strcmp(relcp,"?")==0){
-                                strcpy(relcp,"question_mark");
-                        }
-                        if(strcmp(relcp,"(")==0){
-                                strcpy(relcp,"left_paren");
-                        }
-                        if(strcmp(relcp,")")==0){
-                                strcpy(relcp,"right_paren");
-                        }
-                        if(strcmp(relcp,";")==0){
-                                strcpy(relcp,"semi_colon");
-                        }
-                        fprintf(fp1,"(parserid-word\tP%d\t%s)\n",j, relcp);
-                        fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",j, relcp);
-                        fprintf(fp3,"(linkid-word-node_cat\tP%d\t%s -)\n",j, relcp);
-                }
-            /*#####################################################################################################*/
 	}
 	append_string(string,"]");
 	append_string(string,"\n");
@@ -376,8 +347,35 @@ char * linkage_print_disjuncts(Linkage linkage)
                    fprintf(fp5,"(link_name-link_lnode-link_rnode %5s\t", ppla[link]->name);
                      }
                     else { fprintf(fp5," ()"); }
+			////////////////////// Added newly on 22-02-11 by Shirisha Manju  //////////////////////////	
+			p=malloc(sizeof(char)*15);
+                        if((p=strchr(linkage->word[link],'.'))!=NULL)
+                        { *p= ' ';
+                                if (strcmp(p," g")==0 )   
+                                       fprintf(fp3, "(linkid-node_cat\tP%d\tverbal_noun)\n",link);
+                                else 
+                                       fprintf(fp3, "(linkid-node_cat\tP%d\t-)\n",link);
+			}
+                        if(( p=strchr(linkage->word[link],' '))!=NULL)
+                        { *p= '\0';     fprintf(fp1,"(parserid-word\tP%d\t%s)\n",link, linkage->word[link]);
+                                        fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",link, linkage->word[link]);
+                        }
+                        else {
+				relcp1=malloc(sizeof(char)*50);
+                                strcpy(relcp1,linkage->word[link]);
 
-                    fprintf(fp5,"P%d\tP%d)\n", ppla[link]->l-d, ppla[link]->r-d);
+                                if(strcmp(relcp1,"?")==0)       strcpy(relcp1,"question_mark");
+                                if(strcmp(relcp1,"(")==0)       strcpy(relcp1,"left_paren");
+                                if(strcmp(relcp1,")")==0)       strcpy(relcp1,"right_paren");
+                                if(strcmp(relcp1,";")==0)       strcpy(relcp1,"semi_colon");
+                                fprintf(fp1,"(parserid-word\tP%d\t%s)\n",link, relcp1);
+                                fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",link, relcp1);
+				fprintf(fp3, "(linkid-node_cat\tP%d\t-)\n",link);
+                        }
+
+                      /////////////////////////////////////////////////////////////////// end
+
+                        fprintf(fp5,"P%d\tP%d)\n", ppla[link]->l-d, ppla[link]->r-d);
                   /*#################################################################################################*/
 			append_string(string," (%s)]", ppla[link]->name);		
 		}/* else {
