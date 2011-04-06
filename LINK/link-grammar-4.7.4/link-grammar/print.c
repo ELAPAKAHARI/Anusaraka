@@ -349,7 +349,8 @@ char * linkage_print_disjuncts(Linkage linkage)
                     else { fprintf(fp5," ()"); }
 			////////////////////// Added newly on 22-02-11 by Shirisha Manju  //////////////////////////	
 			p=malloc(sizeof(char)*15);
-                        if((p=strchr(linkage->word[link],'.'))!=NULL)
+                        if((p=strchr(linkage->word[link],'.'))!=NULL && !isdigit(*(p+1)))//Here the word.g ---> word g i.e;
+                        //(.) is replaced with null character and !isdigit() condition (added by Mahalaxmi 6-04-11)is given to stop checking the condition for decimal numbers. Eg. Moon is at a distance of 2.68 billion miles from Earth.
                         { *p= ' ';
                                 if (strcmp(p," g")==0 )   
                                        fprintf(fp3, "(linkid-node_cat\tP%d\tverbal_noun)\n",link);
