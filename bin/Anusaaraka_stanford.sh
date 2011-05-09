@@ -57,7 +57,7 @@
 
   echo "Calling Stanford parser"
   cd $HOME_anu_test/stanford-parser/stanford-parser-2010-11-30/
-  sh ./run_stanford-parser.sh $1 $MYPATH > /dev/null
+  sh run_stanford-parser.sh $1 $MYPATH > /dev/null
   
   cd $MYPATH/tmp/$1_tmp
   sed 's/&/\&amp;/g' one_sentence_per_line.txt|sed -e s/\'/\\\'/g |sed 's/\"/\&quot;/g' |sed  "s/^/(Eng_sen \"/" |sed -n '1h;2,$H;${g;s/\n/\")\n;~~~~~~~~~~\n/g;p}'|sed -n '1h;2,$H;${g;s/$/\")\n;~~~~~~~~~~\n/g;p}' > one_sentence_per_line_tmp.txt
