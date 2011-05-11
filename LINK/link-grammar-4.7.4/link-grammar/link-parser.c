@@ -554,7 +554,7 @@ int main(int argc, char * argv[])
 	const char      *codeset;
         /*##################Added newly ##########################################################################*/
         int             num=0;
-        FILE            *fp2,*fp_word_info,*fp_num,*fp_lname,*fp_rel,*fp_lcount,*fp_word_cat,*fp_word;
+        FILE            *fp_word_info,*fp_num,*fp_lname,*fp_rel,*fp_lcount,*fp_word;
        /*###################Added ended ###########################################################################*/
 
 #if LATER
@@ -767,11 +767,6 @@ int main(int argc, char * argv[])
 		//#####################  Added newly  ########################
 		if(num+1>num_linkages && num_linkages != 0)
                 {
-                 sprintf(link_info_filename,"%s/%s_tmp/linkid_cat.txt",argv[2],argv[3]);
-                 fp2 = fopen(link_info_filename,"a");
-                 if(fp2==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
-                 fprintf(fp2,";~~~~~~~~~~\n");
-                 fclose(fp2);
                  sprintf(link_info_filename,"%s/%s_tmp/linkid_word.txt",argv[2],argv[3]);
                  fp_word= fopen(link_info_filename, "a");
                  if(fp_word==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
@@ -873,10 +868,6 @@ int main(int argc, char * argv[])
 	         fp_word_info= fopen(link_info_filename, "a");
         	 if(fp_word_info==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
 
-	         sprintf(link_info_filename,"%s/%s_tmp/linkid_cat.txt",argv[2],argv[3]);
-        	 fp_word_cat= fopen(link_info_filename, "a");
-	         if(fp_word_cat==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
-
         	 sprintf(link_info_filename,"%s/%s_tmp/link_name_expand.txt",argv[2],argv[3]);
 	         fp_lname =fopen(link_info_filename,"a");
         	 if(fp_lname==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
@@ -886,16 +877,14 @@ int main(int argc, char * argv[])
 	         if(fp_rel==NULL) {printf("Could not open %s for writing\n",link_info_filename);exit(1);}
 	
 	 	 fprintf(fp_word, "\n(No complete linkages found)\n");
-	         fprintf(fp_word_cat, "\n(No complete linkages found)\n");
 	         fprintf(fp_word_info, "\n(No complete linkages found)\n");
         	 fprintf(fp_lname, "\n(No complete linkages found)\n");
 	         fprintf(fp_rel,"\n(No complete linkages found)\n");
 
-        	 fprintf(fp_word_cat,";~~~~~~~~~~\n");    
          	 fprintf(fp_lname,";~~~~~~~~~~\n");       fprintf(fp_rel,";~~~~~~~~~~\n");
 	         fprintf(fp_word_info,";~~~~~~~~~~\n");   fprintf(fp_word,";~~~~~~~~~~\n");
 
-        	 fclose(fp_word_cat);  fclose(fp_word_info);
+		 fclose(fp_word_info);
 	         fclose(fp_lname);       fclose(fp_rel);       fclose(fp_word);
 
         	 continue;
