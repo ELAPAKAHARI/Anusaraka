@@ -210,6 +210,9 @@ char * linkage_print_disjuncts(Linkage linkage)
 	string_delete(s);
 	return djs;
 }
+
+/**
+ */
 //#################################### Added newly #########################################################
 //  This part of the code is written by Shirisha Manju.
   char * split_link_name(char *link_name){
@@ -220,9 +223,9 @@ char * linkage_print_disjuncts(Linkage linkage)
         split_lname=malloc(sizeof(char)*len*2+1);
         for(j=0;j<len;j++)
         {
-		split_lname[2*j]=link_name[j];
+                split_lname[2*j]=link_name[j];
                 split_lname[2*j+1]=' ';
-	}
+        }
         split_lname[2*j-1]='\0';
         return split_lname;
    }
@@ -233,8 +236,6 @@ char * linkage_print_disjuncts(Linkage linkage)
  static char * build_linkage_postscript_string(Linkage linkage, ps_ctxt_t *pctx,char * tmp_path,char * file_name)
  //static char * build_linkage_postscript_string(Linkage linkage, ps_ctxt_t *pctx)
 //##################################################################################################################
-/**
- */
 {
 	int link, i,j;
 	int d;
@@ -247,34 +248,32 @@ char * linkage_print_disjuncts(Linkage linkage)
 	Dictionary dict = linkage->sent->dict;
 	Parse_Options opts = linkage->opts;
 	int N_words_to_print;
-	/*############################ Added newly #########################################*/
+  
+       /*############################ Added newly #########################################*/
        /*  This part of the code written by Maha Laxmi and Shirisha Manju.
         *  opens link_ps_info.clp and link_ps_word.clp files in write mode */
-        FILE        *fp1,*fp2,*fp3,*fp4,*fp5;
-        char        *p,*relcp1;
+        FILE        *fp1,*fp2,*fp4,*fp5;
+        char        *relcp1;
         char        filename[1000];
 
-       sprintf(filename,"%s/%s_tmp/linkid_word.txt",tmp_path,file_name);
-       fp1 = fopen(filename,"a");
-       if(fp1==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
+       	sprintf(filename,"%s/%s_tmp/linkid_word.txt",tmp_path,file_name);
+       	fp1 = fopen(filename,"a");
+       	if(fp1==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
-       sprintf(filename,"%s/%s_tmp/link_numeric_word.txt",tmp_path,file_name);
-       fp2 = fopen(filename,"a");
-       if(fp2==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
+       	sprintf(filename,"%s/%s_tmp/link_numeric_word.txt",tmp_path,file_name);
+       	fp2 = fopen(filename,"a");
+       	if(fp2==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
-       sprintf(filename,"%s/%s_tmp/linkid_cat.txt",tmp_path,file_name);
-       fp3 = fopen(filename,"a");
-       if(fp3==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
+       	sprintf(filename,"%s/%s_tmp/link_name_expand.txt",tmp_path,file_name);
+       	fp4 = fopen(filename,"a");
+       	if(fp4==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
-       sprintf(filename,"%s/%s_tmp/link_name_expand.txt",tmp_path,file_name);
-       fp4 = fopen(filename,"a");
-       if(fp4==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
+       	sprintf(filename,"%s/%s_tmp/link_relation_info.txt",tmp_path,file_name);
+       	fp5 = fopen(filename,"a");
+       	if(fp5==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
 
-       sprintf(filename,"%s/%s_tmp/link_relation_info.txt",tmp_path,file_name);
-       fp5 = fopen(filename,"a");
-       if(fp5==NULL) {printf("Could not open %s for writing\n",filename);exit(1);}
+      	/*#######################################################################################*/
 
-      /*#######################################################################################*/
 	string = string_new();
 
 	N_wall_connectors = 0;
@@ -325,6 +324,17 @@ char * linkage_print_disjuncts(Linkage linkage)
 		if ((i%10 == 0) && (i>0)) append_string(string, "\n");
 		i++;
 		append_string(string, "(%s)", linkage->word[j]);
+		/*######################### Added newly ##########################*/
+                // This part of the code written by Shirisha Manju
+		relcp1=malloc(sizeof(char)*50);
+                strcpy(relcp1,linkage->word[j]);
+                if(strcmp(relcp1,"?")==0)       strcpy(relcp1,"question_mark");
+                if(strcmp(relcp1,"(")==0)       strcpy(relcp1,"left_paren");
+                if(strcmp(relcp1,")")==0)       strcpy(relcp1,"right_paren");
+                if(strcmp(relcp1,";")==0)       strcpy(relcp1,"semi_colon");
+                fprintf(fp1,"(parserid-word\tP%d\t%s)\n",j, relcp1);
+                fprintf(fp2, "(parser_numeric_id-word\t%d\t%s)\n",j, relcp1);
+		/*################################################################*/
 	}
 	append_string(string,"]");
 	append_string(string,"\n");
@@ -340,55 +350,23 @@ char * linkage_print_disjuncts(Linkage linkage)
 		append_string(string,"[%d %d %d",
 				ppla[link]->l-d, ppla[link]->r-d, 
 				pctx->link_heights[link]);
+
+		/*############################################ Added newly ##########################################*/
+                // This part of the code written by Shirisha Manju
+                fprintf(fp4,"(link_name-link_expansion %5s %10s)\n",ppla[link]->name,split_link_name(ppla[link]->name));
+                fprintf(fp5,"(link_name-link_lnode-link_rnode %5s\tP%d\tP%d)\n", ppla[link]->name,ppla[link]->l-d, ppla[link]->r-d);
+                /*####################################################################################################*/
 		if (ppla[link]->lc->label < 0) {
-		  /*################################# Added newly #################################################*/
-	                // This part of the code written by Shirisha Manju
-                   fprintf(fp4,"(link_name-link_expansion %5s %10s)\n",ppla[link]->name,split_link_name(ppla[link]->name));
-                   fprintf(fp5,"(link_name-link_lnode-link_rnode %5s\t", ppla[link]->name);
-                     }
-                    else { fprintf(fp5," ()"); }
-			////////////////////// Added newly on 22-02-11 by Shirisha Manju  //////////////////////////	
-			p=malloc(sizeof(char)*15);
-                        if((p=strchr(linkage->word[link],'.'))!=NULL && !isdigit(*(p+1)))//Here the word.g ---> word g i.e;
-                        //(.) is replaced with null character and !isdigit() condition (added by Mahalaxmi 6-04-11)is given to stop checking the condition for decimal numbers. Eg. Moon is at a distance of 2.68 billion miles from Earth.
-                        { *p= ' ';
-                                if (strcmp(p," g")==0 )   
-                                       fprintf(fp3, "(linkid-node_cat\tP%d\tverbal_noun)\n",link);
-                                else 
-                                       fprintf(fp3, "(linkid-node_cat\tP%d\t-)\n",link);
-			}
-                        if(( p=strchr(linkage->word[link],' '))!=NULL)
-                        { *p= '\0';     fprintf(fp1,"(parserid-word\tP%d\t%s)\n",link, linkage->word[link]);
-                                        fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",link, linkage->word[link]);
-                        }
-                        else {
-				relcp1=malloc(sizeof(char)*50);
-                                strcpy(relcp1,linkage->word[link]);
-
-                                if(strcmp(relcp1,"?")==0)       strcpy(relcp1,"question_mark");
-                                if(strcmp(relcp1,"(")==0)       strcpy(relcp1,"left_paren");
-                                if(strcmp(relcp1,")")==0)       strcpy(relcp1,"right_paren");
-                                if(strcmp(relcp1,";")==0)       strcpy(relcp1,"semi_colon");
-                                fprintf(fp1,"(parserid-word\tP%d\t%s)\n",link, relcp1);
-                                fprintf(fp2, "(parser_numeric_id-word\t\t%d\t%s)\n",link, relcp1);
-				fprintf(fp3, "(linkid-node_cat\tP%d\t-)\n",link);
-                        }
-
-                      /////////////////////////////////////////////////////////////////// end
-
-                        fprintf(fp5,"P%d\tP%d)\n", ppla[link]->l-d, ppla[link]->r-d);
-                  /*#################################################################################################*/
-			append_string(string," (%s)]", ppla[link]->name);		
-		}/* else {
+			append_string(string," (%s)]", ppla[link]->name);
+		} else {
 			append_string(string," ()]");
 		}
-	}*/
-	    /*#################################### Added newly #######################################################*/
-               fprintf(fp1,";~~~~~~~~~~\n");        fprintf(fp2,";~~~~~~~~~~\n");       fprintf(fp3,";~~~~~~~~~~\n");
-               fprintf(fp4,";~~~~~~~~~~\n");        fprintf(fp5,";~~~~~~~~~~\n");
-
-               fclose(fp1);        fclose(fp2);         fclose(fp3);           fclose(fp4);        fclose(fp5);
-            /*#######################################################################################################*/
+	}
+        /*#################################### Added newly #####################################################*/
+        fprintf(fp1,";~~~~~~~~~~\n");        fprintf(fp2,";~~~~~~~~~~\n");      
+    	fprintf(fp4,";~~~~~~~~~~\n");        fprintf(fp5,";~~~~~~~~~~\n");
+        fclose(fp1);        fclose(fp2);     fclose(fp4);        fclose(fp5);
+        /*#######################################################################################################*/	
 	append_string(string,"]");
 	append_string(string,"\n");
 	append_string(string,"[");
@@ -737,6 +715,7 @@ void linkage_free_senses(char * s)
 {
 	exfree(s, strlen(s)+1);
 }
+
 //########################### Added newly ###################################################
 char * linkage_print_postscript(Linkage linkage, int mode,char * tmp_path,char * file_name)
 //char * linkage_print_postscript(Linkage linkage, int mode)
@@ -749,6 +728,7 @@ char * linkage_print_postscript(Linkage linkage, int mode,char * tmp_path,char *
 	ps_ctxt_t ctx;
 	char * ascii = linkage_print_diagram_ctxt(linkage, &ctx);
 	linkage_free_diagram(ascii);
+
 	//################ Added newly #########################################
         ps = build_linkage_postscript_string(linkage, &ctx,tmp_path,file_name);
         //ps = build_linkage_postscript_string(linkage, &ctx);
