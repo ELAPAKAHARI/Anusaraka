@@ -11,8 +11,6 @@ char *s1;
 [A-Za-z_]*\([A-Za-z0-9'-.]*[-][0-9]*[,][ ][A-Za-z0-9'-.]*[-][0-9]*\)\n   { printf("%s", yytext); }
 
 
-[A-Za-z_0-9`'.]*[/][A-Za-z0-9 $ ,' ? ! ( ) `" ._-]*\n\n   { printf("%s", yytext);  }  
-
 
 ^[\n]                                {   printf("\n");  }
 
