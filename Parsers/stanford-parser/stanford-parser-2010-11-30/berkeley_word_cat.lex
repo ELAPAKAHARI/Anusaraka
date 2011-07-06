@@ -13,7 +13,7 @@ FILE *fp,*fp1,*fp2;
                                               fprintf(fp1,";~~~~~~~~~~\n");
                                               fprintf(fp2,";~~~~~~~~~~\n");
                                       }
-[(][A-Z$]*[ ][a-zA-Z0-9']*[)]         {
+[(][A-Z$-]*[ ][a-zA-Z0-9'-]*[)]         {
                                         count1=count; count2=count;
                                         len=strcspn(yytext," ");
                                         strncpy(str,yytext+1,len);
