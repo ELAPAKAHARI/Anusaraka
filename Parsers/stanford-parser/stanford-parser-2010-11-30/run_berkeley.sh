@@ -2,7 +2,7 @@
 export scriptdir=`dirname $0`
 
 
-java  -mx500m -cp "$scriptdir/stanford-parser.jar:" edu.stanford.nlp.trees.EnglishGrammaticalStructure -treeFile $* -basic -collapsedTree -CCprocessed -keepPunct
+java  -mx900m -cp "$scriptdir/stanford-parser.jar:" edu.stanford.nlp.trees.EnglishGrammaticalStructure -treeFile $* -basic -collapsedTree -CCprocessed -keepPunct
 
 #java  -mx500m -cp "$scriptdir/stanford-parser.jar:" edu.stanford.nlp.trees.EnglishGrammaticalStructure -treeFile $* -sentences "newline" -outputFormat wordsAndTags,typedDependencies -basic -collapsedTree -keepPunct $scriptdir/englishPCFG.ser.gz
 
