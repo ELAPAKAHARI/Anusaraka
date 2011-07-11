@@ -1,36 +1,38 @@
-# This program takes sd_stanford.sh programs output as input. Where basic, propagated and tree SDs are produces by the program sd_stanford.sh. 
-
 import sys
-basic_SD = open(sys.argv[2], 'w')
-propagated_SD = open(sys.argv[3], 'w')
-tree_SD = open(sys.argv[4], 'w')
-tree_rel_lst=[]
-propagated_rel_lst=[]
+fp2 = open(sys.argv[2], 'w')
+fp3 = open(sys.argv[3], 'w')
+fp4 = open(sys.argv[4], 'w')
+fp1= open(sys.argv[1],"r")
+f = fp1.readlines();
 count = 0
-for line in open(sys.argv[1]).readlines():
-    if len(line) > 1 and "SENTENCE_SKIPPED_OR_UNPARSABLE" not in line and "/" in line:
-        count = 0
-    if line == '\n':
-        count += 1
+flag=0
 
-    if count == 1 and (line.startswith("pcomp(") or line.startswith("prep(") or line.startswith("pobj(") or line.startswith("mwe(") ) and line != '\n': # this condition extracts only prepositional relations form basic SDs.
-        basic_SD.write(line)  
-    if count == 2 and line == '\n':
-	basic_SD.write(";~~~~~~~~~~\n")
+for i in f:
+        if "------------- basic dependencies ---------------" in i:
+            count = 1
+            continue
+        if "---------- CCprocessed dependencies ----------" in i:
+            count = 2
+            continue
+        if "----------- collapsed dependencies tree -----------" in i:
+            count = 3
+            continue
+        if count == 1 and i == "\n":
+            fp2.write(";~~~~~~~~~~\n")
+        if  count == 2 and i == "\n":
+             fp3.write(";~~~~~~~~~~\n")
+        if  count == 3 and i == "\n":
+             fp4.write(";~~~~~~~~~~\n")
+        if count == 1 and (i.startswith("pcomp(") or i.startswith("prep(") or i.startswith("pobj(") or i.startswith("mwe(") ) and i != '\n':
+#        if count == 1 and  i != "\n":
+             fp2.write(i)
+        if count == 2 and  i != "\n":
+             fp3.write(i)
+        if count == 3 and  i != "\n":
+             fp4.write(i)
 
-    if count == 2 and line != '\n': # This condition extracts propagation SDs.
-	propagated_SD.write(line)
-#    if count == 2 and line == '\n':
-#	basic_SD.write(";~~~~~~~~~~\n")
-    if count == 3 and line == '\n':
-        propagated_SD.write(";~~~~~~~~~~\n")
 
-    if count  == 3 and line != '\n': # This condition extracts tree SDs.
-        tree_SD.write(line)
-    if count == 4 and line == '\n':
-        tree_SD.write(";~~~~~~~~~~\n")
+fp2.close()
+fp3.close()
+fp4.close()
 
-
-basic_SD.close()
-propagated_SD.close()
-tree_SD.close()
