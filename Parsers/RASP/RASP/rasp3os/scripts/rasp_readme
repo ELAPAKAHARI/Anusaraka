@@ -1,0 +1,53 @@
+for constituent_output
+
+./rasp.sh -p'-ou -u' <INP
+
+for dependency_output
+
+./rasp.sh -p'-og -u' <INP
+
+for all type of outputs
+./rasp.sh -p'-op -u' <INP
+
+
+CC      Coordinating conjunction                        CCB
+CD      Cardinal number                                 MC      NN0 
+DT      Determiner                                      AT      AT1     DD1     DB2     DD2
+EX      Existential there
+FW      Foreign word
+IN      Preposition or subordinating conjunction        IF      II      IO      IW      CS
+JJ      Adjective                                       JJ      DA1     DA2
+JJR     Adjective, comparative
+JJS     Adjective, superlative
+LS      List item marker
+MD      Modal                                           VM
+NN      Noun, singular or mass                          NP1     NN1     NNL1    NNS1    NNT1
+NNS     Noun, plural                                    NN2
+NNP     Proper noun, singular                           NP1     NN1
+NNPS    Proper noun, plural
+PDT     Predeterminer
+POS     Possessive ending                               
+PRP     Personal pronoun                                PPY     PPH1    PPHO2   PPH01	PPHS1   PPIS1   PPHS2
+PRP$    Possessive pronoun                              APP$
+RB      Adverb                                          RR      RL      XX
+RBR     Adverb, comparative
+RBS     Adverb, superlative
+RP      Particle
+SYM     Symbol
+TO      to                                              II
+UH      Interjection
+VB      Verb, base form                                 VH0     VV0
+VBD     Verb, past tense                                VVD     VBDZ	VHD	VDD
+VBG     Verb, gerund or present participle              VVG     
+VBN     Verb, past participle                           VHZ     VVN
+VBP     Verb, non-3rd person singular present           VBM     VBR     VH0     PPH1
+VBZ     Verb, 3rd person singular present               VHZ
+WDT     Wh-determiner
+WP      Wh-pronoun                                      DDQ
+WP$     Possessive wh-pronoun                           RGQ
+WRB     Wh-adverb
+---------------
+SBARQ                                                   S
+VP							V
+-----------
+

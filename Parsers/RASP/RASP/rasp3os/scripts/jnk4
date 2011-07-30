@@ -1,0 +1,19 @@
+
+(ROOT
+  (S
+    (NP
+       (NP (DT a) (NN student))
+      (PP (IN towards)
+      (NP (NN knowledge))))))))
+    (. .)))
+
+(ROOT (S ))
+
+(ROOT
+  (S
+    (NP
+              (PP (IN against)
+                (NP (DT the) (NN wind))))))))
+    (. .)))
+
+

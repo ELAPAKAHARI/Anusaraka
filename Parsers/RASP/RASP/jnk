@@ -1,0 +1,259 @@
+Binary file gde/x86_64_linux/gde matches
+Binary file gde/x86_64_darwin/gde matches
+gde/cgde/parse.lsp:            (format t ", ~A heap memory" heap))
+gde/cgde/custom.lsp:   (change-memory-management :growth-limit 750)
+Binary file gde/ix86_linux/gde matches
+Binary file gde/ix86_darwin/gde matches
+manuals/gram/trep.ps:%!PS (but not EPSF because of memory limits)
+manuals/eval/eval-report.log:Here is how much of TeX's memory you used:
+manuals/eval/eval-report.log: 106361 words of memory out of 1000000
+manuals/gde/appendixe.plain:machine, 16 MBytes of real memory seems to be the absolute minimum to
+manuals/gde/appendixe.plain:least 10 MBytes of memory.
+manuals/gde/appendixe.tex:16 MBytes of real memory seems to be the absolute minimum to avoid thrashing.
+manuals/gde/appendixe.tex:needs to be allocated at least 10 MBytes of memory. 
+manuals/gde/user132.plain:17 msec CPU, 33 msec elapsed, 5556 heap memory 
+manuals/gde/user132.plain:50 msec CPU, 9316 heap memory 
+manuals/gde/user132.plain:33 msec CPU, 5620 heap memory 
+manuals/gde/user132.plain:recommended that the machine have at least 16 MBytes of memory,
+manuals/gde/user132.tex:17 msec CPU, 33 msec elapsed, 5556 heap memory\\
+manuals/gde/user132.tex:50 msec CPU, 9316 heap memory\\
+manuals/gde/user132.tex:33 msec CPU, 5620 heap memory\\
+manuals/gde/user132.tex:is recommended that the machine have at least 16 MBytes of memory,
+manuals/gde/appendixe.ps:1079 y(16)c(MBytes)g(of)g(real)h(memory)f(seems)g(to)g(b)q(e)h(the)g
+manuals/gde/appendixe.ps:(least)g(10)g(MBytes)g(of)f(memory)l(.)934 2915 y(6)p eop
+manuals/gde/user132.ps:%!PS (but not EPSF because of memory limits)
+manuals/gde/user132.ps:(memory)135 960 y(17)g(edges)h(generated)135 1020 y(1)g(parse)135
+manuals/gde/user132.ps:1381 y Fe(50)23 b(msec)h(CPU,)f(9316)g(heap)h(memory)135 1442
+manuals/gde/user132.ps:1083 y(33)g(msec)h(CPU,)f(5620)g(heap)h(memory)135 1143 y(22)f(edges)h
+manuals/gde/user132.ps:(MBytes)f(of)h(memory)l(,)c(otherwise)k(thrashing)59 618 y(is)f(lik)o(ely)e
+manuals/gde/hints:;;; Failed to re-enable EGC after the memory manager disabled it for memory
+manuals/gde/hints:(change-memory-management :growth-limit 1500 ; 96MB
+Binary file morph/morpha.x86_64_linux matches
+Binary file morph/morpha.ix86_linux matches
+Binary file morph/morpha.x86_64_darwin matches
+morph/morpha.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+morph/morpha.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+morph/morpha.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_buffer()" );
+morph/morpha.yy.c.saved:	/* Get memory for full buffer, including space for trailing EOB's. */
+morph/morpha.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_bytes()" );
+morph/morpha.yy.c.saved:			"out of memory expanding start-condition stack" );
+Binary file morph/morpha.ix86_darwin matches
+prob/data/susprob-new.data:Mrs._NNS Williams_NP1 have_VHD a_AT1 list_NN1 which_DDQ she_PPHS1 say_VVD contain_VVN about_II nine_MC or_CC ten_MC discrepancy_NN2 between_II her_APP$ memory_NN1 of_IO Dr._NNS Jenkins_NP1 's_$ conversation_NN1 and_CC how_RGQ they_PPHS2 be_VBDR write_VVN up_RP for_IF the_AT board_NNJ1 's_$ approval_NN1 .
+prob/data/susprob-new.data:((|Mrs.| Williams) have (a list ( which   she  say ( contain ((about (nine (or ten))) discrepancy (between (her memory (of (((|Dr.| Jenkins) |'s|) conversation)) (and  how   they  be write  up  (for (((the board) |'s|) approval))))))))))  
+prob/data/susprob-new.data:the_AT long_JJ settle_JJ area_NN2 of_IO state_NN2 like_ICS Virginia_NP1 and_CC south_ND1 Carolina_NP1 develop_VVD the_AT ante-bellum_JB culture_NN1 to_II its_APP$ rich_JJT flower_VVG ,_, and_CC there_RL the_AT memory_NN1 be_VBZ more_DAR precious_JJ ,_, and_CC the_AT consciousness_NN1 of_IO loss_NN1 the_AT great_JJR .
+prob/data/susprob-new.data:((the ( long   settle) area (of (state (like (Virginia (and south Carolina)))))) develop (the |ante-bellum| culture) (to (its rich  flower )) |,| (and  there  (the memory) be (more precious) |,| (and (the consciousness (of loss)) (the great))))  
+prob/data/susprob-new.data:since_ICS it_PPH1 be_VBZ not_XX far_RR from_II Viareggio_NP1 ,_, he_PPHS1 will_VM visit_VV0 Puccini_NP1 's_$ house_NNL1 ,_, as_CSA he_PPHS1 never_RR fail_VVZ to_TO do_VD0 ,_, to_TO pay_VV0 his_APP$ respect_NN2 to_II the_AT memory_NN1 of_IO the_AT composer_NN1 of_IO La_&FW Boheme_&FW ,_, which_DDQ he_PPHS1 consider_VVZ one_MC1 of_IO Puccini_NP1 's_$ masterpiece_NN2 .
+prob/data/susprob-new.data:((since  it  be not (far (from  Viareggio ))) |,|  he  will visit (( Puccini  |'s|) house) |,| (as  he   never  fail ( to do)) |,| (to pay (his respect) (to (the memory (of (the composer (of ( (La Boheme) |,|  ( which   he  consider (one (of (( Puccini  |'s|) masterpiece))))))))))))  
+prob/data/susprob-new.data:Heidenstam_NP1 's_$ conception_NN1 ,_, on_II the_AT contrary_NN1 ,_, be_VBDZ to_TO revive_VV0 the_AT present_JJ by_II the_AT memory_NN2 of_IO the_AT past_NN1 .
+prob/data/susprob-new.data:((( Heidenstam  |'s|) conception) |,| (on (the contrary)) |,| be (to revive (the present) (by (the memory (of (the past))))))  
+prob/data/susprob-new.data:slowly_RR the_AT procession_NN1 of_IO warrior_NN2 and_CC statesman_NN2 pass_VVZ through_II the_AT snow_NN1 beside_II the_AT black_JJ water_NNL1 and_CC into_II the_AT brilliantly_RR light_VVN cathedral_NNL1 ,_, the_AT shrine_NN1 of_IO so_RG many_DA2 precious_JJ memory_NN2 .
+prob/data/susprob-new.data:( slowly  (the procession (of (warrior (and statesman)))) pass (through (the snow (beside (the black water))) (and into (the ( brilliantly  light) cathedral |,| (the shrine (of ((so many) precious memory)))))))  
+prob/data/susprob-new.data:Heidenstam_NP1 write_VVD four_MC other_JB work_NN of_IO fiction_NN1 about_II early_JJR figure_NN2 revere_VVN in_II Swedish_JJ memory_NN1 .
+prob/data/susprob-new.data:( Heidenstam  write (four other work (of fiction) (about (early figure ( revere (in (Swedish memory)))))))  
+prob/data/susprob-new.data:it_PPH1 shall_VM be_VB0 add_VVN that_CST in_II man_NN1 neocortical_JJ hypothalamic_JJ interrelation_NN2 probably_RR play_VV0 a_AT1 role_NN1 in_II the_AT fusion_NN1 of_IO emotional_JJ process_NN2 with_IW those_DD2 underlie_VVG perception_NN1 ,_, memory_NN1 ,_, imagination_NN1 ,_, and_CC creativity_NN1 .
+prob/data/susprob-new.data:( it  shall be add (that (in man) ((neocortical  hypothalamic) interrelation)  probably  play (a role (in (the fusion (of (emotional process)) (with (those ( underlie ((perception |,|  memory  |,|  imagination  |,| (and creativity)))))))))))  
+prob/data/susprob-new.data:the_AT visceral_JJ brain_NN1 as_CSA well_RR as_CSA the_AT neocortex_NN1 be_VBZ know_VVN to_TO contribute_VV0 to_II memory_NN1 ,_, but_CCB this_DD1 topic_NN1 be_VBZ beyond_II the_AT scope_NN1 of_IO this_DD1 paper_NN1 .
+prob/data/susprob-new.data:((the visceral brain ((as well as) the neocortex)) be know ( to contribute (to memory)) |,| (but (this topic) be (beyond (the scope (of (this paper))))))  
+prob/data/susprob-new.data:feeling_NN2 of_IO a_AT1 community_NNJ1 of_IO interest_NN1 will_VM have_VH0 to_TO be_VB0 recreate_VVN -_- in_II some_DD of_IO the_AT new_JJ nation_NN2 ,_, indeed_RGA ,_, they_PPHS2 must_VM be_VB0 build_VVN for_IF the_AT first_MD time_NNT1 -_- on_II a_AT1 new_JJ basis_NN1 which_DDQ look_VVZ toward_II the_AT future_NN1 and_CC do_VDZ not_XX rely_VV0 only_RR on_II share_VVN memory_NN2 of_IO the_AT past_NN1 .
+prob/data/susprob-new.data:((feeling (of (a community (of interest)))) will have (to be recreate) |-| ((in (some (of (the new nation)))) |,|  indeed  |,|  they  must be build (for (the first time))) |-| (on (a new basis ( which  look (toward (the future)) (and do not rely  only  (on ( share  memory (of (the past)))))))))  
+prob/data/susprob-new.data:not_XX with_IW the_AT memory_NN1 of_IO her_APP$ folk_NN2 and_CC the_AT lose_VVN Conestoga_NN1 still_RR hold_VVG she_PPHO1 close_RR ..._... .
+prob/data/susprob-new.data:(not (with (the memory (of (her folk (and the  lose  Conestoga))))  still  hold  she   close ) |...|)  
+prob/data/susprob.data:Mrs._NNS Williams_NP1 have_VHD a_AT1 list_NN1 which_DDQ she_PPHS1 say_VVD contain_VVN about_II nine_MC or_CC ten_MC discrepancy_NN2 between_II her_APP$ memory_NN1 of_IO Dr._NNS Jenkins_NP1 's_$ conversation_NN1 and_CC how_RGQ they_PPHS2 be_VBDR write_VVN up_RP for_IF the_AT board_NNJ1 's_$ approval_NN1 .
+prob/data/susprob.data:((|Mrs.| Williams) have (a list ( which   she  say ( contain ((about (nine (or ten))) discrepancy (between (her memory (of (((|Dr.| Jenkins) |'s|) conversation)) (and  how   they  be write  up  (for (((the board) |'s|) approval))))))))))  
+prob/data/susprob.data:the_AT long_JJ settle_JJ area_NN2 of_IO state_NN2 like_ICS Virginia_NP1 and_CC south_ND1 Carolina_NP1 develop_VVD the_AT ante-bellum_JB culture_NN1 to_II its_APP$ rich_JJT flower_VVG ,_, and_CC there_RL the_AT memory_NN1 be_VBZ more_DAR precious_JJ ,_, and_CC the_AT consciousness_NN1 of_IO loss_NN1 the_AT great_JJR .
+prob/data/susprob.data:((the ( long   settle) area (of (state (like (Virginia (and south Carolina)))))) develop (the |ante-bellum| culture) (to (its rich  flower )) |,| (and  there  (the memory) be (more precious) |,| (and (the consciousness (of loss)) (the great))))  
+prob/data/susprob.data:since_ICS it_PPH1 be_VBZ not_XX far_RR from_II Viareggio_NP1 ,_, he_PPHS1 will_VM visit_VV0 Puccini_NP1 's_$ house_NNL1 ,_, as_CSA he_PPHS1 never_RR fail_VVZ to_TO do_VD0 ,_, to_TO pay_VV0 his_APP$ respect_NN2 to_II the_AT memory_NN1 of_IO the_AT composer_NN1 of_IO La_&FW Boheme_&FW ,_, which_DDQ he_PPHS1 consider_VVZ one_MC1 of_IO Puccini_NP1 's_$ masterpiece_NN2 .
+prob/data/susprob.data:((since  it  be not (far (from  Viareggio ))) |,|  he  will visit (( Puccini  |'s|) house) |,| (as  he   never  fail ( to do)) |,| (to pay (his respect) (to (the memory (of (the composer (of ( (La Boheme) |,|  ( which   he  consider (one (of (( Puccini  |'s|) masterpiece))))))))))))  
+prob/data/susprob.data:Heidenstam_NP1 's_$ conception_NN1 ,_, on_II the_AT contrary_NN1 ,_, be_VBDZ to_TO revive_VV0 the_AT present_JJ by_II the_AT memory_NN2 of_IO the_AT past_NN1 .
+prob/data/susprob.data:((( Heidenstam  |'s|) conception) |,| (on (the contrary)) |,| be (to revive (the present) (by (the memory (of (the past))))))  
+prob/data/susprob.data:slowly_RR the_AT procession_NN1 of_IO warrior_NN2 and_CC statesman_NN2 pass_VVZ through_II the_AT snow_NN1 beside_II the_AT black_JJ water_NNL1 and_CC into_II the_AT brilliantly_RR light_VVN cathedral_NNL1 ,_, the_AT shrine_NN1 of_IO so_RG many_DA2 precious_JJ memory_NN2 .
+prob/data/susprob.data:( slowly  (the procession (of (warrior (and statesman)))) pass (through (the snow (beside (the black water))) (and into (the ( brilliantly  light) cathedral |,| (the shrine (of ((so many) precious memory)))))))  
+prob/data/susprob.data:Heidenstam_NP1 write_VVD four_MC other_JB work_NN of_IO fiction_NN1 about_II early_JJR figure_NN2 revere_VVN in_II Swedish_JJ memory_NN1 .
+prob/data/susprob.data:( Heidenstam  write (four other work (of fiction) (about (early figure ( revere (in (Swedish memory)))))))  
+prob/data/susprob.data:it_PPH1 shall_VM be_VB0 add_VVN that_CST in_II man_NN1 neocortical_JJ hypothalamic_JJ interrelation_NN2 probably_RR play_VV0 a_AT1 role_NN1 in_II the_AT fusion_NN1 of_IO emotional_JJ process_NN2 with_IW those_DD2 underlie_VVG perception_NN1 ,_, memory_NN1 ,_, imagination_NN1 ,_, and_CC creativity_NN1 .
+prob/data/susprob.data:( it  shall be add (that (in man) ((neocortical  hypothalamic) interrelation)  probably  play (a role (in (the fusion (of (emotional process)) (with (those ( underlie ((perception |,|  memory  |,|  imagination  |,| (and creativity)))))))))))  
+prob/data/susprob.data:the_AT visceral_JJ brain_NN1 as_CSA well_RR as_CSA the_AT neocortex_NN1 be_VBZ know_VVN to_TO contribute_VV0 to_II memory_NN1 ,_, but_CCB this_DD1 topic_NN1 be_VBZ beyond_II the_AT scope_NN1 of_IO this_DD1 paper_NN1 .
+prob/data/susprob.data:((the visceral brain ((as well as) the neocortex)) be know ( to contribute (to memory)) |,| (but (this topic) be (beyond (the scope (of (this paper))))))  
+prob/data/susprob.data:feeling_NN2 of_IO a_AT1 community_NNJ1 of_IO interest_NN1 will_VM have_VH0 to_TO be_VB0 recreate_VVN -_- in_II some_DD of_IO the_AT new_JJ nation_NN2 ,_, indeed_RGA ,_, they_PPHS2 must_VM be_VB0 build_VVN for_IF the_AT first_MD time_NNT1 -_- on_II a_AT1 new_JJ basis_NN1 which_DDQ look_VVZ toward_II the_AT future_NN1 and_CC do_VDZ not_XX rely_VV0 only_RR on_II share_VVN memory_NN2 of_IO the_AT past_NN1 .
+prob/data/susprob.data:((feeling (of (a community (of interest)))) will have (to be recreate) |-| ((in (some (of (the new nation)))) |,|  indeed  |,|  they  must be build (for (the first time))) |-| (on (a new basis ( which  look (toward (the future)) (and do not rely  only  (on ( share  memory (of (the past)))))))))  
+prob/data/susprob.data:not_XX with_IW the_AT memory_NN1 of_IO her_APP$ folk_NN2 and_CC the_AT lose_VVN Conestoga_NN1 still_RR hold_VVG she_PPHO1 close_RR ..._... .
+prob/data/susprob.data:(not (with (the memory (of (her folk (and the  lose  Conestoga))))  still  hold  she   close ) |...|)  
+prob/data/susprob.data:Mrs._NNS Williams_NP1 have_VHD a_AT1 list_NN1 which_DDQ she_PPHS1 say_VVD contain_VVN about_II nine_MC or_CC ten_MC discrepancy_NN2 between_II her_APP$ memory_NN1 of_IO Dr._NNS Jenkins_NP1 's_$ conversation_NN1 and_CC how_RGQ they_PPHS2 be_VBDR write_VVN up_RP for_IF the_AT board_NNJ1 's_$ approval_NN1 .
+prob/data/susprob.data:((|Mrs.| Williams) have (a list ( which   she  say ( contain ((about (nine (or ten))) discrepancy (between (her memory (of (((|Dr.| Jenkins) |'s|) conversation)) (and  how   they  be write  up  (for (((the board) |'s|) approval))))))))))  
+prob/data/susprob.data:the_AT long_JJ settle_JJ area_NN2 of_IO state_NN2 like_ICS Virginia_NP1 and_CC south_ND1 Carolina_NP1 develop_VVD the_AT ante-bellum_JB culture_NN1 to_II its_APP$ rich_JJT flower_VVG ,_, and_CC there_RL the_AT memory_NN1 be_VBZ more_DAR precious_JJ ,_, and_CC the_AT consciousness_NN1 of_IO loss_NN1 the_AT great_JJR .
+prob/data/susprob.data:((the ( long   settle) area (of (state (like (Virginia (and south Carolina)))))) develop (the |ante-bellum| culture) (to (its rich  flower )) |,| (and  there  (the memory) be (more precious) |,| (and (the consciousness (of loss)) (the great))))  
+prob/data/susprob.data:since_ICS it_PPH1 be_VBZ not_XX far_RR from_II Viareggio_NP1 ,_, he_PPHS1 will_VM visit_VV0 Puccini_NP1 's_$ house_NNL1 ,_, as_CSA he_PPHS1 never_RR fail_VVZ to_TO do_VD0 ,_, to_TO pay_VV0 his_APP$ respect_NN2 to_II the_AT memory_NN1 of_IO the_AT composer_NN1 of_IO La_&FW Boheme_&FW ,_, which_DDQ he_PPHS1 consider_VVZ one_MC1 of_IO Puccini_NP1 's_$ masterpiece_NN2 .
+prob/data/susprob.data:((since  it  be not (far (from  Viareggio ))) |,|  he  will visit (( Puccini  |'s|) house) |,| (as  he   never  fail ( to do)) |,| (to pay (his respect) (to (the memory (of (the composer (of ( (La Boheme) |,|  ( which   he  consider (one (of (( Puccini  |'s|) masterpiece))))))))))))  
+prob/data/susprob.data:Heidenstam_NP1 's_$ conception_NN1 ,_, on_II the_AT contrary_NN1 ,_, be_VBDZ to_TO revive_VV0 the_AT present_JJ by_II the_AT memory_NN2 of_IO the_AT past_NN1 .
+prob/data/susprob.data:((( Heidenstam  |'s|) conception) |,| (on (the contrary)) |,| be (to revive (the present) (by (the memory (of (the past))))))  
+prob/data/susprob.data:slowly_RR the_AT procession_NN1 of_IO warrior_NN2 and_CC statesman_NN2 pass_VVZ through_II the_AT snow_NN1 beside_II the_AT black_JJ water_NNL1 and_CC into_II the_AT brilliantly_RR light_VVN cathedral_NNL1 ,_, the_AT shrine_NN1 of_IO so_RG many_DA2 precious_JJ memory_NN2 .
+prob/data/susprob.data:( slowly  (the procession (of (warrior (and statesman)))) pass (through (the snow (beside (the black water))) (and into (the ( brilliantly  light) cathedral |,| (the shrine (of ((so many) precious memory)))))))  
+prob/data/susprob.data:Heidenstam_NP1 write_VVD four_MC other_JB work_NN of_IO fiction_NN1 about_II early_JJR figure_NN2 revere_VVN in_II Swedish_JJ memory_NN1 .
+prob/data/susprob.data:( Heidenstam  write (four other work (of fiction) (about (early figure ( revere (in (Swedish memory)))))))  
+prob/data/susprob.data:it_PPH1 shall_VM be_VB0 add_VVN that_CST in_II man_NN1 neocortical_JJ hypothalamic_JJ interrelation_NN2 probably_RR play_VV0 a_AT1 role_NN1 in_II the_AT fusion_NN1 of_IO emotional_JJ process_NN2 with_IW those_DD2 underlie_VVG perception_NN1 ,_, memory_NN1 ,_, imagination_NN1 ,_, and_CC creativity_NN1 .
+prob/data/susprob.data:( it  shall be add (that (in man) ((neocortical  hypothalamic) interrelation)  probably  play (a role (in (the fusion (of (emotional process)) (with (those ( underlie ((perception |,|  memory  |,|  imagination  |,| (and creativity)))))))))))  
+prob/data/susprob.data:the_AT visceral_JJ brain_NN1 as_CSA well_RR as_CSA the_AT neocortex_NN1 be_VBZ know_VVN to_TO contribute_VV0 to_II memory_NN1 ,_, but_CCB this_DD1 topic_NN1 be_VBZ beyond_II the_AT scope_NN1 of_IO this_DD1 paper_NN1 .
+prob/data/susprob.data:((the visceral brain ((as well as) the neocortex)) be know ( to contribute (to memory)) |,| (but (this topic) be (beyond (the scope (of (this paper))))))  
+prob/data/susprob.data:feeling_NN2 of_IO a_AT1 community_NNJ1 of_IO interest_NN1 will_VM have_VH0 to_TO be_VB0 recreate_VVN -_- in_II some_DD of_IO the_AT new_JJ nation_NN2 ,_, indeed_RGA ,_, they_PPHS2 must_VM be_VB0 build_VVN for_IF the_AT first_MD time_NNT1 -_- on_II a_AT1 new_JJ basis_NN1 which_DDQ look_VVZ toward_II the_AT future_NN1 and_CC do_VDZ not_XX rely_VV0 only_RR on_II share_VVN memory_NN2 of_IO the_AT past_NN1 .
+prob/data/susprob.data:((feeling (of (a community (of interest)))) will have (to be recreate) |-| ((in (some (of (the new nation)))) |,|  indeed  |,|  they  must be build (for (the first time))) |-| (on (a new basis ( which  look (toward (the future)) (and do not rely  only  (on ( share  memory (of (the past)))))))))  
+prob/data/susprob.data:not_XX with_IW the_AT memory_NN1 of_IO her_APP$ folk_NN2 and_CC the_AT lose_VVN Conestoga_NN1 still_RR hold_VVG she_PPHO1 close_RR ..._... .
+prob/data/susprob.data:(not (with (the memory (of (her folk (and the  lose  Conestoga))))  still  hold  she   close ) |...|)  
+prob/data/susprob.data:it_PPH1 shall_VM be_VB0 add_VVN that_CST in_II man_NN1 neocortical_JJ hypothalamic_JJ interrelation_NN2 probably_RR play_VV0 a_AT1 role_NN1 in_II the_AT fusion_NN1 of_IO emotional_JJ process_NN2 with_IW those_DD2 underlie_VVG perception_NN1 ,_, memory_NN1 ,_, imagination_NN1 ,_, and_CC creativity_NN1 .
+prob/data/susprob.data:( it  shall be add (that (in man) ((neocortical  hypothalamic) interrelation)  probably  play (a role (in (the fusion (of (emotional process)) (with (those ( underlie ((perception |,|  memory  |,|  imagination  |,| (and creativity)))))))))))  
+prob/data/susprob.data:the_AT visceral_JJ brain_NN1 as_CSA well_RR as_CSA the_AT neocortex_NN1 be_VBZ know_VVN to_TO contribute_VV0 to_II memory_NN1 ,_, but_CCB this_DD1 topic_NN1 be_VBZ beyond_II the_AT scope_NN1 of_IO this_DD1 paper_NN1 .
+prob/data/susprob.data:((the visceral brain ((as well as) the neocortex)) be know ( to contribute (to memory)) |,| (but (this topic) be (beyond (the scope (of (this paper))))))  
+prob/data/susprob.data:feeling_NN2 of_IO a_AT1 community_NNJ1 of_IO interest_NN1 will_VM have_VH0 to_TO be_VB0 recreate_VVN -_- in_II some_DD of_IO the_AT new_JJ nation_NN2 ,_, indeed_RGA ,_, they_PPHS2 must_VM be_VB0 build_VVN for_IF the_AT first_MD time_NNT1 -_- on_II a_AT1 new_JJ basis_NN1 which_DDQ look_VVZ toward_II the_AT future_NN1 and_CC do_VDZ not_XX rely_VV0 only_RR on_II share_VVN memory_NN2 of_IO the_AT past_NN1 .
+prob/data/susprob.data:((feeling (of (a community (of interest)))) will have (to be recreate) |-| ((in (some (of (the new nation)))) |,|  indeed  |,|  they  must be build (for (the first time))) |-| (on (a new basis ( which  look (toward (the future)) (and do not rely  only  (on ( share  memory (of (the past)))))))))  
+prob/data/susprob.data:not_XX with_IW the_AT memory_NN1 of_IO her_APP$ folk_NN2 and_CC the_AT lose_VVN Conestoga_NN1 still_RR hold_VVG she_PPHO1 close_RR ..._... .
+prob/data/susprob.data:(not (with (the memory (of (her folk (and the  lose  Conestoga))))  still  hold  she   close ) |...|)  
+prob/data/orig-data/sustr-mod15.trees1:(|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.)
+prob/data/orig-data/sustr-mod15.trees1:          ("N1/n" |memory_NN2|))))))))))
+prob/data/orig-data/sustr-mod15.trees1:(|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.)
+prob/data/orig-data/sustr-mod15.trees1:          ("N1/n" |memory_NN2|))))))))))
+prob/data/orig-data/sustr-mod15.trees1:(|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.)
+prob/data/orig-data/sustr-mod15.trees1:         ("N1/n_of" |memory_NN2|
+prob/data/orig-data/sustr-mod15.trees1:(|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.)
+prob/data/orig-data/sustr-mod15.trees1:         ("N1/n_of" |memory_NN2|
+prob/data/orig-data/sustr-mod15.trees1:(|the_AT| |visceral_JJ| |brain_NN1| |as_CSA| |well_RR| |as_CSA| |the_AT| |neocortex_NN1| |be_VBZ| |know_VVN| |to_TO| |contribute_VV0| |to_II| |memory_NN1| |,_,| |but_CCB| |this_DD1| |topic_NN1| |be_VBZ| |beyond_II| |the_AT| |scope_NN1| |of_IO| |this_DD1| |paper_NN1| ._.)
+prob/data/orig-data/sustr-mod15.trees1:       ("PP/p1" ("P1/p_n1" |to_II| ("N1/n" |memory_NN1|))))))))
+prob/data/orig-data/tsg15.log:slowly_RR the_AT procession_NN1 of_IO warrior_NN2 and_CC statesman_NN2 pass_VVZ through_II the_AT snow_NN1 beside_II the_AT black_JJ water_NNL1 and_CC into_II the_AT brilliantly_RR light_VVN cathedral_NNL1 ,_, the_AT shrine_NN1 of_IO so_RG many_DA2 precious_JJ memory_NN2 ._.
+prob/data/orig-data/tsg15.log:         (N1/ap_n1/- (AP/a1 (A1/a precious_JJ)) (N1/n memory_NN2))))))))))
+prob/data/orig-data/tsg15.log:slowly_RR the_AT procession_NN1 of_IO warrior_NN2 and_CC statesman_NN2 pass_VVZ through_II the_AT snow_NN1 beside_II the_AT black_JJ water_NNL1 and_CC into_II the_AT brilliantly_RR light_VVN cathedral_NNL1 ,_, the_AT shrine_NN1 of_IO so_RG many_DA2 precious_JJ memory_NN2 ._.
+prob/data/orig-data/tsg15.log:         (N1/ap_n1/- (AP/a1 (A1/a precious_JJ)) (N1/n memory_NN2))))))))))
+prob/data/orig-data/tsg15.log:Heidenstam_NP1 's_$ conception_NN1 ,_, on_II the_AT contrary_NN1 ,_, be_VBDZ to_TO revive_VV0 the_AT present_JJ by_II the_AT memory_NN2 of_IO the_AT past_NN1 ._.
+prob/data/orig-data/tsg15.log:         (N1/n_of memory_NN2
+prob/data/orig-data/tsg15.log:Heidenstam_NP1 's_$ conception_NN1 ,_, on_II the_AT contrary_NN1 ,_, be_VBDZ to_TO revive_VV0 the_AT present_JJ by_II the_AT memory_NN2 of_IO the_AT past_NN1 ._.
+prob/data/orig-data/tsg15.log:         (N1/n_of memory_NN2
+prob/data/orig-data/tsg15.log:the_AT visceral_JJ brain_NN1 as_CSA well_RR as_CSA the_AT neocortex_NN1 be_VBZ know_VVN to_TO contribute_VV0 to_II memory_NN1 ,_, but_CCB this_DD1 topic_NN1 be_VBZ beyond_II the_AT scope_NN1 of_IO this_DD1 paper_NN1 ._.
+prob/data/orig-data/tsg15.log:       (PP/p1 (P1/p_n1 to_II (N1/n memory_NN1))))))))
+prob/data/orig-data/tsg15.trees1:(|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.)
+prob/data/orig-data/tsg15.trees1:          ("N1/n" |memory_NN2|))))))))))
+prob/data/orig-data/tsg15.trees1:(|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.)
+prob/data/orig-data/tsg15.trees1:          ("N1/n" |memory_NN2|))))))))))
+prob/data/orig-data/tsg15.trees1:(|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.)
+prob/data/orig-data/tsg15.trees1:          ("N1/n_pp-of" |memory_NN2|
+prob/data/orig-data/tsg15.trees1:(|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.)
+prob/data/orig-data/tsg15.trees1:          ("N1/n_pp-of" |memory_NN2|
+prob/data/orig-data/tsg15.trans:(1 (|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.) (#(0 161 13) #(161 125 17 1184 0) #(125 106 17 1100 0) #(106 109 17 1133 0) #(109 157 17) #(157 93 19 1179 109) #(93 162 19) #(162 375 21 1185 93) #(375 160 21) #(160 377 19 1183 375) #(377 162 19) #(162 381 15 1185 377) #(381 159 15) #(159 129 19 1182 381) #(129 162 19) #(162 526 24 1185 129) #(526 270 24 1043 381) #(270 381 24 1045 377) #(381 379 24 881 377) #(379 388 24 790 377) #(388 82 24 1048 375) #(82 282 24 1087 375) #(282 94 24 959 93) #(94 279 24 799 109) #(279 163 24) #(163 280 21 1186 279) #(280 160 21) #(160 83 17 1183 280) #(83 157 17) #(157 93 19 1179 83) #(93 162 19) #(162 375 21 1185 93) #(375 94 21 881 93) #(94 160 21) #(160 83 17 1183 94) #(83 157 17) #(157 93 13 1179 83) #(93 161 13) #(161 397 19 1184 93) #(397 389 19 1100 93) #(389 391 19 1133 93) #(391 162 19) #(162 97 15 1185 391) #(97 142 15 884 391) #(142 94 15 890 93) #(94 386 15 799 83) #(386 82 15 1051 94) #(82 190 15 1087 94) #(190 94 15 980 93) #(94 386 15 799 83) #(386 82 15 1048 280) #(82 331 15 1087 280) #(331 159 15) #(159 129 21 1182 331) #(129 160 21) #(160 511 17 1183 129) #(511 157 17) #(157 93 13 1179 511) #(93 161 13) #(161 397 24 1184 93) #(397 389 24 1100 93) #(389 391 24 1133 93) #(391 163 24) #(163 326 19 1186 391) #(326 389 19 1110 93) #(389 391 19 1133 93) #(391 162 19) #(162 97 2 1185 391) #(97 142 2 884 391) #(142 94 2 890 93) #(94 386 2 799 511) #(386 82 2 1051 129) #(82 697 2 1087 129) #(697 334 2 1091 331) #(250 291 2 352 109) #(291 52 2) #(52 157 17) #(157 93 19 1179 52) #(93 162 19) #(162 375 21 1185 93) #(375 160 21) #(160 377 13 1183 375) #(377 161 13) #(161 125 23 1184 377) #(125 161 13) #(161 357 13 1184 125) #(357 275 13 1100 125) #(275 383 13 1101 377) #(383 384 13 1133 377) #(384 161 13) #(161 125 19 1184 384) #(125 214 19 1100 384) #(214 238 19 1133 384) #(238 162 19) #(162 97 4 1185 238) #(97 237 4 881 238) #(237 237 4 890 384) #(237 379 4 890 377) #(379 388 4 790 377) #(388 82 4 1048 375) #(82 282 4 1087 375) #(282 94 4 959 93) #(94 664 4 799 52) #(664 291 4 347 109) #(291 978 4 321 0) #(978 24 4) #(24 979 0 28 978) #(979 986 0 4 0)) ((|slowly_RR| (A0-44@) . #(11 + + |0| CAT NONE @1120504 + @1120505 - @1120506 @1120507)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|procession_NN1| (N0-42@) . #(10 + - |0| - - NORM PPOF - @1120521 - @1120522 @1120523)) (|of_IO| (P0-45@) . #(12 - - |0| NP OF + @1120527 - @1120528 @1120529)) (|warrior_NN2| (N0-42@) . #(10 + - |0| + - NORM @1120651 - @1120571 - @1120572 @1120573)) (|and_CC| (CJ-46@) . #(13 CONJ END @1120605)) (|statesman_NN2| (N0-42@) . #(10 + - |0| + - NORM @1120651 - @1120652 - @1120653 @1120654)) (|pass_VVZ| (V0-35@) . #(7 - + |0| - NP_PP @1120656 - PRES + - @1120657 @1120658)) (|through_II| (P0-45@) . #(12 - - |0| NP PREP - - - @1120855 @1120856)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|snow_NN1| (N0-42@) . #(10 + - |0| - - NORM @1120919 - @1120920 - @1120921 @1120922)) (|beside_II| (P0-45@) . #(12 - - |0| NP PREP + - - @1120926 @1120927)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|black_JJ| (A0-44@) . #(11 + + |0| NORM NONE NONE - @1121065 - @1121066 @1121067)) (|water_NNL1| (N0-42@) . #(10 + - |0| - - PLACE @1121068 - - - @1121070 @1121071)) (|and_CC| (CJ-46@) . #(13 CONJ END @1121200)) (|into_II| (P0-45@) . #(12 - - |0| NP PREP @1121380 - - @1121382 @1121383)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|brilliantly_RR| (A0-44@) . #(11 + + |0| CAT NONE NONE + @1121521 - @1121522 @1121523)) (|light_VVN| (V0-35@) . #(7 - + |0| @1121524 @1121525 @1121526 - PPART + - @1121527 @1121528)) (|cathedral_NNL1| (N0-42@) . #(10 + - |0| - - PLACE @1121531 - + - @1121533 @1121534)) (|,_,| (|+pco-21|) . #(2 |comma|)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|shrine_NN1| (N0-42@) . #(10 + - |0| - - NORM PPOF - @1122336 - @1122337 @1122338)) (|of_IO| (P0-45@) . #(12 - - |0| NP OF + @1122342 - @1122343 @1122344)) (|so_RG| (A0-44@) . #(11 + + |0| DG NONE NONE + @1122510 - @1122511 @1122512)) (|many_DA2| (A0-44@) . #(11 + + |0| ATT NONE NONE - @1122678 - @1122679 @1122680)) (|precious_JJ| (A0-44@) . #(11 + + |0| NORM NONE NONE - @1122865 - @1122866 @1122867)) (|memory_NN2| (N0-42@) . #(10 + - |0| + - NORM @1123215 - - - @1123217 @1123218)) (._. (|+pdo-16|) . #(2 |dot|)))) ;_;_ NIL
+prob/data/orig-data/tsg15.trans:(1 (|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.) (#(0 161 13) #(161 125 17 1184 0) #(125 106 17 1100 0) #(106 109 17 1133 0) #(109 157 17) #(157 93 19 1179 109) #(93 162 19) #(162 375 21 1185 93) #(375 160 21) #(160 377 19 1183 375) #(377 162 19) #(162 381 15 1185 377) #(381 159 15) #(159 129 19 1182 381) #(129 162 19) #(162 526 24 1185 129) #(526 270 24 1043 381) #(270 381 24 1045 377) #(381 379 24 881 377) #(379 388 24 790 377) #(388 82 24 1048 375) #(82 282 24 1087 375) #(282 94 24 959 93) #(94 279 24 799 109) #(279 163 24) #(163 280 21 1186 279) #(280 160 21) #(160 83 17 1183 280) #(83 157 17) #(157 93 19 1179 83) #(93 162 19) #(162 375 21 1185 93) #(375 94 21 881 93) #(94 160 21) #(160 83 17 1183 94) #(83 157 17) #(157 93 13 1179 83) #(93 161 13) #(161 397 19 1184 93) #(397 389 19 1100 93) #(389 391 19 1133 93) #(391 162 19) #(162 97 15 1185 391) #(97 142 15 884 391) #(142 94 15 890 93) #(94 386 15 799 83) #(386 82 15 1051 94) #(82 190 15 1087 94) #(190 94 15 980 93) #(94 386 15 799 83) #(386 82 15 1048 280) #(82 331 15 1087 280) #(331 159 15) #(159 129 21 1182 331) #(129 160 21) #(160 511 17 1183 129) #(511 157 17) #(157 93 13 1179 511) #(93 161 13) #(161 397 24 1184 93) #(397 389 24 1100 93) #(389 391 24 1133 93) #(391 163 24) #(163 326 19 1186 391) #(326 389 19 1110 93) #(389 391 19 1133 93) #(391 162 19) #(162 97 2 1185 391) #(97 142 2 884 391) #(142 94 2 890 93) #(94 386 2 799 511) #(386 82 2 1051 129) #(82 697 2 1087 129) #(697 334 2 1091 331) #(250 291 2 352 109) #(291 52 2) #(52 157 17) #(157 93 19 1179 52) #(93 162 19) #(162 375 21 1185 93) #(375 160 21) #(160 377 13 1183 375) #(377 161 13) #(161 125 23 1184 377) #(125 161 13) #(161 357 13 1184 125) #(357 275 13 1100 125) #(275 383 13 1101 377) #(383 384 13 1133 377) #(384 161 13) #(161 125 19 1184 384) #(125 214 19 1100 384) #(214 238 19 1133 384) #(238 162 19) #(162 97 4 1185 238) #(97 237 4 881 238) #(237 237 4 890 384) #(237 379 4 890 377) #(379 388 4 790 377) #(388 82 4 1048 375) #(82 282 4 1087 375) #(282 94 4 959 93) #(94 664 4 799 52) #(664 291 4 347 109) #(291 978 4 321 0) #(978 24 4) #(24 979 0 28 978) #(979 986 0 4 0)) ((|slowly_RR| (A0-44@) . #(11 + + |0| CAT NONE @2273271 + @2273272 - @2273273 @2273274)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|procession_NN1| (N0-42@) . #(10 + - |0| - - NORM PPOF - @2273288 - @2273289 @2273290)) (|of_IO| (P0-45@) . #(12 - - |0| NP OF + @2273294 - @2273295 @2273296)) (|warrior_NN2| (N0-42@) . #(10 + - |0| + - NORM @2273418 - @2273338 - @2273339 @2273340)) (|and_CC| (CJ-46@) . #(13 CONJ END @2273372)) (|statesman_NN2| (N0-42@) . #(10 + - |0| + - NORM @2273418 - @2273419 - @2273420 @2273421)) (|pass_VVZ| (V0-35@) . #(7 - + |0| - NP_PP @2273423 - PRES + - @2273424 @2273425)) (|through_II| (P0-45@) . #(12 - - |0| NP PREP - - - @2273622 @2273623)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|snow_NN1| (N0-42@) . #(10 + - |0| - - NORM @2273686 - @2273687 - @2273688 @2273689)) (|beside_II| (P0-45@) . #(12 - - |0| NP PREP + - - @2273693 @2273694)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|black_JJ| (A0-44@) . #(11 + + |0| NORM NONE NONE - @2273832 - @2273833 @2273834)) (|water_NNL1| (N0-42@) . #(10 + - |0| - - PLACE @2273835 - - - @2273837 @2273838)) (|and_CC| (CJ-46@) . #(13 CONJ END @2273967)) (|into_II| (P0-45@) . #(12 - - |0| NP PREP @2274147 - - @2274149 @2274150)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|brilliantly_RR| (A0-44@) . #(11 + + |0| CAT NONE NONE + @2274288 - @2274289 @2274290)) (|light_VVN| (V0-35@) . #(7 - + |0| @2274291 @2274292 @2274293 - PPART + - @2274294 @2274295)) (|cathedral_NNL1| (N0-42@) . #(10 + - |0| - - PLACE @2274298 - + - @2274300 @2274301)) (|,_,| (|+pco-21|) . #(2 |comma|)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|shrine_NN1| (N0-42@) . #(10 + - |0| - - NORM PPOF - @2275103 - @2275104 @2275105)) (|of_IO| (P0-45@) . #(12 - - |0| NP OF + @2275109 - @2275110 @2275111)) (|so_RG| (A0-44@) . #(11 + + |0| DG NONE NONE + @2275277 - @2275278 @2275279)) (|many_DA2| (A0-44@) . #(11 + + |0| ATT NONE NONE - @2275445 - @2275446 @2275447)) (|precious_JJ| (A0-44@) . #(11 + + |0| NORM NONE NONE - @2275632 - @2275633 @2275634)) (|memory_NN2| (N0-42@) . #(10 + - |0| + - NORM @2275982 - - - @2275984 @2275985)) (._. (|+pdo-16|) . #(2 |dot|)))) ;_;_ NIL
+prob/data/orig-data/tsg15.trans:(1 (|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.) (#(0 162 19) #(162 97 19 1185 0) #(97 80 19 882 0) #(80 170 19 792 0) #(170 162 19) #(162 259 19 1185 170) #(259 170 19 809 0) #(170 162 19) #(162 259 2 1185 170) #(259 251 2 881 170) #(251 170 2 808 0) #(170 173 2) #(173 160 21) #(160 83 17 1183 173) #(83 157 17) #(157 93 19 1179 83) #(93 162 19) #(162 375 2 1185 93) #(375 94 2 881 93) #(94 386 2 799 83) #(386 82 2 1048 173) #(82 661 2 1087 173) #(661 60 2 268 173) #(60 61 2) #(61 172 25 158 170) #(172 170 25 137 0) #(170 158 25) #(158 72 25 1180 170) #(72 158 25) #(158 309 24 1180 72) #(309 163 24) #(163 466 17 1186 309) #(466 157 17) #(157 93 13 1179 466) #(93 161 13) #(161 397 21 1184 93) #(397 389 21 1100 93) #(389 160 21) #(160 83 17 1183 389) #(83 157 17) #(157 93 19 1179 83) #(93 162 19) #(162 375 21 1185 93) #(375 160 21) #(160 377 17 1183 375) #(377 157 17) #(157 93 19 1179 377) #(93 162 19) #(162 375 4 1185 93) #(375 94 4 881 93) #(94 388 4 799 377) #(388 82 4 1048 375) #(82 282 4 1087 375) #(282 94 4 959 93) #(94 386 4 799 83) #(386 82 4 1048 389) #(82 215 4 1087 389) #(215 389 4 1131 93) #(389 338 4 864 466) #(338 306 4 421 309) #(306 306 4 664 72) #(306 250 4 579 170) #(250 978 4 352 0) #(978 24 4) #(24 979 0 28 978) #(979 986 0 4 0)) ((|Heidenstam_NP1| (N0-42@) . #(10 + - |0| - - NAME @3565225 - @3565226 - @3565227 @3565228)) (|'s_$| (N0-42@) . #(10 + - |0| @3565229 + POSS @3565230 - @3565231 - @3565232 @3565233)) (|conception_NN1| (N0-42@) . #(10 + - |0| - - NORM @3565266 - @3565267 - @3565268 @3565269)) (|,_,| (|+pco-21|) . #(2 |comma|)) (|on_II| (P0-45@) . #(12 - - |0| NP PREP - - - @3565364 @3565365)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|contrary_NN1| (N0-42@) . #(10 + - |0| - - NORM @3565423 - @3565424 - @3565425 @3565426)) (|,_,| (|+pco-21|) . #(2 |comma|)) (|be_VBDZ| (V0-48@) . #(15 - + |0| - BE PAST @3565486 + - @3565487 @3565488)) (|to_TO| (V0-48@) . #(15 - + |0| @3565582 TO INF - - - @3565583 @3565584)) (|revive_VV0| (V0-35@) . #(7 - + |0| @3565630 NP_NP @3565632 - BSE + - @3565633 @3565634)) (|the_AT| (DT-51@) . #(18 DET @3565635 - -)) (|present_JJ| (A0-44@) . #(11 + + |0| NORM NONE PP - @3565692 - @3565693 @3565694)) (|by_II| (P0-45@) . #(12 - - |0| NP PREP @3565696 - - @3565698 @3565699)) (|the_AT| (DT-51@) . #(18 DET + - -)) (|memory_NN2| (N0-42@) . #(10 + - |0| + - NORM PPOF - @3565903 - @3565904 @3565905)) (|of_IO| (P0-45@) . #(12 - - |0| NP OF + @3565909 - @3565910 @3565911)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|past_NN1| (N0-42@) . #(10 + - |0| - - NORM @3566233 - @3566234 - @3566235 @3566236)) (._. (|+pdo-16|) . #(2 |dot|)))) ;_;_ NIL
+prob/data/orig-data/tsg15.trans:(1 (|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.) (#(0 162 19) #(162 97 19 1185 0) #(97 80 19 882 0) #(80 170 19 792 0) #(170 162 19) #(162 259 19 1185 170) #(259 170 19 809 0) #(170 162 19) #(162 259 2 1185 170) #(259 251 2 881 170) #(251 170 2 808 0) #(170 173 2) #(173 160 21) #(160 83 17 1183 173) #(83 157 17) #(157 93 19 1179 83) #(93 162 19) #(162 375 2 1185 93) #(375 94 2 881 93) #(94 386 2 799 83) #(386 82 2 1048 173) #(82 661 2 1087 173) #(661 60 2 268 173) #(60 61 2) #(61 172 25 158 170) #(172 170 25 137 0) #(170 158 25) #(158 72 25 1180 170) #(72 158 25) #(158 309 24 1180 72) #(309 163 24) #(163 466 17 1186 309) #(466 157 17) #(157 93 13 1179 466) #(93 161 13) #(161 397 21 1184 93) #(397 389 21 1100 93) #(389 160 21) #(160 83 17 1183 389) #(83 157 17) #(157 93 19 1179 83) #(93 162 19) #(162 375 21 1185 93) #(375 160 21) #(160 377 17 1183 375) #(377 157 17) #(157 93 19 1179 377) #(93 162 19) #(162 375 4 1185 93) #(375 94 4 881 93) #(94 388 4 799 377) #(388 82 4 1048 375) #(82 282 4 1087 375) #(282 94 4 959 93) #(94 386 4 799 83) #(386 82 4 1048 389) #(82 215 4 1087 389) #(215 389 4 1131 93) #(389 338 4 864 466) #(338 306 4 421 309) #(306 306 4 664 72) #(306 250 4 579 170) #(250 978 4 352 0) #(978 24 4) #(24 979 0 28 978) #(979 986 0 4 0)) ((|Heidenstam_NP1| (N0-42@) . #(10 + - |0| - - NAME @5087705 - @5087706 - @5087707 @5087708)) (|'s_$| (N0-42@) . #(10 + - |0| @5087709 + POSS @5087710 - @5087711 - @5087712 @5087713)) (|conception_NN1| (N0-42@) . #(10 + - |0| - - NORM @5087746 - @5087747 - @5087748 @5087749)) (|,_,| (|+pco-21|) . #(2 |comma|)) (|on_II| (P0-45@) . #(12 - - |0| NP PREP - - - @5087844 @5087845)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|contrary_NN1| (N0-42@) . #(10 + - |0| - - NORM @5087903 - @5087904 - @5087905 @5087906)) (|,_,| (|+pco-21|) . #(2 |comma|)) (|be_VBDZ| (V0-48@) . #(15 - + |0| - BE PAST @5087966 + - @5087967 @5087968)) (|to_TO| (V0-48@) . #(15 - + |0| @5088062 TO INF - - - @5088063 @5088064)) (|revive_VV0| (V0-35@) . #(7 - + |0| @5088110 NP_NP @5088112 - BSE + - @5088113 @5088114)) (|the_AT| (DT-51@) . #(18 DET @5088115 - -)) (|present_JJ| (A0-44@) . #(11 + + |0| NORM NONE PP - @5088172 - @5088173 @5088174)) (|by_II| (P0-45@) . #(12 - - |0| NP PREP @5088176 - - @5088178 @5088179)) (|the_AT| (DT-51@) . #(18 DET + - -)) (|memory_NN2| (N0-42@) . #(10 + - |0| + - NORM PPOF - @5088383 - @5088384 @5088385)) (|of_IO| (P0-45@) . #(12 - - |0| NP OF + @5088389 - @5088390 @5088391)) (|the_AT| (DT-51@) . #(18 DET - - -)) (|past_NN1| (N0-42@) . #(10 + - |0| - - NORM @5088713 - @5088714 - @5088715 @5088716)) (._. (|+pdo-16|) . #(2 |dot|)))) ;_;_ NIL
+prob/data/orig-data/tsg15.trees0:(|the_AT| |visceral_JJ| |brain_NN1| |as_CSA| |well_RR| |as_CSA| |the_AT| |neocortex_NN1| |be_VBZ| |know_VVN| |to_TO| |contribute_VV0| |to_II| |memory_NN1| |,_,| |but_CCB| |this_DD1| |topic_NN1| |be_VBZ| |beyond_II| |the_AT| |scope_NN1| |of_IO| |this_DD1| |paper_NN1| ._.)
+prob/data/orig-data/runtrain.sh:(change-memory-management :growth-limit 1500 ; 96MB
+prob/data/orig-data/tsg15.data:(|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.)
+prob/data/orig-data/tsg15.data:          ("N1/n" |memory_NN2|))))))))))
+prob/data/orig-data/tsg15.data:(|slowly_RR| |the_AT| |procession_NN1| |of_IO| |warrior_NN2| |and_CC| |statesman_NN2| |pass_VVZ| |through_II| |the_AT| |snow_NN1| |beside_II| |the_AT| |black_JJ| |water_NNL1| |and_CC| |into_II| |the_AT| |brilliantly_RR| |light_VVN| |cathedral_NNL1| |,_,| |the_AT| |shrine_NN1| |of_IO| |so_RG| |many_DA2| |precious_JJ| |memory_NN2| ._.)
+prob/data/orig-data/tsg15.data:          ("N1/n" |memory_NN2|))))))))))
+prob/data/orig-data/tsg15.data:(|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.)
+prob/data/orig-data/tsg15.data:         ("N1/n_of" |memory_NN2|
+prob/data/orig-data/tsg15.data:(|Heidenstam_NP1| |'s_$| |conception_NN1| |,_,| |on_II| |the_AT| |contrary_NN1| |,_,| |be_VBDZ| |to_TO| |revive_VV0| |the_AT| |present_JJ| |by_II| |the_AT| |memory_NN2| |of_IO| |the_AT| |past_NN1| ._.)
+prob/data/orig-data/tsg15.data:         ("N1/n_of" |memory_NN2|
+prob/data/orig-data/tsg15.data:(|the_AT| |visceral_JJ| |brain_NN1| |as_CSA| |well_RR| |as_CSA| |the_AT| |neocortex_NN1| |be_VBZ| |know_VVN| |to_TO| |contribute_VV0| |to_II| |memory_NN1| |,_,| |but_CCB| |this_DD1| |topic_NN1| |be_VBZ| |beyond_II| |the_AT| |scope_NN1| |of_IO| |this_DD1| |paper_NN1| ._.)
+prob/data/orig-data/tsg15.data:       ("PP/p1" ("P1/p_n1" |to_II| ("N1/n" |memory_NN1|))))))))
+prob/teval/suste-data:Heidenstam_NP1 write_VVD four_MC other_JB work_NN of_IO fiction_NN1 about_II early_JJR figure_NN2 revere_VVN in_II Swedish_JJ memory_NN1
+prob/teval/suste-trees-susanne:(X  Heidenstam  write (X four other work (X of fiction) (X about (X early figure (X  revere (X in (X Swedish memory)))))))  
+prob/teval/suste-trees-sparkle:    (AP early (S (NP figure) (VP revere (PP in (N1 (AP Swedish) memory)))))))))
+prob/teval/suste-data.data:^_^ Heidenstam_NP1 write_VVD four_MC other_JB work_NN of_IO fiction_NN1 about_II early_JJR figure_NN2 revere_VVN in_II Swedish_JJ memory_NN1
+prob/teval/suste-text:Heidenstam write four other work of fiction about early figure revere in Swedish memory 
+prob/code/tools.lsp:   ;; addition of facility for giving a memory quota, in +parse-storeout+
+prob/code/tools.lsp:   ;; addition of facility for giving a memory quota, in +parse-storeout+
+Binary file scripts/eng_aper_gen.out matches
+Binary file scripts/add_labels.lex.out matches
+Binary file scripts/rasp_parser.out matches
+Binary file scripts/test.out matches
+scripts/lex.yy.c:			YY_FATAL_ERROR( "out of dynamic memory in yy_get_next_buffer()" );
+scripts/lex.yy.c:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+scripts/lex.yy.c:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+scripts/lex.yy.c:			YY_FATAL_ERROR( "out of dynamic memory in yyensure_buffer_stack()" );
+scripts/lex.yy.c:			YY_FATAL_ERROR( "out of dynamic memory in yyensure_buffer_stack()" );
+scripts/lex.yy.c:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_buffer()" );
+scripts/lex.yy.c:	/* Get memory for full buffer, including space for trailing EOB's. */
+scripts/lex.yy.c:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_bytes()" );
+Binary file scripts/rasp.out matches
+Binary file scripts/.out matches
+scripts/rasp_parse.sh:# Defensively set a memory limit on each parse to avoid (sbcl-based) lisp
+scripts/rasp_parse.sh:# system running out of memory and failing dramatically if user has disabled
+scripts/rasp_parse.sh:# increased, but not beyond the amount of real memory otherwise the overall
+scripts/rasp_parse.sh:  printf "$0: memory limit '%s' should be an integer > 100000000\n" "$memlimit" > /dev/stderr
+Binary file scripts/add_labels.out matches
+Binary file sentence/sentence.ix86_linux matches
+Binary file sentence/sentence.ix86_darwin matches
+Binary file sentence/sentence.x86_64_darwin matches
+Binary file sentence/sentence.x86_64_linux matches
+sentence/sentence.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+sentence/sentence.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+sentence/sentence.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_buffer()" );
+sentence/sentence.yy.c.saved:	/* Get memory for full buffer, including space for trailing EOB's. */
+sentence/sentence.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_bytes()" );
+sentence/sentence.yy.c.saved:			"out of memory expanding start-condition stack" );
+Binary file tag/x86_64_linux/label matches
+tag/auxiliary_files/seclarge.lex:memory 1 NN1 63
+tag/auxiliary_files/unkstats-seclarge:member NN1 140 * member's NN1 1 * members NN2 295 * members' NN2 2 * membership NN1 37 * memberships NN2 1 * membrane NN1 9 * membranes NN2 2 * memento NN1 1 * mementoes NN2 1 * memoir NN1 4 * memoirs NN2 11 * memorabilia NN2 1 * memorable JJ 10 * memoranda NN2 1 * memorandum NN1 6 * memorial NN1 9 * memorials NN2 1 * memories NN2 20 * memorised VVN 1 * memorises VVZ 1 * memorization NN1 1 * memorize VV0 3 * memory NN1 63 * memsaab NN1 3 * 
+Binary file tag/auxiliary_files/slb.bdbm matches
+Binary file tag/x86_64_darwin/label matches
+tag/src/unkdiction.c:    Free a dictionary's memory
+tag/src/stack.c:Feature memory deallocation functions.
+tag/src/stack.c:    Free match memory.
+tag/src/stack.c:	/* Free memory. */
+tag/src/common.h:/* Function to report on memory usage: may be useful in tracing space leaks. */
+tag/src/common.h:/* Include memory.h to get memset */
+tag/src/common.h:#include <memory.h>
+tag/src/unkcommon.h:/* Free a tag score list's memory. */
+tag/src/unkcommon.h:/*  Clear a tag list. Does not free any memory or touch scores. */
+tag/src/unkcommon.h:/* Clear an affix list. Does not free any memory or touch scores. */
+tag/src/unkcommon.h:/* Clear a cut list. Does not free any memory or touch scores. */
+tag/src/unkcommon.h:/* Clear a index list. Does not free any memory or touch scores. */
+tag/src/label.c:   Frees memory from current set of feature tags.
+tag/src/unkdiction.h:/* Free a dictionary's memory */
+tag/src/diction.c:    Clear a dictionary. Does not free any memory or touch scores.
+tag/src/common.c:int  cut_memory, rep_cut_memory, aff_memory, ind_memory;
+tag/src/common.c:    files and free memory.
+tag/src/common.c:	error_exit1("Out of memory creating %s\n", text);*/
+tag/src/unkcommon.c:	error_exit1("Out of memory reallocating %s\n", text);
+tag/src/unkcommon.c:    Free an eval list's memory.
+tag/src/unkcommon.c:    Free a tag score list's memory.
+tag/src/unkcommon.c:    error_exit1("Out of memory creating cut: %s\n", cut);
+tag/src/unkcommon.c:    Clear a tag list. Does not free any memory or touch scores.
+tag/src/unkcommon.c:    Clear an affix list. Does not free any memory or touch scores.
+tag/src/unkcommon.c:    Clear a cut list. Does not free any memory or touch scores.
+tag/src/unkcommon.c:    Clear a index list. Does not free any memory or touch scores.
+tag/src/mainl.c:Feature memory deallocation functions.
+tag/src/mainl.c:    Free a transform list's memory.
+tag/src/mainl.c:    Free an integrated transform list's memory.
+tag/src/mainl.c:    Free a tag list's memory.
+tag/src/mainl.c:    Free an affix list's memory.
+tag/src/mainl.c:    Free a cut list's memory.
+tag/src/mainl.c:    Free a transform list's memory.
+tag/src/mainl.c:    Free a index list's memory.
+tag/src/mainl.c:    Free the feature structure memory.
+tag/src/mainl.c:	error_exit1("Out of memory creating affix: %s\n", affix);
+tag/src/mainl.c:	error_exit1("Out of memory creating index prefix: %s\n", prefix);
+tag/documentation/manual/tagger.ps:f(as)f(running)i(out)f(of)f(memory\),)g(and)h(some)f(that)g(an)h(in)o
+tag/documentation/manual/tagger.ps:2418 y Fg(Out)d(of)f(memory)h(cr)n(e)n(ating)e(...)75
+tag/documentation/manual/tagger.ps:2474 y Fk(The)i(program)e(needs)i(more)g(memory)f(for)f(the)i(giv)o(en)
+tag/documentation/manual/tagger.ps:g(data.)23 b(There)17 b(is)g(no)f(cure)h(if)g(more)f(memory)75
+tag/documentation/manual/version1.3.ps:1942 y(fail)h(for)d(lac)o(k)i(of)e(memory)h(space.)106
+tag/documentation/manual/gdbm.ps:g(is)g(read)224 1321 y(in)o(to)18 b(memory)l(,)f(therefore)g(the)h
+tag/documentation/manual/gdbm.ps:(dictionary)g(in)o(to)f(memory)f(in)i(order)f(for)224
+Binary file tag/ix86_linux/label matches
+Binary file tag/ix86_darwin/label matches
+Binary file tag/database/x86_64_linux/libdb-4.2.so matches
+Binary file tag/database/x86_64_darwin/libdb-4.2.dylib matches
+tag/database/common/db.h:#define	DB_DBT_MALLOC	0x002		/* Return in malloc'd memory. */
+tag/database/common/db.h:#define	DB_DBT_REALLOC	0x008		/* Return in realloc'd memory. */
+tag/database/common/db.h:#define	DB_DBT_USERMEM	0x010		/* Return in user's memory. */
+tag/database/common/db.h:#define	DB_SYSTEM_MEM	      0x000800	/* Use system-backed memory. */
+tag/database/common/db.h:#define	DB_LOCKDOWN	      0x008000	/* Lock memory into physical core. */
+tag/database/common/db.h:#define	DB_AM_INMEM	0x00008		/* In-memory; no sync on close. */
+Binary file tag/database/ix86_linux/libdb-4.2.so matches
+Binary file tag/database/ix86_darwin/libdb-4.2.dylib matches
+Binary file tokenise/token.x86_64_darwin matches
+Binary file tokenise/token.x86_64_linux matches
+tokenise/token.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+tokenise/token.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_create_buffer()" );
+tokenise/token.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_buffer()" );
+tokenise/token.yy.c.saved:	/* Get memory for full buffer, including space for trailing EOB's. */
+tokenise/token.yy.c.saved:		YY_FATAL_ERROR( "out of dynamic memory in yy_scan_bytes()" );
+tokenise/token.yy.c.saved:			"out of memory expanding start-condition stack" );
+Binary file tokenise/token.ix86_darwin matches
+Binary file tokenise/token.ix86_linux matches

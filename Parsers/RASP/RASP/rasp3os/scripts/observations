@@ -1,0 +1,41 @@
+I will give up smoking.         ---------- diff in tree structure
+(ROOT (S (PPIS1 I) (VP (VM will) (VP (VV0 give) (VP (RP up) (VVG smoke+ing))))) (. .))       -- rasp_output
+(ROOT (S (NP (PRP I)) (VP (MD will) (VP (VB give) (PRT (RP up)) (NP (NN smoking)))) (. .)))  -- std_output
+(ROOT (S (NP (PRP I)) (VP (MD will) (VP (VB give) (PRT (RP up) (VBG smoking))))) (. .))      -- mapped_output
+
+All are going to school.       ----------- diff in tree structure and labels
+(ROOT (S (DB2 All) (VP (VBR be+) (VP (VVG go+ing) (VP (TO to) (VV0 school))))) (. .))
+(ROOT (S (NP (DT All)) (VP (VBP are) (VP (VBG going) (PP (TO to) (NP (NN school))))) (. .)))
+(ROOT (S (NP (DT All)) (VP (VBP are) (VP (VBG going) (VP (TO to) (VB school))))) (. .))
+
+He may drink milk or eat apples. ---------- diff in tree structure
+(ROOT (S (PPHS1 He) (VP (VM may) (VP (VP (VV0 drink) (NN1 milk)) (VP (CC or) (VP (VV0 eat) (NN2 apple+s)))))) (. .))
+(ROOT (S (NP (PRP He)) (VP (MD may) (VP (VP (VB drink) (NP (NN milk))) (CC or) (VP (VB eat) (NP (NNS apples))))) (. .)))
+(ROOT (S (NP (PRP He)) (VP (MD may) (VP (VP (VB drink) (NP (NN milk))) (VP (CC or) (VP (VB eat) (NP (NNS apples))))))) (. .))
+
+He heard the sound of rain from the kitchen. ---------- diff in tree structure
+(ROOT (S (PPHS1 He) (VP (VVD hear+ed) (NP (AT the) (NN1 sound) (PP (IO of) (NP (NN1 rain) (PP (II from) (NP (AT the) (NN1 kitchen)))))))) (. .))
+(ROOT (S (NP (PRP He)) (VP (VBD heard) (NP (NP (DT the) (NN sound)) (PP (IN of) (NP (NN rain)))) (PP (IN from) (NP (DT the) (NN kitchen)))) (. .)))
+(ROOT (S (NP (PRP He)) (VP (VBD heard) (NP (DT the) (NN sound) (PP (IN of) (NP (NN rain) (PP (IN from) (NP (DT the) (NN kitchen)))))))) (. .))
+
+Rama gave a book to Mohan. ---------- diff in tree structure
+(ROOT (S (NP1 Rama) (VP (VVD give+ed) (NP (AT1 a) (NN1 book) (PP (II to) (NP1 Mohan))))) (. .))
+(ROOT (S (NP (NNP Rama)) (VP (VBD gave) (NP (DT a) (NN book)) (PP (TO to) (NP (NNP Mohan)))) (. .)))
+(ROOT (S (NP (NNP Rama)) (VP (VBD gave) (NP (DT a) (NN book) (PP (TO to) (NP (NNP Mohan)))))) (. .))
+
+I will not do it.   ---------- diff in tree structure
+(ROOT (S (PPIS1 I) (VP (VM will) (VP (XX not+) (VP (VD0 do) (PPH1 it))))) (. .))
+(ROOT (S (NP (PRP I)) (VP (MD will) (RB not) (VP (VB do) (NP (PRP it)))) (. .)))
+(ROOT (S (NP (PRP I)) (VP (MD will) (VP (RB not) (VP (VB do) (PRP it))))) (. .))
+
+
+He wasted his golden opportunity to play in the national team. ---------- diff in tree structure
+(ROOT (S (PPHS1 He) (VP (VVD waste+ed) (NP (APP$ his) (JJ golden) (NN1 opportunity) (VP (TO to) (VP (VV0 play) (PP (II in) (NP (AT the) (JJ national) (NN1 team)))))))) (. .))
+(ROOT (S (NP (PRP He)) (VP (VBD wasted) (NP (PRP$ his) (JJ golden) (NN opportunity)) (S (VP (TO to) (VP (VB play) (PP (IN in) (NP (DT the) (JJ national) (NN team))))))) (. .)))
+(ROOT (S (NP (PRP He)) (VP (VBD wasted) (NP (PRP$ his) (JJ golden) (NN opportunity) (VP (TO to) (VP (VB play) (PP (IN in) (NP (DT the) (JJ national) (NN team)))))))) (. .))
+
+The blacksmith made an assay of iron ore.    ---------- diff in tree structure
+(ROOT (S (NP (AT The) (NN1 blacksmith)) (VP (VVD make+ed) (NP (AT1 an) (NN1 assay) (PP (IO of) (NP (NN1 iron) (NN1 ore)))))) (. .))
+(ROOT (S (NP (DT The) (NN blacksmith)) (VP (VBD made) (NP (NP (DT an) (NN assay)) (PP (IN of) (NP (NN iron) (NN ore))))) (. .)))
+(ROOT (S (NP (DT The) (NN blacksmith)) (VP (VBD made) (NP (DT an) (NN assay) (PP (IN of) (NP (NN iron) (NP (NN ore))))))) (. .))
+

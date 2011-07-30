@@ -1,0 +1,994 @@
+(|Test:1_NP1| |.:2_.|) 0 ; ()
+gr-list: 1
+
+
+(|Abandon+ed:1_VVN| |child+s:2_NN2| |be+:3_VBR| |keep+ed:4_VVN| |in:5_II| |orphanage+s:6_NN2| |.:7_.|) 1 ; (-14.557)
+gr-list: 1
+(|ncsubj| |keep+ed:4_VVN| |child+s:2_NN2| _)
+(|aux| |keep+ed:4_VVN| |be+:3_VBR|)
+(|passive| |keep+ed:4_VVN|)
+(|iobj| |keep+ed:4_VVN| |in:5_II|)
+(|dobj| |in:5_II| |orphanage+s:6_NN2|)
+(|passive| |Abandon+ed:1_VVN|)
+(|ncsubj| |Abandon+ed:1_VVN| |child+s:2_NN2| |obj|)
+(|ncmod| _ |child+s:2_NN2| |Abandon+ed:1_VVN|)
+
+
+(|A:1_AT1| |fat:2_JJ| |boy:3_NN1| |have+ed:4_VHD| |to:5_TO| |eat:6_VV0| |.:7_.|) 1 ; (-8.483)
+gr-list: 1
+(|ncsubj| |eat:6_VV0| |boy:3_NN1| _)
+(|ncmod| |prt| |have+ed:4_VHD| |to|)
+(|aux| |eat:6_VV0| |have+ed:4_VHD|)
+(|det| |boy:3_NN1| |A:1_AT1|)
+(|ncmod| _ |boy:3_NN1| |fat:2_JJ|)
+
+
+(|A:1_AT1| |fat:2_JJ| |ugly:3_JJ| |boy:4_NN1| |have+ed:5_VHD| |to:6_TO| |eat:7_VV0| |fruit+s:8_NN2| |.:9_.|) 1 ; (-11.182)
+gr-list: 1
+(|ncsubj| |eat:7_VV0| |boy:4_NN1| _)
+(|ncmod| |prt| |have+ed:5_VHD| |to|)
+(|aux| |eat:7_VV0| |have+ed:5_VHD|)
+(|dobj| |eat:7_VV0| |fruit+s:8_NN2|)
+(|det| |boy:4_NN1| |A:1_AT1|)
+(|ncmod| _ |boy:4_NN1| |fat:2_JJ|)
+(|ncmod| _ |boy:4_NN1| |ugly:3_JJ|)
+
+
+(|A:1_AT1| |fat:2_JJ| |ugly:3_JJ| |boy:4_NN1| |have+ed:5_VHD| |to:6_TO| |eat:7_VV0| |too:8_RG| |many:9_DA2| |fruit+s:10_NN2| |to:11_TO| |lose:12_VV0| |his:13_APP$| |weight:14_NN1| |.:15_.|) 1 ; (-17.813)
+gr-list: 1
+(|ncsubj| |eat:7_VV0| |boy:4_NN1| _)
+(|ncmod| |prt| |have+ed:5_VHD| |to|)
+(|aux| |eat:7_VV0| |have+ed:5_VHD|)
+(|dobj| |eat:7_VV0| |fruit+s:10_NN2|)
+(|ncmod| _ |fruit+s:10_NN2| |many:9_DA2|)
+(|xmod| |to| |fruit+s:10_NN2| |lose:12_VV0|)
+(|dobj| |lose:12_VV0| |weight:14_NN1|)
+(|det| |weight:14_NN1| |his:13_APP$|)
+(|ncmod| _ |many:9_DA2| |too:8_RG|)
+(|det| |boy:4_NN1| |A:1_AT1|)
+(|ncmod| _ |boy:4_NN1| |fat:2_JJ|)
+(|ncmod| _ |boy:4_NN1| |ugly:3_JJ|)
+
+
+(|All:1_DB2| |be+:2_VBR| |go+ing:3_VVG| |to:4_TO| |school:5_VV0| |.:6_.|) 1 ; (-9.286)
+gr-list: 1
+(|ncsubj| |go+ing:3_VVG| |All:1_DB2| _)
+(|aux| |go+ing:3_VVG| |be+:2_VBR|)
+(|xcomp| |to| |go+ing:3_VVG| |school:5_VV0|)
+
+
+(|All:1_DB| |his:2_APP$| |book+s:3_NN2| |be+:4_VBR| |good:5_JJ| |.:6_.|) 1 ; (-12.344)
+gr-list: 1
+(|ncsubj| |be+:4_VBR| |book+s:3_NN2| _)
+(|xcomp| _ |be+:4_VBR| |good:5_JJ|)
+(|ncmod| |part| |book+s:3_NN2| |All:1_DB|)
+(|det| |book+s:3_NN2| |his:2_APP$|)
+
+
+(|All:1_DB| |our:2_APP$| |sister+s:3_NN2| |be+:4_VBR| |come+ing:5_VVG| |.:6_.|) 1 ; (-13.142)
+gr-list: 1
+(|ncsubj| |come+ing:5_VVG| |sister+s:3_NN2| _)
+(|aux| |come+ing:5_VVG| |be+:4_VBR|)
+(|ncmod| |part| |sister+s:3_NN2| |All:1_DB|)
+(|det| |sister+s:3_NN2| |our:2_APP$|)
+
+
+(|And:1_CC| |21:2_MC| |could:3_VM| |stand:4_VV0| |for:5_IF| |the:6_AT| |21:7_MC| |cm:8_NNU| |radio:9_NN1| |frequency:10_NN1| |of:11_IO| |hydrogen:12_NN1| |in:13_II| |space:14_NN1| |.:15_.|) 1 ; (-20.881)
+gr-list: 1
+(|conj| |And:1_CC| |stand:4_VV0|)
+(|ncsubj| |stand:4_VV0| |21:2_MC| _)
+(|aux| |stand:4_VV0| |could:3_VM|)
+(|iobj| |stand:4_VV0| |for:5_IF|)
+(|dobj| |for:5_IF| |frequency:10_NN1|)
+(|ncmod| _ |frequency:10_NN1| |cm:8_NNU|)
+(|ncmod| _ |frequency:10_NN1| |radio:9_NN1|)
+(|iobj| |frequency:10_NN1| |of:11_IO|)
+(|dobj| |of:11_IO| |hydrogen:12_NN1|)
+(|ncmod| _ |hydrogen:12_NN1| |in:13_II|)
+(|dobj| |in:13_II| |space:14_NN1|)
+(|det| |cm:8_NNU| |the:6_AT|)
+(|ncmod| |num| |cm:8_NNU| |21:7_MC|)
+
+
+(|An:1_AT1| |insect:2_NN1| |bite+ed:3_VVD| |I+:4_PPIO1| |on:5_II| |the:6_AT| |arm:7_NN1| |.:8_.|) 1 ; (-6.331)
+gr-list: 1
+(|ncsubj| |bite+ed:3_VVD| |insect:2_NN1| _)
+(|iobj| |bite+ed:3_VVD| |on:5_II|)
+(|dobj| |bite+ed:3_VVD| |I+:4_PPIO1|)
+(|dobj| |on:5_II| |arm:7_NN1|)
+(|det| |arm:7_NN1| |the:6_AT|)
+(|det| |insect:2_NN1| |An:1_AT1|)
+
+
+(|A:1_AT1| |policeman:2_NN1| |be+s:3_VBZ| |abase+ing:4_VVG| |a:5_AT1| |good:6_JJ| |businessman:7_NN1| |.:8_.|) 1 ; (-6.954)
+gr-list: 1
+(|ncsubj| |abase+ing:4_VVG| |policeman:2_NN1| _)
+(|aux| |abase+ing:4_VVG| |be+s:3_VBZ|)
+(|dobj| |abase+ing:4_VVG| |businessman:7_NN1|)
+(|det| |businessman:7_NN1| |a:5_AT1|)
+(|ncmod| _ |businessman:7_NN1| |good:6_JJ|)
+(|det| |policeman:2_NN1| |A:1_AT1|)
+
+
+(|be+:1_VBR| |you:2_PPY| |afraid:3_JJ| |of:4_IO| |spider+s:5_NN2| |?:6_?|) 1 ; (-12.710)
+gr-list: 1
+(|xcomp| _ |be+:1_VBR| |afraid:3_JJ|)
+(|ncsubj| |be+:1_VBR| |you:2_PPY| _)
+(|iobj| |afraid:3_JJ| |of:4_IO|)
+(|dobj| |of:4_IO| |spider+s:5_NN2|)
+
+
+(|be+:1_VBR| |you:2_PPY| |come+ing:3_VVG| |with:4_IW| |we+:5_PPIO2| |?:6_?|) 1 ; (-15.276)
+gr-list: 1
+(|aux| |come+ing:3_VVG| |be+:1_VBR|)
+(|ncsubj| |come+ing:3_VVG| |you:2_PPY| _)
+(|iobj| |come+ing:3_VVG| |with:4_IW|)
+(|dobj| |with:4_IW| |we+:5_PPIO2|)
+
+
+(|Ashoka:1_NP1| |rule+ed:2_VVD| |a:3_AT1| |large:4_JJ| |empire:5_NN1| |.:6_.|) 1 ; (-6.039)
+gr-list: 1
+(|ncsubj| |rule+ed:2_VVD| |Ashoka:1_NP1| _)
+(|dobj| |rule+ed:2_VVD| |empire:5_NN1|)
+(|det| |empire:5_NN1| |a:3_AT1|)
+(|ncmod| _ |empire:5_NN1| |large:4_JJ|)
+
+
+(|As:1_CSA| |it:2_PPH1| |be+s:3_VBZ| |call+ed:4_VVN| |now:5_CS| |Chennai:6_NP1| |,:7_,| |Madras:8_NP1| |be+s:9_VBZ| |know+en:10_VVN| |as:11_CSA| |the:12_AT| |gateway:13_NNL1| |of:14_IO| |southern:15_JJ| |india:16_NP1| |.:17_.|) 0 ; ()
+gr-list: 1
+(|ta| |voc| |know+en:10_VVN| |Chennai:6_NP1|)
+(|ncsubj| |know+en:10_VVN| |Madras:8_NP1| _)
+(|aux| |know+en:10_VVN| |be+s:9_VBZ|)
+(|passive| |know+en:10_VVN|)
+(|iobj| |know+en:10_VVN| |as:11_CSA|)
+(|dobj| |as:11_CSA| |gateway:13_NNL1|)
+(|det| |gateway:13_NNL1| |the:12_AT|)
+(|iobj| |gateway:13_NNL1| |of:14_IO|)
+(|dobj| |of:14_IO| |india:16_NP1|)
+(|ncmod| _ |india:16_NP1| |southern:15_JJ|)
+(|ncsubj| |call+ed:4_VVN| |As:1_CSA| |inv|)
+(|aux| |call+ed:4_VVN| |be+s:3_VBZ|)
+(|passive| |call+ed:4_VVN|)
+(|dobj| |As:1_CSA| |it:2_PPH1|)
+
+
+(|A:1_AT1| |slow:2_JJ| |,:3_,| |balmy:4_JJ| |breeze:5_NN1| |from:6_II| |the:7_AT| |south:8_ND1| |engulf+ed:9_VVD| |everyone:10_PN1| |in:11_II| |the:12_AT| |audience:13_NN1| |.:14_.|) 1 ; (-18.695)
+gr-list: 1
+(|ncsubj| |engulf+ed:9_VVD| |breeze:5_NN1| _)
+(|iobj| |engulf+ed:9_VVD| |in:11_II|)
+(|dobj| |engulf+ed:9_VVD| |everyone:10_PN1|)
+(|dobj| |in:11_II| |audience:13_NN1|)
+(|det| |audience:13_NN1| |the:12_AT|)
+(|det| |breeze:5_NN1| |A:1_AT1|)
+(|ncmod| _ |breeze:5_NN1| |from:6_II|)
+(|dobj| |from:6_II| |south:8_ND1|)
+(|det| |south:8_ND1| |the:7_AT|)
+(|ncmod| _ |breeze:5_NN1| |slow:2_JJ|)
+(|ncmod| _ |breeze:5_NN1| |balmy:4_JJ|)
+
+
+(|As:1_CSA| |the:2_AT| |Master:3_NNS1| |grow+ed:4_VVD| |old:5_JJ| |and:6_CC| |infirm:7_JJ| |,:8_,| |the:9_AT| |disciple+s:10_NN2| |beg+ed:11_VVD| |he+:12_PPHO1| |not+:13_XX| |to:14_TO| |die:15_VV0| |.:16_.|) 1 ; (-22.871)
+gr-list: 1
+(|cmod| _ |beg+ed:11_VVD| |As:1_CSA|)
+(|ncsubj| |beg+ed:11_VVD| |disciple+s:10_NN2| _)
+(|ncsubj| |die:15_VV0| |he+:12_PPHO1| _)
+(|xcomp| |to| |beg+ed:11_VVD| |die:15_VV0|)
+(|dobj| |beg+ed:11_VVD| |he+:12_PPHO1|)
+(|ncmod| _ |die:15_VV0| |not+:13_XX|)
+(|det| |disciple+s:10_NN2| |the:9_AT|)
+(|ccomp| _ |As:1_CSA| |grow+ed:4_VVD|)
+(|ncsubj| |grow+ed:4_VVD| |Master:3_NNS1| _)
+(|xcomp| _ |grow+ed:4_VVD| |and:6_CC|)
+(|conj| |and:6_CC| |old:5_JJ|)
+(|conj| |and:6_CC| |infirm:7_JJ|)
+(|det| |Master:3_NNS1| |the:2_AT|)
+
+
+(|As:1_CSA| |you:2_PPY| |be+:3_VBR| |aware:4_JJ| |,:5_,| |this:6_DD1| |be+s:7_VBZ| |not+:8_XX| |a:9_AT1| |new:10_JJ| |problem:11_NN1| |.:12_.|) 1 ; (-11.429)
+gr-list: 1
+(|cmod| _ |be+s:7_VBZ| |As:1_CSA|)
+(|ncsubj| |be+s:7_VBZ| |this:6_DD1| _)
+(|xcomp| _ |be+s:7_VBZ| |problem:11_NN1|)
+(|ncmod| _ |be+s:7_VBZ| |not+:8_XX|)
+(|det| |problem:11_NN1| |a:9_AT1|)
+(|ncmod| _ |problem:11_NN1| |new:10_JJ|)
+(|ccomp| _ |As:1_CSA| |be+:3_VBR|)
+(|ncsubj| |be+:3_VBR| |you:2_PPY| _)
+(|xcomp| _ |be+:3_VBR| |aware:4_JJ|)
+
+
+(|A:1_AT1| |warm:2_JJ| |breeze:3_NN1| |fan+ed:4_VVD| |her:5_APP$| |cheek+s:6_NN2| |.:7_.|) 1 ; (-5.683)
+gr-list: 1
+(|ncsubj| |fan+ed:4_VVD| |breeze:3_NN1| _)
+(|dobj| |fan+ed:4_VVD| |cheek+s:6_NN2|)
+(|det| |cheek+s:6_NN2| |her:5_APP$|)
+(|det| |breeze:3_NN1| |A:1_AT1|)
+(|ncmod| _ |breeze:3_NN1| |warm:2_JJ|)
+
+
+(|Ayodhya:1_NP1| |during:2_II| |ancient:3_JJ| |time+s:4_NNT2| |be+ed:5_VBDZ| |know+en:6_VVN| |as:7_CSA| |kaushaldesa:8_RR| |.:9_.|) 1 ; (-19.411)
+gr-list: 1
+(|ncsubj| |know+en:6_VVN| |Ayodhya:1_NP1| _)
+(|aux| |know+en:6_VVN| |be+ed:5_VBDZ|)
+(|passive| |know+en:6_VVN|)
+(|xcomp| _ |know+en:6_VVN| |as:7_CSA|)
+(|xcomp| _ |as:7_CSA| |kaushaldesa:8_RR|)
+(|ncmod| _ |Ayodhya:1_NP1| |during:2_II|)
+(|dobj| |during:2_II| |time+s:4_NNT2|)
+(|ncmod| _ |time+s:4_NNT2| |ancient:3_JJ|)
+
+
+(|Beautiful:1_JJ| |painting+s:2_NN2| |adorn+ed:3_VVD| |the:4_AT| |wall+s:5_NN2| |of:6_IO| |the:7_AT| |palace:8_NN1| |.:9_.|) 1 ; (-8.000)
+gr-list: 1
+(|ncsubj| |adorn+ed:3_VVD| |painting+s:2_NN2| _)
+(|dobj| |adorn+ed:3_VVD| |wall+s:5_NN2|)
+(|det| |wall+s:5_NN2| |the:4_AT|)
+(|iobj| |wall+s:5_NN2| |of:6_IO|)
+(|dobj| |of:6_IO| |palace:8_NN1|)
+(|det| |palace:8_NN1| |the:7_AT|)
+(|ncmod| _ |painting+s:2_NN2| |Beautiful:1_JJ|)
+
+
+(|Biking:1_NNSB1| |be+s:2_VBZ| |good:3_JJ| |for:4_IF| |health:5_NN1| |.:6_.|) 1 ; (-16.129)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |Biking:1_NNSB1| _)
+(|xcomp| _ |be+s:2_VBZ| |good:3_JJ|)
+(|iobj| |good:3_JJ| |for:4_IF|)
+(|dobj| |for:4_IF| |health:5_NN1|)
+
+
+(|Bird+s:1_NN2| |lay:2_VVD| |their:3_APP$| |egg+s:4_NN2| |in:5_II| |the:6_AT| |nest:7_NN1| |.:8_.|) 1 ; (-8.553)
+gr-list: 1
+(|ncsubj| |lay:2_VVD| |Bird+s:1_NN2| _)
+(|dobj| |lay:2_VVD| |egg+s:4_NN2|)
+(|det| |egg+s:4_NN2| |their:3_APP$|)
+(|ncmod| _ |egg+s:4_NN2| |in:5_II|)
+(|dobj| |in:5_II| |nest:7_NN1|)
+(|det| |nest:7_NN1| |the:6_AT|)
+
+
+(|Break+en:1_VVN| |window+s:2_NN2| |need:3_VV0| |to:4_TO| |be:5_VB0| |replace+ed:6_VVN| |.:7_.|) 1 ; (-16.088)
+gr-list: 1
+(|ncsubj| |need:3_VV0| |window+s:2_NN2| _)
+(|xcomp| |to| |need:3_VV0| |replace+ed:6_VVN|)
+(|aux| |replace+ed:6_VVN| |be:5_VB0|)
+(|passive| |replace+ed:6_VVN|)
+(|passive| |Break+en:1_VVN|)
+(|ncsubj| |Break+en:1_VVN| |window+s:2_NN2| |obj|)
+(|ncmod| _ |window+s:2_NN2| |Break+en:1_VVN|)
+
+
+(|But:1_CCB| |where:2_RRQ| |will:3_VM| |you:4_PPY| |get:5_VV0| |they+:6_PPHO2| |from:7_II| |.:8_.|) 0 ; ()
+gr-list: 1
+(|conj| |But:1_CCB| |get:5_VV0|)
+(|arg_mod| _ |get:5_VV0| |where:2_RRQ|)
+(|aux| |get:5_VV0| |will:3_VM|)
+(|ncsubj| |get:5_VV0| |you:4_PPY| _)
+(|dobj| |get:5_VV0| |they+:6_PPHO2|)
+
+
+(|By:1_II| |go+ing:2_VVG| |there:3_RL| |you:4_PPY| |can:5_VM| |earn:6_VV0| |more:7_DAR| |money:8_NN| |.:9_.|) 1 ; (-13.646)
+gr-list: 1
+(|xmod| _ |earn:6_VV0| |By:1_II|)
+(|ncsubj| |earn:6_VV0| |you:4_PPY| _)
+(|aux| |earn:6_VV0| |can:5_VM|)
+(|dobj| |earn:6_VV0| |money:8_NN|)
+(|ncmod| _ |money:8_NN| |more:7_DAR|)
+(|xcomp| _ |By:1_II| |go+ing:2_VVG|)
+(|ncmod| _ |go+ing:2_VVG| |there:3_RL|)
+
+
+(|Cancer:1_NN1| |and:2_CC| |heart:3_NN1| |disease:4_NN1| |be+:5_VBR| |the:6_AT| |UK:7_NP1| |'s+:8_$| |biggest:9_JJT| |killer+s:10_NN2| |.:11_.|) 1 ; (-16.429)
+gr-list: 1
+(|ncsubj| |be+:5_VBR| |and:2_CC| _)
+(|xcomp| _ |be+:5_VBR| |killer+s:10_NN2|)
+(|ncmod| |poss| |killer+s:10_NN2| |UK:7_NP1|)
+(|ncmod| _ |killer+s:10_NN2| |biggest:9_JJT|)
+(|det| |UK:7_NP1| |the:6_AT|)
+(|conj| |and:2_CC| |Cancer:1_NN1|)
+(|conj| |and:2_CC| |disease:4_NN1|)
+(|ncmod| _ |disease:4_NN1| |heart:3_NN1|)
+
+
+(|Can:1_VM| |we:2_PPIS2| |open:3_VV0| |a:4_AT1| |second:5_MD| |browser:6_NN1| |window:7_NN1| |?:8_?|) 1 ; (-15.596)
+gr-list: 1
+(|aux| |open:3_VV0| |Can:1_VM|)
+(|ncsubj| |open:3_VV0| |we:2_PPIS2| _)
+(|dobj| |open:3_VV0| |window:7_NN1|)
+(|det| |window:7_NN1| |a:4_AT1|)
+(|ncmod| |num| |window:7_NN1| |second:5_MD|)
+(|ncmod| _ |window:7_NN1| |browser:6_NN1|)
+
+
+(|Can:1_VM| |you:2_PPY| |reach:3_VV0| |the:4_AT| |ceiling:5_NN1| |fan:6_NN1| |?:7_?|) 1 ; (-12.205)
+gr-list: 1
+(|aux| |reach:3_VV0| |Can:1_VM|)
+(|ncsubj| |reach:3_VV0| |you:2_PPY| _)
+(|dobj| |reach:3_VV0| |fan:6_NN1|)
+(|det| |fan:6_NN1| |the:4_AT|)
+(|ncmod| _ |fan:6_NN1| |ceiling:5_NN1|)
+
+
+(|Can:1_VM| |you:2_PPY| |tell:3_VV0| |we+:4_PPIO2| |where:5_RRQ| |those:6_DD2| |strange:7_JJ| |idea+s:8_NN2| |come+ed:9_VVD| |from:10_II| |?:11_?|) 0 ; ()
+gr-list: 1
+(|aux| |tell:3_VV0| |Can:1_VM|)
+(|ncsubj| |tell:3_VV0| |you:2_PPY| _)
+(|ccomp| _ |tell:3_VV0| |come+ed:9_VVD|)
+(|dobj| |tell:3_VV0| |we+:4_PPIO2|)
+(|arg_mod| _ |come+ed:9_VVD| |where:5_RRQ|)
+(|ncsubj| |come+ed:9_VVD| |idea+s:8_NN2| _)
+(|det| |idea+s:8_NN2| |those:6_DD2|)
+(|ncmod| _ |idea+s:8_NN2| |strange:7_JJ|)
+
+
+(|Certain:1_JJ| |phenomenon+s:2_NN2| |can:3_VM| |be:4_VB0| |approach+ed:5_VVN| |better:6_RRR| |by:7_II| |certain:8_JJ| |technique+s:9_NN2| |.:10_.|) 1 ; (-14.142)
+gr-list: 1
+(|ncsubj| |approach+ed:5_VVN| |phenomenon+s:2_NN2| _)
+(|ncmod| _ |approach+ed:5_VVN| |by:7_II|)
+(|ncmod| _ |by:7_II| |better:6_RRR|)
+(|dobj| |by:7_II| |technique+s:9_NN2|)
+(|ncmod| _ |technique+s:9_NN2| |certain:8_JJ|)
+(|aux| |approach+ed:5_VVN| |can:3_VM|)
+(|aux| |approach+ed:5_VVN| |be:4_VB0|)
+(|passive| |approach+ed:5_VVN|)
+(|ncmod| _ |phenomenon+s:2_NN2| |Certain:1_JJ|)
+
+
+(|Come:1_VV0| |to:2_II| |our:3_APP$| |place:4_NNL1| |when:5_RRQ| |you:6_PPY| |feel:7_VV0| |like:8_CST| |it:9_PPH1| |.:10_.|) 0 ; ()
+gr-list: 1
+(|ncmod| _ |Come:1_VV0| |to:2_II|)
+(|dobj| |to:2_II| |place:4_NNL1|)
+(|det| |place:4_NNL1| |our:3_APP$|)
+(|cmod| _ |place:4_NNL1| |feel:7_VV0|)
+(|arg_mod| _ |feel:7_VV0| |when:5_RRQ|)
+(|ncsubj| |feel:7_VV0| |you:6_PPY| _)
+
+
+(|Criminal:1_JJ| |charge+s:2_NN2| |will:3_VM| |be:4_VB0| |bring+ed:5_VVN| |against:6_II| |the:7_AT| |driver:8_NN1| |.:9_.|) 1 ; (-8.895)
+gr-list: 1
+(|ncsubj| |bring+ed:5_VVN| |charge+s:2_NN2| _)
+(|aux| |bring+ed:5_VVN| |will:3_VM|)
+(|aux| |bring+ed:5_VVN| |be:4_VB0|)
+(|passive| |bring+ed:5_VVN|)
+(|iobj| |bring+ed:5_VVN| |against:6_II|)
+(|dobj| |against:6_II| |driver:8_NN1|)
+(|det| |driver:8_NN1| |the:7_AT|)
+(|ncmod| _ |charge+s:2_NN2| |Criminal:1_JJ|)
+
+
+(|Dalai:1_NP1| |Lama:2_NP1| |be+s:3_VBZ| |the:4_AT| |abbot:5_NNS1| |of:6_IO| |the:7_AT| |Tibetian:8_JJ| |monastery:9_NN1| |.:10_.|) 1 ; (-9.882)
+gr-list: 1
+(|ncsubj| |be+s:3_VBZ| |Lama:2_NP1| _)
+(|xcomp| _ |be+s:3_VBZ| |abbot:5_NNS1|)
+(|det| |abbot:5_NNS1| |the:4_AT|)
+(|iobj| |abbot:5_NNS1| |of:6_IO|)
+(|dobj| |of:6_IO| |monastery:9_NN1|)
+(|det| |monastery:9_NN1| |the:7_AT|)
+(|ncmod| _ |monastery:9_NN1| |Tibetian:8_JJ|)
+(|ncmod| _ |Lama:2_NP1| |Dalai:1_NP1|)
+
+
+(|Decorate:1_VV0| |the:2_AT| |car:3_NN1| |with:4_IW| |fresh:5_JJ| |flower+s:6_NN2| |.:7_.|) 1 ; (-8.907)
+gr-list: 1
+(|iobj| |Decorate:1_VV0| |with:4_IW|)
+(|dobj| |Decorate:1_VV0| |car:3_NN1|)
+(|dobj| |with:4_IW| |flower+s:6_NN2|)
+(|ncmod| _ |flower+s:6_NN2| |fresh:5_JJ|)
+(|det| |car:3_NN1| |the:2_AT|)
+
+
+(|Delhi:1_NP1| |be+s:2_VBZ| |my:3_APP$| |birth:4_NN1| |place:5_NNL1| |.:6_.|) 1 ; (-9.428)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |Delhi:1_NP1| _)
+(|xcomp| _ |be+s:2_VBZ| |place:5_NNL1|)
+(|det| |place:5_NNL1| |my:3_APP$|)
+(|ncmod| _ |place:5_NNL1| |birth:4_NN1|)
+
+
+(|do+ed:1_VDD| |it:2_PPH1| |all:3_DB| |go:4_VV0| |accord+ing:5_VVG| |to:6_II| |the:7_AT| |plan:8_NN1| |?:9_?|) 1 ; (-20.118)
+gr-list: 1
+(|aux| |go:4_VV0| |do+ed:1_VDD|)
+(|ncsubj| |go:4_VV0| |it:2_PPH1| _)
+(|iobj| |go:4_VV0| |to:6_II|)
+(|xcomp| _ |go:4_VV0| |accord+ing:5_VVG|)
+(|dobj| |to:6_II| |plan:8_NN1|)
+(|det| |plan:8_NN1| |the:7_AT|)
+(|ncmod| _ |it:2_PPH1| |all:3_DB|)
+
+
+(|do+ed:1_VDD| |the:2_AT| |noise:3_NN1| |wake:4_VV0| |you:5_PPY| |up:6_RP| |?:7_?|) 1 ; (-10.578)
+gr-list: 1
+(|aux| |wake:4_VV0| |do+ed:1_VDD|)
+(|ncsubj| |wake:4_VV0| |noise:3_NN1| _)
+(|dobj| |wake:4_VV0| |you:5_PPY|)
+(|ncmod| |prt| |wake:4_VV0| |up:6_RP|)
+(|det| |noise:3_NN1| |the:2_AT|)
+
+
+(|do+ed:1_VDD| |they:2_PPHS2| |eat:3_VV0| |in:4_II| |the:5_AT| |dark:6_JJ| |?:7_?|) 1 ; (-16.079)
+gr-list: 1
+(|aux| |eat:3_VV0| |do+ed:1_VDD|)
+(|ncsubj| |eat:3_VV0| |they:2_PPHS2| _)
+(|iobj| |eat:3_VV0| |in:4_II|)
+(|dobj| |in:4_II| |dark:6_JJ|)
+(|det| |dark:6_JJ| |the:5_AT|)
+
+
+(|do+ed:1_VDD| |you:2_PPY| |ask:3_VV0| |the:4_AT| |price:5_NN1| |?:6_?|) 1 ; (-9.866)
+gr-list: 1
+(|aux| |ask:3_VV0| |do+ed:1_VDD|)
+(|ncsubj| |ask:3_VV0| |you:2_PPY| _)
+(|dobj| |ask:3_VV0| |price:5_NN1|)
+(|det| |price:5_NN1| |the:4_AT|)
+
+
+(|do+ed:1_VDD| |you:2_PPY| |send:3_VV0| |a:4_AT1| |birthday:5_NN1| |card:6_NN1| |to:7_II| |Sheela:8_NP1| |?:9_?|) 1 ; (-15.920)
+gr-list: 1
+(|aux| |send:3_VV0| |do+ed:1_VDD|)
+(|ncsubj| |send:3_VV0| |you:2_PPY| _)
+(|dobj| |send:3_VV0| |card:6_NN1|)
+(|det| |card:6_NN1| |a:4_AT1|)
+(|ncmod| _ |card:6_NN1| |to:7_II|)
+(|dobj| |to:7_II| |Sheela:8_NP1|)
+(|ncmod| _ |card:6_NN1| |birthday:5_NN1|)
+
+
+(|do+ed:1_VDD| |you:2_PPY| |take:3_VV0| |your:4_APP$| |breakfast:5_NN1| |?:6_?|) 1 ; (-9.866)
+gr-list: 1
+(|aux| |take:3_VV0| |do+ed:1_VDD|)
+(|ncsubj| |take:3_VV0| |you:2_PPY| _)
+(|dobj| |take:3_VV0| |breakfast:5_NN1|)
+(|det| |breakfast:5_NN1| |your:4_APP$|)
+
+
+(|Discuss:1_VV0| |it:2_PPH1| |among:3_II| |yourselves:4_PPX2| |first:5_RR| |.:6_.|) 1 ; (-11.964)
+gr-list: 1
+(|ncmod| _ |Discuss:1_VV0| |first:5_RR|)
+(|iobj| |Discuss:1_VV0| |among:3_II|)
+(|dobj| |Discuss:1_VV0| |it:2_PPH1|)
+(|dobj| |among:3_II| |yourselves:4_PPX2|)
+
+
+(|do+s:1_VDZ| |this:2_DD1| |shirt:3_NN1| |match:4_VV0| |these:5_DD2| |trousers:6_NN2| |?:7_?|) 1 ; (-11.163)
+gr-list: 1
+(|aux| |match:4_VV0| |do+s:1_VDZ|)
+(|ncsubj| |match:4_VV0| |shirt:3_NN1| _)
+(|dobj| |match:4_VV0| |trousers:6_NN2|)
+(|det| |trousers:6_NN2| |these:5_DD2|)
+(|det| |shirt:3_NN1| |this:2_DD1|)
+
+
+(|Do:1_VD0| |not+:2_XX| |disturb:3_VV0| |the:4_AT| |sleeping:5_NN1| |kid+s:6_NN2| |.:7_.|) 1 ; (-8.406)
+gr-list: 1
+(|aux| |disturb:3_VV0| |Do:1_VD0|)
+(|ncmod| _ |disturb:3_VV0| |not+:2_XX|)
+(|dobj| |disturb:3_VV0| |kid+s:6_NN2|)
+(|det| |kid+s:6_NN2| |the:4_AT|)
+(|ncmod| _ |kid+s:6_NN2| |sleeping:5_NN1|)
+
+
+(|Do:1_VD0| |not+:2_XX| |forget:3_VV0| |to:4_TO| |take:5_VV0| |your:6_APP$| |tiffin:7_NN1| |.:8_.|) 1 ; (-9.552)
+gr-list: 1
+(|aux| |forget:3_VV0| |Do:1_VD0|)
+(|ncmod| _ |forget:3_VV0| |not+:2_XX|)
+(|xcomp| |to| |forget:3_VV0| |take:5_VV0|)
+(|dobj| |take:5_VV0| |tiffin:7_NN1|)
+(|det| |tiffin:7_NN1| |your:6_APP$|)
+
+
+(|Do:1_VD0| |not+:2_XX| |get:3_VB0| |wet:4_VVN| |in:5_II| |the:6_AT| |rain:7_NN1| |.:8_.|) 1 ; (-9.237)
+gr-list: 1
+(|aux| |wet:4_VVN| |Do:1_VD0|)
+(|ncmod| _ |wet:4_VVN| |not+:2_XX|)
+(|aux| |wet:4_VVN| |get:3_VB0|)
+(|passive| |wet:4_VVN|)
+(|iobj| |wet:4_VVN| |in:5_II|)
+(|dobj| |in:5_II| |rain:7_NN1|)
+(|det| |rain:7_NN1| |the:6_AT|)
+
+
+(|Do:1_VD0| |not+:2_XX| |neglect:3_VV0| |your:4_APP$| |duty+s:5_NN2| |.:6_.|) 1 ; (-7.287)
+gr-list: 1
+(|aux| |neglect:3_VV0| |Do:1_VD0|)
+(|ncmod| _ |neglect:3_VV0| |not+:2_XX|)
+(|dobj| |neglect:3_VV0| |duty+s:5_NN2|)
+(|det| |duty+s:5_NN2| |your:4_APP$|)
+
+
+(|Do:1_VD0| |not+:2_XX| |send:3_VV0| |the:4_AT| |message:5_NN1| |by:6_II| |radio:7_NN1| |.:8_.|) 1 ; (-10.288)
+gr-list: 1
+(|aux| |send:3_VV0| |Do:1_VD0|)
+(|ncmod| _ |send:3_VV0| |not+:2_XX|)
+(|dobj| |send:3_VV0| |message:5_NN1|)
+(|det| |message:5_NN1| |the:4_AT|)
+(|ncmod| _ |message:5_NN1| |by:6_II|)
+(|dobj| |by:6_II| |radio:7_NN1|)
+
+
+(|Do:1_VD0| |not+:2_XX| |smoke:3_VV0| |at:4_II| |the:5_AT| |public:6_JJ| |place+s:7_NNL2| |.:8_.|) 1 ; (-11.130)
+gr-list: 1
+(|aux| |smoke:3_VV0| |Do:1_VD0|)
+(|ncmod| _ |smoke:3_VV0| |not+:2_XX|)
+(|iobj| |smoke:3_VV0| |at:4_II|)
+(|dobj| |at:4_II| |place+s:7_NNL2|)
+(|det| |place+s:7_NNL2| |the:5_AT|)
+(|ncmod| _ |place+s:7_NNL2| |public:6_JJ|)
+
+
+(|Do:1_VD0| |you:2_PPY| |think:3_VV0| |these:4_DD2| |two:5_MC| |colour+s:6_NN2| |match:7_NN1| |.:8_.|) 0 ; ()
+gr-list: 1
+(|ncmod| |num| |match:7_NN1| |two:5_MC|)
+(|ncmod| _ |match:7_NN1| |colour+s:6_NN2|)
+(|aux| |think:3_VV0| |Do:1_VD0|)
+(|ncsubj| |think:3_VV0| |you:2_PPY| _)
+(|dobj| |think:3_VV0| |these:4_DD2|)
+
+
+(|Drink:1_VV0| |plenty:2_NN1| |of:3_IO| |water:4_NN1| |to:5_TO| |keep:6_VV0| |good:7_JJ| |health:8_NN1| |.:9_.|) 1 ; (-10.954)
+gr-list: 1
+(|dobj| |Drink:1_VV0| |plenty:2_NN1|)
+(|iobj| |plenty:2_NN1| |of:3_IO|)
+(|dobj| |of:3_IO| |water:4_NN1|)
+(|xmod| |to| |water:4_NN1| |keep:6_VV0|)
+(|dobj| |keep:6_VV0| |health:8_NN1|)
+(|ncmod| _ |health:8_NN1| |good:7_JJ|)
+
+
+(|Each:1_DD1| |one:2_MC1| |of:3_IO| |they+:4_PPHO2| |record+ed:5_VVD| |the:6_AT| |narrative+s:7_NN2| |from:8_II| |twenty:9_MC| |participant+s:10_NN2| |.:11_.|) 1 ; (-13.318)
+gr-list: 1
+(|ncsubj| |record+ed:5_VVD| |one:2_MC1| _)
+(|dobj| |record+ed:5_VVD| |narrative+s:7_NN2|)
+(|det| |narrative+s:7_NN2| |the:6_AT|)
+(|ncmod| _ |narrative+s:7_NN2| |from:8_II|)
+(|dobj| |from:8_II| |participant+s:10_NN2|)
+(|ncmod| |num| |participant+s:10_NN2| |twenty:9_MC|)
+(|det| |one:2_MC1| |Each:1_DD1|)
+(|iobj| |one:2_MC1| |of:3_IO|)
+(|dobj| |of:3_IO| |they+:4_PPHO2|)
+
+
+(|Economic:1_JJ| |indicator+s:2_NN2| |fall+ed:3_VVD| |sharply:4_RR| |last:5_MD| |month:6_NNT1| |.:7_.|) 1 ; (-13.161)
+gr-list: 1
+(|ncsubj| |fall+ed:3_VVD| |indicator+s:2_NN2| _)
+(|ncmod| _ |fall+ed:3_VVD| |month:6_NNT1|)
+(|ncmod| |num| |month:6_NNT1| |last:5_MD|)
+(|ncmod| _ |fall+ed:3_VVD| |sharply:4_RR|)
+(|ncmod| _ |indicator+s:2_NN2| |Economic:1_JJ|)
+
+
+(|Education:1_NN1| |be+s:2_VBZ| |very:3_RG| |important:4_JJ| |for:5_IF| |every:6_AT1| |child:7_NN1| |.:8_.|) 1 ; (-8.529)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |Education:1_NN1| _)
+(|xcomp| _ |be+s:2_VBZ| |important:4_JJ|)
+(|ncmod| _ |important:4_JJ| |very:3_RG|)
+(|iobj| |important:4_JJ| |for:5_IF|)
+(|dobj| |for:5_IF| |child:7_NN1|)
+(|det| |child:7_NN1| |every:6_AT1|)
+
+
+(|Espresso:1_NN1| |be+s:2_VBZ| |a:3_AT1| |coffee:4_NN1| |drink:5_NN1| |.:6_.|) 1 ; (-6.144)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |Espresso:1_NN1| _)
+(|xcomp| _ |be+s:2_VBZ| |drink:5_NN1|)
+(|det| |drink:5_NN1| |a:3_AT1|)
+(|ncmod| _ |drink:5_NN1| |coffee:4_NN1|)
+
+
+(|Even:1_RR| |a:2_AT1| |child:3_NN1| |can:4_VM| |understand:5_VV0| |it:6_PPH1| |.:7_.|) 1 ; (-9.227)
+gr-list: 1
+(|ncmod| _ |understand:5_VV0| |Even:1_RR|)
+(|ncsubj| |understand:5_VV0| |child:3_NN1| _)
+(|aux| |understand:5_VV0| |can:4_VM|)
+(|dobj| |understand:5_VV0| |it:6_PPH1|)
+(|det| |child:3_NN1| |a:2_AT1|)
+
+
+(|Event+s:1_NN2| |of:2_IO| |this:3_DD1| |type:4_NN1| |rarely:5_RR| |go:6_VV0| |accord+ing:7_VVG| |to:8_II| |the:9_AT| |plan:10_NN1| |.:11_.|) 1 ; (-16.275)
+gr-list: 1
+(|ncsubj| |go:6_VV0| |Event+s:1_NN2| _)
+(|ncmod| _ |go:6_VV0| |rarely:5_RR|)
+(|xcomp| _ |go:6_VV0| |accord+ing:7_VVG|)
+(|iobj| |accord+ing:7_VVG| |to:8_II|)
+(|dobj| |to:8_II| |plan:10_NN1|)
+(|det| |plan:10_NN1| |the:9_AT|)
+(|iobj| |Event+s:1_NN2| |of:2_IO|)
+(|dobj| |of:2_IO| |type:4_NN1|)
+(|det| |type:4_NN1| |this:3_DD1|)
+
+
+(|Everyone:1_PN1| |should:2_VM| |maintain:3_VV0| |peace:4_NN1| |on:5_II| |the:6_AT| |earth:7_NN1| |.:8_.|) 1 ; (-7.001)
+gr-list: 1
+(|ncsubj| |maintain:3_VV0| |Everyone:1_PN1| _)
+(|aux| |maintain:3_VV0| |should:2_VM|)
+(|iobj| |maintain:3_VV0| |on:5_II|)
+(|dobj| |maintain:3_VV0| |peace:4_NN1|)
+(|dobj| |on:5_II| |earth:7_NN1|)
+(|det| |earth:7_NN1| |the:6_AT|)
+
+
+(|Food:1_NN1| |must:2_VM| |be:3_VB0| |heat+ed:4_VVN| |to:5_II| |a:6_AT1| |high:7_JJ| |temperature:8_NN1| |to:9_TO| |kill:10_VV0| |harmful:11_JJ| |bacterium+s:12_NN2| |.:13_.|) 1 ; (-13.288)
+gr-list: 1
+(|ncsubj| |heat+ed:4_VVN| |Food:1_NN1| _)
+(|aux| |heat+ed:4_VVN| |must:2_VM|)
+(|aux| |heat+ed:4_VVN| |be:3_VB0|)
+(|passive| |heat+ed:4_VVN|)
+(|iobj| |heat+ed:4_VVN| |to:5_II|)
+(|dobj| |to:5_II| |temperature:8_NN1|)
+(|det| |temperature:8_NN1| |a:6_AT1|)
+(|ncmod| _ |temperature:8_NN1| |high:7_JJ|)
+(|xmod| |to| |temperature:8_NN1| |kill:10_VV0|)
+(|dobj| |kill:10_VV0| |bacterium+s:12_NN2|)
+(|ncmod| _ |bacterium+s:12_NN2| |harmful:11_JJ|)
+
+
+(|Galelio:1_NP1| |be+ed:2_VBDZ| |the:3_AT| |first:4_MD| |scentist:5_NN1| |to:6_TO| |claim:7_VV0| |that:8_CST| |the:9_AT| |earth:10_NN1| |move+s:11_VVZ| |around:12_II| |the:13_AT| |sun:14_NN1| |.:15_.|) 1 ; (-17.126)
+gr-list: 1
+(|ncsubj| |be+ed:2_VBDZ| |Galelio:1_NP1| _)
+(|xcomp| _ |be+ed:2_VBDZ| |scentist:5_NN1|)
+(|det| |scentist:5_NN1| |the:3_AT|)
+(|ncmod| |num| |scentist:5_NN1| |first:4_MD|)
+(|xmod| |to| |scentist:5_NN1| |claim:7_VV0|)
+(|ccomp| |that:8_CST| |claim:7_VV0| |move+s:11_VVZ|)
+(|ncsubj| |move+s:11_VVZ| |earth:10_NN1| _)
+(|iobj| |move+s:11_VVZ| |around:12_II|)
+(|dobj| |around:12_II| |sun:14_NN1|)
+(|det| |sun:14_NN1| |the:13_AT|)
+(|det| |earth:10_NN1| |the:9_AT|)
+
+
+(|Go:1_VV0| |straight:2_JJ| |and:3_CC| |take:4_VV0| |a:5_AT1| |right:6_NN1| |turn:7_NN1| |.:8_.|) 1 ; (-10.155)
+gr-list: 1
+(|conj| |and:3_CC| |Go:1_VV0|)
+(|conj| |and:3_CC| |take:4_VV0|)
+(|dobj| |take:4_VV0| |turn:7_NN1|)
+(|det| |turn:7_NN1| |a:5_AT1|)
+(|ncmod| _ |turn:7_NN1| |right:6_NN1|)
+(|xcomp| _ |Go:1_VV0| |straight:2_JJ|)
+
+
+(|Guess:1_VV0| |who:2_PNQS| |I:3_PPIS1| |see+ed:4_VVD| |at:5_II| |the:6_AT| |party:7_NN1| |last:8_MD| |night:9_NNT1| |.:10_.|) 1 ; (-18.123)
+gr-list: 1
+(|ccomp| _ |Guess:1_VV0| |see+ed:4_VVD|)
+(|dobj| |Guess:1_VV0| |who:2_PNQS|)
+(|ncsubj| |see+ed:4_VVD| |I:3_PPIS1| _)
+(|ncmod| _ |see+ed:4_VVD| |night:9_NNT1|)
+(|ncmod| |num| |night:9_NNT1| |last:8_MD|)
+(|iobj| |see+ed:4_VVD| |at:5_II|)
+(|dobj| |at:5_II| |party:7_NN1|)
+(|det| |party:7_NN1| |the:6_AT|)
+
+
+(|Have:1_VH0| |you:2_PPY| |see+en:3_VVN| |the:4_AT| |Tajmahal:5_NP1| |?:6_?|) 1 ; (-12.488)
+gr-list: 1
+(|passive| |see+en:3_VVN|)
+(|aux| |see+en:3_VVN| |Have:1_VH0|)
+(|ncsubj| |see+en:3_VVN| |you:2_PPY| _)
+(|obj| |see+en:3_VVN| |Tajmahal:5_NP1|)
+(|det| |Tajmahal:5_NP1| |the:4_AT|)
+
+
+(|Have+ing:1_VHG| |finish+ed:2_VVN| |the:3_AT| |book:4_NN1| |,:5_,| |she:6_PPHS1| |go+ed:7_VVD| |to:8_TO| |school:9_VV0| |.:10_.|) 1 ; (-17.521)
+gr-list: 1
+(|aux| |go+ed:7_VVD| |Have+ing:1_VHG|)
+(|xmod| _ |go+ed:7_VVD| |finish+ed:2_VVN|)
+(|ncsubj| |go+ed:7_VVD| |she:6_PPHS1| _)
+(|xcomp| |to| |go+ed:7_VVD| |school:9_VV0|)
+(|obj| |finish+ed:2_VVN| |book:4_NN1|)
+(|det| |book:4_NN1| |the:3_AT|)
+
+
+(|He:1_PPHS1| |always:2_RR| |bitch+s:3_VVZ| |about:4_II| |Tanya:5_NP1| |.:6_.|) 1 ; (-8.252)
+gr-list: 1
+(|ncsubj| |bitch+s:3_VVZ| |He:1_PPHS1| _)
+(|ncmod| _ |bitch+s:3_VVZ| |always:2_RR|)
+(|iobj| |bitch+s:3_VVZ| |about:4_II|)
+(|dobj| |about:4_II| |Tanya:5_NP1|)
+
+
+(|He:1_PPHS1| |buy+ed:2_VVD| |a:3_AT1| |book:4_NN1| |of:5_IO| |stamp+s:6_NN2| |.:7_.|) 1 ; (-5.431)
+gr-list: 1
+(|ncsubj| |buy+ed:2_VVD| |He:1_PPHS1| _)
+(|dobj| |buy+ed:2_VVD| |book:4_NN1|)
+(|det| |book:4_NN1| |a:3_AT1|)
+(|iobj| |book:4_NN1| |of:5_IO|)
+(|dobj| |of:5_IO| |stamp+s:6_NN2|)
+
+
+(|He:1_PPHS1| |buy+ed:2_VVD| |the:3_AT| |publish+ed:4_VVN| |book+s:5_NN2| |for:6_IF| |his:7_APP$| |library:8_NN1| |.:9_.|) 1 ; (-14.468)
+gr-list: 1
+(|ncsubj| |buy+ed:2_VVD| |He:1_PPHS1| _)
+(|iobj| |buy+ed:2_VVD| |for:6_IF|)
+(|dobj| |buy+ed:2_VVD| |book+s:5_NN2|)
+(|dobj| |for:6_IF| |library:8_NN1|)
+(|det| |library:8_NN1| |his:7_APP$|)
+(|det| |book+s:5_NN2| |the:3_AT|)
+(|passive| |publish+ed:4_VVN|)
+(|ncsubj| |publish+ed:4_VVN| |book+s:5_NN2| |obj|)
+(|ncmod| _ |book+s:5_NN2| |publish+ed:4_VVN|)
+
+
+(|He:1_PPHS1| |come+ed:2_VVD| |from:3_II| |inside:4_II| |the:5_AT| |room:6_NN1| |.:7_.|) 1 ; (-5.378)
+gr-list: 1
+(|ncsubj| |come+ed:2_VVD| |He:1_PPHS1| _)
+(|pcomp| |come+ed:2_VVD| |from:3_II|)
+(|iobj| |from:3_II| |inside:4_II|)
+(|dobj| |inside:4_II| |room:6_NN1|)
+(|det| |room:6_NN1| |the:5_AT|)
+
+
+(|He:1_PPHS1| |comment+ed:2_VVD| |that:3_CST| |the:4_AT| |two:5_MC| |essay+s:6_NN2| |be+ed:7_VBDR| |rather:8_RG| |similar:9_JJ| |.:10_.|) 1 ; (-10.284)
+gr-list: 1
+(|ncsubj| |comment+ed:2_VVD| |He:1_PPHS1| _)
+(|ccomp| |that:3_CST| |comment+ed:2_VVD| |be+ed:7_VBDR|)
+(|ncsubj| |be+ed:7_VBDR| |essay+s:6_NN2| _)
+(|xcomp| _ |be+ed:7_VBDR| |similar:9_JJ|)
+(|ncmod| _ |similar:9_JJ| |rather:8_RG|)
+(|det| |essay+s:6_NN2| |the:4_AT|)
+(|ncmod| |num| |essay+s:6_NN2| |two:5_MC|)
+
+
+(|He:1_PPHS1| |could:2_VM| |hear:3_VV0| |a:4_AT1| |faint:5_JJ| |sound:6_NN1| |from:7_II| |the:8_AT| |bush+s:9_NN2| |.:10_.|) 1 ; (-7.606)
+gr-list: 1
+(|ncsubj| |hear:3_VV0| |He:1_PPHS1| _)
+(|aux| |hear:3_VV0| |could:2_VM|)
+(|dobj| |hear:3_VV0| |sound:6_NN1|)
+(|det| |sound:6_NN1| |a:4_AT1|)
+(|ncmod| _ |sound:6_NN1| |from:7_II|)
+(|dobj| |from:7_II| |bush+s:9_NN2|)
+(|det| |bush+s:9_NN2| |the:8_AT|)
+(|ncmod| _ |sound:6_NN1| |faint:5_JJ|)
+
+
+(|He:1_PPHS1| |deal+s:2_VVZ| |fairly:3_RR| |with:4_IW| |his:5_APP$| |employee+s:6_NN2| |.:7_.|) 1 ; (-7.012)
+gr-list: 1
+(|ncsubj| |deal+s:2_VVZ| |He:1_PPHS1| _)
+(|ncmod| _ |deal+s:2_VVZ| |with:4_IW|)
+(|ncmod| _ |with:4_IW| |fairly:3_RR|)
+(|dobj| |with:4_IW| |employee+s:6_NN2|)
+(|det| |employee+s:6_NN2| |his:5_APP$|)
+
+
+(|He:1_PPHS1| |do+s:2_VDZ| |not+:3_XX| |dare:4_VV0| |to:5_TO| |ignore:6_VV0| |I+:7_PPIO1| |.:8_.|) 1 ; (-9.338)
+gr-list: 1
+(|ncsubj| |dare:4_VV0| |He:1_PPHS1| _)
+(|aux| |dare:4_VV0| |do+s:2_VDZ|)
+(|ncmod| _ |dare:4_VV0| |not+:3_XX|)
+(|xcomp| |to| |dare:4_VV0| |ignore:6_VV0|)
+(|dobj| |ignore:6_VV0| |I+:7_PPIO1|)
+
+
+(|He:1_PPHS1| |feel+ed:2_VVD| |a:3_AT1| |deep:4_JJ| |shame:5_NN1| |.:6_.|) 1 ; (-4.257)
+gr-list: 1
+(|ncsubj| |feel+ed:2_VVD| |He:1_PPHS1| _)
+(|dobj| |feel+ed:2_VVD| |shame:5_NN1|)
+(|det| |shame:5_NN1| |a:3_AT1|)
+(|ncmod| _ |shame:5_NN1| |deep:4_JJ|)
+
+
+(|He:1_PPHS1| |give+ed:2_VVD| |up:3_RP| |his:4_APP$| |lucrative:5_JJ| |law:6_NN1| |practice:7_NN1| |for:8_IF| |the:9_AT| |sake:10_NN1| |of:11_IO| |the:12_AT| |country:13_NN1| |.:14_.|) 1 ; (-10.301)
+gr-list: 1
+(|ncsubj| |give+ed:2_VVD| |He:1_PPHS1| _)
+(|iobj| |give+ed:2_VVD| |for:8_IF|)
+(|dobj| |give+ed:2_VVD| |practice:7_NN1|)
+(|dobj| |for:8_IF| |sake:10_NN1|)
+(|det| |sake:10_NN1| |the:9_AT|)
+(|iobj| |sake:10_NN1| |of:11_IO|)
+(|dobj| |of:11_IO| |country:13_NN1|)
+(|det| |country:13_NN1| |the:12_AT|)
+(|det| |practice:7_NN1| |his:4_APP$|)
+(|ncmod| _ |practice:7_NN1| |lucrative:5_JJ|)
+(|ncmod| _ |practice:7_NN1| |law:6_NN1|)
+(|ncmod| |prt| |give+ed:2_VVD| |up:3_RP|)
+
+
+(|He:1_PPHS1| |get+ed:2_VVD| |all:3_DB| |the:4_AT| |advantage+s:5_NN2| |of:6_IO| |his:7_APP$| |birth:8_NN1| |.:9_.|) 1 ; (-9.882)
+gr-list: 1
+(|ncsubj| |get+ed:2_VVD| |He:1_PPHS1| _)
+(|obj2| |get+ed:2_VVD| |advantage+s:5_NN2|)
+(|dobj| |get+ed:2_VVD| |all:3_DB|)
+(|det| |advantage+s:5_NN2| |the:4_AT|)
+(|iobj| |advantage+s:5_NN2| |of:6_IO|)
+(|dobj| |of:6_IO| |birth:8_NN1|)
+(|det| |birth:8_NN1| |his:7_APP$|)
+
+
+(|He:1_PPHS1| |have+ed:2_VHD| |not+:3_XX| |see+en:4_VVN| |he+:5_PPHO1| |since:6_ICS| |that:7_DD1| |graduation:8_NN1| |day:9_NN1| |.:10_.|) 1 ; (-15.506)
+gr-list: 1
+(|ncsubj| |see+en:4_VVN| |He:1_PPHS1| _)
+(|ncmod| _ |see+en:4_VVN| |since:6_ICS|)
+(|dobj| |since:6_ICS| |day:9_NN1|)
+(|det| |day:9_NN1| |that:7_DD1|)
+(|ncmod| _ |day:9_NN1| |graduation:8_NN1|)
+(|aux| |see+en:4_VVN| |have+ed:2_VHD|)
+(|ncmod| _ |see+en:4_VVN| |not+:3_XX|)
+(|obj| |see+en:4_VVN| |he+:5_PPHO1|)
+
+
+(|He:1_PPHS1| |have+ed:2_VHD| |see+en:3_VVN| |I+:4_PPIO1| |in:5_II| |the:6_AT| |garden:7_NNL1| |last:8_MD| |night:9_NNT1| |.:10_.|) 1 ; (-22.110)
+gr-list: 1
+(|ncsubj| |see+en:3_VVN| |He:1_PPHS1| _)
+(|ncmod| _ |see+en:3_VVN| |night:9_NNT1|)
+(|ncmod| |num| |night:9_NNT1| |last:8_MD|)
+(|aux| |see+en:3_VVN| |have+ed:2_VHD|)
+(|iobj| |see+en:3_VVN| |in:5_II|)
+(|dobj| |see+en:3_VVN| |I+:4_PPIO1|)
+(|dobj| |in:5_II| |garden:7_NNL1|)
+(|det| |garden:7_NNL1| |the:6_AT|)
+
+
+(|He:1_PPHS1| |have+s:2_VHZ| |be+en:3_VBN| |frequently:4_RR| |come+ing:5_VVG| |.:6_.|) 1 ; (-12.092)
+gr-list: 1
+(|ncsubj| |come+ing:5_VVG| |He:1_PPHS1| _)
+(|aux| |come+ing:5_VVG| |have+s:2_VHZ|)
+(|ncmod| _ |come+ing:5_VVG| |frequently:4_RR|)
+(|aux| |come+ing:5_VVG| |be+en:3_VBN|)
+
+
+(|He:1_PPHS1| |have+s:2_VHZ| |lose+ed:3_VVN| |his:4_APP$| |confidence:5_NN1| |.:6_.|) 1 ; (-9.056)
+gr-list: 1
+(|ncsubj| |lose+ed:3_VVN| |He:1_PPHS1| _)
+(|aux| |lose+ed:3_VVN| |have+s:2_VHZ|)
+(|obj| |lose+ed:3_VVN| |confidence:5_NN1|)
+(|det| |confidence:5_NN1| |his:4_APP$|)
+
+
+(|He:1_PPHS1| |hear+ed:2_VVD| |the:3_AT| |sound:4_NN1| |of:5_IO| |rain:6_NN1| |from:7_II| |the:8_AT| |kitchen:9_NN1| |.:10_.|) 1 ; (-7.357)
+gr-list: 1
+(|ncsubj| |hear+ed:2_VVD| |He:1_PPHS1| _)
+(|dobj| |hear+ed:2_VVD| |sound:4_NN1|)
+(|det| |sound:4_NN1| |the:3_AT|)
+(|iobj| |sound:4_NN1| |of:5_IO|)
+(|dobj| |of:5_IO| |rain:6_NN1|)
+(|ncmod| _ |rain:6_NN1| |from:7_II|)
+(|dobj| |from:7_II| |kitchen:9_NN1|)
+(|det| |kitchen:9_NN1| |the:8_AT|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |a:3_AT1| |brother:4_NN1| |of:5_IO| |a:6_AT1| |rich:7_JJ| |person:8_NN1| |.:9_.|) 1 ; (-5.867)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |brother:4_NN1|)
+(|det| |brother:4_NN1| |a:3_AT1|)
+(|iobj| |brother:4_NN1| |of:5_IO|)
+(|dobj| |of:5_IO| |person:8_NN1|)
+(|det| |person:8_NN1| |a:6_AT1|)
+(|ncmod| _ |person:8_NN1| |rich:7_JJ|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |a:3_AT1| |devote+ed:4_VVN| |husband:5_NN1| |and:6_CC| |a:7_AT1| |father:8_NN1| |.:9_.|) 1 ; (-15.146)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |and:6_CC|)
+(|conj| |and:6_CC| |husband:5_NN1|)
+(|conj| |and:6_CC| |father:8_NN1|)
+(|det| |father:8_NN1| |a:7_AT1|)
+(|det| |husband:5_NN1| |a:3_AT1|)
+(|passive| |devote+ed:4_VVN|)
+(|ncsubj| |devote+ed:4_VVN| |husband:5_NN1| |obj|)
+(|ncmod| _ |husband:5_NN1| |devote+ed:4_VVN|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |a:3_AT1| |great:4_JJ| |sport+s:5_NN2| |fan:6_NN1| |.:7_.|) 1 ; (-5.595)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |fan:6_NN1|)
+(|det| |fan:6_NN1| |a:3_AT1|)
+(|ncmod| _ |fan:6_NN1| |great:4_JJ|)
+(|ncmod| _ |fan:6_NN1| |sport+s:5_NN2|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |a:3_AT1| |small:4_JJ| |man:5_NN1| |in:6_II| |eye+s:7_NN2| |of:8_IO| |his:9_APP$| |boss:10_NN1| |.:11_.|) 1 ; (-9.011)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |man:5_NN1|)
+(|det| |man:5_NN1| |a:3_AT1|)
+(|ncmod| _ |man:5_NN1| |in:6_II|)
+(|dobj| |in:6_II| |eye+s:7_NN2|)
+(|iobj| |eye+s:7_NN2| |of:8_IO|)
+(|dobj| |of:8_IO| |boss:10_NN1|)
+(|det| |boss:10_NN1| |his:9_APP$|)
+(|ncmod| _ |man:5_NN1| |small:4_JJ|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |a:3_AT1| |well:4_NN1| |know+en:5_VVN| |scientist:6_NN1| |.:7_.|) 1 ; (-5.067)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |well:4_NN1|)
+(|det| |well:4_NN1| |a:3_AT1|)
+(|passive| |know+en:5_VVN|)
+(|ncsubj| |know+en:5_VVN| |well:4_NN1| |obj|)
+(|xmod| _ |well:4_NN1| |know+en:5_VVN|)
+(|obj| |know+en:5_VVN| |scientist:6_NN1|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |bold:3_JJ| |,:4_,| |but:5_CCB| |he:6_PPHS1| |be+s:7_VBZ| |not+:8_XX| |practical:9_JJ| |.:10_.|) 1 ; (-10.384)
+gr-list: 1
+(|conj| |but:5_CCB| |be+s:2_VBZ|)
+(|conj| |but:5_CCB| |be+s:7_VBZ|)
+(|ncsubj| |be+s:7_VBZ| |he:6_PPHS1| _)
+(|xcomp| _ |be+s:7_VBZ| |practical:9_JJ|)
+(|ncmod| _ |practical:9_JJ| |not+:8_XX|)
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |bold:3_JJ|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |careful:3_JJ| |about:4_II| |his:5_APP$| |study+s:6_NN2| |.:7_.|) 1 ; (-5.288)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |careful:3_JJ|)
+(|iobj| |careful:3_JJ| |about:4_II|)
+(|dobj| |about:4_II| |study+s:6_NN2|)
+(|det| |study+s:6_NN2| |his:5_APP$|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |know+en:3_VVN| |as:4_CSA| |the:5_AT| |Einstein:6_NP1| |of:7_IO| |India:8_NP1| |.:9_.|) 1 ; (-9.702)
+gr-list: 1
+(|ncsubj| |know+en:3_VVN| |He:1_PPHS1| _)
+(|aux| |know+en:3_VVN| |be+s:2_VBZ|)
+(|passive| |know+en:3_VVN|)
+(|iobj| |know+en:3_VVN| |as:4_CSA|)
+(|dobj| |as:4_CSA| |Einstein:6_NP1|)
+(|det| |Einstein:6_NP1| |the:5_AT|)
+(|iobj| |Einstein:6_NP1| |of:7_IO|)
+(|dobj| |of:7_IO| |India:8_NP1|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |more:3_DAR| |intelligent:4_JJ| |than:5_CSN| |John:6_NP1| |.:7_.|) 1 ; (-10.398)
+gr-list: 1
+(|ncsubj| |be+s:2_VBZ| |He:1_PPHS1| _)
+(|xcomp| _ |be+s:2_VBZ| |intelligent:4_JJ|)
+(|ncmod| _ |intelligent:4_JJ| |more:3_DAR|)
+(|ncmod| _ |intelligent:4_JJ| |than:5_CSN|)
+(|dobj| |than:5_CSN| |John:6_NP1|)
+
+
+(|He:1_PPHS1| |be+s:2_VBZ| |work+ing:3_VVG| |harder:4_JJR| |than:5_CSN| |usual:6_JJ| |.:7_.|) 1 ; (-9.068)
+gr-list: 1
+(|ncsubj| |work+ing:3_VVG| |He:1_PPHS1| _)
+(|aux| |work+ing:3_VVG| |be+s:2_VBZ|)
+(|xcomp| _ |work+ing:3_VVG| |harder:4_JJR|)
+(|xmod| _ |harder:4_JJR| |than:5_CSN|)
+(|xcomp| _ |than:5_CSN| |usual:6_JJ|)
+
+
+(|He:1_PPHS1| |ladle+s:2_VVZ| |it:3_PPH1| |with:4_IW| |a:5_AT1| |large:6_JJ| |wooden:7_JJ| |spoon:8_NN1| |.:9_.|) 1 ; (-7.337)
+gr-list: 1
+(|ncsubj| |ladle+s:2_VVZ| |He:1_PPHS1| _)
+(|iobj| |ladle+s:2_VVZ| |with:4_IW|)
+(|dobj| |ladle+s:2_VVZ| |it:3_PPH1|)
+(|dobj| |with:4_IW| |spoon:8_NN1|)
+(|det| |spoon:8_NN1| |a:5_AT1|)
+(|ncmod| _ |spoon:8_NN1| |large:6_JJ|)
+(|ncmod| _ |spoon:8_NN1| |wooden:7_JJ|)
+
+
+(|He:1_PPHS1| |leave+ed:2_VVD| |all:3_DB| |his:4_APP$| |money:5_NN| |to:6_II| |the:7_AT| |orphanage:8_NN1| |.:9_.|) 1 ; (-11.159)
+gr-list: 1
+(|ncsubj| |leave+ed:2_VVD| |He:1_PPHS1| _)
+(|obj2| |leave+ed:2_VVD| |money:5_NN|)
+(|dobj| |leave+ed:2_VVD| |all:3_DB|)
+(|det| |money:5_NN| |his:4_APP$|)
+(|ncmod| _ |money:5_NN| |to:6_II|)
+(|dobj| |to:6_II| |orphanage:8_NN1|)
+(|det| |orphanage:8_NN1| |the:7_AT|)
+
+
+(|He:1_PPHS1| |leave+ed:2_VVD| |in:3_II| |the:4_AT| |morning:5_NNT1| |.:6_.|) 1 ; (-7.415)
+gr-list: 1
+(|ncsubj| |leave+ed:2_VVD| |He:1_PPHS1| _)
+(|ncmod| _ |leave+ed:2_VVD| |in:3_II|)
+(|dobj| |in:3_II| |morning:5_NNT1|)
+(|det| |morning:5_NNT1| |the:4_AT|)
+
+
+(|He:1_PPHS1| |live+s:2_VVZ| |at:3_II| |Chandinichok:4_NP1| |in:5_II| |Delhi:6_NP1| |in:7_II| |India:8_NP1| |.:9_.|) 1 ; (-16.325)
+gr-list: 1
+(|ncsubj| |live+s:2_VVZ| |He:1_PPHS1| _)
+(|iobj| |live+s:2_VVZ| |at:3_II|)
+(|dobj| |at:3_II| |Chandinichok:4_NP1|)
+(|ncmod| _ |Chandinichok:4_NP1| |in:5_II|)
+(|dobj| |in:5_II| |Delhi:6_NP1|)
+(|ncmod| _ |Delhi:6_NP1| |in:7_II|)
+(|dobj| |in:7_II| |India:8_NP1|)
+
+

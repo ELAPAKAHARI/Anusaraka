@@ -1,0 +1,213 @@
+(|RUN+ing:1_VVG| |THE:2_AT| |RASP:3_NN1| |TOOL+s:4_NN2| |/:5_CC| |PROBABILISTIC:6_JJ| |PARSER:7_NN1|) 0 ; ()
+gr-list: 1
+(|dobj| |RUN+ing:1_VVG| |/:5_CC|)
+(|det| |/:5_CC| |THE:2_AT|)
+(|conj| |/:5_CC| |TOOL+s:4_NN2|)
+(|conj| |/:5_CC| |PARSER:7_NN1|)
+(|ncmod| _ |PARSER:7_NN1| |PROBABILISTIC:6_JJ|)
+(|ncmod| _ |TOOL+s:4_NN2| |RASP:3_NN1|)
+
+
+(|The:1_AT| |shell:2_NN1| |script:3_NN1| |rasp.sh:4_NN1| |invoke+s:5_VVZ| |the:6_AT| |sentence:7_NN1| |boundary:8_NN1| |detector:9_NN1| |-:10_-| |tokeniser:11_NN1| |-:12_-| |tagger:13_NN1| |-:14_-| |morphological:15_JJ| |analyser:16_NN1| |-:17_-| |parser:18_NN1| |on:19_II| |raw:20_JJ| |text:21_NN1| |.:22_.|) 1 ; (-55.015)
+gr-list: 1
+(|ncsubj| |invoke+s:5_VVZ| |rasp.sh:4_NN1| _)
+(|dobj| |invoke+s:5_VVZ| |parser:18_NN1|)
+(|det| |parser:18_NN1| |the:6_AT|)
+(|ncmod| _ |parser:18_NN1| |on:19_II|)
+(|dobj| |on:19_II| |text:21_NN1|)
+(|ncmod| _ |text:21_NN1| |raw:20_JJ|)
+(|ncmod| _ |parser:18_NN1| |sentence:7_NN1|)
+(|ncmod| _ |parser:18_NN1| |boundary:8_NN1|)
+(|ncmod| _ |parser:18_NN1| |detector:9_NN1|)
+(|ncmod| _ |parser:18_NN1| |tagger:13_NN1|)
+(|ta| |bal| |tagger:13_NN1| |analyser:16_NN1|)
+(|ncmod| _ |analyser:16_NN1| |morphological:15_JJ|)
+(|ta| |bal| |detector:9_NN1| |tokeniser:11_NN1|)
+(|det| |rasp.sh:4_NN1| |The:1_AT|)
+(|ncmod| _ |rasp.sh:4_NN1| |shell:2_NN1|)
+(|ncmod| _ |rasp.sh:4_NN1| |script:3_NN1|)
+
+
+(|The:1_AT| |script:2_NN1| |rasp_parse.sh:3_NN1| |invoke+s:4_NN2| |just:5_RR| |the:6_AT| |probabilistic:7_JJ| |parser:8_NN1| |on:9_II| |text:10_NN1| |that:11_CST| |have+s:12_VHZ| |already:13_RR| |be+en:14_VBN| |process+ed:15_VVN| |by:16_II| |the:17_AT| |previous:18_JJ| |stage+s:19_NN2| |.:20_.|) 0 ; ()
+gr-list: 1
+(|dobj| |on:9_II| |text:10_NN1|)
+(|ncsubj| |process+ed:15_VVN| |text:10_NN1| _)
+(|cmod| |that| |text:10_NN1| |process+ed:15_VVN|)
+(|ncmod| _ |process+ed:15_VVN| |already:13_RR|)
+(|aux| |process+ed:15_VVN| |have+s:12_VHZ|)
+(|aux| |process+ed:15_VVN| |be+en:14_VBN|)
+(|passive| |process+ed:15_VVN|)
+(|iobj| |process+ed:15_VVN| |by:16_II|)
+(|dobj| |by:16_II| |stage+s:19_NN2|)
+(|det| |stage+s:19_NN2| |the:17_AT|)
+(|ncmod| _ |stage+s:19_NN2| |previous:18_JJ|)
+(|ncmod| _ |parser:8_NN1| |just:5_RR|)
+(|det| |parser:8_NN1| |the:6_AT|)
+(|ncmod| _ |parser:8_NN1| |probabilistic:7_JJ|)
+(|det| |invoke+s:4_NN2| |The:1_AT|)
+(|ncmod| _ |invoke+s:4_NN2| |script:2_NN1|)
+(|ncmod| _ |invoke+s:4_NN2| |rasp_parse.sh:3_NN1|)
+
+
+(|BEFORE:1_ICS| |try+ing:2_VVG| |to:3_TO| |run:4_VV0| |either:5_DD1| |script:6_NN1| |for:7_IF| |the:8_AT| |first:9_MD| |time:10_NNT1| |,:11_,| |edit:12_VV0| |they+:13_PPHO2| |to:14_TO| |insert:15_VV0| |the:16_AT| |appropriate:17_JJ| |value:18_NN1| |for:19_IF| |the:20_AT| |shell:21_NN1| |variable:22_NN1| |RASP:23_NN1| |,:24_,| |which:25_DDQ| |should:26_VM| |be:27_VB0| |the:28_AT| |file:29_NN1| |system:30_NN1| |pathname:31_NN1| |where:32_RRQ| |you:33_PPY| |have:34_VH0| |install+ed:35_VVN| |the:36_AT| |RASP:37_NN1| |tool+s:38_NN2| |.:39_.|) 1 ; (-62.422)
+gr-list: 1
+(|xmod| _ |be:27_VB0| |BEFORE:1_ICS|)
+(|ncsubj| |be:27_VB0| |which:25_DDQ| _)
+(|aux| |be:27_VB0| |should:26_VM|)
+(|xcomp| _ |be:27_VB0| |pathname:31_NN1|)
+(|det| |pathname:31_NN1| |the:28_AT|)
+(|cmod| _ |pathname:31_NN1| |install+ed:35_VVN|)
+(|arg_mod| _ |install+ed:35_VVN| |where:32_RRQ|)
+(|ncsubj| |install+ed:35_VVN| |you:33_PPY| _)
+(|aux| |install+ed:35_VVN| |have:34_VH0|)
+(|obj| |install+ed:35_VVN| |tool+s:38_NN2|)
+(|det| |tool+s:38_NN2| |the:36_AT|)
+(|ncmod| _ |tool+s:38_NN2| |RASP:37_NN1|)
+(|ncmod| _ |pathname:31_NN1| |file:29_NN1|)
+(|ncmod| _ |pathname:31_NN1| |system:30_NN1|)
+(|xcomp| _ |BEFORE:1_ICS| |try+ing:2_VVG|)
+(|xcomp| |to| |try+ing:2_VVG| |run:4_VV0|)
+(|dobj| |run:4_VV0| |script:6_NN1|)
+(|ta| |bal| |script:6_NN1| |edit:12_VV0|)
+(|ncsubj| |insert:15_VV0| |they+:13_PPHO2| _)
+(|xcomp| |to| |edit:12_VV0| |insert:15_VV0|)
+(|dobj| |edit:12_VV0| |they+:13_PPHO2|)
+(|iobj| |insert:15_VV0| |for:19_IF|)
+(|dobj| |insert:15_VV0| |value:18_NN1|)
+(|dobj| |for:19_IF| |RASP:23_NN1|)
+(|det| |RASP:23_NN1| |the:20_AT|)
+(|ncmod| _ |RASP:23_NN1| |shell:21_NN1|)
+(|ncmod| _ |RASP:23_NN1| |variable:22_NN1|)
+(|det| |value:18_NN1| |the:16_AT|)
+(|ncmod| _ |value:18_NN1| |appropriate:17_JJ|)
+(|det| |script:6_NN1| |either:5_DD1|)
+(|ncmod| _ |script:6_NN1| |for:7_IF|)
+(|dobj| |for:7_IF| |time:10_NNT1|)
+(|det| |time:10_NNT1| |the:8_AT|)
+(|ncmod| |num| |time:10_NNT1| |first:9_MD|)
+
+
+(|rasp.sh:1_RR| |-------:2_VVD|) 0 ; ()
+gr-list: 1
+(|ncmod| _ |-------:2_VVD| |rasp.sh:1_RR|)
+
+
+(|rasp.sh:1_NNU| |[:2_(| |-m:3_ZZ1| |]:4_)| |[:5_(| |-p:6_ZZ1| |parser-option+s:7_NN2| |]:8_)|) 0 ; ()
+gr-list: 1
+(|ta| |bal| |rasp.sh:1_NNU| |parser-option+s:7_NN2|)
+(|ncmod| _ |parser-option+s:7_NN2| |-p:6_ZZ1|)
+(|ta| |bal| |rasp.sh:1_NNU| |-m:3_ZZ1|)
+
+
+(|The:1_AT| |command:2_NN1| |operate+s:3_VVZ| |as:4_CSA| |a:5_AT1| |filter:6_NN1| |,:7_,| |read+ing:8_VVG| |from:9_II| |the:10_AT| |standard:11_JJ| |input:12_NN1| |and:13_CC| |write+ing:14_VVG| |to:15_II| |the:16_AT| |standard:17_JJ| |output:18_NN1| |.:19_.|) 1 ; (-16.357)
+gr-list: 1
+(|xmod| _ |operate+s:3_VVZ| |and:13_CC|)
+(|conj| |and:13_CC| |read+ing:8_VVG|)
+(|conj| |and:13_CC| |write+ing:14_VVG|)
+(|iobj| |write+ing:14_VVG| |to:15_II|)
+(|dobj| |to:15_II| |output:18_NN1|)
+(|det| |output:18_NN1| |the:16_AT|)
+(|ncmod| _ |output:18_NN1| |standard:17_JJ|)
+(|iobj| |read+ing:8_VVG| |from:9_II|)
+(|dobj| |from:9_II| |input:12_NN1|)
+(|det| |input:12_NN1| |the:10_AT|)
+(|ncmod| _ |input:12_NN1| |standard:11_JJ|)
+(|ncsubj| |operate+s:3_VVZ| |command:2_NN1| _)
+(|iobj| |operate+s:3_VVZ| |as:4_CSA|)
+(|dobj| |as:4_CSA| |filter:6_NN1|)
+(|det| |filter:6_NN1| |a:5_AT1|)
+(|det| |command:2_NN1| |The:1_AT|)
+
+
+(|Command-line:1_NN1| |option+s:2_NN2| |be+:3_VBR| |::4_:|) 0 ; ()
+gr-list: 1
+(|ncmod| _ |option+s:2_NN2| |Command-line:1_NN1|)
+
+
+(|-m:1_ZZ1| |Analyse:2_VV0| |with:3_IW| |multiple:4_JJ| |tag+s:5_NN2| |per:6_II| |word:7_NN1| |(:8_(| |so:9_PN| |that:10_CST| |mistagging+s:11_NN2| |be+:12_VBR| |less:13_DAR| |likely:14_JJ| |):15_)| |.:16_.|) 1 ; (-32.561)
+gr-list: 1
+(|ncsubj| |Analyse:2_VV0| |-m:1_ZZ1| _)
+(|iobj| |Analyse:2_VV0| |with:3_IW|)
+(|dobj| |with:3_IW| |tag+s:5_NN2|)
+(|ta| |bal| |tag+s:5_NN2| |so:9_PN|)
+(|cmod| |that:10_CST| |so:9_PN| |be+:12_VBR|)
+(|ncsubj| |be+:12_VBR| |mistagging+s:11_NN2| _)
+(|xcomp| _ |be+:12_VBR| |likely:14_JJ|)
+(|ncmod| _ |likely:14_JJ| |less:13_DAR|)
+(|ncmod| _ |tag+s:5_NN2| |per:6_II|)
+(|dobj| |per:6_II| |word:7_NN1|)
+(|ncmod| _ |tag+s:5_NN2| |multiple:4_JJ|)
+
+
+(|-p:1_ZZ1| |Pass:2_NNL1| |the:3_AT| |immediately:4_RR| |follow+ing:5_VVG| |string:6_NN1| |as:7_CSA| |option+s:8_NN2| |to:9_II| |the:10_AT| |parser:11_NN1| |(:12_(| |see:13_VV0| |below:14_RL| |for:15_IF| |parser:16_NN1| |option+s:17_NN2| |):18_)| |.:19_.|) 0 ; ()
+gr-list: 1
+(|ncmod| _ |string:6_NN1| |as:7_CSA|)
+(|dobj| |as:7_CSA| |option+s:8_NN2|)
+(|ncmod| _ |option+s:8_NN2| |to:9_II|)
+(|dobj| |to:9_II| |parser:11_NN1|)
+(|ta| |bal| |parser:11_NN1| |see:13_VV0|)
+(|iobj| |see:13_VV0| |for:15_IF|)
+(|dobj| |for:15_IF| |option+s:17_NN2|)
+(|ncmod| _ |option+s:17_NN2| |parser:16_NN1|)
+(|ncmod| |prt| |see:13_VV0| |below:14_RL|)
+(|det| |parser:11_NN1| |the:10_AT|)
+(|det| |string:6_NN1| |the:3_AT|)
+(|ncmod| _ |string:6_NN1| |follow+ing:5_VVG|)
+(|ncmod| _ |follow+ing:5_VVG| |immediately:4_RR|)
+(|ncmod| _ |Pass:2_NNL1| |-p:1_ZZ1|)
+
+
+(|Example+s:1_NN2| |of:2_IO| |run+ing:3_VVG| |the:4_AT| |command:5_NN1| |be+:6_VBR| |::7_:|) 0 ; ()
+gr-list: 1
+(|xcomp| _ |Example+s:1_NN2| |of:2_IO|)
+(|xcomp| _ |of:2_IO| |run+ing:3_VVG|)
+(|dobj| |run+ing:3_VVG| |command:5_NN1|)
+(|det| |command:5_NN1| |the:4_AT|)
+
+
+(|./rasp.sh:1_NN1| |-m:2_ZZ1| |<:3_&FO| |file.txt:4_NN1| |>:5_&FO| |analysed.txt:6_NNU|) 0 ; ()
+gr-list: 1
+(|ncmod| _ |>:5_&FO| |analysed.txt:6_NNU|)
+(|ncmod| _ |>:5_&FO| |file.txt:4_NN1|)
+(|ncmod| _ |file.txt:4_NN1| |./rasp.sh:1_NN1|)
+(|ncmod| _ |file.txt:4_NN1| |-m:2_ZZ1|)
+(|ncmod| _ |file.txt:4_NN1| |<:3_&FO|)
+
+
+(|echo:1_VV0| |This:3_DD1| |be+s:4_VBZ| |a:5_AT1| |test.:6_NN1| |\|:8_CC| |./rasp.sh:9_NN1| |-p'-os:10_NN1| |-u:11_PPY|) 0 ; ()
+gr-list: 1
+(|xcomp| _ |be+s:4_VBZ| |-u:11_PPY|)
+(|ncsubj| |be+s:4_VBZ| |\|:8_CC| _)
+(|det| |\|:8_CC| |a:5_AT1|)
+(|conj| |\|:8_CC| |test.:6_NN1|)
+(|conj| |\|:8_CC| |-p'-os:10_NN1|)
+(|ncmod| _ |-p'-os:10_NN1| |./rasp.sh:9_NN1|)
+(|dobj| |echo:1_VV0| |This:3_DD1|)
+
+
+(|Additional:1_JJ| |way+s:2_NN2| |of:3_IO| |modify+ing:4_VVG| |the:5_AT| |behaviour:6_NN1| |of:7_IO| |the:8_AT| |system:9_NN1| |be+:10_VBR| |via:11_II| |the:12_AT| |shell:13_NN1| |environment:14_NN1| |variable+s:15_NN2|) 1 ; (-19.546)
+gr-list: 1
+(|ncsubj| |be+:10_VBR| |way+s:2_NN2| _)
+(|pcomp| |be+:10_VBR| |via:11_II|)
+(|dobj| |via:11_II| |variable+s:15_NN2|)
+(|det| |variable+s:15_NN2| |the:12_AT|)
+(|ncmod| _ |variable+s:15_NN2| |shell:13_NN1|)
+(|ncmod| _ |variable+s:15_NN2| |environment:14_NN1|)
+(|ncmod| _ |way+s:2_NN2| |Additional:1_JJ|)
+(|xcomp| _ |way+s:2_NN2| |of:3_IO|)
+(|xcomp| _ |of:3_IO| |modify+ing:4_VVG|)
+(|dobj| |modify+ing:4_VVG| |behaviour:6_NN1|)
+(|det| |behaviour:6_NN1| |the:5_AT|)
+(|iobj| |behaviour:6_NN1| |of:7_IO|)
+(|dobj| |of:7_IO| |system:9_NN1|)
+(|det| |system:9_NN1| |the:8_AT|)
+
+
+(|rasp_sentence:1_JB| |rasp_tokenise:2_JJ| |rasp_tag:3_NN1| |rasp_morph:4_VVN| |rasp_parse:5_JB|) 1 ; (-8.743)
+gr-list: 1
+(|ncsubj| |rasp_morph:4_VVN| |rasp_tag:3_NN1| _)
+(|xcomp| _ |rasp_morph:4_VVN| |rasp_parse:5_JB|)
+(|ncmod| _ |rasp_tag:3_NN1| |rasp_sentence:1_JB|)
+(|ncmod| _ |rasp_tag:3_NN1| |rasp_tokenise:2_JJ|)
+
+

@@ -1,0 +1,24 @@
+(|Run+ing:1_VVG| |be+s:2_VBZ| |good:3_JJ| |for:4_IF| |health:5_NN1| |.:6_.|) 1 ; (-14.806)
+gr-list: 1
+(|xsubj| |be+s:2_VBZ| |Run+ing:1_VVG| _)
+(|xcomp| _ |be+s:2_VBZ| |good:3_JJ|)
+(|iobj| |good:3_JJ| |for:4_IF|)
+(|dobj| |for:4_IF| |health:5_NN1|)
+
+
+(|A:1_AT1| |fat:2_JJ| |ugly:3_JJ| |boy:4_NN1| |have+ed:5_VHD| |to:6_TO| |eat:7_VV0| |too:8_RG| |many:9_DA2| |fruit+s:10_NN2| |to:11_TO| |lose:12_VV0| |his:13_APP$| |weight:14_NN1| |.:15_.|) 1 ; (-17.813)
+gr-list: 1
+(|ncsubj| |eat:7_VV0| |boy:4_NN1| _)
+(|ncmod| |prt| |have+ed:5_VHD| |to|)
+(|aux| |eat:7_VV0| |have+ed:5_VHD|)
+(|dobj| |eat:7_VV0| |fruit+s:10_NN2|)
+(|ncmod| _ |fruit+s:10_NN2| |many:9_DA2|)
+(|xmod| |to| |fruit+s:10_NN2| |lose:12_VV0|)
+(|dobj| |lose:12_VV0| |weight:14_NN1|)
+(|det| |weight:14_NN1| |his:13_APP$|)
+(|ncmod| _ |many:9_DA2| |too:8_RG|)
+(|det| |boy:4_NN1| |A:1_AT1|)
+(|ncmod| _ |boy:4_NN1| |fat:2_JJ|)
+(|ncmod| _ |boy:4_NN1| |ugly:3_JJ|)
+
+

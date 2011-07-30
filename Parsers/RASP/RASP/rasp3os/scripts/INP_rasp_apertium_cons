@@ -1,0 +1,6 @@
+
+
+(ROOT (S (PPIS1 I) (VP ((VBM am)) (RL here))) (. .))
+(ROOT (S (NP1 Kim) (VP ((VHZ ^have<vblex><pri><p3><sg>$)) (VP ((VBN ^be<vbser><pp>$)) ((VVG ^sleep<vblex><ger>$))))) (. .))
+(ROOT (S (NP (NP1 Jhon) (NP1 Smith))  (VP ((VHZ ^have<vblex><pri><p3><sg>$)) (VP ((VBN ^be<vbser><pp>$)) ((VVG ^sleep<vblex><ger>$))))) (. .))
+(ROOT (S (NP (DD Some) (NN2 ^man<n><pl>$))) ((VVD ^come<vblex><past>$))) (. .))

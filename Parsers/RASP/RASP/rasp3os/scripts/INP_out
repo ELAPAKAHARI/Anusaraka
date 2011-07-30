@@ -1,0 +1,28 @@
+(I_PPIS1 |see+ed_VVD| |the_AT| |man_NN1| |in_II| |the_AT| |park_NNL1| ._.) 3 ; (-8.080 -8.822 -10.502)
+tree-rasp: 1
+(|T/txt-sc1/-+|
+ (|S/np_vp| I_PPIS1
+  (|V1/v_np| |see+ed_VVD|
+   (|NP/det_n1| |the_AT|
+    (|N1/n1_pp1| (|N1/n| |man_NN1|)
+     (|PP/p1|
+      (|P1/p_np-pl| |in_II|
+       (|NP/det_n1| |the_AT| (|N1/n-pl| |park_NNL1|))))))))
+ (|End-punct3/-| ._.))
+tree-rasp: 2
+(|T/txt-sc1/-+|
+ (|S/np_vp| I_PPIS1
+  (|V1/v_np_pp| |see+ed_VVD| (|NP/det_n1| |the_AT| (|N1/n| |man_NN1|))
+   (|PP/p1|
+    (|P1/p_np-pl| |in_II| (|NP/det_n1| |the_AT| (|N1/n-pl| |park_NNL1|))))))
+ (|End-punct3/-| ._.))
+tree-rasp: 3
+(|T/txt-sc1/-+|
+ (|S/np_vp| I_PPIS1
+  (|V1/vp_pp|
+   (|V1/v_np| |see+ed_VVD| (|NP/det_n1| |the_AT| (|N1/n| |man_NN1|)))
+   (|PP/p1|
+    (|P1/p_np-pl| |in_II| (|NP/det_n1| |the_AT| (|N1/n-pl| |park_NNL1|))))))
+ (|End-punct3/-| ._.))
+
+

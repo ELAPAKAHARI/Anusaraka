@@ -1,0 +1,8 @@
+(|Run+ing:1_VVG| |be+s:2_VBZ| |good:3_JJ| |for:4_IF| |health:5_NN1| |.:6_.|) 1 ; (-14.806)
+gr-list: 1
+(|xsubj| |be+s:2_VBZ| |Run+ing:1_VVG| _)
+(|xcomp| _ |be+s:2_VBZ| |good:3_JJ|)
+(|iobj| |good:3_JJ| |for:4_IF|)
+(|dobj| |for:4_IF| |health:5_NN1|)
+
+

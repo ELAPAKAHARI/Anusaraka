@@ -1,0 +1,12 @@
+;~~~~~~~~~~
+(rel_name-parserids	ncsubj	7	4)
+(rel_name-parserids	aux	7	5)
+(rel_name-parserids	dobj	7	10)
+(rel_name-parserids	ncmod	10	9)
+(rel_name-parserids	xmod	10	12)
+(rel_name-parserids	dobj	12	14)
+(rel_name-parserids	det	14	13)
+(rel_name-parserids	ncmod	9	8)
+(rel_name-parserids	det	4	1)
+(rel_name-parserids	ncmod	4	2)
+(rel_name-parserids	ncmod	4	3)
