@@ -29,7 +29,7 @@
 # ./rasp.sh -m < README > README.parses
 #
 
-RASP=/home/mahalaxmi/RASP/rasp3os
+RASP=$HOME_anu_test/Parsers/RASP/rasp3os
 
 arch=`uname -m | sed "s/i.86/ix86/"`_`uname -s | tr "[:upper:]" "[:lower:]"`
 if [ $arch = ix86_darwin ] && [ `sysctl -n hw.optional.x86_64` = 1 ]; then
