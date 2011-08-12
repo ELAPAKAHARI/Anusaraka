@@ -38,6 +38,7 @@ FILE *fp,*fp1,*fp2;
                                       str[len]='\0';
                                       if(strcmp(str,"?")==0)  strcpy(str,"question_mark");
                                       if(strcmp(str,";")==0)  strcpy(str,"semicolon"); 
+                                      if(strcmp(str,"\"")==0) strcpy(str,"\"\"\"");
                                       fprintf(fp1,"(id-sd_cat P%d    %s)\n",count++,str);
                                       fprintf(fp,"(parser_numeric_id-word      %d      %s)\n",count1++,str);
                                       fprintf(fp2,"(parserid-word      P%d      %s)\n",count2++,str);}
