@@ -1,7 +1,0 @@
-(|Ashoka:1_NP1| |rule+ed:2_VVD| |a:3_AT1| |large:4_JJ| |empire:5_NN1| |.:6_.|) 1 ; (-6.039)
-gr-list: 1
-(|ncsubj| |rule+ed:2_VVD| |Ashoka:1_NP1| _)
-(|dobj| |rule+ed:2_VVD| |empire:5_NN1|)
-(|det| |empire:5_NN1| |a:3_AT1|)
-(|ncmod| _ |empire:5_NN1| |large:4_JJ|)
-

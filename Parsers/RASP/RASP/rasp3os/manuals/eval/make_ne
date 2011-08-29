@@ -1,8 +1,0 @@
-latex eval-report
-bibtex eval-report
-latex eval-report
-bibtex eval-report
-latex eval-report
-dvips eval-report
-gv eval-report.ps &
-ps2pdf eval-report.ps

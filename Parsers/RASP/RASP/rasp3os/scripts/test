@@ -1,8 +1,0 @@
-(ROOT (S (NP (PRP He))  (VP (VBZ has) (VP (VBN been) (RB frequently) (VP (VBG coming))))) (. .))
-(ROOT (S (PRP She) (VP (VBZ is) (VBG sleeping))) (. .))
-(ROOT (S (NN Rama) (VP (VBZ is) (NP (DT a) (JJ good) (NNP boy)))) (. .))
-(ROOT (S (DT This)  (VP (VBZ is)   (NP (DT a) (NNP sample) (NNP sentence) (PP (IN for) (NN Anusaraka))))) (. .))
-(ROOT (S (PPIS1 I) (VP (MD will) (VP (VB give) (VP (RP up) (VBG smoking))))) (. .))
-(ROOT (S (PPIS1 I) (VP (VBP am) (VP (VBG eating) (NNS fruits)))) (. .))
-(ROOT (S (PRP They) (VP (MD may) (VP (VB have) (VP (VBN eaten) (NNS fruits))))) (. .))
-
