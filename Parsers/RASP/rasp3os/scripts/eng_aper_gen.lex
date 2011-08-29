@@ -1,4 +1,5 @@
 %{
+#include<string.h>
 int len=0,i=0;
 char str[100],str1[100];
 %}
