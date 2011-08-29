@@ -1,5 +1,6 @@
 %{
 #include <stdio.h>
+#include<string.h>
 char str[1000],str1[1000];
 int count=1,len=0,count1=0,count2=0;
 FILE *fp,*fp1,*fp2;

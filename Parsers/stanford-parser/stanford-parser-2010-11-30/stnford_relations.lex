@@ -1,4 +1,5 @@
 %{
+#include<string.h>
 char str[1000],str1[1000],str2[1000],*s1,*s2, *s3, *s4, str3[100];
 int len,len1,len2;
 FILE *fp;
