@@ -6,7 +6,7 @@
 
   int   my_level=0,my_token_count=0,found=0,my_index[100],j=0,index1=1;
   int   my_opn_parn_loc[100];
-  char  my_temp[100][100000],str1[100],str2[10000],str3[10000],str4[10000],token[10],my_constituents[100][100000],node_level[100][100000];
+  char  my_temp[100][100000],str1[100],str2[10000],str3[10000],str4[10000],token[1000],my_constituents[100][100000],node_level[100][100000];
   char buffer[20];
    int count=0,count1=0;
 
