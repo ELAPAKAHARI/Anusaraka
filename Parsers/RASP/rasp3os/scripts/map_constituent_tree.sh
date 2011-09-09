@@ -1,6 +1,6 @@
  
  rasp_morph=cat ./rasp.sh -p'-ou -u ' < $1/tmp/$2_tmp/$3 > $1/tmp/$2_tmp/$3_rasp_output
- sed -n -e "H;\${g;s/\nupenn: 1/upenn: 1/g;p}" < $1/tmp/$2_tmp/$3_rasp_output | sed 's/.*upenn: 1$//g' |sed -n -e "H;\${g;s/\n//g;p}" |sed -n -e "H;\${g;s/(TOP/\n(ROOT/g;p}" |sed -n "s/^$//;t;p;" | sed 's/[ ]*(/ (/g' | sed 's/^ (/(/g' | sed 's/^(NP\(.*\))$/(ROOT (NP\1))/g' | sed 's/(, ,)/(P_COMMA COMMA)/g' | sed 's/(\. \.)/(P_DOT DOT)/g' | sed 's/(? ?)/(P_QES QUESTION_MARK)/g' > $1/tmp/$2_tmp/$3_rasp_cons_tmp
+ sed -n -e "H;\${g;s/\nupenn: 1/upenn: 1/g;p}" < $1/tmp/$2_tmp/$3_rasp_output | sed 's/.*upenn: 1$//g' |sed -n -e "H;\${g;s/\n//g;p}" |sed -n -e "H;\${g;s/(TOP/\n(ROOT/g;p}" |sed -n "s/^$//;t;p;" | sed 's/[ ]*(/ (/g' | sed 's/^ (/(/g' | sed 's/^(NP\(.*\))$/(ROOT (NP\1))/g' | sed 's/(, ,)/(P_COM COMMA)/g' | sed 's/(\. \.)/(P_DOT DOT)/g' | sed 's/(? ?)/(P_QES QUESTION_MARK)/g' > $1/tmp/$2_tmp/$3_rasp_cons_tmp
  #./eng_aper_gen.out < $1/tmp/$2_tmp/$3_rasp_cons_tmp > $1/tmp/$2_tmp/$3_rasp_aper_cons_analysis
  
  cd $1/tmp/$2_tmp
@@ -14,7 +14,7 @@
  $HOME_anu_test/Parsers/RASP/rasp3os/scripts/rasp_constituency_parse $1/tmp/$2_tmp/$line/rasp_constituents_info.dat $1/tmp/$2_tmp/$line/rasp_node_category_info.dat < $1/tmp/$2_tmp/$line/rasp_constituents
  myclips -f $HOME_anu_test/Anu_clp_files/add_labels.clp >  $1.error
  myclips -f $HOME_anu_test/Anu_clp_files/get_rasp_constituency_tree.clp >  $1.error
- sed  's/LB /(/g' $1/tmp/$2_tmp/$line/constituency_tree_tmp.dat |sed 's/RB)$/)/g' |sed 's/ RB/)/g' | sed 's/(Cons-tree //g' |sed 's/\((\)\([A-Z$0-9_]*\)\([-]\)\([0-9]*\)/\1\2/g' | sed 's/(P_COMMA COMMA)/(, ,)/g' | sed 's/(P_DOT DOT)/(. .)/g' | sed 's/(P_QES QUESTION_MARK)/(? ?)/g' > $1/tmp/$2_tmp/$line/constituency_tree.dat
+ sed  's/LB /(/g' $1/tmp/$2_tmp/$line/constituency_tree_tmp.dat |sed 's/RB)$/)/g' |sed 's/ RB/)/g' | sed 's/(Cons-tree //g' |sed 's/\((\)\([A-Z$0-9_]*\)\([-]\)\([0-9]*\)/\1\2/g' | sed 's/(P_COM COMMA)/(, ,)/g' | sed 's/(P_DOT DOT)/(. .)/g' | sed 's/(P_QES QUESTION_MARK)/(? ?)/g' > $1/tmp/$2_tmp/$line/constituency_tree.dat
  cat $1/tmp/$2_tmp/$line/constituency_tree.dat >>$1/tmp/$2_tmp/$3_rasp_mapped_cons
 # echo ";~~~~~~~~~~" >>$1/tmp/$2_tmp/$3_rasp_mapped_cons
  done < $1/tmp/$2_tmp/dir_names.txt
