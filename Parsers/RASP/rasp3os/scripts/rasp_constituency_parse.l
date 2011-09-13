@@ -1,5 +1,6 @@
 %{
 #include <stdio.h>
+#include <string.h>
 #define YYSTYPE char*
 #include "y.tab.h"
 extern YYSTYPE yylval; 
@@ -220,7 +221,7 @@ PPIO1                 yylval=malloc(yyleng+1);strncpy(yylval,yytext,yyleng);*(yy
 
 
                         /* For handling punctuations */
-P_COMMA                 yylval=malloc(yyleng+1);strncpy(yylval,yytext,yyleng);*(yylval+yyleng)='\0'; return TOK_CATEGORY;
+P_COM                 yylval=malloc(yyleng+1);strncpy(yylval,yytext,yyleng);*(yylval+yyleng)='\0'; return TOK_CATEGORY;
 P_QES                 yylval=malloc(yyleng+1);strncpy(yylval,yytext,yyleng);*(yylval+yyleng)='\0'; return TOK_CATEGORY;
 P_DOT                 yylval=malloc(yyleng+1);strncpy(yylval,yytext,yyleng);*(yylval+yyleng)='\0'; return TOK_CATEGORY;
 [A-Za-z'0-9][+_A-Za-z0-9-]*    yylval=malloc(yyleng+1);strncpy(yylval,yytext,yyleng);*(yylval+yyleng)='\0'; return STRING;
