@@ -24,15 +24,13 @@ FILE *fp,*fp1,*fp2;
                                         yytext=yytext+len+1;
                                         len=strcspn(yytext,")");
                                         strncpy(str,yytext,len);
-                                        if(str[len-1]=='.') 
-                                        str[len-1]='\0';//Handling [St. Francis] ;Added by Maha Laxmi 25-10-11
-                                        else str[len]='\0';
+                                        str[len]='\0';
                                         fprintf(fp,"(parser_numeric_id-word      %d      %s)\n",count1++,str);
                                         fprintf(fp2,"(parserid-word      P%d      %s)\n",count2++,str);
                                         }
 
 
-[(][.,?!"':`]*[ ][.,?!;"':`]*[)]        { count1=count; count2=count; 
+[(][.,?!"':`]*[ ][.,?!;"':`-]*[)]        { count1=count; count2=count; 
                                       len=strcspn(yytext," ");
                                       strncpy(str,yytext,len);
                                       yytext=yytext+len+1;
