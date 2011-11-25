@@ -23,7 +23,7 @@ for i in f:
              fp3.write(";~~~~~~~~~~\n")
         if  count == 3 and i == "\n":
              fp4.write(";~~~~~~~~~~\n")
-        if count == 1 and (i.startswith("pcomp(") or i.startswith("prep(") or i.startswith("pobj(") or i.startswith("mwe(") ) and i != '\n':
+        if count == 1 and (i.startswith("pcomp(") or i.startswith("prep(") or i.startswith("pobj(") or i.startswith("mwe(") or i.startswith("prt(") ) and i != '\n':
 #        if count == 1 and  i != "\n":
              fp2.write(i)
         if count == 2 and  i != "\n":
