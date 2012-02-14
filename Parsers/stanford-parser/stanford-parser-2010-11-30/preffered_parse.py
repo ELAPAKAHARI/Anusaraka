@@ -5,6 +5,6 @@ var = "# Parse "+sys.argv[2]+" with score "
 for i in xrange(len(f)):
     if var in f[i]:
         print f[i+1],
-        sys.exit()
+#        sys.exit()
 fp1.close()
 
