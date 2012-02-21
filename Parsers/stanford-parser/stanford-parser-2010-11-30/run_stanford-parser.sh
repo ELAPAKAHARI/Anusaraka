@@ -8,6 +8,6 @@ python split-relations.py $2/tmp/$1_tmp/sd-relations_tmp.txt  $2/tmp/$1_tmp/sd-b
 ./stnford_relations.out $2/tmp/$1_tmp/sd-tree_relation.txt rel_name-sids < $2/tmp/$1_tmp/sd-tree_relations_tmp.txt
 ./stnford_relations.out $2/tmp/$1_tmp/sd-basic_relation.txt basic_rel_name-sids < $2/tmp/$1_tmp/sd-basic_relations_tmp.txt
 ./stnford_relations.out $2/tmp/$1_tmp/sd-propagation_relations.txt propogation_rel_name-sids < $2/tmp/$1_tmp/sd-propagation_relations_tmp.txt
-./get_word_cat.out < $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn $2/tmp/$1_tmp/sd_numeric_word.txt $2/tmp/$1_tmp/sd_category.txt $2/tmp/$1_tmp/sd_word.txt
+./get_word_cat.out < $2/tmp/$1_tmp/one_sentence_per_line.txt.std.cons $2/tmp/$1_tmp/sd_numeric_word.txt $2/tmp/$1_tmp/sd_category.txt $2/tmp/$1_tmp/sd_word.txt
 
  sed -n  "H;\${g;s/\n\n------------- basic dependencies ---------------/\n;~~~~~~~~~~\n------------- basic dependencies ---------------\n/g;p}" < $2/tmp/$1_tmp/sd-relations_tmp.txt > $2/tmp/$1_tmp/sd-original-relations.txt
