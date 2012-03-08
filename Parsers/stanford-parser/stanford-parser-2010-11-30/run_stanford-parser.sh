@@ -1,6 +1,7 @@
 ./constituency_to_dependency.sh $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn 1>$2/tmp/$1_tmp/sd-relations_tmp.txt 
 #./tsurgeon.sh -treeFile $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn tsurgeon-grammar > $2/tmp/$1_tmp/one_sentence_per_line.txt.std.tsurgeon
 #sh run_lexicalize.sh $2/tmp/$1_tmp/one_sentence_per_line.txt.std.tsurgeon 1>$2/tmp/$1_tmp/sd-lexicalize_info_tmp.txt 2>/dev/null
+./mapping-punctuations.out  < $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn > $2/tmp/$1_tmp/one_sentence_per_line.txt.std.cons
 sh run_lexicalize.sh $2/tmp/$1_tmp/one_sentence_per_line.txt.std.cons 1>$2/tmp/$1_tmp/sd-lexicalize_info_tmp.txt 2>/dev/null
 #sh run_lexicalize.sh $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn 1>$2/tmp/$1_tmp/sd-lexicalize_info_tmp.txt 2>/dev/null
 sed -n -e "H;\${g;s/\n\n/\n;~~~~~~~~~~\n/g;p}" <$2/tmp/$1_tmp/sd-lexicalize_info_tmp.txt > $2/tmp/$1_tmp/sd-lexicalize_info.txt
