@@ -33,9 +33,9 @@ FILE *fp,*fp1,*fp2;
 
 main(int argc, char* argv[])
 {
-fp=fopen(argv[1],"a");
-fp1=fopen(argv[2],"a");
-fp2=fopen(argv[3],"a");
+fp=fopen(argv[1],"w");
+fp1=fopen(argv[2],"w");
+fp2=fopen(argv[3],"w");
 yylex();
 fclose(fp);
 }
