@@ -2,6 +2,11 @@
 Mapping punctuation with a standard notation.
 Removed sed and handled it in this flex programme. 
 *********************/
+%{
+char *s, str[1000];
+int len;
+%}
+
 %%
 
 \(,[ ],\)		{	printf("(P_COM PUNCT-Comma)");	}
@@ -34,6 +39,21 @@ Removed sed and handled it in this flex programme.
 
 \(\.[ ]!\)		{	printf("(P_EXM PUNCT-Exclamation)");	}
 
-\($[ ]$\)		{	printf("(P_DOL SYM-Dollar)");	}
+\($[ ]$\)		{	printf("(S_DOL SYM-Dollar)");	}
+
+\([A-Z]*[ ]=\)		{	s=strchr(yytext, '(')+1;
+				len=strcspn(s, " ");
+				strncpy(str, s, len); str[len]='\0'; 
+				printf("(%s SYM-EqualTo)", str);	}
+
+\([A-Z]*[ ]\+\)		{	s=strchr(yytext, '(')+1;
+                                len=strcspn(s, " ");
+                                strncpy(str, s, len); str[len]='\0';
+				printf("(%s SYM-PLUS)", str);		}
+
+\([A-Z]*[ ]%\)		{	s=strchr(yytext, '(')+1;
+                                len=strcspn(s, " ");
+                                strncpy(str, s, len); str[len]='\0';
+				printf("(%s SYM-PERC)", str);		}
 
 %%
