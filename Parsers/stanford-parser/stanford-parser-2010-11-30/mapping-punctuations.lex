@@ -3,7 +3,7 @@ Mapping punctuation with a standard notation.
 Removed sed and handled it in this flex programme. 
 *********************/
 %{
-char *s, str[1000];
+char *s, *s1, str[1000];
 int len;
 %}
 
@@ -41,19 +41,27 @@ int len;
 
 \($[ ]$\)		{	printf("(S_DOL SYM-Dollar)");	}
 
-\([A-Z]*[ ]=\)		{	s=strchr(yytext, '(')+1;
-				len=strcspn(s, " ");
-				strncpy(str, s, len); str[len]='\0'; 
-				printf("(%s SYM-EqualTo)", str);	}
+\([A-Z]*[ ]=[A-Za-z0-9.]*\)	{	s=strchr(yytext, '(')+1;
+					len=strcspn(s, " ");
+					strncpy(str, s, len); str[len]='\0'; 
+					s1=strchr(s, '=')+1;
+					printf("(%s SYM-EqualTo%s", str, s1);	}
 
-\([A-Z]*[ ]\+\)		{	s=strchr(yytext, '(')+1;
-                                len=strcspn(s, " ");
-                                strncpy(str, s, len); str[len]='\0';
-				printf("(%s SYM-PLUS)", str);		}
+\([A-Z]*[ ]\+[A-Za-z0-9.]*\)	{	s=strchr(yytext, '(')+1;
+               		                len=strcspn(s, " ");
+	                                strncpy(str, s, len); str[len]='\0';
+					s1=strchr(s, '+')+1;
+					printf("(%s SYM-Plus%s", str, s1);	}
 
-\([A-Z]*[ ]%\)		{	s=strchr(yytext, '(')+1;
-                                len=strcspn(s, " ");
-                                strncpy(str, s, len); str[len]='\0';
-				printf("(%s SYM-PERC)", str);		}
+\([A-Z]*[ ]%[A-Za-z0-9.]*\)	{	s=strchr(yytext, '(')+1;
+        		                len=strcspn(s, " ");
+                        	        strncpy(str, s, len); str[len]='\0';
+					printf("(%s SYM-Percent%s", str, s1);	}
+
+\([A-Z]*[ ]β[A-Za-z0-9.]*\)     {       s=strchr(yytext, '(')+1;
+                                	len=strcspn(s, " ");
+	                                strncpy(str, s, len); str[len]='\0';
+					s1=strchr(s, 'β')+1;
+        	                        printf("(%s SYM-Beta%s", str, s1);	}
 
 %%
