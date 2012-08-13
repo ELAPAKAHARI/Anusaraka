@@ -1,3 +1,4 @@
+./handling_abbrevations.out  < $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn_tmp1 > $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn
 ./constituency_to_dependency.sh $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn >$2/tmp/$1_tmp/sd-relations_tmp.txt 
 #./tsurgeon.sh -treeFile $2/tmp/$1_tmp/one_sentence_per_line.txt.std.penn tsurgeon-grammar > $2/tmp/$1_tmp/one_sentence_per_line.txt.std.tsurgeon
 #sh run_lexicalize.sh $2/tmp/$1_tmp/one_sentence_per_line.txt.std.tsurgeon 1>$2/tmp/$1_tmp/sd-lexicalize_info_tmp.txt 2>/dev/null
