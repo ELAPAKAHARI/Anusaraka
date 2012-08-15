@@ -27,7 +27,7 @@ int len;
 
 \(:[ ]-\)		{	printf("(P_DSH PUNCT-Hyphen)");	}
 
-\(:[ ]...\)             {       printf("(P_CLN PUNCT-DotDotDot)"); }
+\(:[ ][.][.][.]\)       {       printf("(P_CLN PUNCT-DotDotDot)"); }
 
 \(''[ ]'\)		{	printf("(P_SQT PUNCT-SingleQuote)");	}
 
