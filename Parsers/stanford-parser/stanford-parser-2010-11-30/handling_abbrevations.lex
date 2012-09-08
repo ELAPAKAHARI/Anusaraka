@@ -12,11 +12,11 @@ char str[1000];
 
 %%
 
-([Ff]igs?|[Ee]qs?|[Vv]izs?|[Cc]h|abbrv)\)[ ]\([.][ ][.]\)	{	len=strcspn(yytext, ")");
+([Ff]igs?|[Ee]qs?|[Vv]izs?|[Cc]h|abbrv|USA)\)[ ]\([.][ ][.]\)	{	len=strcspn(yytext, ")");
 									strncpy(str, yytext, len);
 									str[len]='\0';
 									
 									printf("%s.)", str);
-								}
+								 }
 
 %%
