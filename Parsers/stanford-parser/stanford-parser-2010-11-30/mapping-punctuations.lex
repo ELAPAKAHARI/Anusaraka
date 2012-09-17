@@ -59,12 +59,12 @@ int len;
         		                len=strcspn(s, " ");
                         	        strncpy(str, s, len); str[len]='\0';
 					s1=strchr(s, '%')+1;
-					printf("(%s SYM-Percent%s", str, s1);	}
+					printf("(%s SYM-Percent%s", str, s1); /*	}
 
 \([A-Z]*[ ]β[A-Za-z0-9.]*\)     {       s=strchr(yytext, '(')+1;
                                 	len=strcspn(s, " ");
 	                                strncpy(str, s, len); str[len]='\0';
 					s1=strchr(s, 'β')+1;
-        	                        printf("(%s SYM-Beta%s", str, s1);	}
+        	                        printf("(%s SYM-Beta%s", str, s1);	*/	}
 
 %%
