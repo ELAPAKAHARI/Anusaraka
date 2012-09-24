@@ -33638,3 +33638,5 @@ bAweM_banxa_kIjiye	stop_talking
 AhAra_puswaka	diet_book
 pahale_kI_Waraha	as_before
 harA_BarA	lush_green
+sarala_reKA	straight_line 
+paWa_lambAI	path_length
