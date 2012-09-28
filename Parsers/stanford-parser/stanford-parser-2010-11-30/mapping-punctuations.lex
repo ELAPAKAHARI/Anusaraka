@@ -43,7 +43,7 @@ int len;
 
 \($[ ]$\)		{	printf("(S_DOL SYM-Dollar)");	}
 
-\(:[ ][-][-]\)		{	printf("(P_CLN PUNCT-HyphenHyphen)");	}
+\(:[ ][-][-]\)		{	printf("(P_DDSH PUNCT-HyphenHyphen)");	}
 
 \(#[ ]#\)		{	printf("(S_SHARP SYM-Sharp)");	}
 
