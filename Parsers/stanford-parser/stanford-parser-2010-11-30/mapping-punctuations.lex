@@ -43,6 +43,10 @@ int len;
 
 \($[ ]$\)		{	printf("(S_DOL SYM-Dollar)");	}
 
+\(:[ ][-][-]\)		{	printf("(P_CLN PUNCT-HyphenHyphen)");	}
+
+\(#[ ]#\)		{	printf("(S_SHARP SYM-Sharp)");	}
+
 \([A-Z]*[ ]=[A-Za-z0-9.]*\)	{	s=strchr(yytext, '(')+1;
 					len=strcspn(s, " ");
 					strncpy(str, s, len); str[len]='\0'; 
