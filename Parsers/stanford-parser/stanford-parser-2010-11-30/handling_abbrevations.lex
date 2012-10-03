@@ -20,7 +20,7 @@ char str[1000], *s1, *s2;
 										/*Ex: (NNP Fig) (. .) */
 									}
 
-[0-9]*\)\)[ ]\([A-Z]*[ ]nonascii[0-9]*\) {	len=strcspn(yytext, ")");
+[0-9]+\)\)[ ]\([A-Z]*[ ]nonascii[0-9]*\) {	len=strcspn(yytext, ")");
 						strncpy(str, yytext, len);
 						str[len]='\0';
 
