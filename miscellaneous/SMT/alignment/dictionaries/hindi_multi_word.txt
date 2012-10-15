@@ -33640,3 +33640,6 @@ pahale_kI_Waraha	as_before
 harA_BarA	lush_green
 sarala_reKA	straight_line 
 paWa_lambAI	path_length
+cala_pA	able_to_walk  
+hala_karane_meM_sakRama	able_to_handle 
+GarRaNa_bala	the_force_of_friction
