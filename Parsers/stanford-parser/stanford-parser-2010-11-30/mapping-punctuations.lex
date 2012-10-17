@@ -23,6 +23,8 @@ int len;
 
 \(:[ ];\)		{	printf("(P_SEM PUNCT-Semicolon)");	}
 
+\(,[ ];\)		{	printf("(P_SEM PUNCT-Semicolon)");	}
+
 \(:[ ]:\)		{	printf("(P_CLN PUNCT-Colon)");	}
 
 \(:[ ]-\)		{	printf("(P_DSH PUNCT-Hyphen)");	}
