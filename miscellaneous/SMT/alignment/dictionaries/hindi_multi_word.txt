@@ -33643,3 +33643,5 @@ paWa_lambAI	path_length
 cala_pA	able_to_walk  
 hala_karane_meM_sakRama	able_to_handle 
 GarRaNa_bala	the_force_of_friction
+anAxi_kAla_se_hI	since_time_immemorial
+isake viparIwa	at_the_other_end
