@@ -1,5 +1,5 @@
-	
-	
+	#_Structure_of_the_file:
+Hindi-meaning	#English-compound-word
 kArya_kI_saPalawA_kI_WodZI_ASA	A_fighting_chance
 muJe_nivexana_karane_ke_lie_kahA_gayA_hE	I_am_desired_to_say
 muJe_nixeSa_huA_hE	I_am_directed
@@ -9207,7 +9207,7 @@ cAlU_FaprawiBUwita_pacaba	current_scrip
 cAlU_sawra	current_session
 varwamAna_mAna	current_value
 varwamAna_viMdo	current_window
-CV	curriculum_vitae
+@CV	curriculum_vitae
 masAlA	curry_powder
 prasaMkewaka_niyaMwraNa_kuMjI	cursor_control_key
 prasaMkewaka_AleKI	cursor_graphics
@@ -20757,7 +20757,6 @@ calaciwra_kEmarA	movie_camera
 Pilma_siwarA	movie_star
 sinemA_Wiyetara_SrqMKalA	movie_theater_chain
 cala_Osawa	moving_average
-aXikAra_meM_karane_kI_kriyA	moving_in
 cala_ciwra	moving_picture
 cala_vixyAla	moving_school
 calawI_sIDZI	moving_staircase
@@ -33638,11 +33637,17 @@ bAweM_banxa_kIjiye	stop_talking
 AhAra_puswaka	diet_book
 pahale_kI_Waraha	as_before
 harA_BarA	lush_green
-sarala_reKA	straight_line 
+sarala_reKA	straight_line
 paWa_lambAI	path_length
-cala_pA	able_to_walk  
-hala_karane_meM_sakRama	able_to_handle 
+cala_pA	able_to_walk
+hala_karane_meM_sakRama	able_to_handle
 GarRaNa_bala	the_force_of_friction
 anAxi_kAla_se_hI	since_time_immemorial
 isake_viparIwa	at_the_other_end
+inameM_se_kuCa	some_of_these
+aBilamba_bala	reaction_force
+ilektroYna_puFja	electron_beam
+isa_prakAra	a_way
 nirxeSa_wanwra	frame_of_reference
+XyAna_xIjie_ki	note_that
+kaha_jAwA_hE	is_said_to_be
