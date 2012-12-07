@@ -4,6 +4,7 @@ Removed sed and handled it in this flex programme.
 *********************/
 
 %{
+#include <string.h>
 char str[1000], str1[1000], *s1, *s2;
 int len, len1;
 %}
