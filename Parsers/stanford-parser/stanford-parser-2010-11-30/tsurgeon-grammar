@@ -1,6 +1,0 @@
-NP=head < NN|NNP|NNS=name  < POS=apos
-
-relabel name NP@ 
-delete apos
-excise head head
-
