@@ -3325,7 +3325,6 @@ parora	T
 parosa	T
 parusa	T
 pasA	T
-pAsa	T
 Pasaka	T
 pasara	T
 pasarA	T
@@ -5077,3 +5076,4 @@ muda	T
 pakada	T
 roka	T
 lAiseMsa_xe	T
+xoharA	T

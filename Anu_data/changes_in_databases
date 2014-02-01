@@ -110,9 +110,13 @@
   1. Added
 	paDa		T
 	lAiseMsa_xe	T
+	xoharA		T	(Suggested by Anita ji LTRC 21-01-14)
 
   2. Modified
 	XAkela	=>	Xakela	(By Roja 18-07-13, Suggested by Chaitanya Sir) 	 
+
+  3. Removed
+	pAsa		(By Shirisha Manju 29-01-14, Suggested by Chaitanya Sir)
 
   changes in kriyA_mUla-gender.txt
   ================================
@@ -137,6 +141,8 @@
         Sarwa_lagA	f   Meena(5.4.11)
 	kE_kara 	f   Meena(2.5.11)
 	uwwara_xe	m   Suggested by Sukhada (16-09-11)      Ex: He studiously avoided answering the question.)	 
+	puRti_kara	f   		"	 (08-01-14)	 Ex: Indeed, the detection of such waves in the Orion Nebula confirmed 
+								     that new stars are still being born there. 
 
 
   changes in compound_phrase.txt  (samAsa.txt)
@@ -270,6 +276,7 @@
 	yA_jAwA_WA   (Meena(18.2.11) Ex: Ayodhya during ancient times was known as kaushaldesa.
 	ne_kI_jarUWawa_pada_sakawI_hE,f,p,a     kI_jarUWawa_pada_sakawI_hE
 	nA_kI_jZarUrawa_nahIM_hE  kI_jZarUrawa_nahIM_hE  for all cases (suggested by Sukhada 21.12.11) He need not stay here
+	yA_huA_WA	(suggested by Prachi Banasthali  21-01-14 ) Ex: He was holding the baby in his arms.
 
   Modified :
 	1. yA_huA_hE,m,s,u huA_hEM"  as  "yA_huA_hE,m,s,u huA_hUz (Suggested by sheetal(10-12-09))
@@ -416,14 +423,30 @@
 	parrot     (              "                     "    ) Ex: Mohan brought few parrots from the forest.
 	turtle     (              "                     "    )
 	donkey     (              "                     "    )
-	doctor	   (Suggested by Anita ji LTRC	   14-11-13  ) Ex: Doctors are trained to recognize the symptoms of different diseases.
+	doctor	   (Suggested by Anita ji LTRC	    14-11-13 ) Ex: Doctors are trained to recognize the symptoms of different diseases.
+	pupil      (Suggested by Pramila Banasthali 25-11-13 ) Ex: Pupils are encouraged to be creative.
+        we         (               "                  "      ) Ex: We were encouraged to learn foreign languages at school.
+        shopper    (               "                  "      ) Ex: Music and lighting are used to encourage shoppers to buy more.
 	thief	   (Suggested by Pramila Banasthali 16-08-13 ) Ex: The thief was driven back by the watch dogs.  
 	horse      (Suggested by Preeti ji LTRC	    03-12-13 ) Ex: The injured horse had to be destroyed.
 	demon	   (		  "			"    ) Ex: Lakshmi lures and destroys evil demons . 
 	army	   (              "	                "    ) Ex: Armies had been crippled but not destroyed .   
 	bird	   (Suggested by Pramila Banasthali 12-12-13 ) Ex: The bird settled on a very small branch.
-	husband	   (Suggested by Anita ji LTRC     12-12-13  ) Ex: I sent my husband to represent me at the funeral.
-	king	   (Suggested by Prachi Banasthali 04-01-14  ) Ex: I must take them to the King, the farmer said firmly.		 
+	husband	   (Suggested by Anita ji LTRC      12-12-13 ) Ex: I sent my husband to represent me at the funeral.
+	king	   (Suggested by Prachi Banasthali  04-01-14 ) Ex: I must take them to the King, the farmer said firmly.
+	student	   (Suggested by Garima	"	    11-01-14 ) Ex: A record similar to the one outlined above may also have been achieved by 									  many other students.
+	professor  (By Roja                         13-01-14 ) Ex: The professor decided to write a book.
+        lecturer   (       "                          "      ) Ex: The lecturer decided to write a book.  (Note: replaced above example)
+	lady	   From human.txt
+	his	   (Suggested by Pramila Banasthali 07-01-14 ) Ex: His descent into crime was rapid.
+	clerk	   (		By Manju	    07-01-14 ) Ex: He dictated the letter to his clerk.  
+	minister   (Suggested by Jagriti  "         21-01-14 ) Ex: He is the most shady minister in the state.
+	terrorist  (Suggested by Krithiki LTRC 	    22-01-14 ) Ex: The police fired tear gas to flush out the terrorists.       
+	robber     (		"	"		"    )
+	prowler    (		"	"		"    ) Ex: He flushed out the prowler. 
+	bandit     (		"	"		"    ) Ex: The police flushed out the bandits from their place of hiding.
+	animal	   (		"	"	    29-01-14 ) Ex: The hunter moved in to finish the animal off.
+
 
 
   Changes in total-paxasUwra.txt 
@@ -495,6 +518,7 @@ Modified :
   16.	namUnA		regular__adj-noun	as	loh/A__n		(By Roja Suggested by Chaitanya Sir 22-04-13)
   17.	judavA		ladak/A__n		as	rAjA/__n		(	"	"	     17-07-13)
   18.   golA		gudiy/A__n		as	loh/A__n		(	" Suggested by Sukhada 16-10-13)
+  19.   bAzha		Gar/a__n		as	rAw/a__n		(	"	"	       20-01-14)
 
  Removed : 
 	  1.  Removed the following parsarg paradigms and its related patterns
@@ -586,6 +610,10 @@ Modified :
 	carve		liv/e__vblex		(     "	     "	  )
 	grandpa		house__n		(     "      "	  )
 	sugarcane	house__n		(     "   06-01-14)
+	labour		accept__vblex		(     "   09-01-14)
+	labor		accept__vblex		(     "   09-01-14)
+	tail		accept__vblex		(     "   18-01-14)
+	bore		liv/e__vblex		(     "      "    )
 
 
 Modified paradigm:
@@ -622,6 +650,7 @@ Miscellaneous:
 	1. In p/erson__n  paradigm: 	person, people	as	person		(By Roja	02-04-13)
 	2. In riteri/on__n paradigm to generate 'criterias' word.		(By Roja	14-03-13)
 	3. ([0-9]+)?[04-9]+th 	as	([0-9]+)?[0-9]+th			(By Roja	17-07-13)
+	4. In t/each__vblex, modified 'teachs' to 'teaches'			(By Roja	20-01-14)
 
 Removed:
 	repetition entry <e lm="April"><i>April</i><par n="house__n"/></e>	(By Roja	27-07-13)
@@ -693,6 +722,7 @@ Removed:
 	2. used_to_be_en	yA_jAwA_WA-0-0  (Suggested by Rajini 17-01-12) Ex: She used to be organized.
 	3. needs_to_be_en	yA_jAnA_hE-0-0              "                  Ex: That's the way business used to be done and that is the
 										    way business needs to be done.
+	4. would_have_been_ing	0_rahA_howA-0-0 (Suggested by Dipti Mam 18-01-14) 
 
  Removed :
  -------
@@ -821,15 +851,15 @@ Removed:
 	92. illustration_noun	vyaKyA			as	vyAKyA		(	" Prachi Banasthali 14-10-13 )
 	93. illustrate_verb	vyaKyA_kara		as	vyAKyA_kara	(By Roja 		    14-10-13 )
 	94. photon_noun		Potana			as	Potona		(Suggested by Sonam Banasthali	29-10-13)
-	95. precisely_adverb	Tika-Tika		as	TIka-vahI	(	"		"	"    )
-	96. intellect_noun	buxxI			as	buxXI		(Suggested by Chaitanya Sir 20-11-13)
-	97. loudly_adverb	jEYora_se		as	jZora_se	(Suggested by Nandini ji LTRC 27-11-13)
-	98. drastic_adjective	uxaNda			as	uxxaNda		(Suggested by Chaitanya Sir 26-11-13  )
-	99. passage_noun	yAtrAXikAra		as	yAwrAXikAra	(Suggested by Chaitanya Sir 05-12-13)
-	100.passage_noun	yAtrA			as	yAwrA		(	"		"	    )
-	101.passage_noun	gamana_svAtanwrya	as	gamana_svAwanwrya(	"		"	    )
-	102.electromagnetism_noun	vixyuw-cumbakawva	as	vixyuwa_cumbakawva	(suggested by Sukhada 04-12-13)
-
+	95. precisely_adverb	Tika-Tika		as	TIka-vahI	(	"		"	"       )
+	96. intellect_noun	buxxI			as	buxXI		(Suggested by Chaitanya Sir  	20-11-13)
+	97. loudly_adverb	jEYora_se		as	jZora_se	(Suggested by Nandini ji LTRC 	27-11-13)
+	98. drastic_adjective	uxaNda			as	uxxaNda		(Suggested by Chaitanya Sir	26-11-13)
+	99. passage_noun	yAtrAXikAra		as	yAwrAXikAra	(Suggested by Chaitanya Sir 	05-12-13)
+	100. passage_noun	yAtrA			as	yAwrA		(	"		"	    	)
+	101. passage_noun	gamana_svAtanwrya	as	gamana_svAwanwrya(	"		"	    	)
+	102. electromagnetism_noun	vixyuw-cumbakawva	as	vixyuwa_cumbakawva  (suggested by Sukhada 04-12-13)
+	103. employment_noun 	vyavasAsa		as	vyavasAya	(Suggested by Pramila Banasthali 24-01-14)
 
     3. Added new entry:
        ---------------
@@ -966,6 +996,12 @@ Removed:
 					Ex: The monthly premium for your health insurance is deducted from your paycheck.
 	73. duo_noun  			xonoM				(Suggested by Pamila Banasthali   28-12-13)
 					Ex: The father and son duo were sitting beside a dying fire in front of their hut .
+	74. Murrah_noun   		mUDZA				(Suggested by Nandini ji LTRC     05-01-14)
+					Ex: Murrahs were brought and they all sat down.
+	75. peacekeeping_noun		SAnwi_banAe_raKane_vAlA		(Suggested by Sonam Banasthali  28-01-14)
+					Ex: Peacekeeping operations.
+	76. infestation_noun		saMkramaNa			(Suggested by Prachi Banasthali	29-01-14)
+					Ex: Scientists are checking for both insect and fungal infestation.
 
 
     4. Added new meaning to the existing word:
@@ -1328,14 +1364,33 @@ Removed:
 				Ex: He has captained the England cricket team three times.
 	99. flying_noun		udAna		as	udanA			(Suggested by Chaitanaya Sir	28-12-13)
 				Ex: Flying planes can be dangerous.
-	100.homogeneous_adjective	sajAwIya	as	samarUpa	(	"		"	"	)
+	100. homogeneous_adjective	sajAwIya	as	samarUpa	(	"		"	"	)
 				Ex: Likewise, space is homogeneous and there is no (intrinsically) preferred location in the universe.
-	101.yes_interjection	vAkaI		as	hAz			(Suggested by Sukhada		28-12-13)
+	101. yes_interjection	vAkaI		as	hAz			(Suggested by Sukhada		28-12-13)
 				Ex: Yes, he did.
-	102.careless_adjective	beparavAha	as	lAparavAha 		(Suggested by Preeti ji LTRC	04-01-14)
+	102. careless_adjective	beparavAha	as	lAparavAha 		(Suggested by Preeti ji LTRC	04-01-14)
 				Ex:Don't be so careless about spelling.
-	103.confusion_noun	samBrama	as	Brama			(Suggested by 	"		"	)
+	103. confusion_noun	samBrama	as	Brama			(Suggested by 	"		"	)
 				Ex: Her unexpected arrival threw us into total confusion.
+	104. metre_noun      	Canxa		as	mItara			(Suggested by Nandini ji LTRC   05-01-14)
+				Ex: So if we draw a straight line from the warehouse to the boat, and search the area fifty to a hundred
+				    metres from the warehouse, we might discover the other opening.
+	105. speech_noun     	bolI		as	BARaNa			(Suggested by Jagriti Banasthali 07-01-14)
+				Ex: There will be a repeat of Prime Minister's speech tomorrow on radio.
+	106. secret_adjective   rAja_raKane_vAlA  as	gupwa			(Suggested by Jagriti Banasthali 07-01-14)
+				Ex: No one will ever find my secret hiding-place.
+	107. seldom_adverb   	birale_hI	as	SAyaxa_hI_kaBI		(	"		"	 14-01-14)
+				Ex: She was a severe woman who seldom smiled.
+	108. carp_noun		wAlAba_kI_badI_maCalI	as	kArpa_maCalI	(Suggested by Preeti ji LTRC	 18-01-14)
+				Ex: I like carp fish.
+	109. convincing_adjective	niScayAwmaka	as	yaWArWapUrNa	(	"		"	   "	 )
+				Ex: The Fellows of the University found the arguments so convincing that the proposal to attach new 						   conditions to the award was dropped.
+	110. separately_adverb	svawanwra_rUpa_se	as	alaga-alaga	(Suggested by Jagriti Banasthali 23-01-14)
+				Ex: Can I pay for each item separately?
+	111. conscience_noun    viveka		as	anwaHkaraNa		(Suggested by Preeti ji LTRC	29-01-14)
+				Ex: He will not let it trouble his conscience.
+	112. county_noun	maNdala 	as	kAuNtI			(Suggested by 	"		"	)
+				Ex: Today they take the field against county champions Essex.
 
 	
     6. Removed meaning from existing list:
@@ -1406,7 +1461,7 @@ Removed:
 	30. grain_UNDEFINED 	anAja					(Suggested by Shweta Banasthali 29-10-13)
 	31. observe_UNDEFINED	avalokana_kara				( Suggested by Chaitanya Sir    26-11-13)
 	32. doorway_UNDEFINED   xvArapaWa				(Suggested by Pramila Banasthali 12-12-13)
-
+	33. doctorate_noun  	daktara_kI_upAXi			(	"		"	 24-01-14)
 
     8. Modified category:
        ------------------
@@ -1420,6 +1475,7 @@ Removed:
 	8. electrified_UNDEFINED as	electrified_adjective	(Suggested by Pramila Banasthali 05-10-13)
 	9. focussed_UNDEFINED	as	focussed_verb		(By Roja 			16-10-13 )	
 	10. civilisation_UNDEFINED	as civilisation_noun	(Suggested by Sukhada 		26-11-13 )
+	11. doctorate_UNDEFINED as	doctorate_noun    	(Suggested by Pramila Banasthali 24-01-14)
 
 	
  changes in preposition.txt
@@ -1444,6 +1500,9 @@ Removed:
 	just_before		---	(Suggested by Chaitanya Sir 22-01-13)
 	more_than		---	(Suggested by Sukhada	    04-09-13)
 	on_the_basis_of		---	(Suggested by Chaitanya Sir 05-01-14)
+	such_as			---	(		"	    18-01-14)
+	rather_than		---	(		"		"   )
+	at_the_behest_of	---	(		"		"   )
 
 -------------------------- compound_phrase.txt -----------------------------------
  Based on the type of the phrase, compound_phrase.txt file has been splitted in to four different files,(Suggested by Chaitanya ji 23-04-12)
@@ -1465,6 +1524,7 @@ Removed:
     Zulm_Ko_Jala_Doonga	jZulma_ko_jalA_xUMgA#jZulma_ko_jalA_xUMgA#noun#4#RM	
     Crab_Nebula		karka_nihArikA#karka_nihArikA#noun#2#RM	(Suggested by Nandini ji LTRC 07-12-13)
     United_Nation's	saMyukwa_rARtra#saMyukwa_rARtra#noun#2#RM	(Suggested by Sukhada	19-12-13)
+    Prime_Minister	praXAna_manwrI#praXAna_manwrI#noun#2#RM		(Suggested by Anita ji  21-01-14)
     
  multi_word_expressions.txt
  ==========================
@@ -1504,7 +1564,12 @@ Removed:
 	15. fan_in		niveSAMka#niveSAMka#noun#2#RM 		(Suggested by Krithika ji LTRC	17-12-13)
 				Ex: That big fan in our lab is not working.
 	16. on_the_basis_of_total_income	kula_Aya_ke_AXAra_para#kula_Aya_ke_AXAra_para#noun#3#RM (Suggested by Chaitanya Sir 05-01-14)
-				
+	17. away_from		se_xUra#se_xUra#noun#2#RM		(Suggested by Krithika ji LTRC  07-01-14)
+				Ex: When she left school she grew away from her mother.
+	18. in_the_case_of	kI_sWiwi_meM#kI_sWiwi_meM#noun#3#RM	(Suggested by Preeti ji LTRC	29-01-14)
+				Ex: As in the case of the Sun, the shrinking ball of gas begins to heat up and eventually becomes hot enough 					   to shine.
+	19. first_class		pahalA_xarjA#pahalA_xarjA#noun#2#RM	(suggested by Preeti ji LTRC	29-01-14)
+				Ex: My first class starts at 8:30.
 
     Modified :
     --------
@@ -1893,6 +1958,7 @@ Removed:
 	Gatldis		gEtaladisa	(	"		"	"	)
 	Earth    	pqWvI		(Suggested by Pramila Banasthali 12-12-13)
 	Dad     	piwAjI		(	"		"	   "	 )
+	Marathi 	marATI		(	By Shirisha Manju        29-01-14)
 
    Modified:
    ---------
@@ -1916,9 +1982,21 @@ Removed:
 	we		(		"		   "	  ) Ex: We were encouraged to learn foreign languages at school.  
 	shopper		(		"		   "	  ) Ex:	Music and lighting are used to encourage shoppers to buy more.
 	thief		(Suggested by Pramila Banasthali 16-08-13 ) Ex: The thief was driven back by the watch dogs.
+	dacoit		(Suggested by Chaitanya Sir     06-11-13  ) Ex: The government took serious steps to check the dacoits.
+	everyone	(Suggested by Chaitanya Sir	 06-11-13 ) Ex: A slow, balmy breeze from the south engulfed everyone in the audience.
         demon		(Suggested by Preeti ji LTRC     03-12-13 ) Ex: Lakshmi lures and destroys evil demons .
         army		(              "                     "    ) Ex: Armies had been crippled but not destroyed .
 	husband		(  By Shirisha Manju             12-12-13 ) Ex: I sent my husband to represent me at the funeral.
+	king		(Suggested by Prachi Banasthali  04-01-14 ) Ex: I must take them to the King, the farmer said firmly.
+	soldier		(By Roja, from animate.txt	 13-01-14 ) Ex: The soldiers were called out for the war.
+	professor	(By Roja			 13-01-14 ) Ex: The professor decided to write a book.
+	lecturer	(	"			   "	  ) Ex: The lecturer decided to write a book.  (Note: replaced above example)
+	clerk		(Suggested by Pramila Banasthali 07-01-14 ) Ex: He dictated the letter to his clerk.  
+	minister	(By Manju from animate.txt 	 21-01-14 ) Ex: He is the most shady minister in the state.
+	terrorist  	( 	"	"		 22-01-14 ) Ex: The police fired tear gas to flush out the terrorists.
+        robber     	(       "       "                    "    )
+        prowler    	(       "       "                    "    ) Ex: He flushed out the prowler.
+        bandit  	(	"	"		     "    ) Ex: The police flushed out the bandits from their place of hiding.
 
 
  changes in named_entities.txt

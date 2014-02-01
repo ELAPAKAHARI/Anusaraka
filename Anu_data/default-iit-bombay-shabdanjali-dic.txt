@@ -12845,7 +12845,7 @@ carousel_noun	cakraxolA/hiNdolA
 carousels_UNDEFINED	cakraxolA
 carouses_UNDEFINED	KUba_maxyapAna_karanA
 carousing_UNDEFINED	KUba_maxyapAna_karanA
-carp_noun	wAlAba_kI_badI_maCalI/kArpa_maCalI
+carp_noun	kArpa_maCalI/wAlAba_kI_badI_maCalI
 carp_verb	mIna_meKa_nikAla/CotI_wucCa_bAwoM_kI_SikAyawa_kara
 carpal_noun	maNibanXa-asWi/kalAI_kI_haddI
 carped_UNDEFINED	CotI_wucCa_bAwoM_kI_SikAyawa_karanA
@@ -16829,7 +16829,7 @@ conquers_UNDEFINED	jIwanA
 conquest_noun	jIwa/vijiwa-hqxaya_vyakwi/vijaya
 conquests_UNDEFINED	jIwa
 conscience-stricken_adjective	anwarAwmA_se_prawAdiwa
-conscience_noun	viveka/saccAI/anwaHkaraNa/acCe-bure_kI_samaJa
+conscience_noun	anwaHkaraNa/viveka/saccAI/acCe-bure_kI_samaJa
 conscienceless_adjective	avivekapUrNa
 consciences_UNDEFINED	viveka
 conscientious_adjective	karwavyaniRTa/SuxXa_anwaHkaraNavAlA
@@ -17508,7 +17508,7 @@ convince_verb	viSvAsa_xilA/rAjI_kara/samaJA_xe/xqDa_mawa_ho
 convinced_UNDEFINED	viSvAsa_karavA
 convinced_adjective	kAyala
 convinces_UNDEFINED	viSvAsa_karavA
-convincing_adjective	niScayAwmaka/yukwiyukwa/yaWArWapUrNa/viSvAsowpAxaka/viSvasanIya/sajIva
+convincing_adjective	yaWArWapUrNa/niScayAwmaka/yukwiyukwa/viSvAsowpAxaka/viSvasanIya/sajIva
 convincinger_UNDEFINED	niScayAwmaka
 convincingest_UNDEFINED	niScayAwmaka
 convincingly_UNDEFINED	viSvAsowpAxaka_Dafga_se
@@ -18214,7 +18214,7 @@ county-council_noun	praxeSa_kA_SAsana_pariRax
 county-court_noun	sWAnIya_nyAyAlaya
 county-town_noun	kAuNtI_praSAsana_kA_aXiRTAna{kexra}
 county_adjective	aBijAwa_vargIya
-county_noun	maNdala/kAuNtI/jilA
+county_noun	kAuNtI/maNdala/jilA
 coup_noun	Akasmika_SAsana-parivarwana/aprawyASiwa_saPalawA/Akasmika_SAsana_pariwarwana/saPala_evaM_akasmAwa_kriyA
 coupe_noun	xo_xvAra_vAlI_kAra/kUpa/bagGI
 couped_UNDEFINED	saPala_evaM_akasmAwa_kriyA
@@ -23663,8 +23663,7 @@ doctor_noun	dAktara/paNdiwa/marammawa_karanevAlA/cikiwsaka/vExya/vixvAna
 doctor_verb	napuMsaka_banA/milAvata_kara/meM_goalmAla_kara/marammawa_kara/ilAja_kara/galawa_banA
 doctoral_UNDEFINED	doYktara_kI_upAXi_se_sambaMixawa
 doctoral_adjective	daktara_kI_upAXi_se_sambanxiwa
-doctorate_UNDEFINED	doYktara_kI_upAXi
-doctorate_noun	daktara_kI_upAXi
+doctorate_noun	doYktara_kI_upAXi
 doctored_UNDEFINED	vixvAna
 doctoring_UNDEFINED	vixvAna
 doctors_UNDEFINED	vixvAna
@@ -25926,7 +25925,7 @@ employer_noun	mAlika/pravarwaka
 employers_UNDEFINED	mAlika
 employing_UNDEFINED	kAma_para_lagA
 employment_UNDEFINED	rojAgAra
-employment_noun	vyavasAsa/nOkarI/kAma/AjIvikA/rojagAra
+employment_noun	vyavasAya/nOkarI/kAma/AjIvikA/rojagAra
 employments_UNDEFINED	rojagAra
 employs_UNDEFINED	kAma_para_lagA
 emporium_noun	emporiyama/badI_xukAna
@@ -48865,7 +48864,7 @@ meticulousest_UNDEFINED	awisAvaXAna
 meticulously_adverb	sawarkawApUrvaka
 meticulousness_noun	sawarkawA
 meting_UNDEFINED	BoganA
-metre_noun	Canxa/mItara/mApa
+metre_noun	mItara/Canxa/mApa
 metres_UNDEFINED	mItara
 metric_adjective	mItara_kA/mAwrika/mApIya
 metrical_adjective	paxyAwmaka
@@ -69734,7 +69733,7 @@ secrecy_noun	gupwawA/gupwa/gopanIyawA
 secrecy_verb	rAja_raKa/gupwa_raKa/Cip
 secret-Agent_noun	gupwacara
 secret-Service_noun	KuPiyA_viBAga
-secret_adjective	rAja_raKane_vAlA/rahasya_raKane_vAlA/rahasyamaya/nijI/jAlI/gupwa_rUpa_se_kiyA_huA/gUpwa/gupwa/gopanIya/ekAnwa/Cupa/CipAUM/Cipakara
+secret_adjective	gupwa/rAja_raKane_vAlA/rahasya_raKane_vAlA/rahasyamaya/nijI/jAlI/gupwa_rUpa_se_kiyA_huA/gUpwa/gopanIya/ekAnwa/Cupa/CipAUM/Cipakara
 secret_noun	rahasya/rAja/Bexa/marma
 secret_verb	CipA_kara_raKa
 secretaire_noun	liKane_kI_meja
@@ -70010,7 +70009,7 @@ seizure_noun	pakada/xOrA/kabjA/jabwI/giraPwArI/aXikAra/JatakA
 seizures_UNDEFINED	JatakA
 sekar_UNDEFINED	SeKara
 sekhar_UNDEFINED	SeKara
-seldom_adverb	birale_hI/SAyaxa_hI_kaBI/kaBI_kaBAra/kaBI-kaBAra
+seldom_adverb	SAyaxa_hI_kaBI/birale_hI/kaBI_kaBAra/kaBI-kaBAra
 select-Committee_noun	pravara_samiwi
 select_UNDEFINED	cunanA
 select_adjective	viSiRta/cuninxA
@@ -70457,7 +70456,7 @@ separate_verb	alaga_ho/viBAjiwa_kara/vargIkaraNa_kara/roka/PEl/nikAla/biKera/BEx
 separated_UNDEFINED	Binna
 separated_adjective	alaga-Walaga/alaga
 separately_UNDEFINED	alaga_se
-separately_adverb	svawanwra_rUpa_se/alaga-alaga/alaga
+separately_adverb	alaga-alaga/svawanwra_rUpa_se/alaga
 separateness_noun	BinnawA
 separater_UNDEFINED	Binna
 separates_UNDEFINED	Binna
@@ -74750,7 +74749,7 @@ speculativest_UNDEFINED	anxAja_lagAwe_hue
 speculator_UNDEFINED	vicAraSIla
 speculator_noun	xAzva_lagAne_vAlA/satoriyA/atakalabAja
 sped_UNDEFINED	kRiprawA
-speech_noun	bolI/ukwi/pafkwi/bAwacIwa/bAwa/BARaNa_yogyawA/BARaNa_Sakwi/BARaNa/BARA/kaWana
+speech_noun	BARaNa/bolI/ukwi/pafkwi/bAwacIwa/bAwa/BARaNa_yogyawA/BARaNa_Sakwi/BARA/kaWana
 speech_verb	bAwa_kara/BARaNa_kara
 speeches_UNDEFINED	BARaNa
 speechified_UNDEFINED	BARaNIya_anxAja_meM_bAwa_karanA
@@ -93513,3 +93512,6 @@ orthodox_noun	paraMparAgawa
 non-uniform_adjective	asamAna
 paycheck_noun	wanaKvAha_kA_cEka
 duo_noun	xonoM
+Murrah_noun	mUDZA
+peacekeeping_noun	SAnwi_banAe_raKane_vAlA
+infestation_noun	saMkramaNa
