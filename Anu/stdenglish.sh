@@ -1,7 +1,7 @@
 ## First join the words that are split with '-' followed by a new line.
 ## Split words that have 'spoken' spelling rather than 'written'.
 PATH1=$HOME_anu_test/Anu/stdenglish
-PATH2=$2/tmp/
+PATH2=$2/tmp
 
 if [ -f "$PATH2/tmp_stdenglish"  ] ; then
   echo "File tmp_stdenglish exists. Remove or rename it, and give the command again ."
@@ -34,10 +34,10 @@ $PATH1/enclitics.out < $1.tmp > $1.tmp1
 #=======================================Handling Abbrevations========================================================
 
 # Adding ABBR-DOT using NER information Ex: W.R. Grace  ---> WABBR-DotRABBR-Dot Grace
-$PATH1/abbrevations_using_NER.out  $PATH2/$1_tmp/ner.txt  > $PATH1/generate_ABBR-Dot.lex
-sed -i "s/\./\\\./g" $PATH1/generate_ABBR-Dot.lex
-$HOME_anu_test/Anu_src/comp.sh $PATH1/generate_ABBR-Dot
-$PATH1/./generate_ABBR-Dot.out < $1.tmp1 > $1.tmp1_1
+$PATH1/abbrevations_using_NER.out  $PATH2/$1_tmp/ner.txt  > $PATH2/$1_tmp/generate_ABBR-Dot.lex
+sed -i "s/\./\\\./g" $PATH2/$1_tmp/generate_ABBR-Dot.lex
+$HOME_anu_test/Anu_src/comp.sh $PATH2/$1_tmp/generate_ABBR-Dot
+$PATH2/$1_tmp/generate_ABBR-Dot.out < $1.tmp1 > $1.tmp1_1
 
 # standard_abbrevations.lex handles standard abbreviations such as 'Inc.', 'viz.', 'e.g.', 'B.S.' ... 
 $PATH1/standard_abbrevations.out < $1.tmp1_1 > $1.tmp2
@@ -70,7 +70,11 @@ $PATH1/simplify_english.pl < $1.tmp7 > $1.tmp8
 #A sample honorifics file is provided. This file MUST contain honorifics, not
 #abbreviations. The program detects abbreviations using regular expressions.
 
-$PATH1/sentence-boundary.pl -d $PATH1/HONORIFICS -i $1.tmp8 -o ../$1.std
-
+if  [ "$3" != "onesent" ]; then 
+	$PATH1/sentence-boundary.pl -d $PATH1/HONORIFICS -i $1.tmp8 -o ../$1.std
+else
+	perl $PATH1/check-for-another-sent.pl $1 $HOME_anu_tmp < $1.tmp8  > $HOME_anu_tmp/tmp/$1_tmp/$1.check 2>&1
+	cat  $HOME_anu_tmp/tmp/$1_tmp/$1.check
+fi
 cd ../
 fi

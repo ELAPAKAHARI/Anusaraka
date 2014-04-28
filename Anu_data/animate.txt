@@ -74,3 +74,16 @@ robber	1
 prowler	1
 bandit	1
 animal	1
+audience	1 
+hunter	1
+government	1
+college	1
+president	1
+chairperson	1
+advocate	1
+police	1
+driver	1
+laborer	1
+investigator	1
+murderer	1
+turkey	1

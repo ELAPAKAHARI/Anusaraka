@@ -2094,11 +2094,11 @@ X-chromosome_noun	eksa_guNasUwra
 X-linked_adjective	eksa_kromojoma_se_sambaxXa/eksa_guNasUwra-sambaxXa
 X-radiation_noun	kRa-vikiraNa/eksa-rediyeSana
 X-rated_adjective	eksa_SreNI_kA/aSlIla
-X-ray_noun	eksa-kiraNa/eksa-re
-X-ray_verb	eksa-kiraNa_se_Poto_nikAla
-X-rayed_UNDEFINED	eksa-kiraNa_se_Poto_nikAlanA
-X-raying_UNDEFINED	eksa-kiraNa_se_Poto_nikAlanA
-X-rays_UNDEFINED	eksa-kiraNa_se_Poto_nikAlanA
+X-ray_noun	eksa-re
+X-ray_verb	eksa-re_se_Poto_nikAla
+X-rayed_UNDEFINED	eksa-re_se_Poto_nikAlanA
+X-raying_UNDEFINED	eksa-re_se_Poto_nikAlanA
+X-rays_UNDEFINED	eksa-re_se_Poto_nikAlanA
 XCIII_noun	werAnave
 XCII_noun	bAnave
 XCIV_noun	cOrAnave
@@ -12230,7 +12230,7 @@ cajoled_UNDEFINED	PusalAnA
 cajoles_UNDEFINED	PusalAnA
 cajoling_UNDEFINED	PusalAnA
 cake_noun	keka/tikiyA/rotI/piNdikA/piNda/KalI/capAwI/battI
-cake_verb	tikiyA_banA/sUKa_jA/keka_banA/Dazka/banA
+cake_verb	sana/tikiyA_banA/sUKa_jA/keka_banA/Dazka/banA
 caked_UNDEFINED	keka
 cakehole_noun	muzha
 cakes_UNDEFINED	keka
@@ -12861,7 +12861,6 @@ carpet-slippers_noun	kArpeta_slipara
 carpet-sweeper_noun	kAlIna_buhArI
 carpet_noun	kAlIna/xarI/parawa
 carpet_verb	xarI_biCA/para_xarI_biCA/dAzta/DAzka_xe/kAlIna_biCA
-carpeted_UNDEFINED	kAlIna_biCAnA
 carpeting_UNDEFINED	kAlIna_biCAnA
 carpeting_noun	xarI_banAne_kA_sAmAna
 carpets_UNDEFINED	kAlIna_biCAnA
@@ -12872,7 +12871,7 @@ carpus_noun	maNibanXa/kalAI
 carpython_UNDEFINED	kAlIna_biCAnA
 carpythons_UNDEFINED	kAlIna_biCAnA
 carriage_UNDEFINED	yAna
-carriage_noun	wopa-gAdI/vyavasWA/vAhana/vAhaka/upabanXaka/tattU/savArI_dibbA/relagAdI/raWa/prabanXa/parivahanavyaya/parivahana/pAlanA/mUlya/mAla-dibbA/kEYreja/hAva-BAva/gAdI/DAzcA/Dafga/cAra_pahiyoM_vAlI_GodAgAdI/cAla-DAla/cAla/barwAva/BAdA/baccA-gAdI/AcaraNa/relagADI_kA_dibbA
+carriage_noun	gAdI/wopa-gAdI/vyavasWA/vAhana/vAhaka/upabanXaka/tattU/savArI_dibbA/relagAdI/raWa/prabanXa/parivahanavyaya/parivahana/pAlanA/mUlya/mAla-dibbA/kEYreja/hAva-BAva/DAzcA/Dafga/cAra_pahiyoM_vAlI_GodAgAdI/cAla-DAla/cAla/barwAva/BAdA/baccA-gAdI/AcaraNa/relagADI_kA_dibbA
 carriages_UNDEFINED	relagAdI_kA_dibbA
 carriageway_UNDEFINED	piravahana-mArga
 carriageway_noun	parivahana-mArga
@@ -14062,7 +14061,7 @@ chimney-pot_noun	cimanI_kI_nalI
 chimney-stack_noun	cimanI_ciwi
 chimney-sweep_noun	cimanI_sAPa_karanevAlA
 chimney_UNDEFINED	XuzAkaSa
-chimney_noun	XuAzkaSa/lEmpa/cUlhA/cimanI/barPa_kA_katAva/pahAda_me_Upara_ko_jAwI_surafga
+chimney_noun	cimanI/XuAzkaSa/lEmpa/cUlhA/barPa_kA_katAva/pahAda_me_Upara_ko_jAwI_surafga
 chimneys_UNDEFINED	pahAda_me_Upara_ko_jAwI_surafga
 chimp_noun	cimpAFjI
 chimpanzee_noun	cimpAFjI
@@ -14149,7 +14148,7 @@ chock-a-block_adjective	TasATasa
 chock_noun	paccara
 chocolate_UNDEFINED	cAkaleta_rafga
 chocolate_adjective	gaharA_bUrA/cAkaleta
-chocolate_noun	gahara_BurA_rafga/cAkaleta_sasa/cAkaleta_peya/cAkaleta
+chocolate_noun	cAkaleta/gahara_BurA_rafga/cAkaleta_sasa/cAkaleta_peya
 chocolates_UNDEFINED	cAkaleta
 choice_adjective	uwwama/sAvaXAnIpUrvaka_cune_hui/cuniMnxA/baDiyA/acCA
 choice_noun	vikalpa/vaswu_kA_uwwama_safgraha/prakAra/pasanxa/cunAva/cunane_kA_aXikAra/cayana_kA_aXikAra/cayana/cArA
@@ -16047,7 +16046,7 @@ companionable_adjective	milanasAra
 companioned_UNDEFINED	sAWI
 companioning_UNDEFINED	sAWI
 companions_UNDEFINED	sAWI
-companionship_noun	safgawi/sAWa
+companionship_noun	sAWa/safgawi
 companionships_UNDEFINED	safgawi
 company_noun	kampanI/xala/uxyoga/tolI/sAWI/sAWa/safgawi/safga/sahayogI/mitra/milanevAlA/mehamAna/maNdalI/janasamUha/ikAI/awiWi/safgawa
 company_verb	sAWI_ho/sAWa_xe
@@ -16128,7 +16127,7 @@ competitions_UNDEFINED	sparXA
 competitive_adjective	prawiyogiwA_sambanXI/prawisparXAwmaka/prawisparXApUrNa
 competitiver_UNDEFINED	prawiyogiwA_sambanXI
 competitivest_UNDEFINED	prawiyogiwA_sambanXI
-competitor_noun	prawiyogI/prawixvanxvI/prawisparXxI
+competitor_noun	prawisparXxI/prawiyogI/prawixvanxvI
 competitorier_UNDEFINED	prawiyogiwA_sambanXI
 competitoriest_UNDEFINED	prawiyogiwA_sambanXI
 competitors_UNDEFINED	prawiyogI
@@ -16214,7 +16213,7 @@ complicater_UNDEFINED	ulaJAnA
 complicates_UNDEFINED	ulaJAnA
 complicatest_UNDEFINED	ulaJAnA
 complicating_UNDEFINED	ulaJAnA
-complication_noun	ulaJana/pareSAnI/jatilawA
+complication_noun	samasyA/ulaJana/pareSAnI/jatilawA
 complications_UNDEFINED	ulaJana
 complicities_UNDEFINED	sahaaparAXiwA
 complicity_UNDEFINED	sahaaparAXiwA
@@ -27576,7 +27575,7 @@ exhausting_UNDEFINED	WakA_xenA
 exhausting_adjective	WakAU
 exhaustion_noun	kRaya/WakAna/samApana
 exhaustions_UNDEFINED	kRaya
-exhaustive_adjective	soKane_vAlA/suviswqwa
+exhaustive_adjective	viswqwa/soKane_vAlA/suviswqwa
 exhaustively_adverb	suviswqwa_rUpa_se
 exhaustiver_UNDEFINED	soKane_vAlA
 exhaustivest_UNDEFINED	soKane_vAlA
@@ -27747,7 +27746,7 @@ expending_UNDEFINED	vyaya_karanA
 expenditure_noun	vyaya/Karca
 expenditures_UNDEFINED	vyaya
 expends_UNDEFINED	vyaya_karanA
-expense_noun	lAgawa/Karca
+expense_noun	Karca/lAgawa
 expensed_UNDEFINED	lAgawa
 expenses_UNDEFINED	lAgawa
 expensing_UNDEFINED	lAgawa
@@ -59225,7 +59224,7 @@ polemics_noun	vivAxAwmaka_kuSalawA
 polemist_noun	KaNdanAwmaka_leKaka
 poles_UNDEFINED	Xruva
 police-man_UNDEFINED	pulisa_vAlA
-police_noun	pulIsa/pulisa_viBAga/pulisa/ArakRaka
+police_noun	pulisa/pulisa_viBAga/ArakRaka
 police_verb	vyavasWiwa_kara/vyavasWA_kara/niyanwraNa_kara/nigarAnI_raKa
 policed_UNDEFINED	nigarAnI_raKanA
 policeman_noun	sipAhI
@@ -65464,7 +65463,7 @@ remunerating_UNDEFINED	pAriSramika_xenA
 remuneration_noun	pAriSramika
 remunerations_UNDEFINED	pAriSramika
 remunerative_UNDEFINED	lABapraxa
-remunerative_adjective	pAriSramika-praxawwa/lABakArI
+remunerative_adjective	lABakArI/pAriSramika-praxawwa
 remunerator_noun	BugawAnakarwA
 renaissance_UNDEFINED	punarjAgaraNa
 renaissance_noun	navajAgaraNakAla/navajAgaraNa
@@ -66934,7 +66933,7 @@ righteousness_noun	nekI/nIwiparAyaNawA
 righteousnesses_UNDEFINED	nekI
 righter_UNDEFINED	sahI
 rightest_UNDEFINED	sahI
-rightful_adjective	aXikArI/vEXa/asalI
+rightful_adjective	asalI/aXikArI/vEXa
 rightfuler_UNDEFINED	aXikArI
 rightfulest_UNDEFINED	aXikArI
 righting_UNDEFINED	sahI
@@ -74643,7 +74642,7 @@ spearmints_UNDEFINED	puxInA
 spears_UNDEFINED	Kera
 spec_noun	viSeRa_nirxeSa
 special-branch_noun	pulIsa_kI_viSeRa_SAKA
-special_adjective	asAXAraNa/viSiRta/viSeRAfka/viSeRa/uwkriRta/KAsa/Kasa/awirikwa/mahawwvapUrNa/viSeRa_uxxeSya_se_banA_huA
+special_adjective	viSeRa/asAXAraNa/viSiRta/viSeRAfka/uwkriRta/KAsa/Kasa/awirikwa/mahawwvapUrNa/viSeRa_uxxeSya_se_banA_huA
 special_noun	viSeRa/viSiRta_vyakwi/viSeRa_wAra/viSeRa_viBAga/viSeRa_vaswu/viSeRa_sAmAna/viSeRa_gAdI/viSeRa_basa/KAsa_kAryakrama
 specialer_UNDEFINED	mahawwvapUrNa
 specialest_UNDEFINED	mahawwvapUrNa
@@ -78999,7 +78998,7 @@ symbioticalest_UNDEFINED	sahajIvI
 symbioticer_UNDEFINED	sahajIvI
 symbioticest_UNDEFINED	sahajIvI
 symbol-worship_noun	prawIkopAsanA
-symbol_noun	niSAna/prawIka/cinha/cihna/safkewAkRara
+symbol_noun	prawIka/niSAna/cinha/cihna/safkewAkRara
 symbolatry_noun	prawIkopAsanA
 symboled_UNDEFINED	safkewAkRara
 symbolic_adjective	prawIkAwmaka
@@ -79448,7 +79447,7 @@ takeout_adjective	le_jAne_ke_liye_wEyAra
 takeover_UNDEFINED	BAra_lenA
 takeover_noun	aXInIkaraNa
 takeovers_UNDEFINED	BAra_lenA
-taker_noun	xAzva_lagAne_vAlA/xAnakarwA/svIkAra_karane_vAlA/lene_vAlA
+taker_noun	lene_vAlA/xAzva_lagAne_vAlA/xAnakarwA/svIkAra_karane_vAlA
 takes_UNDEFINED	giraPwAra_karanA
 taking_UNDEFINED	giraPwAra_karanA
 taking_adjective	luBAvanA/AkarRaka
@@ -89969,7 +89968,7 @@ wall_verb	xIvAra_se_Gera
 wallabies_UNDEFINED	CotA_kafgArU
 wallaby_noun	CotA_kafgArU
 walled_UNDEFINED	xIvAra_se_GeranA
-wallet_noun	JolA/parsa/batuA
+wallet_noun	batuA/JolA/parsa
 wallets_UNDEFINED	JolA
 walleye_noun	apasArI_wiryakaxqRti
 walleyed_adjective	BefgA
@@ -93000,7 +92999,7 @@ yearns_UNDEFINED	icCA_karanA
 years_UNDEFINED	varRa
 years_noun	umra/lambA_samaya/bahuwa_samaya/bahuwa_sAla/baDawI_umra
 yeas_UNDEFINED	hAz
-yeast_noun	KamIra/yIsta
+yeast_noun	yIsta/KamIra
 yeastlike_adjective	yIstayukwa/yIsta_ke_samAna/KamIra-yukwa/KamIra_ke_samAna
 yeasts_UNDEFINED	KamIra
 yeasty_adjective	yIstayukwa/yIsta_ke_samAna/uwsAhapUrNa/KamIrayukwa/KamIra_ke_samAna/joSapUrNa/joSa_Ora_ullAsa_se_yukwa
@@ -93515,3 +93514,34 @@ duo_noun	xonoM
 Murrah_noun	mUDZA
 peacekeeping_noun	SAnwi_banAe_raKane_vAlA
 infestation_noun	saMkramaNa
+evince_verb	icCA_vyakwa_kara
+educative_adjective	SikRApraxa
+expressible_adjective	vyakwa_karane_yogya
+intervening_adjective	maXyAvarwI
+icecream_noun	AIsakrIma
+hour-long_noun	GaMtA_lambI
+well-wishers_noun	SuBacinwaka
+joint-secretary_noun	sahasaciva
+North-Central_noun	uwwara-maXya
+Multi-speciality_noun	maltIspeSielitI
+in-charge_noun	praBArI
+power-dependent_noun	bijalI_para_nirBara_hone_vAlA
+Indo-Pakistani_noun	BArawa-pAka
+near-by_noun	AsapAsa
+Sub-Inspector_noun	saba_iMspektara
+North-Centre_noun	uwwara-maXya
+secretary-general_noun	mahAsaciva
+Co-operative_noun	paxAXikArI
+multi-talented_noun	bahuAyAmI_prawiBASAlI
+part-payment_noun	pArta_pemeMta
+sub-divisions_noun	saba_divijana
+show-cause_noun	kAraNa_bawAo
+house-shop_noun	makAna-xukAna
+Vice-President_noun	upAXyakRa
+oblation_noun	Ahuwi
+#abbrevations:
+etc._noun	Axi
+MSRTC_PropN	mahArARtra_rAjya_sadZaka_parivahana_nigama
+BJP_PropN	BAjapA
+ADCP_PropN	edIsIpI
+ACP_PropN	esIpI

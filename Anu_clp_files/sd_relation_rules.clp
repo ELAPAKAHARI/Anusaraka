@@ -83,8 +83,8 @@
  (parserid-word ?dum there)
  (rel_name-sids  nsubj  ?k ?s)
  =>
- (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-aXikaraNavAcI_avyaya   "?k"        "?dum")"crlf)
- (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   expl_not_dummy    kriyA-aXikaraNavAcI_avyaya     "?k"        "?dum")"crlf)
+ (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-aXikaraNavAcI   "?k"        "?dum")"crlf)
+ (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   expl_not_dummy    kriyA-aXikaraNavAcI     "?k"        "?dum")"crlf)
  )
  ; Ex. I went there to buy a book. ### I think dependency parse is wrong for this sentence.
 ;------------------------------------------------------------------------------------------------------------------------
@@ -269,8 +269,8 @@
 (defrule nn
 (rel_name-sids nn  ?n1 ?n2)
 =>
-(printout       ?*fp*   "(prep_id-relation-parser_ids  -     samAsa   "?n1"        "?n2")"crlf)
-(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   nn     samAsa   "?n1"        "?n2   ")"crlf)
+(printout       ?*fp*   "(prep_id-relation-parser_ids  -     samAsa_viSeRya-samAsa_viSeRaNa   "?n1"        "?n2")"crlf)
+(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   nn     samAsa_viSeRya-samAsa_viSeRaNa   "?n1"        "?n2   ")"crlf)
 )
  ; Ex. The income tax proposal was rejected.
 ;------------------------------------------------------------------------------------------------------------------------
@@ -298,48 +298,59 @@
 )
  ; Ex. She looks beautiful. All the prisoners were set free. 
 ;------------------------------------------------------------------------------------------------------------------------
-(defrule attr+nsubj
-(rel_name-sids nsubj ?kriyA ?samA)
-(rel_name-sids attr ?kriyA ?sub)
-=>
-(printout	?*fp*	"(prep_id-relation-parser_ids  -     subject-subject_samAnAXikaraNa	"?sub"	"?samA")"crlf)
-(printout	?*dbug*	"(prep_id-Rule-Rel-ids  - 	attr+nsubj	subject-subject_samAnAXikaraNa	"?sub"	"?samA")"crlf)	
-)
- ; Ex. What is that?
-;------------------------------------------------------------------------------------------------------------------------
-(defrule attr+aux
-(rel_name-sids cop|aux ?sam ?k)
-(rel_name-sids attr ?sam ?sub)
-=>
-(printout       ?*fp*   "(prep_id-relation-parser_ids  -     subject-subject_samAnAXikaraNa        "?sub"  "?sam")"crlf)
-(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-subject        "?k"  "?sub")"crlf)
-(printout       ?*dbug*   "(prep_id-Rule-Rel-ids  -   attr+aux     kriyA-subject        "?k"  "?sub")"crlf)
-(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   attr+aux      subject-subject_samAnAXikaraNa  "?sub"  "?sam")"crlf)
-)
+;Commenting this rules as Stanford parser removed 'attr' in latest version 3.3.1
+;(defrule attr+nsubj
+;(rel_name-sids nsubj ?kriyA ?samA)
+;(rel_name-sids attr ?kriyA ?sub)
+;=>
+;(printout	?*fp*	"(prep_id-relation-parser_ids  -     subject-subject_samAnAXikaraNa	"?sub"	"?samA")"crlf)
+;(printout	?*dbug*	"(prep_id-Rule-Rel-ids  - 	attr+nsubj	subject-subject_samAnAXikaraNa	"?sub"	"?samA")"crlf)	
+;)
+; ; Ex. What is that?
+;;------------------------------------------------------------------------------------------------------------------------
+;Commenting this rules as Stanford parser removed 'attr' in latest version 3.3.1
+;(defrule attr+aux
+;(rel_name-sids cop|aux ?sam ?k)
+;(rel_name-sids attr ?sam ?sub)
+;=>
+;(printout       ?*fp*   "(prep_id-relation-parser_ids  -     subject-subject_samAnAXikaraNa        "?sub"  "?sam")"crlf)
+;(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-subject        "?k"  "?sub")"crlf)
+;(printout       ?*dbug*   "(prep_id-Rule-Rel-ids  -   attr+aux     kriyA-subject        "?k"  "?sub")"crlf)
+;(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   attr+aux      subject-subject_samAnAXikaraNa  "?sub"  "?sam")"crlf)
+;)
  ; Ex. Who is afraid of the big bad wolf? 
 ;------------------------------------------------------------------------------------------------------------------------
 (defrule cop+nsubj
 (declare(salience 100))
 (rel_name-sids nsubj|nsubjpass ?samAnAXikaraNa  ?sub)
 (rel_name-sids cop  ?samAnAXikaraNa ?kriyA)
+(parserid-word ?sub  ?word) ; It is not a good manner to eat alone. 
 (not (sub_id_decided ?sub))
 =>
-(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-subject    "?kriyA"        "?sub")"crlf)
-(printout      ?*dbug* "(prep_id-Rule-Rel-ids  -   cop+nsubj       kriyA-subject   "?kriyA"        "?sub")"crlf)
-
-)
+(if (or (eq (lowcase ?word)  it) (eq (lowcase ?word) there)) then
+    (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-dummy_subject    "?kriyA"        "?sub")"crlf)
+    (printout      ?*dbug* "(prep_id-Rule-Rel-ids  -   cop+nsubj       kriyA-dummy_subject   "?kriyA"        "?sub")"crlf)
+else
+    (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-subject    "?kriyA"        "?sub")"crlf)
+    (printout      ?*dbug* "(prep_id-Rule-Rel-ids  -   cop+nsubj       kriyA-subject   "?kriyA"        "?sub")"crlf)
+))
  ; Ex. Bill is big.  Bill is big and honest .
 ;------------------------------------------------------------------------------------------------------------------------
+;'attr' is removed in version 3.3.1. To handle WHNP elements added if else loop.
 (defrule cop+nsubj_2
 (declare (salience 1000))
 (rel_name-sids nsubj|nsubjpass ?samA  ?sub)
 (rel_name-sids cop  ?samA ?kriyA)
-(rel_name-sids nsubj ?samA1 ?sub)
+(parserid-word ?samA ?word) ; What is the company's financial state?  Who is Rama?
 =>
-(printout      ?*fp*   "(prep_id-relation-parser_ids  -     subject-subject_samAnAXikaraNa   "?sub"  "?samA1")"crlf)
-(printout      ?*dbug* "(prep_id-Rule-Rel-ids  -   cop+nsubj_2      subject-subject_samAnAXikaraNa  "?sub"  "?samA1")"crlf)
-)
-; ; Ex. Bill is big and honest.
+(if (or (eq (lowcase ?word)  who) (eq (lowcase ?word) what)) then
+    (printout      ?*fp*   "(prep_id-relation-parser_ids  -     subject-subject_samAnAXikaraNa   "?samA"  "?sub")"crlf)
+    (printout      ?*dbug* "(prep_id-Rule-Rel-ids  -   cop+nsubj_2    subject-subject_samAnAXikaraNa  "?samA"  "?sub")"crlf)
+ else
+    (printout      ?*fp*   "(prep_id-relation-parser_ids  -     subject-subject_samAnAXikaraNa   "?sub"  "?samA")"crlf)
+    (printout      ?*dbug* "(prep_id-Rule-Rel-ids  -   cop+nsubj_2    subject-subject_samAnAXikaraNa  "?sub"  "?samA")"crlf)
+))
+; ; Ex. Bill is big.
 ;------------------------------------------------------------------------------------------------------------------------
  (defrule cop+nsubj_for_it
  (declare(salience 101))
@@ -510,7 +521,7 @@
 (rel_name-sids advmod ?kri ?kri_viSeRaNa) 
 (parser_id-cat_coarse ?kri verb) ;He is more intelligent than John.
 (not  (got_viSeRya-jo_samAnAXikaraNa  ?kri_viSeRaNa))
-(not (got_kriyA-aXikaraNavAcI_avyaya_rel_for ?kri_viSeRaNa))
+(not (got_kriyA-aXikaraNavAcI_rel_for ?kri_viSeRaNa))
 =>
 (printout	?*fp*	"(prep_id-relation-parser_ids  -     kriyA-kriyA_viSeRaNa	"?kri"	"?kri_viSeRaNa")"crlf)	
 (printout	?*dbug*	"(prep_id-Rule-Rel-ids  - 	nsubj_advmod	kriyA-kriyA_viSeRaNa	"?kri"	"?kri_viSeRaNa")"crlf)	
@@ -556,9 +567,9 @@
  (parser_id-cat_coarse ?kriyA verb)
  (parserid-word  ?lupwa_p  again|later|here|there|somewhere|anywhere|everywhere|now|outside|longer|alone|next|upstairs|downstairs|upwards|downwards|above|down)
  =>
- (assert (got_kriyA-aXikaraNavAcI_avyaya_rel_for ?lupwa_p))
- (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-aXikaraNavAcI_avyaya     "?kriyA"        "?lupwa_p")"crlf)
- (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   advmd  kriyA-aXikaraNavAcI_avyaya    "?kriyA"        "?lupwa_p")"crlf)  
+ (assert (got_kriyA-aXikaraNavAcI_rel_for ?lupwa_p))
+ (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-aXikaraNavAcI     "?kriyA"        "?lupwa_p")"crlf)
+ (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   advmd  kriyA-aXikaraNavAcI    "?kriyA"        "?lupwa_p")"crlf)  
  )
  ;Ex. By going there you can earn more money. I am here.
 ;------------------------------------------------------------------------------------------------------------------------
@@ -617,10 +628,10 @@
 ;------------------------------------------------------------------------------------------------------------------------
 (defrule mark
 (rel_name-sids mark ?kri ?conj)
-(not (got_kriyA-conjunction_for ?conj))
+(not (got_kriyA-vAkya_viBakwi_for ?conj))
 =>
-(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-conjunction        "?kri"      "?conj")"crlf)
-(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   mark    kriyA-conjunction        "?kri"      "?conj")"crlf)
+(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-vAkya_viBakwi        "?kri"      "?conj")"crlf)
+(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   mark    kriyA-vAkya_viBakwi        "?kri"      "?conj")"crlf)
 )
 
  ; Ex. The accident happened as the night was falling .
@@ -630,9 +641,9 @@
 (rel_name-sids mark ?x  ?conj)
 (rel_name-sids cop ?x ?kriyA) 
 =>
-(assert (got_kriyA-conjunction_for ?conj))
-(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-conjunction        "?kriyA"      "?conj")"crlf)
-(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   mark+cop    kriyA-conjunction        "?kriyA"      "?conj")"crlf)
+(assert (got_kriyA-vAkya_viBakwi_for ?conj))
+(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-vAkya_viBakwi        "?kriyA"      "?conj")"crlf)
+(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   mark+cop    kriyA-vAkya_viBakwi        "?kriyA"      "?conj")"crlf)
 )
  ; Ex. He disputed that our program was superior.
 ;------------------------------------------------------------------------------------------------------------------------
@@ -646,8 +657,8 @@
 (not (found_kriyA-sub_rel ?kri))
 (not (rel_name-sids nsubj ?kri ?x))
 =>
-(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-conjunction        "?kri"      "?conj_id")"crlf)
-(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   conj_but   kriyA-conjunction        "?kri"      "?conj_id")"crlf)
+(printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-vAkya_viBakwi        "?kri"      "?conj_id")"crlf)
+(printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   conj_but   kriyA-vAkya_viBakwi        "?kri"      "?conj_id")"crlf)
 )
  ; Ex. Petu ran fast but Betu could not run fast. 
 ;------------------------------------------------------------------------------------------------------------------------
@@ -912,8 +923,8 @@
  (if (or (eq ?w when) (eq ?w where))then
     (printout       ?*fp*   "(prep_id-relation-parser_ids  -     viSeRya-jo_samAnAXikaraNa   "?vi" "?js")"crlf)
     (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   rcmod     viSeRya-jo_samAnAXikaraNa   "?vi" "?js")"crlf)
-    (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-aXikaraNavAcI_avyaya  "?kri" "?js")"crlf)
-    (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   rcmod     kriyA-aXikaraNavAcI_avyaya  "?kri" "?js")"crlf)
+    (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-aXikaraNavAcI  "?kri" "?js")"crlf)
+    (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   rcmod     kriyA-aXikaraNavAcI  "?kri" "?js")"crlf)
     (assert (got_viSeRya-jo_samAnAXikaraNa  ?vi))
     (assert (got_viSeRya-jo_samAnAXikaraNa  ?js))
  )
@@ -957,8 +968,8 @@
 (if (eq ?a "1") then
     (printout       ?*fp*   "(prep_id-relation-parser_ids  -   viSeRya-jo_samAnAXikaraNa       "?vi"   10000)"       crlf)
     (printout       ?*dbug*    "(prep_id-Rule-Rel-ids  -   insert-where  viSeRya-jo_samAnAXikaraNa      "?vi"    10000)"crlf)
-    (printout       ?*fp*   "(prep_id-relation-parser_ids  -   kriyA-aXikaraNavAcI_avyaya       "?rv"   10000)"       crlf)
-    (printout       ?*dbug*    "(prep_id-Rule-Rel-ids  -   insert-where  kriyA-aXikaraNavAcI_avyaya       "?rv"  10000)"crlf)
+    (printout       ?*fp*   "(prep_id-relation-parser_ids  -   kriyA-aXikaraNavAcI       "?rv"   10000)"       crlf)
+    (printout       ?*dbug*    "(prep_id-Rule-Rel-ids  -   insert-where  kriyA-aXikaraNavAcI       "?rv"  10000)"crlf)
     (printout       ?*hmng_fp*      "(id-HM-source  10000   jahAz      Relative_clause)"       crlf)
     (printout       ?*open-word*    "(id-word 10000  where)"  crlf)
     (printout       ?*open-orign*   "(id-original_word 10000  where)"   crlf)
@@ -980,8 +991,8 @@
 (if (eq ?a "1") then
     (printout       ?*fp*   "(prep_id-relation-parser_ids  -   viSeRya-jo_samAnAXikaraNa       "?vi"   10000)"crlf)
     (printout       ?*dbug*    "(prep_id-Rule-Rel-ids  -   insert-where_2  viSeRya-jo_samAnAXikaraNa      "?vi"    10000)"crlf)
-    (printout       ?*fp*   "(prep_id-relation-parser_ids  -   kriyA-aXikaraNavAcI_avyaya     "?rv"   10000)"crlf)
-    (printout       ?*dbug*    "(prep_id-Rule-Rel-ids  -   insert-where_2  kriyA-aXikaraNavAcI_avyaya     "?rv"   10000)"crlf)
+    (printout       ?*fp*   "(prep_id-relation-parser_ids  -   kriyA-aXikaraNavAcI     "?rv"   10000)"crlf)
+    (printout       ?*dbug*    "(prep_id-Rule-Rel-ids  -   insert-where_2  kriyA-aXikaraNavAcI     "?rv"   10000)"crlf)
     (printout       ?*hmng_fp*      "(id-HM-source  10000   jahAz      Relative_clause)"crlf)
     (printout       ?*open-word*    "(id-word 10000  where)"  crlf)
     (printout       ?*open-orign*   "(id-original_word 10000  where)"   crlf)
@@ -1241,8 +1252,8 @@
  (rel_name-sids cc ?k P1)
  (parserid-word P1 But|And)
  =>
-        (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-conjunction "?k    " P1)"crlf)
-        (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   cc_rule  kriyA-conjunction " ?k      " P1)"crlf)
+        (printout       ?*fp*   "(prep_id-relation-parser_ids  -     kriyA-vAkya_viBakwi "?k    " P1)"crlf)
+        (printout       ?*dbug* "(prep_id-Rule-Rel-ids  -   cc_rule  kriyA-vAkya_viBakwi " ?k      " P1)"crlf)
  )
  ; Ex. But my efforts to win his heart have failed . 
  ;Added by Shirisha Manju
