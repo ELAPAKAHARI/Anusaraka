@@ -14,7 +14,7 @@ var rows_visibility = [
 1, // row9
 0, // row10
 1, // row11
-1, // row11
+1, // row12
 0, // last row will be the suggestions row
 ]; // The array can be of different size than the number of rows at hand
 
@@ -46,6 +46,6 @@ var row_descriptions = [
 "Shows the Hindi meaning after disambiguating the word in a context",
 "Shows the probable place to which preposition should be moved in Hindi output as per parser",
 "Shows the Hindi word after calling the Hindi generator",
-"Shows the manual word translation",
+"Shows the manual aligned meaning",
 "Shows the user suggestion"
 ];

@@ -35,7 +35,7 @@ do
         ./get_canonical_form-dic.out  $line".hnd"   > $line".hnd1.canonical_form_tmp"
         ./get_canonical_form-dic.out  $line".hindi" > $line".hnd2.canonical_form_tmp"
         ./canonical_form_correction.out  < $line".hnd1.canonical_form_tmp" > $line".hnd1.canonical_form_tmp1"
-        ./canonical_to_conventional.out  < $line".hnd1.canonical_form_tmp1" > $line".hnd1.canonical_form"
+       ./canonical_to_conventional.out  < $line".hnd1.canonical_form_tmp1" > $line".hnd1.canonical_form"
         ./canonical_form_correction.out  < $line".hnd2.canonical_form_tmp" > $line".hnd2.canonical_form_tmp1"
         ./canonical_to_conventional.out  < $line".hnd2.canonical_form_tmp1" > $line".hnd2.canonical_form"
 	paste $line".hnd1.canonical_form"  $line".hnd2.canonical_form" > dictionaries/$line"_in_canonical_form.txt"

@@ -90,6 +90,8 @@
  ./create-gdbm.pl $HOME_anu_test/Anu_databases/idioms.gdbm < idioms.txt
  echo "Creating preposition.gdbm"
  ./create-gdbm.pl $HOME_anu_test/Anu_databases/preposition.gdbm < preposition.txt
+ echo "Creating transliterate_meaning.gdbm"
+ ./create-gdbm.pl $HOME_anu_test/Anu_databases/transliterate_meaning.gdbm < transliterate_meaning.txt
 
  cd vb_root
  echo "Creating ol_vb_root.gdbm"
@@ -192,11 +194,6 @@
 
  cp $HOME_anu_test/debugging/sentence_debug.sh $HOME_anu_test/bin/.
  
- cd $HOME_anu_test/miscellaneous/std_tregex/
- unzip stanford-tregex-2014-01-04.zip
- cp run_tregex_for_multiparse.sh $HOME_anu_test/bin/.
- chmod +x $HOME_anu_test/bin/run_tregex_for_multiparse.sh
-
  echo "Creating Transliteration files"
  cd  $HOME_anu_test/miscellaneous/transliteration/
  tar -xvzf phrasal.Beta2.tar.gz

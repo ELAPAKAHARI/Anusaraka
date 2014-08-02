@@ -19,7 +19,7 @@
  myclips -f $HOME_anu_test/Anu_clp_files/run_modules_std.bat >  $1.error
  #Following two files are added to handle PropN fact and SYMBOL facts in layered o/p 
  python $HOME_anu_test/Anu_src/add-@_in-hindi_sentence.py hindi_meanings_tmp1.dat hindi_meanings.dat
- python $HOME_anu_test/Anu_src/add-@_in-hindi_sentence.py hindi_meanings_with_grp_ids_tmp.dat hindi_meanings_with_grp_ids.dat
+ python $HOME_anu_test/Anu_src/add-@_in-hindi_sentence.py hindi_meanings_with_grp_ids_tmp1.dat hindi_meanings_with_grp_ids.dat
  
  cd $HOME_anu_test/Anu_src/
  perl   FinalGenerate.pl $HOME_anu_test/bin/hi.gen.bin  $HOME_anu_test/Anu_databases/AllTam.gdbm  $MYPATH/ $1 $2 $HOME_anu_test/bin/hi.morf.bin < $MYPATH/$1_tmp/$2/id_Apertium_input.dat > $MYPATH/$1_tmp/$2/id_Apertium_output1.dat
@@ -44,14 +44,14 @@
 
  cat  hindi_sentence_tmp2.dat |  sed -e 's/\\@//g' | sed 's/@//g'  > hindi_sentence.dat
  cat  hindi_sentence.dat
+ 
+ wx_utf8 < hindi_sentence_tmp2.dat  >  hindi_sentence_utf8.dat
+ cat hindi_sentence_utf8.dat
 
+ grep "Warning:" $1.error > error.txt
+ sort -u error.txt > errors.txt
  grep -B2 "FALSE" $1.error >> errors.txt
- grep "Multiple adjective senses are available"  $1.error > error.txt
- sort -u error.txt >> errors.txt
- grep "Meaning for verb phrase" $1.error >> errors.txt
- grep "Parserid Wordid mapping missing for" $1.error >> errors.txt
- grep "Removed repeated meaning" $1.error >> errors.txt
- grep "Warning:" $1.error >> errors.txt
+
  cat errors.txt
 
  myclips -f $HOME_anu_test/Anu_clp_files/user_info.bat > /dev/null

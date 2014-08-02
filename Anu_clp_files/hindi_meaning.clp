@@ -39,22 +39,7 @@
  (assert (id-eng-src))
  (assert (id-attach_eng_mng))
  (assert (id-wsd_viBakwi))
- (assert (dir_name-file_name-rule_name-id-wsd_root_mng))
- (assert (dir_name-file_name-rule_name-id-wsd_word_mng))
- (assert (dir_name-file_name-rule_name-id-H_tam_mng))
- (assert (default-iit-bombay-shabdanjali-dic.gdbm))
- (assert (dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_root_mng))
- (assert (dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_word_mng))
- (assert (dir_name-file_name-rule_name-root_id-TAM-vachan))
- (assert (dir_name-file_name-rule_name-make_verbal_noun))
- (assert (dir_name-file_name-rule_name-id-H_vib_mng))
- (assert (dir_name-file_name-rule_name-kriyA_id-object_viBakwi))
- (assert (dir_name-file_name-rule_name-kriyA_id-subject_viBakwi))
- (assert (dir_name-file_name-rule_name-id-wsd_root))
- (assert (dir_name-file_name-rule_name-kriyA_id-object1_viBakwi))
- (assert (dir_name-file_name-rule_name-kriyA_id-subject1_viBakwi))
- (assert (dir_name-file_name-rule_name-id-preceeding_part_of_verb))
- (assert (dir_name-file_name-rule_name-id-wsd_number))
+ (assert (id-HM-source))
  )
 
  ;------------------------------------------ Functions ---------------------------------------------------------
@@ -85,10 +70,25 @@
  ;for MWE meaning will be assinged to the last word (single mng will be given to all words).So,by this rule we are retracting cntrl facts for remaining ids.
  (defrule mng_decided
  (declare (salience 9990))
- ?f<-(mng_has_been_decided ?id)
+ (or (mng_has_been_decided ?id)(id-HM-source ?id ? Template_root_mng|Template_word_mng))
+ ;?f<-(mng_has_been_decided ?id)
  ?mng<-(meaning_to_be_decided ?id)
  =>
         (retract ?mng)
+ )
+ ;--------------------------------------------------------------------------------------------------------------
+ ;Added by Roja (05-07-14)
+ ;If category is symbol then hindi meaning is same as Original Word.
+ ;A can be expressed as a sum of two vectors — one obtained by multiplying [a] by a real number and the other obtained by multiplying [b] by another real number.
+ (defrule decide_mng_symbols
+ (declare (salience 9989))
+ (id-cat_coarse ?id symbol)
+ ?mng<-(meaning_to_be_decided ?id)
+ (id-original_word ?id  ?original_wrd)
+ =>
+	(retract ?mng)
+	(printout ?*hin_mng_file* "(id-HM-source  " ?id "  @" ?original_wrd"    Symbol)" crlf)
+        (printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?id "  @"?original_wrd"    Symbol)" crlf)
  )
  ;--------------------------------------------------------------------------------------------------------------
  ;Added by Shirisha Manju (29-11-12) (suggested by Chaitanya Sir)
@@ -175,10 +175,10 @@
 	(print_hindi_mng ?head_id -  Phy_compound_phrase_root_mng $?grp_ids)
 	(if (eq ?mng_typ RM) then
   		(printout ?*hin_mng_file* "(id-HM-source  " ?head_id "  "?mng"    Phy_compound_phrase_root_mng)" crlf)
-  		(printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?head_id "  "?mng"    Phy_compound_phrase_root_mng" ?head_id" "(implode$ $?grp_ids)")" crlf)
+  		(printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?head_id "  "?mng"    Phy_compound_phrase_root_mng  "(implode$ $?grp_ids)")" crlf)
 	else
 		(printout ?*hin_mng_file* "(id-HM-source  " ?head_id "  "?mng"    Phy_compound_phrase_word_mng)" crlf)
-                (printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?head_id "  "?mng"    Phy_compound_phrase_word_mng" ?head_id" "(implode$ $?grp_ids)")" crlf)
+                (printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?head_id "  "?mng"    Phy_compound_phrase_word_mng  "(implode$ $?grp_ids)")" crlf)
 	)
  )
  ;========================================== WSD multi word meaning ==============================================
@@ -187,14 +187,12 @@
  (defrule wsd_cmp_phrase_word_mng
  (declare (salience 9400))
  (affecting_id-affected_ids-wsd_group_word_mng  ?id  $?ids ?cmp_mng)
- (dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_word_mng ? ?file_name ?rule_name ?id $?ids ?)
  ?f<-(meaning_to_be_decided ?id)
  =>
 	(retract ?f)
-        (bind ?str (str-cat WSD_compound_phrase_word_mng ",rule::"  ?rule_name))
 	(print_hindi_mng ?id -  WSD_compound_phrase_word_mng $?ids)
 	(printout ?*hin_mng_file* "(id-HM-source  " ?id "  "?cmp_mng"    WSD_compound_phrase_word_mng)" crlf)
-        (printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?id "  "?cmp_mng"    "?str" "?id" "(implode$ $?ids)")" crlf)
+        (printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?id "  "?cmp_mng"    WSD_compound_phrase_word_mng "?id" "(implode$ $?ids)")" crlf)
  )
  ;--------------------------------------------------------------------------------------------------------------
  ; WSD compound phrase mng.
@@ -202,14 +200,12 @@
  (defrule wsd_cmp_phrase_root_mng
  (declare (salience 9400))
  (affecting_id-affected_ids-wsd_group_root_mng  ?id  $?ids ?cmp_mng)
- (dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_root_mng ? ?file_name ?rule_name ?id $?ids ?)
  ?f<-(meaning_to_be_decided ?id)
  =>
 	(retract ?f)
-        (bind ?str (str-cat WSD_compound_phrase_root_mng ",rule::"  ?rule_name))
 	(print_hindi_mng ?id -  WSD_compound_phrase_root_mng $?ids)
-        (printout ?*hin_mng_file* "(id-HM-source  " ?id "  "?cmp_mng"   WSD_compound_phrase_root_mng)" crlf)
-	(printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?id "  "?cmp_mng"    "?str" "?id" "(implode$ $?ids)")" crlf)
+        (printout ?*hin_mng_file* "(id-HM-source  " ?id "  "?cmp_mng"    WSD_compound_phrase_root_mng)" crlf)
+	(printout ?*hin_mng_file1* "(id-HM-source-grp_ids  " ?id "  "?cmp_mng"    WSD_compound_phrase_root_mng "?id" "(implode$ $?ids)")" crlf)
  )
  ;--------------------------------------------------------------------------------------------------------------
  ;WSD verb phrase mng
@@ -218,15 +214,13 @@
  (declare (salience 9300))
  (prep_id-relation-anu_ids ?  kriyA-upasarga  ?id ?id1)
  (affecting_id-affected_ids-wsd_group_word_mng  ?id  ?id1 ?grp_mng)
- (dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_root_mng ? ?file_name ?rule_name ?id $?ids ?)
  ?mng<-(meaning_to_be_decided ?id)
  ?mng1<-(meaning_to_be_decided ?id1)
  =>
   (retract ?mng ?mng1)
-  (bind ?str (str-cat WSD_verb_phrase_word_mng ",rule::"  ?rule_name))
-  (printout ?*hin_mng_file* "(id-HM-source   "?id"   " ?grp_mng"  WSD_verb_phrase_word_mng)" crlf)
+  (printout ?*hin_mng_file* "(id-HM-source   "?id"   " ?grp_mng "  WSD_verb_phrase_word_mng)" crlf)
   (printout ?*hin_mng_file* "(id-HM-source   "?id1"   -    WSD_verb_phrase_word_mng)" crlf)
-  (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id1"   "?grp_mng"    "?str"  "?id" "?id1")" crlf)
+  (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id1"   "?grp_mng"    WSD_verb_phrase_word_mng "?id" "?id1")" crlf)
  )
  ;--------------------------------------------------------------------------------------------------------------
  ;WSD verb phrase mng
@@ -235,15 +229,13 @@
  (declare (salience 9300))
  (prep_id-relation-anu_ids  ? kriyA-upasarga  ?id ?id1)
  (affecting_id-affected_ids-wsd_group_root_mng  ?id  ?id1 ?grp_mng)
- (dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_root_mng ? ?file_name ?rule_name ?id $?ids ?)
  ?mng<-(meaning_to_be_decided ?id)
  ?mng1<-(meaning_to_be_decided ?id1)
  =>
   (retract ?mng ?mng1)
-  (bind ?str (str-cat WSD_verb_phrase_root_mng ",rule::"  ?rule_name))
   (printout ?*hin_mng_file* "(id-HM-source   "?id"   " ?grp_mng "  WSD_verb_phrase_root_mng)" crlf)
   (printout ?*hin_mng_file* "(id-HM-source   "?id1"   -    WSD_verb_phrase_root_mng)" crlf)
-  (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   " ?grp_mng " "?str" "?id" "?id1")" crlf)
+  (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   " ?grp_mng "  WSD_verb_phrase_root_mng "?id" "?id1")" crlf)
  )
  ;=================================== Default multi word meaning ===============================================
  ;Added 'if..else' loop by Roja(20-02-14) to decide source of the MWE.
@@ -314,7 +306,7 @@
 		(printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   " ?a "   Verb_Phrase_gdbm "?id" "?id1")" crlf)
 		(retract ?mng ?mng1)
 	else
-		(printout t "Meaning for verb phrase "?vrb_phrase "  is required" crlf)
+		(printout t "Warning: Meaning for verb phrase "?vrb_phrase "  is required" crlf)
   	)
  )
  ;======================================== PropN rules ==========================================================
@@ -493,13 +485,11 @@
  (defrule wsd_word_mng
  (declare (salience 8200))
  ?mng<-(meaning_to_be_decided ?id)
- (dir_name-file_name-rule_name-id-wsd_word_mng  ?  ?file_name 	?rule_name  ?id ?)
  (id-wsd_word_mng ?id ?h_word)
  =>
         (retract ?mng)
-        (bind ?str (str-cat WSD_word_mng ",rule::"  ?rule_name))
-        (printout ?*hin_mng_file* "(id-HM-source   "?id"   " ?h_word"  WSD_word_mng)" crlf)
-        (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   " ?h_word" "?str" "?id")" crlf)
+        (printout ?*hin_mng_file* "(id-HM-source   "?id"   " ?h_word "    WSD_word_mng)" crlf)
+        (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   " ?h_word "    WSD_word_mng "?id")" crlf)
  )
  ;--------------------------------------------------------------------------------------------------------------
  (defrule idiom_root_mng
@@ -515,13 +505,11 @@
  (defrule wsd_root_mng
  (declare (salience 8000))
  ?mng<-(meaning_to_be_decided ?id)
- (dir_name-file_name-rule_name-id-wsd_root_mng  ?  ?file_name 	?rule_name  ?id ?)
  (id-wsd_root_mng ?id ?h_word)
  =>
         (retract ?mng)
-        (bind ?str (str-cat WSD_root_mng ",rule::"  ?rule_name))
         (printout ?*hin_mng_file* "(id-HM-source   "?id"   " ?h_word "   WSD_root_mng)" crlf)
-        (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   " ?h_word "   "?str" "?id")" crlf)
+        (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   " ?h_word "   WSD_root_mng "?id")" crlf)
  )
  ;========================================== Default single word meaning =======================================
  ;Added by Shirisha Manju (09-05-13)
@@ -580,7 +568,7 @@
  ;Getting Hindi meaning from default dictionary when there is a same category 
  ;Assuming first meaning always has 'Defualt'.
  ;Modified by Shirisha Manju (04-02-12) removed if condition to check for "number" in action part instead added in rule part
- (defrule default_hindi_mng-same-cat
+ (defrule default_hindi_mng-same-cat_with_root
  (declare (salience 7700))
  (id-root ?id ?rt)
  ?mng<-(meaning_to_be_decided ?id)
@@ -600,7 +588,7 @@
  ;Getting Hindi meaning from default dictionary when there is a different category.
  ;Also asserting a fact (sen_type-id-phrase Default_mng_with_different_category) as a warning message in catastrophe.dat
  ;Assuming first meaning always has 'Defualt'.
- (defrule default_hindi_mng-different-cat
+ (defrule default_hindi_mng-different-cat_with_root
  (declare (salience 7600))
  (id-root ?id ?rt)
  ?mng<-(meaning_to_be_decided ?id)
@@ -619,8 +607,107 @@
         )
  )
  ;--------------------------------------------------------------------------------------------------------------
+ ;Added by Roja (24-05-14).
+ ;Getting Hindi meaning from default dictionary with original word same category
+ (defrule default_hindi_mng-same-cat_with_org_wrd
+ (declare (salience 7500))
+ ?mng<-(meaning_to_be_decided ?id)
+ (id-cat_coarse ?id ?cat)
+ (id-original_word ?id ?org_wrd)
+ (test (neq (numberp ?org_wrd) TRUE))
+ (test (neq (gdbm_lookup "default-iit-bombay-shabdanjali-dic.gdbm" (str-cat ?org_wrd "_" ?cat)) "FALSE"))
+ =>
+        (bind ?f_mng (get_first_mng ?org_wrd ?cat default-iit-bombay-shabdanjali-dic.gdbm))
+        (if (neq ?f_mng "FALSE") then
+                (retract ?mng)
+                (printout ?*hin_mng_file* "(id-HM-source   "?id"   "?f_mng"   Default_meaning)" crlf)
+                (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   "?f_mng"   Default_meaning "?id")" crlf)
+        )
+ )
+ ;--------------------------------------------------------------------------------------------------------------
+ ;Added by Roja (24-05-14).
+ ;Getting Hindi meaning from default dictionary with original word when there is a different category.
+ ;Also asserting a fact (sen_type-id-phrase Default_mng_with_different_category) as a warning message in catastrophe.dat
+ ;Assuming first meaning always has 'Defualt'.
+ (defrule default_hindi_mng-different-cat_with_org_wrd
+ (declare (salience 7300))
+ ?mng<-(meaning_to_be_decided ?id)
+ (id-original_word ?id ?org_wrd)
+ (id-cat_coarse ?id ?cat)
+ (default-cat ?cat1)
+ (test (neq (numberp ?org_wrd) TRUE))
+ (test (neq ?cat ?cat1))
+ (test (neq (gdbm_lookup "default-iit-bombay-shabdanjali-dic.gdbm" (str-cat ?org_wrd "_" ?cat1)) "FALSE"))
+ =>
+        (bind ?f_mng (get_first_mng ?org_wrd ?cat1 default-iit-bombay-shabdanjali-dic.gdbm))
+        (if (neq ?f_mng "FALSE") then
+                (retract ?mng)
+                (printout ?*hin_mng_file* "(id-HM-source   "?id"   "?f_mng"   Default_meaning)" crlf)
+                (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   "?f_mng"   Default_meaning "?id")" crlf)
+                (printout ?*catastrophe_file* "(sen_type-id-phrase Default_mng_with_different_category "?id"  " ?org_wrd")" crlf)
+        )
+ )
+ ;--------------------------------------------------------------------------------------------------------------
+ ;Added by Roja (24-05-14).
+ ;Getting Hindi meaning from default dictionary lowcasing original word same category
+ (defrule default_hindi_mng-same-cat_with_org_wrd_lc
+ (declare (salience 7200))
+ ?mng<-(meaning_to_be_decided ?id)
+ (id-cat_coarse ?id ?cat)
+ (id-original_word ?id ?org_wrd)
+ (test (neq (numberp ?org_wrd) TRUE))
+ (test (neq (gdbm_lookup "default-iit-bombay-shabdanjali-dic.gdbm" (str-cat (lowcase ?org_wrd) "_" ?cat)) "FALSE"))
+ =>
+        (bind ?f_mng (get_first_mng (lowcase ?org_wrd) ?cat default-iit-bombay-shabdanjali-dic.gdbm))
+        (if (neq ?f_mng "FALSE") then
+                (retract ?mng)
+                (printout ?*hin_mng_file* "(id-HM-source   "?id"   "?f_mng"   Default_meaning)" crlf)
+                (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   "?f_mng"   Default_meaning "?id")" crlf)
+        )
+ )
+ ;--------------------------------------------------------------------------------------------------------------
+ ;Added by Roja (24-05-14).
+ ;Getting Hindi meaning from default dictionary lowcasing original word when there is a different category.
+ ;Also asserting a fact (sen_type-id-phrase Default_mng_with_different_category) as a warning message in catastrophe.dat
+ ;Assuming first meaning always has 'Defualt'.
+ (defrule default_hindi_mng-different-cat_with_org_wrd_lc
+ (declare (salience 7100))
+ ?mng<-(meaning_to_be_decided ?id)
+ (id-original_word ?id ?org_wrd)
+ (id-cat_coarse ?id ?cat)
+ (default-cat ?cat1)
+ (test (neq (numberp ?org_wrd) TRUE))
+ (test (neq ?cat ?cat1))
+ (test (neq (gdbm_lookup "default-iit-bombay-shabdanjali-dic.gdbm" (str-cat (lowcase ?org_wrd) "_" ?cat1)) "FALSE"))
+ =>
+        (bind ?f_mng (get_first_mng (lowcase ?org_wrd) ?cat1 default-iit-bombay-shabdanjali-dic.gdbm))
+        (if (neq ?f_mng "FALSE") then
+                (retract ?mng)
+                (printout ?*hin_mng_file* "(id-HM-source   "?id"   "?f_mng"   Default_meaning)" crlf)
+                (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   "?f_mng"   Default_meaning "?id")" crlf)
+                (printout ?*catastrophe_file* "(sen_type-id-phrase Default_mng_with_different_category "?id"  " ?org_wrd")" crlf)
+        )
+ )
+ ;--------------------------------------------------------------------------------------------------------------
+ ;Added by Shirisha Manju Suggested by Chaitanya Sir (18-7-14)
+ (defrule get_mng_from_transliterate_mng
+ (declare (salience 7410))
+ (id-word ?id ?word)
+ ?f<-(meaning_to_be_decided ?id)
+ (test (neq (numberp ?word) TRUE))
+ (test (neq (gdbm_lookup "transliterate_meaning.gdbm" ?word ) "FALSE"))
+ =>
+	(bind ?mng (gdbm_lookup "transliterate_meaning.gdbm" ?word ))
+        (if (neq ?mng "FALSE") then
+                (retract ?f)
+                (printout ?*hin_mng_file* "(id-HM-source   "?id"   "?mng"   transliterate_meaning_dic)" crlf)
+                (printout ?*hin_mng_file1* "(id-HM-source-grp_ids   "?id"   "?mng"   transliterate_meaning_dic "?id")" crlf)
+        )
+ )
+ ;--------------------------------------------------------------------------------------------------------------
+  ;Getting meaning for Proper noun 
   (defrule test_for_PropN
-  (declare (salience 7500))
+  (declare (salience 7400))
   (id-cat_coarse ?id PropN)
   (id-word ?id ?word)
   ?mng<-(meaning_to_be_decided ?id)
@@ -637,7 +724,7 @@
  ;That would be the lowest level since the early 1970s.
  ;Seven of nine states have grown each year since 1980, including New York, which lost 4% of its population during the 1970s.
  (defrule default_mng
- (declare (salience 7400))
+ (declare (salience 7000))
  (id-original_word ?id  ?original_wrd)
  ?mng<-(meaning_to_be_decided ?id)
  =>
