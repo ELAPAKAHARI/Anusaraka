@@ -1,5 +1,7 @@
  (deftemplate pada_info (slot group_head_id (default 0))(slot group_cat (default 0))(multislot group_ids (default 0))(slot vibakthi (default 0))(slot gender (default 0))(slot number (default 0))(slot case (default 0))(slot person (default 0))(slot H_tam (default 0))(slot tam_source (default 0))(slot preceeding_part_of_verb (default 0)) (multislot preposition (default 0))(slot Hin_position (default 0))(slot pada_head (default 0)))
 
+(deftemplate alignment (slot anu_id (default 0))(slot man_id (default 0))(multislot anu_meaning (default 0))(multislot man_meaning(default 0)))
+
  (deffunction string_to_integer (?parser_id)
  (string-to-field (sub-string 2 10000 ?parser_id)))
 
@@ -75,8 +77,10 @@
  (deffunction print_eng_wrd_row(?p_id ?s_id ?w_id ?chnk_fr_htm ?l_punc ?r_punc ?root ?original_word ?sen_type ?fetch $?eng_sen)
  (if (= ?w_id 1) then ;(printout fp "<tr><td>"(implode$ $?eng_sen)"</td></tr>" crlf)
                       (printout fp "<form class=\"suggestion\" action=\"sumbit_suggestions.php\">" crlf)
+                      (printout fp "<!-- Sent Start -->" crlf)
                       (printout fp "<table border=\"1\">" crlf)
                       (printout fp "<tr><td>"(implode$ $?eng_sen)"</td></tr><tr><td>" crlf)
+                      (printout fp "<!-- Sent End -->" crlf)
  )
  (printout fp "<table cellspacing=\"0\">"crlf"<tr class=\"row1\">" crlf)
  (printout fp "<td class=\"number\">"?p_id"."?s_id".A<a name=\"sentence_"?p_id"_"?s_id"_"?w_id"\" id=\"sentence_"?p_id"_"?s_id"_"?w_id"\"></a></td><td class=\""?chnk_fr_htm"\"> <a onclick=\"javascript:  fetchshabd"?fetch"('"?root"')\"> <span id=\"popup_link_"?p_id"_"?s_id"_"?w_id"_"?original_word"\" class=\"popup_link\">"(implode$ (create$ ?l_punc)) ?original_word (implode$ (create$ ?r_punc))"</span> <script type=\"text/javascript\"> new Popup('popup_2','popup_link_"?p_id"_"?s_id"_"?w_id"_"?original_word "',{position:'below',trigger:'click'}); </script>   </a> </td>"crlf"</tr>" crlf)
@@ -253,7 +257,7 @@
  (deffunction print_suggestion_row(?p_id ?s_id ?w_id ?chnk_fr_htm ?l_punc ?r_punc ?aper_op ?id_type)
  (printout fp "<tr class=\"row15\">" crlf )
  (if (= ?w_id 1) then (printout fp "<td class=\"number\">&nbsp;</td>"))
- (printout fp "<td class=\""?chnk_fr_htm"\"><input name=\"suggestion_1.1\" type=\"text\" class=\"suggestion\" size=\"1\" value=\"")
+ (printout fp "<td class=\""?chnk_fr_htm"\"><input name=\"suggestion_"?p_id"."?s_id"\" type=\"text\" class=\"suggestion\" size=\"1\" value=\"")
  (if (eq ?id_type AUX_VERB) then (printout fp " -- \" /></td></tr>" crlf) else (printout fp (implode$ (create$ ?l_punc)) ?aper_op (implode$ (create$ ?r_punc)) "\" /></td></tr>" crlf))
  (printout fp "</table>" crlf)
  )
@@ -787,14 +791,16 @@
 
  (defrule convert_wx_to_utf8_for_manual_output_human_rules-en_hi
  (declare (salience 2001))
- ?f<-(anu_id-anu_mng-sep-man_id-man_mng_tmp ?aid $?mng - ?mid $?man_output)
- (test (and (> (length $?mng) 0) (neq $?man_output -)))
+ ?f<-(alignment (anu_id ?aid)(man_id ?mid)(anu_meaning $?mng)(man_meaning $?man_output))
+ ;?f<-(anu_id-anu_mng-sep-man_id-man_mng_tmp ?aid $?mng - ?mid $?man_output)
+; (test (and (> (length $?mng) 0) (neq $?man_output -)))
  (not (id_manual_output_mng_modified2 ?aid))
  =>
- (retract ?f)
+ ;(retract ?f)
  (bind ?length (length $?man_output))
  (if (eq ?length 0) then
-        (assert (anu_id-anu_mng-sep-man_id-man_mng_tmp ?aid $?mng - ?mid -))
+  ;      (assert (anu_id-anu_mng-sep-man_id-man_mng_tmp ?aid $?mng - ?mid -))
+         (modify ?f (man_meaning -) (anu_meaning $?mng))
  else
         (loop-for-count (?i  1 ?length)
                 ;(bind ?word (nth$ ?i (create$ $?man_output)))
@@ -809,7 +815,8 @@
                 else
                         (bind ?utf8_man_output ?word)))
 
-        (assert (anu_id-anu_mng-sep-man_id-man_mng_tmp ?aid  $?mng - ?mid ?utf8_man_output))
+        ;(assert (anu_id-anu_mng-sep-man_id-man_mng_tmp ?aid  $?mng - ?mid ?utf8_man_output))
+        (modify ?f (man_meaning ?utf8_man_output)(anu_meaning $?mng))
  )
         (assert (id_manual_output_mng_modified2 ?aid))
  )
@@ -818,10 +825,12 @@
  (defrule man_rule_human_rules_en_hi
  (declare (salience 900))
  (id-word ?id ?word)
- (not (anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $?))
+ ;(not (anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $?))
+ (not (alignment (anu_id ?id)))
  =>
 
- (assert (anu_id-anu_mng-sep-man_id-man_mng_tmp ?id - - - -))
+ ;(assert (anu_id-anu_mng-sep-man_id-man_mng_tmp ?id - - - -))
+  (assert (alignment (anu_id ?id)(man_id -)(anu_meaning -)(man_meaning -)))
  )
 
  (defrule convert_wx_to_utf8_for_manual_output_human_rules-hi_en
@@ -917,7 +926,7 @@
  (if (eq ?r_punc NONE) then (bind ?r_punc (create$ )))
  (if (eq ?l_punc NONE) then (bind ?l_punc (create$ )))
  (bind ?fetch (sub-string 0 1 (implode$ (create$ ?root))))
- (printout fp "<form class=\"suggestion\" action=\"sumbit_suggestions.php\"><table cellspacing=\"0\">" crlf)
+ ;(printout fp "<form class=\"suggestion\" action=\"sumbit_suggestions.php\"><table cellspacing=\"0\">" crlf)
  (print_eng_wrd_row  ?p_id ?s_id 1 ?chnk_fr_htm ?l_punc ?r_punc ?root ?original_word ?sen_type ?fetch $?eng_sen)
  (assert (id-index 1 ?n_words))
  )
@@ -968,7 +977,8 @@
  (sen_type-id-phrase ?sen_type ?id ?phrase)
  (anu_id-anu_mng-sep-man_id-man_mng ?id $? ? - ? ?man_mng)
  (eng_id-eng_wrd-sep-man_id-man_mng ?id $? ? - ? ?man_mng1)
- (anu_id-anu_mng-sep-man_id-man_mng_tmp  ?id $? ? - ? ?man_mng2)
+ (alignment (anu_id ?id)(man_meaning ?man_mng2))
+ ;(anu_id-anu_mng-sep-man_id-man_mng_tmp  ?id $? ? - ? ?man_mng2)
  (id-phrase_type-lvalue ?id ?ph_ltype ?ph_l_val)
  (id-phrase_type-rvalue ?id ?ph_rtype ?ph_r_val)
  (anu_id-man_left_punc ?id ?m_l_punc)
@@ -1046,7 +1056,8 @@
  (sen_type-id-phrase ?sen_type ?id ?phrase)
  (anu_id-anu_mng-sep-man_id-man_mng ?id $? ? - ? ?man_mng)
  (eng_id-eng_wrd-sep-man_id-man_mng ?id $? ? - ? ?man_mng1)
- (anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $? ? - ? ?man_mng2)
+ (alignment (anu_id ?id)(man_meaning ?man_mng2))
+ ;(anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $? ? - ? ?man_mng2)
  (id-phrase_type-lvalue ?id ?ph_ltype ?ph_l_val)
  (id-phrase_type-rvalue ?id ?ph_rtype ?ph_r_val)
  (anu_id-man_left_punc ?id ?m_l_punc)
@@ -1112,7 +1123,8 @@
  (sen_type-id-phrase ?sen_type ?pp_id ?phrase)
  (anu_id-anu_mng-sep-man_id-man_mng ?pp_id $? ? - ? ?man_mng)
  (eng_id-eng_wrd-sep-man_id-man_mng  ?pp_id $? ? - ? ?man_mng1)
- (anu_id-anu_mng-sep-man_id-man_mng_tmp ?pp_id $? ? - ? ?man_mng2)
+ (alignment (anu_id ?pp_id)(man_meaning ?man_mng2))
+ ;(anu_id-anu_mng-sep-man_id-man_mng_tmp ?pp_id $? ? - ? ?man_mng2)
  (id-phrase_type-lvalue ?pp_id ?ph_ltype ?ph_l_val) 
  (id-phrase_type-rvalue ?pp_id ?ph_rtype ?ph_r_val) 
  (anu_id-man_left_punc ?id ?m_l_punc)
@@ -1175,7 +1187,8 @@
  (sen_type-id-phrase ?sen_type ?id ?phrase)
  (anu_id-anu_mng-sep-man_id-man_mng ?id $? ? - ? ?man_mng)
  (eng_id-eng_wrd-sep-man_id-man_mng ?id $? ? - ? ?man_mng1)
- (anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $? ? - ? ?man_mng2)
+ (alignment (anu_id ?id)(man_meaning ?man_mng2))
+ ;(anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $? ? - ? ?man_mng2)
  (id-phrase_type-lvalue ?id ?ph_ltype ?ph_l_val)
  (id-phrase_type-rvalue ?id ?ph_rtype ?ph_r_val)
  (anu_id-man_left_punc ?id ?m_l_punc)
@@ -1232,7 +1245,8 @@
  (sen_type-id-phrase ?sen_type ?id ?phrase)
  (anu_id-anu_mng-sep-man_id-man_mng ?id $? ? - ? ?man_mng)
  (eng_id-eng_wrd-sep-man_id-man_mng ?id $? ? - ? ?man_mng1)
- (anu_id-anu_mng-sep-man_id-man_mng_tmp  ?id $? ? - ? ?man_mng2)
+ (alignment (anu_id ?id)(man_meaning ?man_mng2))
+ ;(anu_id-anu_mng-sep-man_id-man_mng_tmp  ?id $? ? - ? ?man_mng2)
  (id-phrase_type-lvalue ?id ?ph_ltype ?ph_l_val)
  (id-phrase_type-rvalue ?id ?ph_rtype ?ph_r_val)
  (anu_id-man_left_punc ?id ?m_l_punc)
@@ -1288,7 +1302,8 @@
  (No complete linkages found)
  (anu_id-anu_mng-sep-man_id-man_mng ?id $? ? - ? ?man_mng)
  (eng_id-eng_wrd-sep-man_id-man_mng ?id $? ? - ? ?man_mng1)
- (anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $? ? - ? ?man_mng2)
+ (alignment (anu_id ?id)(man_meaning ?man_mng2))
+ ;(anu_id-anu_mng-sep-man_id-man_mng_tmp ?id $? ? - ? ?man_mng2)
  (id-phrase_type-lvalue ?id ?ph_ltype ?ph_l_val)
  (id-phrase_type-rvalue ?id ?ph_rtype ?ph_r_val)
  (anu_id-man_left_punc ?id ?m_l_punc)
@@ -1385,8 +1400,8 @@
  (retract ?f)
  (printout fp "<div class=\"submit_button_block\"><input class=\"submit_button\" type=\"submit\" value=\"Submit\" /></div> " crlf)
  (printout fp "</td></tr>" crlf)
+ (printout fp "<!-- Sent Start -->" crlf) 
  (printout fp "<tr><td>"(implode$ $?eng_sen)"</td></tr>" crlf)
- 
  (bind ?dic_path1 (str-cat ?*path1* "/tmp/" ?*filename* "_tmp/"?p_id"."?s_id"/hindi_sentence_tmp2.dat"))
  (open ?dic_path1 dic_fp1)
  (bind ?val1 (readline dic_fp1))
@@ -1413,7 +1428,8 @@
  (printout fp "</td></tr>" crlf)
  (close dic_fp)
 
- (printout fp "</table></form>")
+ (printout fp "</table></form>" crlf)
+ (printout fp "<!-- Sent End -->" crlf) 
  (if (and (= ?p_id 1) (= ?s_id 1)) then (printout fp "<div class=\"float_clear\"/>" crlf))
 
  (reset)

@@ -1,9 +1,11 @@
- 02-08-14
+ 24-10-14
  ========
  1. WSD:
 	Modified : have.clp	president.clp	admire.clp	distinguish.clp		update.clp
 		   who.clp	roundabout.clp	on.clp		add.clp			excess.clp
-		   both.clp
+		   both.clp	consist.clp	reflect.clp	point.clp		till.clp
+		   be.clp	describe.clp	call.clp   	drink.clp   		rude.clp 
+		   to.clp
 	Added	 : dissolve.clp
 	Moved provisional wsd rules into WSD
  2. sd_category.clp
@@ -12,42 +14,78 @@
 	Modified the rules to generate fine category using stanford parser 
  3. sd_lwg_rules.clp
         Modified : check_for_imper1  (to add SBAR in the list)
+        Added    : find_conj_head1 test_nodes_for_verbs replace_nodes_for_main_verb replace_nodes_for_aux rem_fact_with_nodes
+        Removed  : replace_nodes
  4. hindi_meaning.clp:
-	Added : decide_mng_symbols (when cat is symbol), get_mng_from_transliterate_mng 
-	Modified: get_compound_mng_for_physics_domain (printout statements)
-	Modified: vrb_phrase_mng (Added Warning: in print statement)
+	Added    : decide_mng_symbols (when cat is symbol), get_mng_from_transliterate_mng, get_phy_wsd_word_mng and get_phy_wsd_root_mng
+	Modified : get_compound_mng_for_physics_domain (printout statements)
+	Modified : vrb_phrase_mng (Added Warning: in print statement) , mng_decided , modify_word_for_apos rules
+	Removed  : rm_cmp_mng_if_head_is_verb, compare_wsd_and_db_MWE_word_mng,  compare_wsd_and_db_MWE_root_mng, lwg_mng
+		   complete_sen_trans, get_compound_mng_for_physics_domain,wsd_cmp_phrase_word_mng, wsd_cmp_phrase_root_mng,
+		   wsd_vrb_phrase_word_mng, wsd_vrb_phrase_root_mng,database_cmp_phrase_word_mng, database_cmp_phrase_root_mng
+                   vrb_phrase_mng   [ handled in  hindi_compound_meaning.clp ]
+	Renamed  :  default_hindi_mng-different-cat_with_org_wrd to default_hindi_mng-different-cat_with_org_wrd1
  5. wsd_tam_meaning.clp:
 	Modified: load_user_tam_file
  6. cat_rule.clp
 	Modified: 'fine_cat' rule (used stanford parsers fine cat instead apertium)
  7. parser_id_mapping.clp
 	Modified: 'map_cat' rule  (used stanford parsers fine cat instead apertium) 
- 8.  H_ordering_rules.clp
+ 8. H_ordering_rules.clp
 	Modified : dont_rev_if_VP_head_accused, move_ADVP_after_v and rev_VP_or_WHPP 
 	dded	 : dont_rev_VP_if_immediate_sis_sbar
  9. check_for_best_match_in_multi-word.clp:
 	Added example sentence and comments in 'chk_for_prov_multi_same_group_ids' rule.
  10. causative_verb_mng.clp:
 	Modified : get_rule_info
+	increased salience of causative_verb_mng (bcoz mng should be lookup before adding 'nA')
  11. tam_meaning.clp:
 	Added 'Warning msg in get_tam_from_database' rule.
+	Modified : vib_mng_from_wsd_[word/root]_file1, vib_mng_from_wsd_[word/root]_file
+                   [ removed 'id-H_vib_mng' fact instead meaning_to_be_decided fact for vib case]
  12. adjective.clp:
 	Added:  load_user_org_wrd_with_verb_root, load_user_wrd_with_verb_root, load_org_wrd_with_verb_root
 		load_wrd_with_verb_root, check_whether_mng_dcd, remove_dummy_fact_mng_need_to_be_decided_on_verb_root
  13. parser_tree_correction_rules.clp:
-	Modified: modify_PP_daughter (Added Warning: in print statement)
- 14. parserid_wordid_mapping.clp:
+	Modified : modify_PP_daughter (Added Warning: in print statement)
+	Added    : modify_NNP_as_JJ	modify_VBZ_as_NP	modify_NNP_as_VB
+ 14. parser_tree_modification_rules.clp
+	Added   : make_compound_Phrase1 rule 
+ 15. parserid_wordid_mapping.clp:
 	Modified: print_warning_msg (Added Warning: in print statement)
- 15. run_modules_std.bat
+ 16. sd_relation_rules.clp:
+	Modified : vmod , cop+nsubj and cop+nsubj_2
+ 17. vibakthi.clp
+        Added : get_vib_for_kriyA_mUla
+ 18. prepare_apertium_input.clp :
+        Added    : kA_vib_rule_for_verbal_noun ,default_kA_vib_rule
+	Modified : kA_vib_from_obj_rule, kA_vib_from_obj_rule1 and kA_vib_rule_for_verbal_noun [changed 'case' info from variable to 'd']
+ 19. get_dbase_mng.clp:
+	Added 'proper_noun_dic.gdbm in rules 'get_mng_from_all_dic' and 'get_mng_from_all_dic1'   
+ 20. run_modules_std.bat
         Loaded  parserid_wordid_mapping.dat and word2.dat in sd_category module
 	Loaded  root.dat file in H_ordering_rules module
- 16. hnd_translation.pl:
-        Modified 'hindi_sentence_tmp.dat' to 'hindi_sentence.dat'	
- 17. Added transliterate_meaning.txt file in Anu_data
- 18. Added relation_table/ folder in Doc contains following files:
+	Added 	new module 'hindi_compound_meaning.clp'
+ 21. hnd_translation.pl:
+        Modified 'hindi_sentence_tmp.dat' to 'hindi_sentence_tmp2.dat'
+		 '$ARGV[0]_trnsltn.html' to '$ARGV[0]_trnsltn_tmp.html'	
+ 22. Added relation_table/ folder in Doc contains following files:
 	relation-table-for-WSD-wx.html  
 	style.css
- 19. Added following files related to phrasal alignment:
+ 23. Added align_output/ folder in phrasal_alignment which contains
+	verified			phy_verified
+	verified_hnd			phy_verified_hnd
+       	verified_eng_align.html		phy_verified_eng_align.html
+ 24. Added align_debug/ folder in phrasal_alignment which contains
+	alignment_debug.sh
+	create-html-table.pl
+	print_matrix.py
+	combine_apos.lex
+	get_wordid.lex
+	parserid_wordid_mapping.clp
+	run_parser_mapping.bat
+	README
+ 25. Added following files related to phrasal alignment:
 	count.py
 	sort.sh
 	bin/Anusaaraka_alignment.sh 
@@ -65,43 +103,53 @@
 	get_phrasal_dic-en-hi.sh 
 	phrase_gdbm_dict.c 
 	create_SL-TL_dict_using_phrase_table.py
- 20. Added 'parser_id-cat' dummy fact in cat_rule.clp, parser_id_mapping.clp, root_rule.clp and sd_relation_rules.clp
- 21. Removed : 
+	get_heuristics.clp
+	alignment.clp
+	get_score.clp
+ 26. Added dummy fact
+        1. 'parser_id-cat' ---  cat_rule.clp, parser_id_mapping.clp, root_rule.clp and sd_relation_rules.clp
+	2. '(id-domain_type) and (compound_meaning_decided)'
+		causative_verb_mng.clp		hindi_meaning.clp		hindi_sent_reorder.clp
+		hindi_sentence.clp		number.clp			prepare_apertium_input.clp
+		tam_meaning.clp			vibakthi.clp			preferred_morph_consistency_check.clp
+ 27. Added following files:
+	-> check_for_TITLE.c programme to check whether input file contains TITLE or not.
+	-> get_latest_version_stanford_parser.sh in stanford-parser dir 
+	-> src folder in stanford-parser dir (Separated source files related to stanford-parser)
+ 	-> transliterate_meaning.txt file in Anu_data
+	-> get_rev_alltam.sh file to generate Alltam in reverse format
+	-> hindi_compound_meaning.clp in Anu_clp_files  (to handle all compound meanings)
+ 28. Added:
+	iit-bombay-UNL-hi-en dictionary in goldendict format(reverse of en-hi)
+ 29. Removed : 
 	miscellaneous/SMT/phrasal_alignment/replace-mapping-symbols_for_align.lex
- 22. Updated following lex files:
+	Stanford parser version 3.3.1
+ 30. Renamed iit-bombay dictionary has iit-bombay-UNL-en-hi
+ 31. Modified get_word_count.c and get_word_count_single.c 
+ 32. Updated following lex files:
 	add_snt_tag.lex	-> Included <string.h> header file to avoid warnings in CentOs.
-	replace-mapping-symbols.lex -> Modified SYMBOL-LESSTHAN and SYMBOL-GREATERTHAN pattern
+	mapping-symbols.lex -> 	Added code to handle '|'
+	replace-mapping-symbols.lex -> Modified SYMBOL-LESSTHAN and SYMBOL-GREATERTHAN pattern, Added code to handle '|'
 	morph.lex:	-> Modified to get tam info from morph.
 	wx_utf8.lex:	-> Handled 'eV', 'eY', 'oV'
- 23. Updated phrasal alignement related files , Major changes is separated code to work with each sentence separately.
-	Word-to-Word-dict.txt
-	en-hi-gdbm-dict.txt
-	run_alignment.sh
-	run_alignment-hi-en.sh
-	run_alignment-hi-en-hi.sh
-	multifast-v1.0.0/src/extract_key.c
+	phrasal_alignment/replace-punctuation.lex	-> 	Added '~' 
+ 33. Updated phrasal alignement related files , Major changes is separated code to work with each sentence separately.
+	Word-to-Word-dict.txt			run_alignment.sh			align-left-over-wrds.py
+	en-hi-gdbm-dict.txt			run_alignment-hi-en.sh			get_word_align.py
+						run_alignment-hi-en-hi.sh		match_value_in_hnd.py
+	create_eng_align_html_phrasal.clp	Anusaaraka_alignment.sh			get_phrase.py
+	get_manual_id_en_hi.clp			bin/run_alignment.sh			map-ids.py
+ 						multifast-v1.0.0/src/run.sh		map-wrd-to-wrd.py
+ 	multifast-v1.0.0/src/extract_key.c	compile.sh				mapping.py
+											print_shortest_path.py
+	run_H_gen_sen_eng.bat								replace_val_trn.py
     	multifast-v1.0.0/src/Makefile
-	align-left-over-wrds.py
-	compile.sh
-	get_word_align.py
-	match_value_in_hnd.py
-	Anusaaraka_alignment.sh
-	bin/run_alignment.sh
-	get_phrase.py
-	create_eng_align_html_phrasal.clp
-	map-ids.py
-	map-wrd-to-wrd.py
-	mapping.py
-	print_shortest_path.py
-	replace_val_trn.py
+	Readme 
 	phrasal_alignment.css
 	phrasal_alignment.js
-	run_H_gen_sen_eng.bat
- 	multifast-v1.0.0/src/run.sh
-	Readme 
- 24. Updated following dictionarie related files:
-	changes_in_databases	apertium-en-hi.en.metadix	apertium_hn.dix
- 25. Updated following files shell files:
+ 34. Updated following dictionarie related files:
+	changes_in_databases	apertium-en-hi.en.metadix	apertium_hn.dix		provisional_multi_word_dictionary.txt 
+ 35. Updated following shell files:
 	Anusaaraka_stanford_align_eng_ord.sh
 	replace-abbrevations.sh
 	abbr.sh
@@ -109,9 +157,24 @@
 	dic_compile.sh
 	anu_compile.sh 
 	get_multi_word-dic.sh
- 26. Updated following file:
-	sd_verified (827)
- 27. Updated Log. 
+	stdenglish.sh	-> 	Added code to run  check_for_TITLE.c programme
+	run_align_browser_eng.sh to work email concept in alignment layered o/p
+ 36. Updated following files:
+	create_eng_align_html_phrasal.clp to work email concept in alignment layered o/p
+	this1.py
+	stanford-parser/README
+ 	Readme_to_use_email_in_firefox.txt
+	Dictionaries/Readme
+	create_binary_files.clp	-- added hindi_compound_meaning.clp
+ 37. Updated Stanford parser version from 3.3.1 to 3.4.1 in following files:
+	Anusaaraka_bllip_parser.sh	Anusaaraka_bllip_parser_minion.sh	Anusaaraka_rasp.sh	Anusaaraka_site.sh
+	Anusaaraka_stanford-Factored.sh	Anusaaraka_stanford_align_man_ord.sh	Anusaaraka.sh		Anusaaraka_all.sh	
+	Anusaaraka_berkeley.sh		run_stanford-gui-factored.sh		run_stanford-gui-pcfg.sh
+	Anusaaraka_stanford.sh		shell_scripts/anu_compile.sh		shell_scripts/remove_out-files.sh
+ 38. Updated following verifieds:
+	sd_verified (846)
+ 39. Updated Log. 
+
 
  05-06-14
  ========

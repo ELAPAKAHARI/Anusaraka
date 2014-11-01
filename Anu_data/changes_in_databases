@@ -80,6 +80,7 @@
 								    similar effect takes place.
 	22. wArA	Suggested by Sukhada	    (21-12-13)  Eg: How does a star form?
 	23. kAna 	Suggested by Chaitanya Sir  (02-05-14)	Eg: A rabbit has long ears.
+	24. kAPI    	Suggested by Sukhada 	    (02-09-14)  Eg: I used to be pretty good.
 
   changes in Phrv.txt 
   ===================
@@ -155,6 +156,8 @@
 	CApa_lagA       f   Suggested by Sukhada (04-02-14)	Ex: The newspapers branded her a hypocrite.
 	xAzva_lagA      m   		"		"	Ex: I wager that she can not pass the exam. 
 	gAlI_xe		f		"	 (27-03-14)	Ex: Billy cried when the other kids called him names.
+	Added   'Radayanwra_raca	 m '	to 	'XamakI_xe	f' by Sukhada 27-8-14
+
 	
 
 
@@ -481,6 +484,7 @@
 	wife		(Suggested by Preeti ji LTRC	 09-05-14 ) Ex: He is cheating on his wife. 
 	bouncer		(Suggested by Sukhada		 09-05-14 ) Ex: He had the bouncers throw them out of the club. 
 	enemy		(Suggested by Preeti ji LTRC	 09-05-14 ) Ex: We charged at the enemy.  
+	kitten		(Suggested by Anshika Sharma Banasthali 4-8-14)	Ex: Our cat produced four kittens during the course of the night.
 
   Changes in total-paxasUwra.txt 
   ==============================
@@ -532,6 +536,7 @@
  23.	samamiwi	Apawwi/__n		(By Roja Suggested by Chaitanya Sir 28-12-13)
  24.	wArA		ladak/A__n		(By Roja Suggetsed by Sukhada	06-01-14)
  25.	bAzyA		kAl/A__adj		(By roja Suggested by Chaitanya Sir 01-07-14)
+ 26.    pariGatanA	ASA/__n			(By Manju Suggested by Chaitanya Sir 20-10-14)
 
 Modified :
   1.	<e><p><l>we_hue</l>	as	<e><p><l>owe_hue</l>       for tam:adv_we_hue    (Suggested by Sriram 21-06-11)
@@ -640,7 +645,6 @@ Modified :
 	ionization	house__n		(     "	     "	  )
 	ionise		liv/e__vblex		(     "      "    )
 	square		liv/e__vblex		(     "      "    )
-	focuss		approach__vblex		(     "      "    )
 	salesperson	p/erson__n		(     "      "    )
 	shrink		dr/ink__vblex		(     "      "    )
 	arms		personnel__n		(     "   02-10-13)
@@ -696,7 +700,14 @@ Modified :
 	resource	liv/e__vblex		(     "	     "	  )
 	disinvestment	house__n		(     "	     "	  )
 	recognise	liv/e__vblex		(     "	  01-07-14)
-
+	endeavor	house__n		(     "	  02-10-14)
+	endeavour	house__n		(     "	     "	  )
+	weave		w/eave__vblex		(     "      "    )
+	campfire	house__n		(     "      "    )
+	rack		house__n		(     "      "    )
+	rack		accept__vblex		(     "      "    )
+	rumbling	house__n		(     "      "    )
+	focus		focus__vblex		(     "   24-10-14)
 
 
 Modified paradigm:
@@ -713,15 +724,19 @@ Added new paradigms:
 	quarrel_vblex		("		16-11-13)
 	refer_vblex		("		04-12-13)
 	ey/e__vblex		("		28-03-14)
+	focus__vblex		("		24-10-14)
 
 Modified root:
-	may		May		as	may		(By Roja 14-03-13)
-	june		June		as	june		( 	"	 ) 
-	december	December	as	december	(	"	 )
-	april		April		as	april		(	"	 )
-	september	September	as	september	(	"	 )
-	november	November	as	november	(	"	 )
-	october		October		as	october		(	"	 )
+	may		May		as	may		(By Roja  14-03-13)
+	june		June		as	june		( 	"	  ) 
+	december	December	as	december	(	"	  )
+	april		April		as	april		(	"	  )
+	september	September	as	september	(	"	  )
+	november	November	as	november	(	"	  )
+	october		October		as	october		(	"	  )
+	ourselves	ourselves	as	ourself		(	" 02-10-14)
+	yourselves	yourselves	as	yourself	(	"	  )
+	themselves	themselves	as	themself	(	"	  )
 
 Modified root based on paradigms:
 	bab/y__n	analys/is__n	maxim/um__n	m/an__n		wol/f__n	li/fe__n	m/ouse__n
@@ -735,6 +750,9 @@ Miscellaneous:
 	2. In riteri/on__n paradigm to generate 'criterias' word.		(By Roja	14-03-13)
 	3. ([0-9]+)?[04-9]+th 	as	([0-9]+)?[0-9]+th			(By Roja	17-07-13)
 	4. In t/each__vblex, modified 'teachs' to 'teaches'			(By Roja	20-01-14)
+	5. In cost__vblex", modified to generate 'costed'			(By Roja	02-10-14)
+	6. In w/eave__vblex, added code to generate 'weaved'			("		"	)
+
 
 Removed:
 	repetition entry <e lm="April"><i>April</i><par n="house__n"/></e>	(By Roja	27-07-13)
@@ -742,6 +760,7 @@ Removed:
 	<e lm="shrank"><i>shrank</i><par n="accept__vblex"/></e>		("		"	)
 	<e lm="flags"><i>flags</i><par n="access__n"/></e>			("		04-12-13) 
 	<e lm="tactics"><i>tactics</i><par n="politics__n"/></e>		("		06-01-14)
+	<e lm="wrapped"><i>wrapped</i><par n="accept__vblex"/></e>		("		02-10-14)
 
 
  Added new files:
@@ -804,11 +823,12 @@ Removed:
 
     Added:
     ------
-	1. 0			wA_hE
+	1. 0			wA_hE		(By Shirisha Manju      01-09-14)
 	2. used_to_be_en	yA_jAwA_WA-0-0  (Suggested by Rajini 17-01-12) Ex: She used to be organized.
 	3. needs_to_be_en	yA_jAnA_hE-0-0              "                  Ex: That's the way business used to be done and that is the
 										    way business needs to be done.
 	4. would_have_been_ing	0_rahA_howA-0-0 (Suggested by Dipti Mam 18-01-14) 
+	5. ing			wA_huA-0-0	(By Shirisha Manju 	01-09-14)
 
  Removed :
  -------
@@ -952,13 +972,15 @@ Removed:
 	106. X-rayed_UNDEFINED       eksa-kiraNa_se_Poto_nikAlanA	as	eksa-re_se_Poto_nikAlanA  (Suggested by Anita ji LTRC 24-03-14)
 	107. X-raying_UNDEFINED      eksa-kiraNa_se_Poto_nikAlanA	as	eksa-re_se_Poto_nikAlanA  (		"		"     )
 	108. X-rays_UNDEFINED        eksa-kiraNa_se_Poto_nikAlanA	as	eksa-re_se_Poto_nikAlanA  (		"		"     )
-	109. harden_verb	xrDa_ban	as	xqDa_banA	(Suggested by Chaitanya Sir 24-07-14	)
-	110.	"		saKwa_ban	as	saKwa_banA	(	"	"	"		)
-	111.	"		pakkA_ban	as	pakkA_banA	(	"	"	"		)
-	112.	"		kaTora_ban	as	kaTora_banA	(	"	"	"		)
-	113. have_verb		K		as	KA		(	"	"	"		)
-	114. both_conjunction	xono		as	xonoM		(	"	"	"   01-08-14	)
-	115. both_determiner	xono		as	xonoM		(	"	"	"	"	)
+	109. harden_verb		xrDa_ban	as	xqDa_banA	(Suggested by Chaitanya Sir 24-07-14	)
+	110.	"			saKwa_ban	as	saKwa_banA	(	"	"	"		)
+	111.	"			pakkA_ban	as	pakkA_banA	(	"	"	"		)
+	112.	"			kaTora_ban	as	kaTora_banA	(	"	"	"		)
+	113. have_verb			K		as	KA		(	"	"	"		)
+	114. both_conjunction		xono		as	xonoM		(	"	"	"   01-08-14	)
+	115. both_determiner		xono		as	xonoM		(	"	"	"	"	)
+	116. breathtakingly_UNDEFINED  	asAXAraNa_oVpa_se as  asAXAraNa_rUpa_se (Suggested by karanveer kaur Banasthali 02-08-14) 
+	117. guideline_noun		muKya_bAw	as	muKya_bAwa	(Suggested by Chaitanya Sir 20-10-14    )
 	
 
     3. Added new entry:
@@ -1182,8 +1204,32 @@ Removed:
 					Ex:All the processes occurring in living beings including plants are mediated by fluids. 
 	118. general_adverb		Ama_wOra_para/sAmAnyawayA	(Suggested by 	"		"	"	)
 					Ex: The surface of liquid near the plane of contact, with another medium is in general curved. 
+	119. citydweller_noun    	SaharavAsI			(Suggested by Soshya Joshi Banasthali 02-08-14)
+					Ex: Fauyasagar reservoir is the nearest picnic spot of the citydwellers.
+	120. chosen_adjective        	cunA_huA			(Suggested by Chaitanya Sir         08-10-14)
+					Ex: Husband and wife were similarly successful in their chosen careers. (OALD)
+	121. metallically_noun 		XAwu				(Suggested by Swati Kanojia Banasthali 08-09-14)
+					Ex: Jean left her car in the doctors' parking area and walked across the darkened expanse,stepping
+ 					    round the puddles, her footsteps resounding metallically in the silence.
+	122. electronegative_adjective 	QNAwmaka			(Suggested by Vartika Sah Banasthali 08-09-14)
+					Ex: As the most electronegative element, it is extremely reactive: almost all other elements,including
+					    some noble gases, form compounds with fluorine
+	123. electronegativity_noun  	viGuwaQNAwmaka			(Suggested by Vartika Sah Banasthali 08-09-14)
+					Ex: Conversely, bonds to other atoms are very strong because of fluorine's high electronegativity.
+	124. connotation_noun    	saMkewArWa			(Suggested by yashwini Banasthali    20-10-14)
+					Ex: The moral connotation was accentuated by the always at least implicit use of the term to contest. 
+	125. edit_noun       		saMpAxana			(Suggested by 14anu-ban-04	     17-10-14)
+					Ex:  Wikipedia's radical openness also means that any given article may be, at any given moment, in a
+					     bad state, such as in the middle of a large edit, or a controversial rewrite.
+	126. coplanar_adjective      	samawalIya			(Suggested by 	14anu-ban-03		17-10-14)
+					Ex:  In many problems all the forces acting on the body are coplanar. 
+	127. epulsion_noun   		prawikarRaNa			(Suggested by	14anu-ban-10		 17-10-14)
+					Ex: For example, the elastic spring force arises due to the net attraction/repulsion between the 
+					    neighbouring atoms of the spring when the spring is elongated/compressed.
 
 
+
+	
     4. Added new meaning to the existing word:
        ---------------------------------------
         1. inaudibly_adverb             XImI_Avaja_meM                  ( Suggested by Rajini   29-02-12        )
@@ -1362,7 +1408,42 @@ Removed:
 	98. all_adjective		samaswa			(Suggested by Chaitanya Sir	24-07-14)
 					Ex: All the processes occurring in living beings including plants are mediated by fluids. 
 	99. all_pronoun			samaswa			(	"		"	"	)
-	100. 
+	100. blackberry_noun 		jAmuna 			(Suggested by Shivani Pathak Banasthali 02-08-14)
+					Ex: There are mixed trees of butea , salai , black berry , berries , baheda etc in the forests of 
+					    Sariska National Park  .
+	101. weaving_UNDEFINED       	bunanA			(Suggested by Soshya Joshi Banasthali 02-08-14)
+					Ex: Right since the time of Hindu King Kumar there were important centres of weaving Patola sari in 
+					    Patan.
+	102. molehill_noun   		bAzbI			(Suggested by karanveer kaur Banasthali 02-08-14)
+					Ex: Make a mountain out of a molehill.
+	103. submergence_noun        	jalaBarAva		(Suggested by Ayushi Agrawal Banasthali 02-08-14)
+					Ex: A water submergence of 42 square kms has taken place in its lake till Pipaldali in Bhilangana .
+	104. mark_verb       		cihna_laga		(Suggested by Swati Kanojia Banasthali 25-08-14)
+					Ex: An arrow is marked at the head of this line. 
+	105. venue_noun      		sWala			(Suggested by Soshya Joshi Banasthali 27-08-14)
+					Ex: The venue of the fair is about 90 kilometres from Delhi .
+	106. cooking_noun    		KAnA_pakAnA		(Suggested by yashwini dhaka Banasthali 08-09-14)
+					Ex: This explains why cooking is difficult on hills.
+	107. receiver_noun   		grAhI			(Suggested by Chaitanya Sir     	10-09-14)
+					Ex: For communication to be successful, it is essential that the sender and the receiver understand a
+					    common language. (12_15)
+	108. surrounding_adjective   	cAroM_ora_kA		 (Suggested by Chaitanya Sir             10-09-14)
+					Ex: Every living creature in the world experiences the need to impart or receive information almost 
+					    continuously with others in the surrounding world. (12_15)
+	109. bulk_adjective  		vqhaxAkAra/bqhaxAkAra	(Suggested by Aditi ji 			20-10-14)
+					Ex: Subsequently, the subjects of kinetic theory and statistical mechanics interpreted these quantities
+					    in terms of the properties of the molecular constituents of the bulk system.
+	110. quest_noun			anveRaNa		(Suggested by Aditi ji                  20-10-14)
+					Ex: The attempts to unify fundamental forces of nature (section 1.4) reflect this same quest for
+					    unification. "
+	111. derive_verb     		vyuwpanna_kara		(Suggested by Aditi ji                  20-10-14)
+					Ex: A related effort is to derive the properties of a bigger, more complex, system from the properties
+					    and interactions of its constituent simpler parts.
+	112. dramatically_adverb	nAtakIya_rUpa_se	(Suggested by Chaitanya Sir   		20-10-14)
+					Ex: The pace of development seems to have increased dramatically after the first half of the 20th
+					    century. 
+	113. similarly_adverb		isI_prakAra		 (Suggested by Chaitanya Sir         08-10-14)
+                                        Ex: Husband and wife were similarly successful in their chosen careers. (OALD)
 
 
     5. Modifying first meaning from the list :
@@ -1672,11 +1753,42 @@ Removed:
 	140. raindrop_noun	varRA_kI_eka_bUnxa	as	varRA_kI_bUnxa	(	"	"		"	)
 				Ex: Anything thrown up falls down towards the earth, raindrops from the clouds etc.(note:sentence simplified)
 	141. 	"		varRA-binxu		as	varRA_bUnxa	(	"	"		"	)
-	142. medicinal_adjective    roganASaka		as	ORaXIya		(Suggested by Manasa-Gurukul    16-08-14)
-				Ex: Often people will be found looking at the medicinal plants.
-	
-	
+	142. medicinal_adjective    	roganASaka	as	ORaXIya		(Suggested by Manasa-Gurukul    16-07-14)
+					Ex: Often people will be found looking at the medicinal plants.
+	143. marvellous_adjective    	camawkArI	as	SAnaxAra	(Suggested by Soshya Joshi Banasthali 16-07-14)
+				     	Ex: This will be a marvellous opportunity for her.
+	144. adjacent_adjective		pArSvasWa	as	satA_huA	(Suggested by Soshya Joshi Banasthali 02-08-14)
+					Ex: Prithviraj Chauhan Memorial' is on a small hill adjacent to Taragarh hill.
+	145. conversion_noun    Xarma_parivarwana	as	parivarwana	(Suggested by yashwini dhaka Banasthali 14-08-14)
+				Ex: Because SI units used decimal system, conversions within the system are quite simple and convenient.
+	146. recognise_verb  	svIkAra_kara		as	pahacAna	(Suggested by Swati Kanojia Banasthali 14-08-14)
+				Ex: Getting a glimpse of the tiger the deer, peacock and the baboon cry out their calls  to caution others , 
+				    to recognise which among the many other voices in the jungle is an art .
+	147. mark_noun       	niSAna		as	cihna			(Suggested by Swati Kanojia Banasthali 25-08-14)
+				Ex: 
+	148. cube_noun		kyUba		as	Gana			(Suggested by yashwini dhaka Banasthali 27-08-14)
+				Ex: The square of the time period of revolution of a planet is proportional to the cube of the semi-major axis 
+				    of the ellipse traced out by the planet.
+	149. communication_noun sUcanA		as	saFcAra			(Suggested by yashwini dhaka Banasthali 27-08-14)
+				Ex: An example of the latter is the wireless communication technology that followed the discovery of the basic 
+				    laws of electricity and magnetism in the nineteenth century. 
+	150. pair_noun       	jodA		as	yugala			(Suggested by Anshika Sharma Banasthali 27-08-14)
+				Ex: Forces always occur in pairs.  
+	151. engineering_noun   kala_banAne_kI_vixyA	as   aBiyAnwrikI	(Suggested by Vartika Sah Banasthali 08-09-14)
+				Ex: Wikipedia is also not subject to any peer review for scientific, medical or engineering articles.
+	152. complicated_adjective	ulaJA_huA	as	jatila		(Suggested by      14anu-ban-03	   17-10-14)
+				Ex: For example, we may not know the complicated forces that act during a collision of two automobiles; yet
+			            momentum conservation law enables us to bypass the complications and predict or rule out possible outcomes
+				    of the collision.
+	153. reaction_noun   	prawikriyA		as	aBikriyA	(Suggested by     14anu-ban-10		17-10-14)
+				Ex: Thus it is mainly the electromagnetic force that governs the structure of atoms and molecules, the dynamics
+				    of chemical reactions and the mechanical, thermal and other properties of materials.
+	154. remarkable_adjective    ulleKanIya		as	vilakRaNa	(Suggested by	14anu-ban-10	17-10-14)
+				Ex: A remarkable fact is that some special physical quantities, however, remain constant in time. 
+	155. circumstance_noun  hAlAwa			as	parisWiwi	(Suggested by 	14anu-ban-03	17-10-14)
+				Ex: Indeed, to be consistent, in that circumstance, we ourselves would crumble under our own weight.
 
+	
     6. Removed meaning from existing list:
        ----------------------------------
 	1. overdue_adjective 	jo_bahuwa_pahale_hI_ho_jAnA_cAhiye_WA,_vaha	( Suggested by Rajini		29-02-12)
@@ -1714,6 +1826,10 @@ Removed:
 	31. deer_noun		mqganayanI					(	"	"		"	)
 	32. harden_verb		saKwa_bana					(	"	"		"	)
 	33. series_noun		SrqfKalA					(	"	"		"	)
+	34. unless_conjunction	jabawaka_nahIM					(	"	"		18-07-14)
+	35. mark_noun		cinha						(	"	"		25-08-14)
+	36. mark_verb		cinha_lag					(	"	"		"	)
+	37. them_pronoun	unak/unheM_unako				(	"	"		17-10-14)
 
 	
 
@@ -1772,7 +1888,7 @@ Removed:
 	50. woven_UNDEFINED	eka_hI_kaWAsUwra_meM_graWiwa_karanA	(	"	"	"	"	)
 	51. persian_UNDEFINED	PArasI_BARA_yA_PArasI			(Suggested by Anita ji LTRC 	01-07-14)
 	52. raindrops_UNDEFINED	varRA_kI_eka_bUnxa			(Suggested by Chaitanya Sir	24-07-14)
-
+	53. footings_UNDEFINED	sanwulana				(	"	"	"	11-08-14)
 
 
     8. Modified category:
@@ -2194,6 +2310,8 @@ Removed:
 				Ex: It takes only two and a half to three hours to reach Munnar via Periyakenal and Devikulam.
 	126. one_and_a_half	deDa#deDa#number#4#RM					(Suggested by Neha Arya Gurkul 13-07-2014)
 				Ex: It takes only one and a half to three hours to reach Munnar.
+	127. picnic_spot	pikanika_sWala#pikanika_sWala#noun#2#RM			(Suggested by Soshya joshi Banasthali 3-9-13) 
+				Ex: Fauyasagar reservoir is the nearest picnic spot of the citydwellers. 
 
     Added new meaning to the existing word:
     --------------------------------------
@@ -2288,16 +2406,52 @@ Removed:
                                                                                                only if they have the same dimensions.
 	dimensionally_adverb 	vimIya		(Suggested by Pramila Banasthali 05-02-14) Ex: The dimensions of LHS and RHS are the same and
 											       hence the equation is dimensionally correct.
-	exponent_noun 		GAwAfka		(		"		    "	 ) Ex: The dimensions of a physical quantity are the 
-									       powers or exponents to which the base quantities 											      are raised to represent that quantity.
+	exponent_noun 		GAwAfka		(		"		    "	 ) 
+				Ex: The dimensions of a physical quantity are the powers or exponents to which the base quantities are raised
+				    to represent that quantity.
 	sensitivity_noun	sugrAhiwA	(Suggested by Chaitanya Sir	24-07-14) 
-			Ex: A convenient way for the manufacturer to increase the sensitivity is to increase the number of turns N. 
+				Ex: A convenient way for the manufacturer to increase the sensitivity is to increase the number of turns N. 
+
 	Added 'electrostatic_UNDEFINED' to 'calorimetry_UNDEFINED' extracted from phrase table(Suggested by Banasthali Students-2014 24-07-14)
-	
+
+	projectile_adjective    prakRepya	(Suggested by Vartika Sah Banasthali  02-08-14)
+				Ex: As a simple case of motion in a plane, we shall discuss motion with constant acceleration and treat in 
+				    detail the projectile motion.  
+	unit_noun    		mAwraka		(Suggested by Soshya Joshi Banasthali 02-08-14)
+				Ex: Measurement of any physical quantity involves comparison with a certain basic, arbitrarily chosen,
+				    internationally accepted reference standard called unit.  
+	frictionless_adjective	GarRaNa_rahiwa	(Suggested by Prajna Jha Banasthali   02-08-14)
+				Ex: Galileo concluded that an object moving on a frictionless horizontal plane must neither have acceleration
+				    nor retardation, i.e. it should move with constant velocity.
+	convention_noun		paxXawi		(Suggested by yashwini dhaka Banasthali 02-08-14)
+				Ex: Following this convention, the position coordinates of point P and Q in Fig. 3.1 are +360 m and +240 m
+	elastic_adjective    	prawyAsWa	(Suggested by Anshika Sharma Banasthali 02-08-14)
+				Ex: The elastic behavior of materials plays an important role in engineering design.
+	material_noun        	xravya		(Suggested by Anshika Sharma Banasthali 02-08-14)
+				Ex: The elastic behavior of materials plays an important role in engineering design.
+	conservative_adjective  saMrakRI	(Suggested by yashwini dhaka Banasthali 04-08-14)
+				Ex: This law restricted for a conservative force should not be confused with the general law of conservation 
+				    of energy of an isolated system.
+	positive_noun 		XanAwmaka	(Suggested by Anshika Sharma Banasthali 14-08-14)
+				Ex: But absolute error |Δa| will always be positive.
+	positive_adjective 	XanAwmaka	(Suggested by Anshika Sharma Banasthali 14-08-14)
+				Ex: Multiplying a vector A with a positive number λ gives a vector.
+	centimetre_adjective    sentImItara	(Suggested by yashwini dhaka Banasthali 14-08-14)
+				Ex:  In CGS system they were centimetre, gram and second respectively.
+	differential_noun       avakala 	(Suggested by Vartika Sah Banasthali 14-08-14)
+				Ex: use differential calculus for the given expression and calculate dx/dt at different instants 
+	coincide_verb     	saMpAwI		(Suggested by yashwini dhaka Banasthali 14-08-14)
+				Ex: To describe motion along a straight line, we can choose an axis, say X-axis, so that it coincides with the
+				    path of the object.
+	elasticity_noun    	prawyAsWA	(Suggested by Anshika Sharma Banasthali 14-08-14)
+				Ex: In 1676, he presented his law of elasticity, now called Hooke's law. 
+
     Modifying first meaning:
     -----------------------
-	instant_noun	kRaNika	as	kRaNa	(Suggested by Prachi Banasthali  21-03-14) 
+	instant_noun	kRaNika		as	kRaNa		(Suggested by Prachi Banasthali  21-03-14) 
 			Ex: It is easier to calculate the value of velocity at different instants if we have data of positions at different 				   instants or exact expression for the position as a function of time.
+	prefix_noun 	pUrvalagna	as	upasarga	(Suggested by Anshika Sharma Banasthali 25-08-14)
+			Ex: Common SI prefixes and symbols for multiples and sub-multiples are given in Appendix A2.  
 
     Modifying spelling of the existing word :
     -----------------------------------------
@@ -2319,11 +2473,16 @@ Removed:
 	2. translational_adjective	sWAnAnwaraNa		(	"	  )
 	3. molecular_adjective		aNu			(Suggested by Chaitanya Sir  05-12-12)
 	4. galaxy_noun			manxAkinI		(Suggested by Prachi Banasthali 29-08-13)
-					Ex:The sun itself is in motion in the Milky Way, which is again moving within its					     local group of galaxies.  
+					Ex:The sun itself is in motion in the Milky Way, which is again moving within its local group of
+					   galaxies.  
+	5. interaction_noun        	pArasparika_kriyA	(Suggested by Aditi ji     	20-10-14)
+					Ex: A related effort is to derive the properties of a bigger, more complex, system from the properties
+					    and interactions of its constituent simpler parts.
 
     Modifing category:
     -----------------
-	relative_noun	as	relative_adjective		(Suggested by Chaitanya Sir 05-01-13)
+	relative_noun		as	relative_adjective		(Suggested by Chaitanya Sir 		05-01-13)
+	nuclide_UNDEFINED	as	nuclide_noun			(Suggested by Swati Kanojia Banasthali 	27-08-14)
 	
 
  changes in phy_eng_multi_word_dic.txt
@@ -2543,3 +2702,12 @@ Removed:
   Modified :
 	1. 'RR' is replaced with 'R' 
 		Ex: anwarrARRtrIya_vikAsa_ejeMsI	as	anwarrARtrIya_vikAsa_ejeMsI	(by Roja 08-10-13)
+
+  Added :
+	1. National_youth_wing    rARtrIya_yuvA_morcA#rARtrIya_yuvA_morcA#noun#3#RM	(Suggested by Anita ji LTRC	01-09-14)
+
+ changes in restricted_eng_words.txt:
+ ===================================
+ Added:
+	be	ho/raha		(Suggested by Chaitanya Sir 11-08-14)
+

@@ -108,6 +108,7 @@
  gcc -o f_range.out f_range_wordarray_resarray.c
  gcc -o split_file.out   split_file.c
  gcc -o chunker.out  chunker.c
+ gcc -o check_for_TITLE.out check_for_TITLE.c
  ./comp.sh ir
  mv ir.out  $HOME_anu_test/bin/ir
  ./comp.sh ir_no@
@@ -141,7 +142,10 @@
  cd  $HOME_anu_test/multifast-v1.0.0/ahocorasick
  make
  cd  $HOME_anu_test/multifast-v1.0.0/src
- sh run.sh 
+ sh run.sh
+ if ! [ -e extract_hindi_key.c ] ; then
+	touch extract_hindi_key.c
+ fi 
  make
 
  echo "Compiling Anu stdenglish source files"
@@ -171,7 +175,7 @@
  make
 
  echo "Compiling stanford parser files"
- cd $HOME_anu_test/Parsers/stanford-parser/stanford-parser-full-2014-01-04/
+ cd $HOME_anu_test/Parsers/stanford-parser/src
  sh compile.sh
 
  echo "Compiling RASP parser files"

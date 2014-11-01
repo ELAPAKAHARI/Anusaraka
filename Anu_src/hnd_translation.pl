@@ -49,8 +49,9 @@ sub final_translation{
    if(defined $ARGV[2] && length $ARGV[2] > 0) {
    if(($ARGV[2] eq "REMOVE_TITLE") && ($ParaId == 1 && $SenId == 1))  { return; } }
 
-#    local $facts_filename = $path_clips."/tmp/$ARGV[0]_tmp/".$ParaId.".".$SenId."/hindi_sentence_tmp.dat";
-    local $facts_filename = $path_clips."/tmp/$ARGV[0]_tmp/".$ParaId.".".$SenId."/hindi_sentence.dat";
+#   local $facts_filename = $path_clips."/tmp/$ARGV[0]_tmp/".$ParaId.".".$SenId."/hindi_sentence.dat";
+#   Instead of 'hindi_sentence.dat' using 'hindi_sentence_tmp2.dat' because in 'hindi_sentence.dat' '@' are removed due to this english word is converted from wx to utf8. Always use the o/p of the programe 'add-@_in-hindi_sentence.py' .Ex: What's even more amazing is that many of the fruits are ancient, [hard-to-find], varieties. Modified by Roja (22-09-14)
+    local $facts_filename = $path_clips."/tmp/$ARGV[0]_tmp/".$ParaId.".".$SenId."/hindi_sentence_tmp2.dat";
 
     if (-e  $facts_filename) {
       if (-z $facts_filename){
@@ -81,7 +82,7 @@ sub final_translation{
       }
     }
     else {
-      open(TRANS,">> $path_clips\/tmp/$ARGV[0]_tmp/$ARGV[0]_trnsltn_tmp.html") || die "Can't open $ARGV[0]_trnsltn.html";
+      open(TRANS,">> $path_clips\/tmp/$ARGV[0]_tmp/$ARGV[0]_trnsltn_tmp.html") || die "Can't open $ARGV[0]_trnsltn_tmp.html";
       print TRANS "$ParaId.$SenId\t\@Could \@not \@translate \@the \@sentence. \n<\@BR>\n";
       close(TRANS);
 
@@ -101,6 +102,6 @@ sub wx_utf8 {
 }
 
 
-open(TRANS,">> $path_clips\/tmp/$ARGV[0]_tmp/$ARGV[0]_trnsltn_tmp.html") || die "Can't open $ARGV[0]_trnsltn.html";
+open(TRANS,">> $path_clips\/tmp/$ARGV[0]_tmp/$ARGV[0]_trnsltn_tmp.html") || die "Can't open $ARGV[0]_trnsltn_tmp.html";
 print TRANS "</\@BODY></\@HTML>\n";
 close(TRANS);

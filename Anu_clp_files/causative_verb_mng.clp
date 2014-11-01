@@ -50,9 +50,13 @@
  (assert (dir_name-file_name-rule_name-kriyA_id-object2_viBakwi))
  (assert (dir_name-file_name-rule_name-id-attach_emphatic))
  (assert (dir_name-file_name-rule_name-id-wsd_viBakwi))
+ (assert (dir_name-file_name-rule_name-id-domain_type))
  (assert (id-HM-source-grp_ids))
+ (assert (id-domain_type))
+ (assert (compound_meaning_decided))
  )
  ;----------------------------------------------------------------------------------------------------------------
+
  ; I am going to remarry when you die
  ; 1. if category is "verbal_noun" or "make_verbal_noun" fact present then check hindi mng in hindi_cat.gdbm if found then 
  ;    add nA to the h_mng
@@ -88,14 +92,13 @@
           (bind ?h_word (explode$ (str-cat ?h_word "nA")))
           (assert (id-HM-source ?id ?h_word ?src))
           (assert (made_verbal_noun ?id))
-                 
         )
  )
  ;----------------------------------------------------------------------------------------------------------------
  ;She is making the girl feed the child .
  ;She made the girl feed the child .
  (defrule causative_verb_mng
- (declare (salience 800))
+ (declare (salience 1800))
  (verb_type-verb-causative_verb-tam causative ?vrb_id ?causative_vrb_id ?tam)
  ?f0<-(id-HM-source ?causative_vrb_id ?h_mng ?src)
  (id-HM-source ?vrb_id ?hmng ?src1)
@@ -142,8 +145,7 @@
  (defrule get_rule_info
  (declare (salience 600))
  (id-HM-source ?id ?hmng ?src&~Physics_Glossary)
- (or (dir_name-file_name-rule_name-id-wsd_root_mng ? ?file_name ?rule_name $?ids ?) (dir_name-file_name-rule_name-id-wsd_word_mng ? ?file_name ?rule_name $?ids ?))
-; (dir_name-file_name-rule_name-id-wsd_root_mng ? ?file_name ?rule_name ?id ?)
+ (or (dir_name-file_name-rule_name-id-wsd_root_mng ? ?file_name ?rule_name $?ids ?) (dir_name-file_name-rule_name-id-wsd_word_mng ? ?file_name ?rule_name $?ids ?)(dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_root_mng ? ?file_name ?rule_name $?ids ?)(dir_name-file_name-rule_name-affecting_id-affected_ids-wsd_group_word_mng ? ?file_name ?rule_name $?ids ?))
  ?f0<-(id-HM-source-grp_ids  ?id  ? ?src $?ids)
  =>
 	(retract ?f0)
