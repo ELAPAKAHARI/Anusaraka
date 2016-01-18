@@ -31,7 +31,7 @@
         (assert (anu_id-anu_mng-man_mng  ?aid ?anu_mng $?pre $?post))
 )
 
-(defrule rm_underscore
+(defrule rm_underscore_L_layer
 (declare (salience 1000))
 ?f<-(anu_id-anu_mng-man_mng ?aid ?word ?man_mng)
 (not (underscore_removed ?aid))
@@ -43,6 +43,20 @@
   (bind ?new_mng (remove_character "," (implode$ ?new_mng) " "))
   (assert (anu_id-anu_mng-man_mng ?aid ?word ?new_mng))
   (assert (underscore_removed ?aid))
+)
+;---------------------------------------------------------------------------------------------------------------------------------------------
+(defrule rm_underscore_M_layer
+(declare (salience 1000))
+?f<-(eng_id-eng_wrd-man_wrd ?aid ?word ?man_mng)
+(not (underscore_removed_in_M ?aid))
+(test (and (neq ?man_mng @PUNCT-Comma) (neq ?word @PUNCT-Comma)))
+=>
+  (retract ?f)
+  (bind ?new_mng (remove_character "_" (implode$ (create$ ?man_mng)) " "))
+  (bind ?new_mng (remove_character "." (implode$ ?new_mng) " "))
+  (bind ?new_mng (remove_character "," (implode$ ?new_mng) " "))
+  (assert (eng_id-eng_wrd-man_wrd ?aid ?word ?new_mng))
+  (assert (underscore_removed_in_M ?aid))
 )
 ;---------------------------------------------------------------------------------------------------------------------------------------------
 ;Added by Shirisha Manju 
@@ -221,6 +235,39 @@
         (assert (mng_has_been_grouped ?id1))
 )
 ;----------------------------------------------------------------------------------------------------------------
+;Added by Shirisha Manju 8-9-14
+;[Similarly], we can argue that it lies on the median MQ and NR.
+;[isI prakAra] hama warka kara sakawe hEM ki yaha mAXyikA MQ Ora NR para BI avasWiwa hogA.
+(defrule multi_word_2_from_dic
+(declare (salience 110))
+(database_info (components ?mng ?mng1 $?)(database_type single))
+?f0<-(manual_id-word ?id0 ?mng)
+?f1<-(manual_id-word ?id1&:(=(+ ?id0 1) ?id1) ?mng1)
+(not (mng_has_been_grouped ?id0))
+=>
+	(assert (manual_word_info (head_id ?id0) (word ?mng ?mng1)(group_ids ?id0 ?id1)))
+        (assert (mng_has_been_grouped ?id0))
+        (assert (mng_has_been_grouped ?id1))
+)
+;----------------------------------------------------------------------------------------------------------------
+;Added by Shirisha Manju 4-11-14
+;However, atoms on a whole are [electrically] neutral.
+;waWApi, paramANu svayaM meM [vExyuwa rUpa se] uxAsIna howe hEM.
+(defrule multi_word_3_from_dic
+(declare (salience 111))
+(database_info (components ?mng ?mng1 ?mng2)(database_type single))
+?f0<-(manual_id-word ?id0 ?mng)
+?f1<-(manual_id-word ?id1&:(=(+ ?id0 1) ?id1) ?mng1)
+?f2<-(manual_id-word ?id2&:(=(+ ?id0 2) ?id2) ?mng2)
+(not (mng_has_been_grouped ?id0))
+=>
+        (assert (manual_word_info (head_id ?id0) (word ?mng ?mng1 ?mng2)(group_ids ?id0 ?id1 ?id2)))
+        (assert (mng_has_been_grouped ?id0))
+        (assert (mng_has_been_grouped ?id1))
+        (assert (mng_has_been_grouped ?id2))
+)
+
+;----------------------------------------------------------------------------------------------------------------
 ;It is mainly through light and the sense of vision that we know and interpret the world around us.
 ;Man tran :: muKya rUpa se prakASa evaM xqRti kI saMvexanA ke kAraNa hI hama [apane cAroM ora] ke saMsAra ko samaJawe evaM usakI vyAKyA karawe hEM.
 ;Anu tran :: yaha halake meM se waWA xUraxarSiwA kI saMvexanA meM se pramuKa rUpa se hE ki hama hamAre cAroM ora yuga vyAKyA kara waWA jAnawI hE.
@@ -260,7 +307,7 @@
 (declare (salience 90))
 ?f1<-(manual_id-word ?id0 $?noun)
 ?f2<-(manual_id-word ?id1&:(=(+ ?id0 1) ?id1) ke)
-?f3<-(manual_id-word ?id2&:(=(+ ?id0 2) ?id2) ?w&rUpa|bAre|viRaya|AXAra|wOra|paxoM|sWAna)
+?f3<-(manual_id-word ?id2&:(=(+ ?id0 2) ?id2) ?w&rUpa|bAre|viRaya|AXAra|wOra|paxoM|sWAna|maXya|bIca|pakRa|samparka)
 ?f4<-(manual_id-word ?id3&:(=(+ ?id0 3) ?id3) meM|para)
 (not (mng_has_been_grouped ?id1))
 (not (mng_has_been_grouped ?id2))
@@ -293,7 +340,7 @@
 (declare (salience 80))
 ?f1<-(manual_id-word ?id0 $?noun)
 ?f2<-(manual_id-word ?id1&:(=(+ ?id0 1) ?id1) kI)
-?f3<-(manual_id-word ?id2&:(=(+ ?id0 2) ?id2) ?w&apekRA)
+?f3<-(manual_id-word ?id2&:(=(+ ?id0 2) ?id2) ?w&apekRA|ora|waraha)
 (not (mng_has_been_grouped ?id1))
 (not (mng_has_been_grouped ?id2))
 =>
@@ -308,11 +355,12 @@
 ;There is no loss of energy due to friction. [ke kAraNa]
 ;The apparent flattening (oval shape) of the sun at sunset and sunrise is also due to the same phenomenon.--->sUryAswa waWA [sUryoxaya ke samaya] sUrya kA ABAsI capatApana (aNdAkAra Akqwi) BI isI pariGatanA ke kAraNa hI hE.
 ;The restoring muscular forces again come into play and bring the body to rest.----- >prawyAnayanI peSIya baloM ke kAryarawa hone [ke kAraNa] SarIra virAma avasWA meM A jAwI hE
+;EsI gEsoM meM paramANuoM [ke maXya] anwarAla aXika howA hE.
 (defrule ke_[word]
 (declare (salience 80))
 ?f1<-(manual_id-word ?id0 $?noun)
 ?f2<-(manual_id-word ?id1&:(=(+ ?id0 1) ?id1) ke)
-?f3<-(manual_id-word ?id2&:(=(+ ?id0 2) ?id2) ?w&pariwaH|lie|liye|sAWa|anwargawa|ora|awirikwa|bAxa|kAraNa|samaya|xvArA|anusAra|aXIna|bIca|nIce|Upara|samAna|pare|BIwara|Age|pICe|paScAwa|paScAw|nikata|sApekRa)
+?f3<-(manual_id-word ?id2&:(=(+ ?id0 2) ?id2) ?w&pariwaH|lie|liye|sAWa|anwargawa|ora|awirikwa|bAxa|kAraNa|samaya|xvArA|anusAra|aXIna|bIca|nIce|Upara|samAna|pare|BIwara|Age|pICe|paScAwa|paScAw|nikata|sApekRa|maXya|anxara|bAhara|binA|jEsA|pAsa|viruxXa|xOrAna|sahiwa)
 (not (mng_has_been_grouped ?id1))
 (not (mng_has_been_grouped ?id2))
 =>
@@ -385,6 +433,22 @@
         (assert (mng_has_been_grouped ?id1)) 
 )
 ;----------------------------------------------------------------------------------------------------------------
+;Added by Shirisha Manju 4-11-14
+;According to this model, the positive charge of the atom is uniformly distributed throughout the volume of the atom and the negatively charged electrons are embedded in it like seeds in a watermelon. 
+; (manual_word_info (head_id 2) (word moYdala) (vibakthi 0)) and (manual_word_info (head_id 3)(word ke anusAra)) then
+; (manual_word_info (head_id 2) (word moYdala) (vibakthi ke anusAra)) 
+(defrule single_vib1-0
+(declare (salience 71))
+?f1<-(manual_word_info (head_id ?mid0) (word $?noun)(group_ids $?grp_ids ?id0)(vibakthi 0))
+?f2<-(manual_word_info (head_id ?id1&:(=(+ ?id0 1) ?id1))(word ke $?r_wrd)(group_ids ?id1 $?grp_ids1))
+(test (neq (length $?r_wrd) 0))
+(not (vib_added ?id1))
+=>
+	(retract ?f2)
+        (modify ?f1  (head_id ?mid0) (word $?noun)(vibakthi ke $?r_wrd)(group_ids $?grp_ids ?id0 ?id1 $?grp_ids1))
+        (assert (vib_added ?id1))
+)
+;-------------------------------------------------------------------------------------------------------------------------------
 (defrule single_vib1
 (declare (salience 70))
 ?f1<-(manual_word_info (head_id ?mid0) (word $?noun)(group_ids $?grp_ids ?id0))
@@ -406,22 +470,10 @@
 (test (neq (length $?noun) 0))
 (test (neq ?v1 ?vib));A simple method for estimating the molecular size of oleic acid is given below. olIka amla aNu ke sAija kA [Akalana karane kI] eka sarala viXi nIce xI gaI hE.
 (not (vib_added ?id0))
+(not (mng_has_been_grouped ?id0));However, atoms on a whole are electrically neutral.
 =>
 	(modify ?f1 (word $?noun)(vibakthi $?v ?v1 ?vib))
 	(assert (vib_added ?id0))
-)
-;-------------------------------------------------------------------------------------------------------------------------------
-;Added by Shirisha Manju 8-9-14
-;[Similarly], we can argue that it lies on the median MQ and NR.
-;[isI prakAra] hama warka kara sakawe hEM ki yaha mAXyikA MQ Ora NR para BI avasWiwa hogA.
-(defrule multi_word_from_dic
-(declare (salience 110))
-(database_info (components ?mng ?mng1)(database_type single))
-?f0<-(manual_word_info (head_id ?id0) (word ?mng)(group_ids ?id))
-?f1<-(manual_word_info (head_id ?id1&:(=(+ ?id0 1) ?id1)) (word ?mng1)(group_ids $?ids))
-=>
-	(retract ?f0)
-	(modify ?f1 (head_id ?id0)(word ?mng ?mng1)(group_ids ?id $?ids))
 )
 ;-------------------------------------------------------------------------------------------------------------------------------
 ;Added by Shirisha Manju 5-9-14
@@ -604,5 +656,30 @@
 	(retract ?f0 ?f1)
 	(assert (chunk_name-chunk_ids-words VGF  ?id $?ids $?vids - ?id $?ids $?wrds))	
 )
-
+;-------------------------------------------------------------------------------------------------------------------------------
+;Added by Shirisha Manju
+;Today, most of the electrical devices we use [require] ac voltage.
+;Ajakala jina vExyuwa yukwiyoM kA hama upayoga karawe hEM unameM se aXikAMSa ke lie @ac voltawA kI hI [AvaSyakawA howI hE].
+(defrule verb_group_using_anu_out
+(declare (salience 12))
+?f0<-(manual_word_info (head_id ?id0) (word $?mng)(root ho)(group_ids ?id $?ids))
+(id-Apertium_output ? ?m $?mng)
+?f1<-(manual_word_info (head_id ?id1&:(= (- ?id 1) ?id1)) (word ?m) (group_ids $?ids1))
+=>
+	(retract ?f0 ?f1)
+	(assert (manual_word_info (head_id ?id1) (word ?m $?mng)(group_ids $?ids1 ?id $?ids)))
+)
+;-------------------------------------------------------------------------------------------------------------------------------
+;Added by Shirisha Manju
+;We can broadly [describe] physics as a study of the basic laws of nature and their manifestation in different natural phenomena.
+;mote wOra para hama BOwikI kA [varNana] prakqwi ke mUlaBUwa niyamoM kA aXyayana waWA viBinna prAkqwika pariGatanAoM meM inakI aBivyakwi ke rUpa meM [kara sakawe hEM].
+(defrule group_kara
+(declare (salience 11))
+?f0<-(manual_word_info (head_id ?id0) (word kara $?mng)(group_ids $?ids))
+?f1<-(manual_word_info (head_id ?id1) (word ?m)(group_ids ?id1))
+(database_info (components ?m kara))
+=>
+	(retract ?f0 ?f1)
+	(assert (manual_word_info (head_id ?id1) (word ?m kara $?mng)(group_ids ?id1 $?ids)))
+)
 

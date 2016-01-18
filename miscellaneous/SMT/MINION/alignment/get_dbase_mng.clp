@@ -5,7 +5,6 @@
 ;	5. default_meaning_frm_oldwsd.gdbm  and
 ;	6. default-iit-bombay-shabdanjali-dic_smt.gdbm 
 
-;(deftemplate  database_info (slot meaning (default 0))(multislot components (default 0))(slot root (default 0))(slot database_name (default 0))( slot database_type (default 0))(multislot group_ids (default 0)))
 (deftemplate  database_info (slot root (default 0))(slot meaning (default 0))(multislot components (default 0))(slot database_name (default 0))( slot database_type (default 0))(multislot group_ids (default 0)))
 
 (deftemplate tam_database_info (multislot e_tam (default 0)) (slot database_name (default 0)) (multislot meaning (default 0))(multislot components (default 0)))
@@ -50,7 +49,7 @@
                                 (assert (database_info (meaning ?org_mng)(components ?new_mng1) (database_name ?gdbm)(database_type multi)(group_ids $?grp_ids)))
                         else
                                 (assert (id-org_wrd-root-dbase_name-mng ?count ?word ?root ?gdbm ?new_mng1))
-                                (assert (database_info (meaning ?org_mng)(components ?new_mng1)(root ?root)(database_name ?gdbm)(database_type single)))
+                                (assert (database_info (meaning ?org_mng)(components ?new_mng1)(root ?root)(database_name ?gdbm)(database_type single)(group_ids $?grp_ids)))
                         )
                         (bind ?new_mng (sub-string (+ ?slh_index 1) (length ?new_mng) ?new_mng))
                         (bind ?slh_index (str-index "/" ?new_mng))
@@ -67,7 +66,7 @@
                         (assert (database_info (meaning ?org_mng)(components ?new_mng1) (database_name ?gdbm)(database_type multi)(group_ids $?grp_ids)))
                 else
                         (assert (id-org_wrd-root-dbase_name-mng ?count ?word ?root ?gdbm ?new_mng1))
-           	       (assert (database_info (meaning ?org_mng)(components ?new_mng1)(root ?root)(database_name ?gdbm)(database_type single)))
+           	       (assert (database_info (meaning ?org_mng)(components ?new_mng1)(root ?root)(database_name ?gdbm)(database_type single)(group_ids $?grp_ids)))
  		)
         )
  )
@@ -146,6 +145,7 @@
  ?f<-(English_Sen $?Eng_list)
   =>
         (mwe_lookup "eng_phy_multi_word_dic.gdbm" 1 $?Eng_list)
+        (mwe_lookup "eng_social_science_multi_word_dic.gdbm" 1 $?Eng_list)
         (mwe_lookup "eng_acronyms_multi.gdbm" 1 $?Eng_list)
         (mwe_lookup "eng_named_entity_multi.gdbm" 1 $?Eng_list)
         (mwe_lookup "eng_proper_noun_multi.gdbm" 1 $?Eng_list)
@@ -155,7 +155,7 @@
 	(mwe_lookup "eng_multi_word_from_iit_bombay_dic.gdbm" 1 $?Eng_list)
  )
  ;--------------------------------------------------------------------------------------------------------
- ;Modified by Shirisha Manju to get word mng from all the databases
+ ;Modified by Shirisha Manju to get word mng from all the databases, to get mng from physics dic
  ;Added by Mahalaxmi
  ;These laws can be derived from [Newton's] laws of motion in mechanics. ;ina niyamoM ko yAMwrikI meM nyUtana ke gawi ke niyamoM se vyuwpanna kiyA jA sakawA hE. ;here morph doesn't has entry for word Newton's as PropN, 
  (deffunction dic_lookup(?gdbm ?id ?word ?root ?cat)
@@ -164,23 +164,36 @@
 	(bind ?new_mng "")
 	(bind ?wrd_mng (gdbm_lookup ?gdbm ?word))
 	(if (and (neq ?wrd_mng "FALSE") (neq (length ?wrd_mng) 0)) then (bind ?new_mng ?wrd_mng)
-		(print_dic_mng ?gdbm ?word ?root ?new_mng single 0)
+		(print_dic_mng ?gdbm ?word ?root ?new_mng single ?id)
+	else  ; to get mng from physics dic
+		(bind ?w (str-cat ?word "_" ?cat))
+		(bind ?wrd_mng (gdbm_lookup ?gdbm ?w))
+		(if (and (neq ?wrd_mng "FALSE") (neq (length ?wrd_mng) 0)) then (bind ?new_mng ?wrd_mng)
+                	(print_dic_mng ?gdbm ?word ?root ?new_mng single ?id)
+		)
+	)
+	(if (or (eq ?gdbm "physics_dic.gdbm") (eq ?gdbm "social_science_dic.gdbm")) then
+		(bind ?w (str-cat ?root "_" ?cat))
+                (bind ?wrd_mng (gdbm_lookup ?gdbm ?w))
+                (if (and (neq ?wrd_mng "FALSE") (neq (length ?wrd_mng) 0)) then (bind ?new_mng ?wrd_mng)
+                        (print_dic_mng ?gdbm ?word ?root ?new_mng single ?id)
+                )
 	)
 	(bind ?rt_mng (gdbm_lookup ?gdbm ?root))
-      	(if (and (neq ?rt_mng "FALSE") (neq (length ?rt_mng) 0)) then (bind ?new_mng ?rt_mng)
-		(print_dic_mng ?gdbm ?word ?root ?new_mng single 0)
+	(if (and (neq ?rt_mng "FALSE") (neq (length ?rt_mng) 0)) then (bind ?new_mng ?rt_mng)
+		(print_dic_mng ?gdbm ?word ?root ?new_mng single ?id)
 	else (if (eq (sub-string (- (length ?word) 1) (length ?word) ?word) "'s") then
 		(bind ?word (string-to-field (sub-string 1 (- (length ?word) 2) ?word)))
                 (bind ?apos_mng (gdbm_lookup ?gdbm ?word))
              	(if (and (neq ?apos_mng "FALSE") (neq (length ?apos_mng) 0)) then (bind ?new_mng ?apos_mng))
-		        (print_dic_mng ?gdbm ?word ?root ?new_mng single 0)
+		        (print_dic_mng ?gdbm ?word ?root ?new_mng single ?id)
 		else (if (and (eq ?id 1)(eq (upcase (sub-string 1 1 ?root)) (sub-string 1 1 ?root))(eq ?cat PropN)) then
                         (bind ?str (lowcase (sub-string 1 1 ?root)))
              		(bind ?n_root (str-cat ?str (sub-string 2 (length ?root)  ?root)))
 		        (bind ?n_rt_mng (gdbm_lookup ?gdbm  ?n_root))
 			(if (and (neq ?n_rt_mng "FALSE") (neq (length ?n_rt_mng) 0)) then 
 				(bind ?new_mng ?n_rt_mng)                      
-		  		(print_dic_mng ?gdbm ?word ?root ?new_mng single 0)
+		  		(print_dic_mng ?gdbm ?word ?root ?new_mng single ?id)
 	     		)
 	    	     )
 	    )
@@ -193,6 +206,7 @@
  ?f0<-(id-root ?id -)
  (id-original_word ?id ?word)
  (id-cat_coarse ?id ?cat)
+ (id-word ?id ?w)
  =>
 		(retract ?f0)
 		(dic_lookup "provisional_word_dic.gdbm" ?id ?word ?word ?cat)
@@ -202,10 +216,13 @@
 		(dic_lookup "numbers_dic.gdbm" ?id ?word ?word ?cat)
 		(dic_lookup "inferred_dic.gdbm" ?id ?word ?word ?cat)
 		(dic_lookup "proper_noun_dic.gdbm" ?id ?word ?word ?cat)
+		(dic_lookup "physics_dic.gdbm" ?id ?w ?w ?cat)
+		(dic_lookup "agriculture_dic.gdbm" ?id ?w ?w ?cat)
+		(dic_lookup "social_science_dic.gdbm" ?id ?w ?w ?cat)
  )
  ;--------------------------------------------------------------------------------------------------------
  (defrule get_mng_from_all_dic1
- (declare (salience 150))
+ (declare (salience 155))
  (id-original_word ?id ?word)
  (id-root ?id ?root)
  (id-cat_coarse ?id ?cat)
@@ -218,6 +235,9 @@
 		(dic_lookup "numbers_dic.gdbm" ?id ?word ?root ?cat)
 		(dic_lookup "inferred_dic.gdbm" ?id ?word ?root ?cat)
 		(dic_lookup "proper_noun_dic.gdbm" ?id ?word ?word ?cat)
+		(dic_lookup "physics_dic.gdbm" ?id ?word ?root ?cat)
+		(dic_lookup "agriculture_dic.gdbm" ?id ?word ?root ?cat)
+		(dic_lookup "social_science_dic.gdbm" ?id ?word ?root ?cat)
  )
  ;--------------------------------------------------------------------------------------------------------
  ;Added by Roja (01-08-12). 
@@ -240,56 +260,26 @@
  (assert (default-cat wh-determiner))
  )
  ;--------------------------------------------------------------------------------------------------------
- ; get mng from physics dic with same category
- (defrule get_mng_from_phy_dic
- (declare (salience 140))
- ?f0<-(id-original_word ?id ?word)
- (id-root ?id ?rt)
- (id-cat_coarse ?id ?cat)
- (test (neq (numberp ?rt) TRUE))
- (test (neq (gdbm_lookup "phy_dictionary.gdbm" (str-cat ?rt "_" ?cat)) "FALSE"))
- =>
-        (bind ?mng (gdbm_lookup "phy_dictionary.gdbm" (str-cat ?rt "_" ?cat)))
-        (if (neq ?mng "FALSE") then
-		(print_dic_mng phy_dictionary.gdbm ?word ?rt ?mng single 0)
-		(retract ?f0)
-        )
- )
- ;--------------------------------------------------------------------------------------------------------
- ; get mng from physics dic with different category
- (defrule get_mng_from_phy_dic1
- (declare (salience 130))
- ?f0<-(id-original_word ?id ?word)
- (id-root ?id ?rt)
+ ;Added by Shirisha Manju
+ (defrule get_mng_from_all_dic_with_diff_cat
+ (declare (salience 150))
+ (id-original_word ?id ?word)
+ (id-root ?id ?root)
  (id-cat_coarse ?id ?cat)
  (default-cat ?cat1)
  (test (neq ?cat ?cat1))
- (test (neq (numberp ?rt) TRUE))
- (test (neq (gdbm_lookup "phy_dictionary.gdbm" (str-cat ?rt "_" ?cat1)) "FALSE"))
  =>
-        (bind ?mng (gdbm_lookup "phy_dictionary.gdbm" (str-cat ?rt "_" ?cat1)))
-        (if (neq ?mng "FALSE") then
-                (print_dic_mng phy_dictionary.gdbm ?word ?rt ?mng single 0)
-		(retract ?f0)
-        )
- )
- ;--------------------------------------------------------------------------------------------------------
- ; get mng from physics dic with different category and with lowcase root
- (defrule get_mng_from_phy_dic2
- (declare (salience 120))
-?f0<-(id-original_word ?id ?word)
- (id-root ?id ?rt)
- (id-cat_coarse ?id ?cat)
- (test (neq (numberp ?rt) TRUE))
- (default-cat ?cat1)
- (test (neq ?cat ?cat1))
- (test (neq (gdbm_lookup "phy_dictionary.gdbm" (str-cat (lowcase ?rt) "_" ?cat1)) "FALSE"))
- =>
-        (bind ?mng (gdbm_lookup "phy_dictionary.gdbm" (str-cat (lowcase ?rt) "_" ?cat1)))
-	(if (neq ?mng "FALSE") then
-                (print_dic_mng phy_dictionary.gdbm ?word ?rt ?mng single 0)
-		(retract ?f0)
-        )
+
+                (dic_lookup "provisional_word_dic.gdbm" ?id ?word ?root ?cat1)
+                (dic_lookup "provisional_root_dic.gdbm" ?id ?word ?root ?cat1)
+                (dic_lookup "provisional_PropN_dic.gdbm" ?id ?word ?root ?cat1)
+                (dic_lookup "default-iit-bombay-shabdanjali-dic_smt.gdbm" ?id ?word ?root ?cat1)
+                (dic_lookup "numbers_dic.gdbm" ?id ?word ?root ?cat1)
+                (dic_lookup "inferred_dic.gdbm" ?id ?word ?root ?cat1)
+                (dic_lookup "proper_noun_dic.gdbm" ?id ?word ?word ?cat1)
+                (dic_lookup "physics_dic.gdbm" ?id ?word ?root ?cat1)
+                (dic_lookup "agriculture_dic.gdbm" ?id ?word ?root ?cat1)
+		(dic_lookup "social_science_dic.gdbm" ?id ?word ?root ?cat1)
  )
  ;--------------------------------------------------------------------------------------------------------
  ;Added by Mahalaxmi

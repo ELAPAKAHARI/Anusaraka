@@ -21,8 +21,12 @@
  sh get_canonical_form_wsd_rules.sh
 
  cd $HOME_anu_test/Anu_data/canonical_form_dictionary/dictionaries
- echo "Creating phy_dictionary.gdbm"
- ./create-gdbm.pl $HOME_anu_test/Anu_databases/phy_dictionary.gdbm < phy_dictionary_in_canonical_form.txt
+ echo "Creating physics_dic.gdbm"
+ ./create-gdbm.pl $HOME_anu_test/Anu_databases/physics_dic.gdbm < phy_dictionary_in_canonical_form.txt
+ echo "Creating agriculture_dic.gdbm"
+ ./create-gdbm.pl $HOME_anu_test/Anu_databases/agriculture_dic.gdbm < agriculture_dic_in_canonical_form.txt
+ echo "Creating social_science_dic.gdbm"
+ ./create-gdbm.pl $HOME_anu_test/Anu_databases/social_science_dic.gdbm < social_science_dic_in_canonical_form.txt
 
  echo "Creating paxasUwra.gdbm"
  ./create-gdbm.pl $HOME_anu_test/Anu_databases/total-paxasUwra.gdbm < total-paxasUwra_in_canonical_form.txt 
@@ -62,7 +66,10 @@
  ./create-gdbm.pl $HOME_anu_test/Anu_databases/kriyA_object_vib.gdbm < kriyA_object_vib_in_canonical_form.txt
  echo "Creating proper_noun_dic.gdbm"
  ./create-gdbm.pl $HOME_anu_test/Anu_databases/proper_noun_dic.gdbm < proper_noun_dic_in_canonical_form.txt
+ echo "Creating mixed_domain_dic.gdbm"
+ ./create-gdbm.pl $HOME_anu_test/Anu_databases/mixed_domain_dic.gdbm < mixed_domain_dic_in_canonical_form.txt
 
+ 
  cd $HOME_anu_test/Anu_data
  echo "Creating PropN.gdbm"
  ./create-gdbm.pl $HOME_anu_test/Anu_databases/PropN.gdbm < PropN.txt 
@@ -139,13 +146,10 @@
  rm word_field mng_field mng_utf8 default-iit-bombay-shabdanjali-dic_firefox_tmp.txt default-iit-bombay-shabdanjali-dic_smt_tmp.txt
 
  echo "Compiling Multifast programmes..."
- cd  $HOME_anu_test/multifast-v1.0.0/ahocorasick
+ cd  $HOME_anu_test/multifast-v1.4.2/ahocorasick
  make
- cd  $HOME_anu_test/multifast-v1.0.0/src
+ cd  $HOME_anu_test/multifast-v1.4.2/src
  sh run.sh
- if ! [ -e extract_hindi_key.c ] ; then
-	touch extract_hindi_key.c
- fi 
  make
 
  echo "Compiling Anu stdenglish source files"
@@ -159,6 +163,7 @@
 
  echo "Compiling CLIPS source files"
  cd $HOME_anu_test/CLIPS
+ sh create_wx_utf8.sh $HOME_anu_test/Anu_src/wx_utf8.lex wx_utf8.lex
  sh compile.sh
  mv myclips $HOME_anu_test/bin/.
 
@@ -177,7 +182,15 @@
  echo "Compiling stanford parser files"
  cd $HOME_anu_test/Parsers/stanford-parser/src
  sh compile.sh
+ cp run_penn-rnn.sh $HOME_anu_test/bin/
+ cp run_penn-pcfg.sh $HOME_anu_test/bin/
 
+ echo "Compiling Logon parser files"
+ cd $HOME_anu_test/Parsers/logon-parser/src
+ sh compile_bison.sh dependency_parse
+ sh compile_bison.sh derivation_parse
+ $HOME_anu_test/Anu_src/comp.sh add_info_for_no_parse
+ 
  echo "Compiling RASP parser files"
  cd $HOME_anu_test/Parsers/RASP/rasp3os/scripts/
  sh comp.sh 

@@ -5788,3 +5788,5 @@ Antarctica	aMtArkatikA
 Arthur	ArWara
 Charles	cArlsa
 Dennis	denisa
+Ganges	gaMgA
+Persia	PArasa

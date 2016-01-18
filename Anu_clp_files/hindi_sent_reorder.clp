@@ -2,6 +2,8 @@
 
 (deftemplate pada_info (slot group_head_id (default 0))(slot group_cat (default 0))(multislot group_ids (default 0))(slot vibakthi (default 0))(slot gender (default 0))(slot number (default 0))(slot case (default 0))(slot person (default 0))(slot H_tam (default 0))(slot tam_source (default 0))(slot preceeding_part_of_verb (default 0)) (multislot preposition (default 0))(slot Hin_position (default 0))(slot pada_head (default 0)))
 
+(deftemplate word-morph(slot original_word)(slot morph_word)(slot root)(slot category)(slot suffix)(slot number))
+
  (deffunction never-called ()
  (assert (No complete linkages found))
  (assert (missing-level-id) )
@@ -44,10 +46,32 @@
  (assert (id-wsd_viBakwi))
  (assert (id-domain_type))
  (assert (compound_meaning_decided))
+ (assert (parserid-wordid))
  )
  ;============================================ Stanford Parser Rules ===================================================
 
  ;-------------------------------- new_word/new_id insertion rules ------------------------------------------------------
+
+ ;Added by Shirisha Manju (30-07-15) Suggested by Sukhada
+ ;So can a magazine survive by downright thumbing its nose at major advertisers? 
+ (defrule insert_kyA
+ (Head-Level-Mother-Daughters ? ? ?SQ $? ?VP)
+ (and (Node-Category ?SQ SQ) (Node-Category ?VP VP))
+ (Head-Level-Mother-Daughters ? ? ?VP ?MD $?)
+ (Node-Category ?MD MD)
+ (Head-Level-Mother-Daughters ? ? ?MD ?pid)
+ (parserid-wordid  ?pid ?id)
+ ?f1<-(id-word ?id did|do|does|may|can|could|would|will|are|is|was|were|am|shall|has|have|had|should)
+ (id-word =(- ?id 1) ?w&~what&~where&~when&~how&~who&~whom&~whose&~which&~whence);But where will you get them from. What will be the effect of these reforms?
+ (Head-Level-Mother-Daughters ? ? ?SQ ?fid $?)
+ ?f0 <- (hindi_id_order $?pre ?fid $?pos )
+ (not (prep_id-relation-anu_ids ? AjFArWaka_kriyA ?kri) )
+ =>
+        (retract ?f0 ?f1)
+        (assert (hindi_id_order   $?pre kyA ?fid $?pos))
+        (printout ?*DBUG* "(Rule_Name-ids  insert_kyA   " (implode$  (create$ $?pre  kyA  ?fid $?pos)) ")" crlf)
+ )
+ ;-----------------------------------------------------------------------------------------------------------------------
  ;If you know who did it, you should tell the teacher. 
  ;yaxi Apa jAnawe hEM, ki yaha kisane kiyA wo Apako SikRaka ko bawAnA cAhie.
  (defrule insert_wo
@@ -128,44 +152,6 @@
         (printout ?*DBUG* "(Rule_Name-ids  insert_conjunction  (hindi_id_order  "(implode$ (create$ $?id 10000 $?ids $?id1 ?k $?daut)) ")"  crlf)
  )
  ;-----------------------------------------------------------------------------------------------------------------------
- ; Added by Shirisha Manju (22-12-11) Suggested by Sukhada
- ;When Mrs. Chitnis discovered that her husband was an adulterer she divorced him.
- (defrule insert_wo_when
- (declare (salience 1100))
- (id-word ?id when)
- (sbar-mother-dau ?sbar ?SBAR-dau)
- (Node-Category ?sbar SBAR)
- (Node-Category ?SBAR-dau SBAR)
- (Head-Level-Mother-Daughters ? ? ?sbar $?m_ids)
- (Head-Level-Mother-Daughters ? ? ?SBAR-dau $?ids)
- ?f0<-(hindi_id_order $?pre $?ids $?post)
- (test (member$ ?id $?m_ids))
- (not (wo_inserted ))
- =>
-        (retract ?f0)
-        (assert (hindi_id_order $?pre $?ids wo $?post))
-        (assert (wo_inserted ))
-        (printout ?*DBUG* "(Rule_Name-ids  insert_wo (hindi_id_order  "(implode$ (create$ $?pre $?ids wo $?post)) ")" crlf)
- )
- ;-----------------------------------------------------------------------------------------------------------------------
- ; Added by Shirisha Manju (22-12-11) Suggested by Sukhada
- ;When the dollar is in a free-fall, even central banks can not stop it.
-; (defrule insert_wo1
-; (declare (salience 1000))
-; (id-word ?id if|when)
-; (Head-Level-Mother-Daughters ? ? ?SBAR $?ids ?id1)
-; (Node-Category ?SBAR SBAR)
-; ?f0<-(hindi_id_order $?pre $?ids ?id1 ?that_id $?post)
-; (id-word ?that_id ?that&~that&~then);For example, when you say that a car is moving on a road, you are describing the car with respect to a frame of reference attached to you or to the ground.
-; (test (and (or (member$ ?id $?ids)(eq ?id ?id1))(neq (length $?post) 0))) ;My car broke down when I reached Lalitpur.
-; (not (wo_inserted ))
-; (not (prep_id-relation-anu_ids - kriyA-vAkyakarma ?id1 ?))
-; =>
-;        (retract ?f0)
-;        (assert (hindi_id_order $?pre $?ids ?id1 wo ?that_id $?post))
-;        (assert (wo_inserted ))
-;        (printout ?*DBUG* "(Rule_Name-ids  insert_wo1 (hindi_id_order  "(implode$ (create$ $?pre $?ids ?id1 wo ?that_id $?post)) ")" crlf)
-; )
  ;====================================  id movement rules ===============================================================
  ; I finally figured out why this program is so slow .
  ; Modified by Shirisha Manju (09-11-11) Suggested by Sukhada -- instead of moving wh word move the whole pada
@@ -265,6 +251,23 @@
 	(assert (hindi_id_order $?pre ?advp $?ids $?post ?kriyA))
         (printout  ?*DBUG* "(Rule_Name-ids   move_adv_b4_sub_sama  (hindi_id_order  "(implode$ (create$  $?pre ?advp $?ids $?post ?kriyA)) ")" crlf)
  )
+ ;------------------------------------------------------------------------------------------------------------------
+ ;Added by Shirisha Manju.  Suggested by Sukhada (30-07-15)
+ ;The evidence indicates that program trading did not, in fact, cause the market's sharp fall on Oct. 13, though it may have exacerbated it.
+ (defrule interchange_date_and_month
+ (id-word ?id ?mon)
+ (test (neq (integerp (member$ ?mon (create$ jan. feb. mar. apr. may. june july aug. sep. oct. nov. dec.))) FALSE))
+ (id-cat_coarse ?id1&:(= (+ ?id 1) ?id1) number)
+ ?f0 <-(hindi_id_order $?pre ?id ?id1 $?post )
+ ?f1<-(pada_info (group_head_id ?id1) (group_ids ?id ?id1))
+ =>
+	(retract ?f0)
+	(assert (hindi_id_order $?pre ?id1 ?id $?post))
+	(modify ?f1 (group_head_id ?id) (group_ids ?id1 ?id))
+        (printout  ?*DBUG* "(Rule_Name-ids   interchange_date_and_month  (hindi_id_order  "(implode$ (create$  $?pre ?id1 ?id $?post)) ")" crlf)
+ )
+
+ 
 
  ;======================================== New word insertion rules =======================================================
  ;Added by Shirisha Manju (1-02-11)
@@ -287,7 +290,7 @@
  ; bet in the list suggested my Meena(05-04-11) Ex:Alan bet me five dollars Clinton would lose the election. 
  (defrule rule_for_ki
  (declare (salience 10))
- ?f1<- (id-root-category-suffix-number  ?kri tell|guess|see|think|say|know|suppose|wonder|hope|bet ? ? ?)
+ ?f1<- (id-root-category-suffix-number  ?kri tell|guess|see|think|say|know|suppose|wonder|hope|bet|doubt ? ? ?)
  (prep_id-relation-anu_ids ?  kriyA-subject ?kri  ?)
  (prep_id-relation-anu_ids ?  kriyA-subject ?kri_1 ?)
  ?f0 <-(hindi_id_order $?pre ?kri ?id $?post)
@@ -393,7 +396,6 @@
         (printout  ?*DBUG* "(Rule_Name-ids   rule_for_yaha   (hindi_id_order  "(implode$ (create$ $?pre ?kri  yaha $?post)) ")" crlf)
  )
  ;------------------------------------------------------------------------------------------------------------------
- ;-----------------------------------------------------------------------------------------------------------------
  ;When you stand on this rock and face the east, the waves of the bay of bengal lap your feet. 
  ;jaba Apa isa cattAna para Kade howe hEM Ora pUrva kI ora muzha karawe hEM, wo bengal kI KAdI kI lahareM Apake pAzvoM se XIre_se takarAwI hEM.
  ;In questiory type sentences 'wo' is not inserted. So added '(not (prep_id-relation-anu_ids  -    praSnAwmaka_vAkya))' by Roja (24-05-14)
@@ -443,17 +445,34 @@
         (printout ?*DBUG* "(Rule_Name-ids   insert_wo_for_when2  (hindi_id_order  "(implode$ (create$ $?pre ?k1 wo $?post))")"crlf)
  )
  ;------------------------------------------------------------------------------------------------------------------
- ;------------------------------------------------------------------------------------------------------------------
  (defrule since_rule
  ?f1<-(id-word 1 since)  ;Modified by Meena (28-10-10) 
  (prep_id-relation-anu_ids ?  kriyA-vAkya_viBakwi  ?k 1)
  (prep_id-relation-anu_ids ?  kriyA-subject  ?kri1 ?id)
- ?f0 <-(hindi_id_order $?pre ?id $?post)
+ (pada_info (group_head_id ?id)(group_ids $?grp_ids))
+ ?f0 <-(hindi_id_order $?pre $?grp_ids $?post)
  (test (and (> ?kri1 ?k) (neq ?id ?k)))
  =>
         (retract ?f0 ?f1)
-	(assert (hindi_id_order  $?pre isaliye ?id $?post))
-        (printout ?*DBUG* "(Rule_Name-ids   since_rule  (hindi_id_order  "(implode$ (create$ $?pre isaliye ?id $?post))")" crlf)
+	(assert (hindi_id_order  $?pre isaliye $?grp_ids $?post))
+	(printout ?*DBUG* "(Rule_Name-ids   since_rule  (hindi_id_order  "(implode$ (create$ $?pre isaliye $?grp_ids $?post))")" crlf)
+ )
+ ;------------------------------------------------------------------------------------------------------------------
+ ; Added by Shirisha Manju (14-11-14) 
+ ;[Since] the magnitude of a null vector is zero, [its] [direction] can not be specified. 
+ (defrule since_rule1
+ (declare (salience 10))
+ ?f1<-(id-word 1 since)   
+ (prep_id-relation-anu_ids ?  kriyA-vAkya_viBakwi  ?k 1)
+ (prep_id-relation-anu_ids ?  kriyA-subject  ?kri1 ?id)
+ (prep_id-relation-anu_ids ? viSeRya-RaRTI_viSeRaNa  ?id ?id1)
+ (pada_info (group_head_id ?id1)(group_ids $?grp_ids))
+ ?f0 <-(hindi_id_order $?pre $?grp_ids $?post)
+ (test (and (> ?kri1 ?k) (neq ?id ?k)))
+ =>
+        (retract ?f0 ?f1)
+	(assert (hindi_id_order  $?pre isaliye $?grp_ids $?post))
+        (printout ?*DBUG* "(Rule_Name-ids   since_rule1  (hindi_id_order  "(implode$ (create$ $?pre isaliye $?grp_ids $?post))")" crlf)
  )
  ;------------------------------------------------------------------------------------------------------------------
   ;I can not go out until my hair is dry.
@@ -470,21 +489,43 @@
   	(printout  ?*DBUG* "(Rule_Name-ids   insert_nahIM   (hindi_id_order  "(implode$ (create$ $?list  ?id $?list1 nahIM ?kri)) ")" crlf)
  )
  ;------------------------------------------------------------------------------------------------------------------
+ ;Added by Shirisha Manju (29-10-14) Suggested by Chaitanya Sir
+ ;Harder your better will be the result. 
+ ;jiwanA kaTora Apa uwanA behawara pariNAma hogA.
+ (defrule add_vib_for_er
+ (declare (salience 15))
+ ?f0<-(hindi_id_order $?s_m1 ?id $?s_m2 ?id1 $?s_m3)
+ (id-original_word ?id ?w)
+ (id-original_word ?id1 ?w1)
+ (word-morph (original_word ?w) (suffix er))
+ (word-morph (original_word ?w1) (suffix er))
+ (not (vib_inserted ?id1))
+ => 
+	(retract ?f0)
+	(assert (hindi_id_order $?s_m1 jiwanA ?id $?s_m2 uwanA ?id1 $?s_m3))
+	(assert (vib_inserted ?id))
+	(assert (vib_inserted ?id1))
+ )
+ ;------------------------------------------------------------------------------------------------------------------
  ;Added provisional_Database_compound_phrase_root_mng and provisional_Database_compound_phrase_word_mng in the list by Roja(20-02-14)
  ;Mary is taller than Max.
  ;Added by Shirisha Manju (03-08-13)  Suggested by Chaitanya Sir
  ;At longer wavelengths (i.e., at lower frequencies), the antennas have large physical size and they are located on or very near to the ground.
  ;In short, the greater the rate of change of momentum, the greater is the force.
+ ;What would be reasonable indicators to show that the economy is better or worse? 
  (defrule insert_aXika_for_adj_er
  (declare (salience 10))
  ?f0<-(id-root-category-suffix-number ?id ? adjective er ?)
+ ?f<-(hindi_id_order $?list ?m ?id $?list1)
+ (id-HM-source ?id ?mng ?s&~Database_compound_phrase_root_mng&~Database_compound_phrase_word_mng&~provisional_Database_compound_phrase_root_mng&~provisional_Database_compound_phrase_word_mng)
+ (test (eq (integerp (member$ ?mng (create$ behawara ))) FALSE))
+ (not (vib_inserted ?id))
  (not (id-eng-src ?id ? Word_mng))
- ?f<-(hindi_id_order $?list ?id $?list1)
- (not (id-HM-source ?id ? ?src&Database_compound_phrase_root_mng|Database_compound_phrase_word_mng|provisional_Database_compound_phrase_root_mng|provisional_Database_compound_phrase_word_mng));Note : Same as below but no sentence found. 
+ (not (id-HM-source ?m se_aXika ?)) ;Current PCs are more than 50 times faster and have memory capacity 500 times greater than their 1977 counterparts. 
  =>
         (retract ?f ?f0)
-	(assert (hindi_id_order  $?list aXika ?id $?list1))
-  	(printout  ?*DBUG* "(Rule_Name-ids   insert_aXika_for_adj_er   (hindi_id_order  "(implode$ (create$ $?list aXika ?id $?list1 )) ")" crlf)
+	(assert (hindi_id_order  $?list ?m aXika ?id $?list1))
+  	(printout  ?*DBUG* "(Rule_Name-ids   insert_aXika_for_adj_er   (hindi_id_order  "(implode$ (create$ $?list ?m aXika ?id $?list1 )) ")" crlf)
  )
  ;------------------------------------------------------------------------------------------------------------------
  ;Added provisional_Database_compound_phrase_root_mng and provisional_Database_compound_phrase_word_mng in the list by Roja(20-02-14)

@@ -87,8 +87,10 @@
  (printout fp "</td><td class=\""?chnk_fr_htm"\"><a onclick=\"javascript:  caution"?root"('"?root"')\"> <span id=\"popup_link_"?p_id"_"?s_id"_"?w_id"_caution\" class=\"popup_link\"><blink>&#9761;</blink></span> <script type=\"text/javascript\"> new Popup('popup_3','popup_link_"?p_id"_"?s_id"_"?w_id"_caution',{position:'below',trigger:'click'}); </script>   </a></td>" crlf "</tr>" crlf)
  else (if (eq ?sen_type Default_mng_with_different_category) then 
  (printout fp "</td><td class=\""?chnk_fr_htm"\"><a onclick=\"javascript:  alert(\'Default_mng_with_different_category\')\"><blink>&#9761;</blink></a></td>" crlf "</tr>" crlf)
+ else (if (eq ?sen_type Mixed_domain_mng_with_different_category) then ;Added else if by Roja(12-01-16) 
+ (printout fp "</td><td class=\""?chnk_fr_htm"\"><a onclick=\"javascript:  alert(\'Mixed_domain_mng_with_different_category\')\"><blink>&#9761;</blink></a></td>" crlf "</tr>" crlf)
  else
- (printout fp "</td><td class=\""?chnk_fr_htm"\"> - </td>" crlf "</tr>" crlf)))))
+ (printout fp "</td><td class=\""?chnk_fr_htm"\"> - </td>" crlf "</tr>" crlf))))))
  )
 
  (deffunction print_padasutra_row(?p_id ?s_id ?w_id ?chnk_fr_htm ?l_punc ?r_punc ?cat ?padasuthra)
@@ -166,11 +168,11 @@
  (printout fp "<td class=\""?chnk_fr_htm"\"> "?h_tam" </td>" crlf "</tr>" crlf))))
  )
 
- (deffunction print_sense_disambiguation_row(?p_id ?s_id ?w_id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam ?id_type ?mng_src)
+ (deffunction print_sense_disambiguation_row(?p_id ?s_id ?w_id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam ?id_type ?mng_src ?tam_src)
  (printout fp "<tr class=\"row9\">" crlf)
  (if (= ?w_id 1) then (printout fp "<td class=\"number\">"?p_id"."?s_id".I</td>"))
  (if (eq ?id_type MAIN_VERB) then
- (printout fp "<td class=\""?chnk_fr_htm"\"> <a class=\"tooltip\" href=\"#\"> "?l_punc ?h_mng"{tam:"?h_tam"}" ?r_punc" <span>"?mng_src"</span></a></td>" crlf "</tr>" crlf)
+ (printout fp "<td class=\""?chnk_fr_htm"\"> <a class=\"tooltip\" href=\"#\"> "?l_punc ?h_mng" <span>"?mng_src"</span></a><a class=\"tooltip\" href=\"#\"> {tam:"?h_tam"}"?r_punc "<span>"?tam_src "</span></a></td>" crlf "</tr>" crlf)
  else (if (eq ?id_type AUX_VERB) then
  (printout fp "<td class=\""?chnk_fr_htm"\"> <a class=\"tooltip\" href=\"#\"> --&gt; <span>"?mng_src"</span></a></td>" crlf "</tr>" crlf)
  else (if (eq ?id_type VIB0) then
@@ -646,7 +648,7 @@
  (id-padasuthra ?id ?padasuthra)
  (id-HM-source-grp_ids ?id ?h_mng ?mng_src $?)
  (root-verbchunk-tam-chunkids ? ? ? $?lwg_ids ?head_id)
- (pada_info (group_head_id ?head_id)(H_tam ?h_tam))
+ (pada_info (group_head_id ?head_id)(H_tam ?h_tam)(tam_source ?tam_src))
  (test (or(member$ ?id $?lwg_ids)(= ?head_id ?id)))
  (id-Apertium_output ?head_id ?apertium_output)
  (id-right_punctuation ?id ?r_punc)
@@ -665,13 +667,13 @@
  (print_chunker_row  ?p_id ?s_id ?id ?chnk_fr_htm ?chunk_type)
  (if (= ?head_id ?id) then
  (print_lwg_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_tam ?padasuthra MAIN_VERB)
- (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam MAIN_VERB ?mng_src)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam MAIN_VERB ?mng_src ?tam_src)
  (print_prep-movement_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam MAIN_VERB -)
  (print_hindi-generation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?apertium_output MAIN_VERB)
  (print_suggestion_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?apertium_output MAIN_VERB) 
  else
  (print_lwg_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_tam ?padasuthra AUX_VERB)
- (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam AUX_VERB ?mng_src)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam AUX_VERB ?mng_src -)
  (print_prep-movement_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng ?h_tam AUX_VERB -)
  (print_hindi-generation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - AUX_VERB)
  (print_suggestion_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?apertium_output AUX_VERB)) 
@@ -719,7 +721,7 @@
  (print_pos_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?cat)
  (print_chunker_row  ?p_id ?s_id ?id ?chnk_fr_htm ?chunk_type)
  (print_lwg_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - ?padasuthra VIB0) 
- (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - VIB0 ?mng_src)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - VIB0 ?mng_src -)
  (print_prep-movement_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - VIB0 -)
  (print_hindi-generation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?apertium_output -)
  (print_suggestion_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?apertium_output -)
@@ -768,10 +770,10 @@
  (print_chunker_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?chunk_type)
  (print_lwg_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc - ?pp_padasuthra -)
  (if (> ?sign 0) then
- (print_sense_disambiguation_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc ?pp_h_mng - GREATER_THAN ?mng_src)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc ?pp_h_mng - GREATER_THAN ?mng_src -)
  (print_prep-movement_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc ?pp_h_mng - GREATER_THAN ?sign)
  else
- (print_sense_disambiguation_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc ?pp_h_mng - LESS_THAN ?mng_src)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc ?pp_h_mng - LESS_THAN ?mng_src -)
  (print_prep-movement_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc ?pp_h_mng - LESS_THAN ?sign))
  (print_hindi-generation_row  ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc "~" -)
  (print_suggestion_row ?p_id ?s_id ?pp_id ?chnk_fr_htm ?l_punc ?r_punc "~" -) 
@@ -808,7 +810,7 @@
  (print_pos_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?cat)
  (print_chunker_row  ?p_id ?s_id ?id ?chnk_fr_htm ?chunk_type)
  (print_lwg_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - ?padasuthra -)
- (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - - ?mng_src)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - - ?mng_src -)
  (print_prep-movement_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - - -)
  (print_hindi-generation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?apertium_output -)
  (print_suggestion_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?apertium_output -)
@@ -844,7 +846,7 @@
  (print_pos_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?cat)
  (print_chunker_row  ?p_id ?s_id ?id ?chnk_fr_htm ?chunk_type)
  (print_lwg_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - ?padasuthra -)
- (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - - ?mng_src)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - - ?mng_src -)
  (print_prep-movement_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng - - -)
  (print_hindi-generation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng -)
  (print_suggestion_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?h_mng -)
@@ -879,7 +881,7 @@
  (print_pos_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc ?cat)
  (print_chunker_row  ?p_id ?s_id ?id ?chnk_fr_htm ?chunk_type)
  (print_lwg_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - ?padasuthra -)
- (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - - - -)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - - - - -)
  (print_prep-movement_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - - - -)
  (print_hindi-generation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - -)
  (print_suggestion_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - -)
@@ -907,7 +909,7 @@
  (print_pos_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc -)
  (print_chunker_row  ?p_id ?s_id ?id ?chnk_fr_htm -)
  (print_lwg_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - - -)
- (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - - - -)
+ (print_sense_disambiguation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - - - - -)
  (print_prep-movement_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - - - -)
  (print_hindi-generation_row  ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - -)
  (print_suggestion_row ?p_id ?s_id ?id ?chnk_fr_htm ?l_punc ?r_punc - -)

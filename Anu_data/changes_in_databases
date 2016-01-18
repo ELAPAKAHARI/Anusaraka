@@ -49,6 +49,10 @@
 	27. sanXyA  			"		"		
 	28. sigareta	Suggested by sukhada (08-05-14) 	Ex: He sat back and lit up a cigarette.
 	29. saMsaxa 			"    (07-07-14)		Ex: The Speaker dissolved the parliament.
+	30. vAina   	Suggested by Chaitanya Sir (13-11-14)	Ex: Can I offer you some wine?
+	31. prayogaSAlA	Suggested by 14anu-ban-08 (22-11-14)	Ex: The prototypes of the International standard kilogram supplied by the International Bureau of Weights and Measures (BIPM) are available in many other laboratories of different countries.
+	32. ASaMkA  	(Suggested by Chaitanya Sir 03-02-15)	Ex: More than 80 people were feared dead last night after flash floods, the 
+								    worst in 34 years. 
 	
 
   3. Removed :
@@ -89,6 +93,7 @@
 	come back       vApasa_AnA		(Suggested by Rajini 20.01.12) Ex : Let Abraham come back.
 	look_after      xekabAla_kara		(Suggested by Chaitanya Sir 26-07-13)
 	put_forward	praswuwa_kara		(Suggested by Pramila Banasthali 23-08-13)
+	swear_in        SapaWa_le		(Suggested by Chaitanya Sir 02-09-15)
 
   2.  Removed
 	"nA" in hindi meanings.
@@ -157,6 +162,9 @@
 	xAzva_lagA      m   		"		"	Ex: I wager that she can not pass the exam. 
 	gAlI_xe		f		"	 (27-03-14)	Ex: Billy cried when the other kids called him names.
 	Added   'Radayanwra_raca	 m '	to 	'XamakI_xe	f' by Sukhada 27-8-14
+	parawa_uwAra      f	Suggested by Sukhada (05-05-15)	Ex: They scale the fish to cook.
+	jayajayakAra_kara f	Suggested by Sukhada (05-05-15) Ex: Bansal is being hailed for saving a young child from drowning. 
+	golI_calA         f	"			"	Ex: The police opened fire on the public.
 
 	
 
@@ -280,10 +288,11 @@
   1. Added  
          Chinmaya International Foundation  ----  cinmaya_anwarrARtrIya_saMsWA  (Added by Sriram (02-11-09))
          Welcome you all                    ----  Apa_saba_kA_svAgata           (Added by Sriram (02-11-09))
-	 How are you     		    ----  Apa_kEse_hEM 		   (Added by Manju Suggested by Rajini (09-12-11))
- 	 I am fine thank you     	    ----  mEM_baDiyA_hUz_XanyavAxa (Added by Manju Suggested by Rajini (09-12-11))
-	 How old are you 		    ----  Apa_kI_kyA_umra_hE       (Added by Manju Suggested by Rajini (09-12-11))
-	 so far so good 		    ----  yahAz_waka_wo_saba_sahI_hE (Added by Manju Suggested by Chaitanya Sir (02-10-12))
+	 How are you     		    ----  Apa_kEse_hEM 		   	(Added by Manju Suggested by Rajini (09-12-11))
+ 	 I am fine thank you     	    ----  mEM_baDiyA_hUz_XanyavAxa 	(Added by Manju Suggested by Rajini (09-12-11))
+	 How old are you 		    ----  Apa_kI_kyA_umra_hE       	(Added by Manju Suggested by Rajini (09-12-11))
+	 so far so good 		    ----  yahAz_waka_wo_saba_sahI_hE 	(Added by Manju Suggested by Chaitanya Sir (02-10-12))
+	 Have you any idea    		    ----  kyA_Apa_ko_pawA_hE		(Added by Manju Suggested by Rajini (21-06-14))
                    
   changes in AllTam.txt
   =====================
@@ -306,6 +315,9 @@
 			ne_ke_bIca		ne_ke_pahale	ne_ke_pare	ne_ke_bAre_meM
 			ne_kI_jarUrawa_hE	ne_vAlA_hE	ne_vAlA_WA	ne_meM
 			ne_para			ne_se		ne_kI_jarUrawa_pada_sakawI_hE,
+	5. yA_jAwA_hE,m,s,u		jAwA_hE	 	as  	jAwA_hUM	(Suggested by Somaji 10-11-14)
+
+
   Removed  : 
 	0_sakawA_               (all the entries for 0_sakawA_         ) Suggested by sukhada(19-01-12)
 	nA_kI_himmahE           (       "          nA_kI_himmahE       )          "
@@ -372,8 +384,9 @@
                              Eg: If you were a middle-class American without a job , who would you vote for .
 	ruka	(Suggested by Chaitanya Sir 10-07-13) 	Ex: Well then, get out of the pit as best you can, said Papri coldly.
 	jala	(Suggested by Chaitanya Sir 30-04-14)	Ex: The coal in the BBQ grill finally lit up.	
-  2. Removed : -kara , -pIta    
-		     Eg: The songwriter, whose artistic work had stretched over decades, acknowledged the standing ovation.
+  2. Removed :
+	-kara , -pIta    Eg: The songwriter, whose artistic work had stretched over decades, acknowledged the standing ovation.
+	pA		(Suggested by Sukhada 19-06-14) Ex: I scraped a pass in the exam.
   3. Modified : -siXAra as siXAra	
 	
   changes in PropN.txt
@@ -485,6 +498,47 @@
 	bouncer		(Suggested by Sukhada		 09-05-14 ) Ex: He had the bouncers throw them out of the club. 
 	enemy		(Suggested by Preeti ji LTRC	 09-05-14 ) Ex: We charged at the enemy.  
 	kitten		(Suggested by Anshika Sharma Banasthali 4-8-14)	Ex: Our cat produced four kittens during the course of the night.
+	farmer		(Suggested by Soma Mam		 21-11-14 ) Ex: In government-regulated agriculture, farmers can be required to destroy 									crops that exceed their production quota.
+	solicitor       (Suggested by 14anu-ban-04       03-12-14 ) Ex: If your opponent employs a solicitor, you can not be charged the cost 
+                                                                        even if you lose your case .
+	lover		(Suggested by 14anu-ban-04       15-12-14 ) Ex: She discovered her lover in the arms of another woman.
+	killer		(Suggested by 14anu-ban-08       16-12-14 ) Ex: The police have failed to nail the killer.
+	firefighter     (By Shirisha Manju from human.txt 28-01-15) Ex: All four firefighters were decorated for bravery.       
+	swimmer		(Suggested by 14anu-ban-01        03-02-15) Ex: She was not a strong swimmer. 
+	Suggested following entries by Soma Mam (03-02-15)
+	abuser		airhostess	anybody		assistant	astronaut	attendant	blacksmith	boyfriend
+	captain		carpenter	champion	chef		consumer	cook		customer	diver
+	employer	engineer	everybody	girlfriend	granddaugthter	grandfather	grandmother	grandson
+	herself		hijacker	himself		inspector	interviewee	interviewer	journalist	kid
+	lawyer		leader		master		member		myself		nobody		nurse		operator
+	ourself		patron		pilot		politician	public		reader		reporter	scholar
+	scientist	steward		subordinate	teen		themself	victim		viewer		voter
+	astronomer
+	guard		(By Shirisha Manju from human.txt 28-01-15) Ex: Guards have been posted along the border. 
+	prisoner	(	"		"	  07-02-15) Ex: The prisoners were executed by firing squad.
+	rhinoceros	(Suggested by 14anu-ban-01        07-02-15) Ex: This injection stuns the rhinoceros, so we can examine it.
+	staff           (By Shirisha Manju from human.txt 16-02-15) Ex: The company is reconsidering the way in which it deploys its staff.
+        spokesman       (       "       "                       " ) Ex: The spokesman refused to disclose details of the takeover to the press.
+	parent		(	"	"		  18-02-15)
+	baby            (Suggested by 14anu-ban-01       23-02-15 ) Ex: The baby was screaming itself hoarse
+	teenager        (       "       "                28-02-15 ) Ex: Bob turned out to be a sullen teenager.
+	paparazzi	(	"     14anu-ban-07	   "	  ) Ex: I love what you did to try to throw off the paparazzi.
+	troop           (       "     14anu-ban-04       23-02-15 ) Ex: They embarked the troops by night.
+	guy		(	"     14anu-ban-03	 20-03-15 ) Ex: He was a cool guy.
+	ant     	(	"	 "		   "	  ) Ex: A colony of ants.
+	bacteria  	(	"	 "		   "	  )
+	termites	(	"	 "		   "	  )
+	crowd           (       "     14anu-ban-04         "      ) Ex: The crowd erupted in applause and cheering.
+        nephew          (       "        "                 "      ) Ex: He entrusted the task to his nephew.
+	pig		(	"	 "		 21-03-15 ) Ex: I had an alarming encounter with a wild pig.
+	volunteer       (       "        "               11-04-15 ) Ex: They're enlisting volunteers for an experiment.
+	fly		(	"	 "		 13-04-15 ) Ex: Spiders ensnare flies and other insects in their webs. 
+	insect  	(	"	 "		    "	  ) Ex: 	"		"
+	passenger	(	"	 "		 30-04-15 ) Ex: The delayed commuter train disgorged hundreds of angry passengers.  
+	someone		(	"	 "		    "	  ) Ex: Someone had been poisoning his food.        
+	poor            (       "     Jagriti Banasthali 10-03-14 )
+        government      (       "     14anu-ban-04       25-04-15 ) Ex: Deposition of government is not in the interest of the country.
+
 
   Changes in total-paxasUwra.txt 
   ==============================
@@ -564,9 +618,13 @@ Modified :
 
 	  <e><p><l>anA</l><r>a<s n="cat:v"/><s n="gen:m"/><s n="num:s"/><s n="per:u"/><s n="tam:nA"/></r></p></e>
 	  [Note: similarly for per : m,a and m_h where gen and num are same]
-  21.   in /jA__v paradigm:							(By Roja			02-04-14)
+  21.   in /jA__v paradigm:							(By Roja		    02-04-14)
 	  Stopped generation of 'gayIM'
-
+  22.   vikiraNa	kroXa/__n		as	Gar/a__n		("	"		    29-12-14)
+  23.   sWiwi		kavi/__n		as	Apawwi/__n		(Suggested by Chaitanya Sir 03-02-15)
+  24.   nasla		Gar/a__n		as	rAw/a__n		(		"		"   )
+  25. 	PlEta		kroXa/__n		as	Gar/a__n		(		"	    29-09-15)
+	
  Removed : 
 	  1.  Removed the following parsarg paradigms and its related patterns
 		kI_wulanA_meM  ke_liye  ke_sAWa  ke_pAsa  ke_pICe   ke_Upara   ke_bAre_meM   ke_pakRa_meM   ke_xvArA
@@ -579,7 +637,15 @@ Modified :
 		muJako, hamako, 
 	  4.  <e lm="keSa"><i>keS</i><par n="Gar/a__n"/></e>	 (Suggested by Chaitanya Sir 04-04-12)
 	  5.  <e lm="kamI"><i>kamI</i><par n="AjAxI/__n"/></e>	 (By Roja, Suggested by Chaitanya Sir 31-08-13)
-	  6.  <e lm="ha"><i>h</i><par n="Gar/a__n"/></e> 	 (by Roja, 	"		"     01-07-14)
+	  6.  <e lm="ha"><i>h</i><par n="Gar/a__n"/></e> 	 (By Roja, 	"		"     01-07-14)
+	  7.  Following entries are commented in k/Ona__p paradigm (By Roja, Suggested by Chaitanya Sir	29-12-14)
+		<e><p><l>isI</l><r>oI<s n="cat:p"/><s n="case:o"/><s n="parsarg:0"/><s n="gen:m"/><s n="num:s"/><s n="per:a"/></r></p></e>
+		<e><p><l>isI</l><r>oI<s n="cat:p"/><s n="case:o"/><s n="parsarg:0"/><s n="gen:f"/><s n="num:s"/><s n="per:a"/></r></p></e>
+		<e><p><l>isa</l><r>yA<s n="cat:p"/><s n="case:o"/><s n="parsarg:0"/><s n="gen:f"/><s n="num:s"/><s n="per:a"/><s n="tam:0"/></r></p></e>
+		<e><p><l>isa</l><r>yA<s n="cat:p"/><s n="case:d"/><s n="parsarg:0"/><s n="gen:f"/><s n="num:p"/><s n="per:a"/><s n="tam:0"/></r></p></e>
+		<e><p><l>isa</l><r>yA<s n="cat:p"/><s n="case:o"/><s n="parsarg:0"/><s n="gen:m"/><s n="num:s"/><s n="per:a"/><s n="tam:0"/></r></p></e>
+		<e><p><l>isa</l><r>yA<s n="cat:p"/><s n="case:d"/><s n="parsarg:0"/><s n="gen:m"/><s n="num:p"/><s n="per:a"/><s n="tam:0"/></r></p></e>
+		
 
 
  Changes in apertium-en-hi.en.metadix 
@@ -621,6 +687,7 @@ Modified :
 	lens		approach__vblex		(     "	  12-04-13)
 	unravel		accept__vblex		(     "	     "    )
 	unravell	accept__vblex		(     "      " 	  )
+	rod		house__n		(     "      "    )
 	rod		house__n		(     "      "    )
 	rod		accept__vblex		(     "	     "    )
 	encapsulate	liv/e__vblex		(     "	  02-05-13)
@@ -708,6 +775,37 @@ Modified :
 	rack		accept__vblex		(     "      "    )
 	rumbling	house__n		(     "      "    )
 	focus		focus__vblex		(     "   24-10-14)
+	label		accept__vblex		(     "   06-12-14)
+	pen		plan__vblex		(     "	     "	  )
+	minimize	liv/e__vblex		(     "      "    )
+	minimise	liv/e__vblex		(     "      "    )
+	utilize		liv/e__vblex		(     "      "    )
+	utilise		liv/e__vblex		(     "      "    )
+	breastfeed	ble/ed__vblex		(     "	     "	  )
+	gnaw		hew__vblex		(     "	     "	  )
+	synthesize	liv/e__vblex		(     "      "    )
+	synthesise	liv/e__vblex		(     "      "    )
+	scope		liv/e__vblex		(     "   02-01-15)
+	slide		slid/e__vblex		(     "   28-01-15)
+	swivel		quarrel__vblex		(     "   05-02-15)
+	fuel		quarrel__vblex		(     "	     "	  )
+	fuel		accept__vblex		(     "	     "	  )
+	clamour		accept__vblex		(     "      "	  )
+	clamor		accept__vblex		(     "      "    )
+	strew		hew__vblex		(     "	  26-02-15)
+	intricacy	bab/y__n		(     "      "    )
+	cleave		w/eave__vblex		(     "      "    )
+	sheer		long/__adj		(     "      "    )
+	billow		accept__vblex		(     "      "    )
+	enfold		accept__vblex		(     "      "    )
+	align		accept__vblex		(     "   06-03-15)
+	disguise	liv/e__vblex		(     "      "    )
+	sneak		accept__vblex		(     "   05-04-15) 
+	stabbing	house__n		(     "	     "	  )
+	pencil		quarrel__vblex		(     "	     "	  )
+	slather		accept__vblex		(     "   13-04-15)
+	salvo		access__n		(     "	     "	  )
+	salvo		house__n		(     "	     "	  )
 
 
 Modified paradigm:
@@ -737,6 +835,7 @@ Modified root:
 	ourselves	ourselves	as	ourself		(	" 02-10-14)
 	yourselves	yourselves	as	yourself	(	"	  )
 	themselves	themselves	as	themself	(	"	  )
+	electric	electrical	as	electric	(	" 06-12-14)
 
 Modified root based on paradigms:
 	bab/y__n	analys/is__n	maxim/um__n	m/an__n		wol/f__n	li/fe__n	m/ouse__n
@@ -761,27 +860,7 @@ Removed:
 	<e lm="flags"><i>flags</i><par n="access__n"/></e>			("		04-12-13) 
 	<e lm="tactics"><i>tactics</i><par n="politics__n"/></e>		("		06-01-14)
 	<e lm="wrapped"><i>wrapped</i><par n="accept__vblex"/></e>		("		02-10-14)
-
-
- Added new files:
- ===============
- 1. ol_parser_unused_words.txt (Added by Roja 06-11-10 suggested by Chaitanya sir)
- 2. month_day.txt (Added by Roja 20-11-10 suggested by Meena ji)
- 3. place.txt 		    (Added by Roja 11-02-11. suggested by Sukhada)
- 4. time.txt  		    (     	"                  )
- 5. transitive-verb-list.txt(     	"                  )
- 6. eng-animate-list.txt    (     	"                  )
- 7. hindi_default_tam.txt   (Added by Roja 11-03-11 . Suggested by Chaitanya Sir)
- 8. default-iit-bombay-shabdanjali-dic.txt (Added by Roja 31-01-12 . Suggested by Chaitanya Sir)
- 9. preposition.txt (Added by Manju 24-02-12.  Suggested by Chaitanya Sir)
-10. Physics-dictionary  (Added by Roja 04-05-12. Suggested by Chaitanya Sir)
-     This file is splitted into two files
-     i. phy_dictionary.txt   and   ii. phy_eng_multi_word_dic.txt
-11. multi_word_expressions_from_iit_bombay.txt 
-	Extracted from iit-bombay dictionary.Added by Roja 10-05-13. Suggested by Chaitanya Sir)
-12. proper_noun_dic.txt    (Added by Shirisha Manju Suggested by Chaitanya Sir)
-13. provisional_multi_word_dictionary.txt	(Added by Roja 21-02-14)
-     
+	<e lm="stocks"><i>stocks</i><par n="access__n"/></e>			("		26-02-15)
 
  Changes in ol_parser_unused_words.txt
  =====================================
@@ -803,8 +882,20 @@ Removed:
  changes in place.txt
  ====================
  Added   :
-		himalayas       1  (Added by Sukhada 19-12-11)
-		plains  	1  (Added by Sukhada 19-12-11)
+	himalayas       (Added by Sukhada 19-12-11)
+	plains 	 	(Added by Sukhada 19-12-11)
+	Nagaland  	(Suggested by 14anu-ban-04 30-01-15) Ex:The entrance of Nagaland is connected with several major cities of the country.
+	Gateway		(	"		"	"  ) Ex: On the entrance of Gateway of India the statues of two great personalities 
+								 like Chhatrapati Shivaji and Swami Vivekananda are installed .
+	Basti   	(	"		"	"  ) Ex: A big door of wood is the entrance of the ' Badi Basti ' .
+	Cave		(	"		"	"  ) Ex: On the entrance of Karla Cave there are one pillar and three lion statues
+								 prior to the cave .
+	Industry	(	"		"  28-02-15) Ex: Industry in Britain has been in decline since the 1970s.  	
+	Maharashtra	(Added by Shirisha Manju   22-09-15)
+
+ Removed  :
+ ---------
+	wood		(Suggested by 14anu-ban-04 21-03-15)
 
 
  Changes in hindi_default_tam.txt
@@ -819,7 +910,7 @@ Removed:
 			Ex: Let her go to the market. 
     6. had_en		0_cukA_WA-0-0			     as	   yA_WA-0-0		       (Suggested by Chaitanya Sir 12-12-13)
     7. has_en		0_cukA_hE-0-0			     as    yA_hE-0-0		       ( 	"		"	   )
-
+    8. am_en		yA_gayA_hE-0-0			     as	   yA_jAwA_hE-0-0	       (Suggested by Soma Madam 10-11-14)		
 
     Added:
     ------
@@ -960,7 +1051,8 @@ Removed:
 	94. photon_noun		Potana			as	Potona		(Suggested by Sonam Banasthali	29-10-13)
 	95. precisely_adverb	Tika-Tika		as	TIka-vahI	(	"		"	"       )
 	96. intellect_noun	buxxI			as	buxXI		(Suggested by Chaitanya Sir  	20-11-13)
-	97. loudly_adverb	jEYora_se		as	jZora_se	(Suggested by Nandini ji LTRC 	27-11-13)
+	97. loudly_adverb	jEYora_se		as	jZora_se	(Suggested by 
+Nandini ji LTRC 	27-11-13)
 	98. drastic_adjective	uxaNda			as	uxxaNda		(Suggested by Chaitanya Sir	26-11-13)
 	99. passage_noun	yAtrAXikAra		as	yAwrAXikAra	(Suggested by Chaitanya Sir 	05-12-13)
 	100. passage_noun	yAtrA			as	yAwrA		(	"		"	    	)
@@ -981,7 +1073,20 @@ Removed:
 	115. both_determiner		xono		as	xonoM		(	"	"	"	"	)
 	116. breathtakingly_UNDEFINED  	asAXAraNa_oVpa_se as  asAXAraNa_rUpa_se (Suggested by karanveer kaur Banasthali 02-08-14) 
 	117. guideline_noun		muKya_bAw	as	muKya_bAwa	(Suggested by Chaitanya Sir 20-10-14    )
-	
+	118. silicon_noun    		silikana	as	silikoYna	(Suggested by 14anu-ban-01	17-10-14)
+	119. silicons_UNDEFINED      	silikana        as	silikoYna	(	"	"		 "	)
+	120. solid_noun      		tosa_paxArWa	as	Tosa_paxArWa	(	"	"		 "	)
+	121. neutron_noun     		nyUtrana	as	nyUtroYna 	(	"	14anu-ban-08	"	)
+	122. usefully_adverb		upayogI_Dafga_e	as	upayogI_DaMga_se(	"	14anu-ban-07 21-11-14	)
+	123. significantly_adverb	arWapUrNawAse	as	arWapUrNawA_se	(	"	14anu-ban-11 21-11-14   )
+	124. move_verb			hil/hat/becakara_hat/calA_j	as	hila/hata/becakara_hata/calA_ja	(Suggested by Chaitanya Sir 06-03-15)
+	125. withhold_verb		roka_raKa	as	roke_raKa	(Suggested by Sukhada 		20-05-15)
+	126. confine_verb    		sImIwa_raKa	as	sImiwa_raKa	(    "          "		23-06-15)
+	127. power_noun      		vixyuw/vixyuw_Sakwi as  vixyuwa/vixyuwa_Sakwi (   By Shirisha Manju     20-07-15)
+	128. missile_noun    		prakRepAstra	as	prakRepAswra	(Suggested by Sukhada           17-08-15)
+	129. likely_adverb   		samBavawH	as	samBavawaH	(	"	"		"	)
+	130. tendency_noun   		pravqwi		as	pravqwwi	(Suggested by Chaitanya Sir 20-08-15    )
+		
 
     3. Added new entry:
        ---------------
@@ -1226,10 +1331,106 @@ Removed:
 	127. epulsion_noun   		prawikarRaNa			(Suggested by	14anu-ban-10		 17-10-14)
 					Ex: For example, the elastic spring force arises due to the net attraction/repulsion between the 
 					    neighbouring atoms of the spring when the spring is elongated/compressed.
+	128. carrom_noun     		kErama				(Suggested by   14anu-ban-03            17-10-14)
+					Ex: Several games such as billiards, marbles or carrom involve collisions.
+	129. commutative_adjective   	kramaviniyama			(Suggested by   14anu-ban-03            17-10-14)
+					Ex: Note that scalar product of two vectors is commutative as said earlier, a.b = b.a.
+	130. sub-atomic_adjective    	avaparamANuka			(Suggested by   14anu-ban-01            17-10-14)
+					Ex: For measurement of small masses of atomic/sub-atomic particles etc., we make use of mass
+                                            spectrograph.
+	131. ejecting_adjective      	niRkAsiwa			(Suggested by   14anu-ban-04            17-10-14)
+					Ex: The propulsion of a rocket by a jet of ejecting gases, propagation of water waves or sound waves in
+					    air, the equilibrium of a bent rod under a load, etc., are problems of mechanics.
+	132. trailing_adjective		anugAmI				(Suggested by   14anu-ban-07            17-10-14)
+					Ex: There can be some confusion regarding the trailing zero (s).
+	133. spherometer_noun        	golAImApI			(Suggested by   14anu-ban-01            17-10-14)
+					Ex: For example, a vernier callipers has the least count as 0.01 cm; a spherometer may have a least 
+					    count of 0.001 cm.
+	134. side-wise_adjective    	iXara_se_uXara			(Suggested by   14anu-ban-01            20-10-14)
+					Ex: While the fan rotates and its axis moves sidewise, this point is fixed.
+	135. idealised_adjective    	AxarSa				(Suggested by   14anu-ban-06            17-10-14)
+					Ex: This is, of course, an idealised situation.
+	136. ejecting_adjective		niRkAsiwa			( Suggested by Chaitanya Sir  04-11-14)
+	137. english_adjective		afgreja/britiSa			( Suggested by Chaitanya Sir  04-11-14)
+					Ex: In 1897, the experiments on electric discharge through gases carried out by the English physicist
+					    J. J. Thomson (1856—1940) revealed that atoms of different elements contain negatively charged 
+					    constituents (electrons) that are identical for all atoms. 
+	138. stretched_adjective	KIFcA_huA			 ( Suggested by Chaitanya Sir  04-11-14)
+					Ex: The spring is not stretched and does not exert any upward force on the object which is moving down
+					    with acceleration g due to gravity.
+	140. derive_noun     		vyuwpanna			(Suggested by   14anu-ban-04   05-11-14)
+					Ex:A complete set of these units,both the base units and derived units,is known as the system of units.
+	141. inhibitor_noun  		niroXI				(Suggested by   14anu-ban-06   13-11-14)
+					Ex: According to a 2003 study, roasting peanuts, as more commonly done in North America, causes the 
+					    major peanut allergen Ara h2 to become a stronger inhibitor of the digestive enzyme trypsin, making
+					    it more resistant to digestion.
+	142. trypsin_noun    		kloma-rasa/tripsina		(Suggested by   14anu-ban-07   13-11-14)
+					Ex: According to a 2003 study, roasting peanuts, as more commonly done in North America, causes the 
+                                            major peanut allergen Ara h2 to become a stronger inhibitor of the digestive enzyme trypsin, making
+                                            it more resistant to digestion.
+	143. anaphylactic_adjective  	wIvragAhiwA_saMbaMXI		(Suggested by   14anu-ban-02   14-11-14)
+					Ex: Some people (0.6%[26] of the United States population) report that they experience mild to severe
+					    allergic reactions to peanut exposure; symptoms can range from watery eyes to anaphylactic shock,
+					    which can be fatal if untreated.
+	144. immobilization_noun	nisaMcAlana			(Suggested by 14anu-ban-06	21-11-14)
+					Ex: Just like fertilizer nutrients, nutrients released from crop residue into the soil are susceptible 				to losses such as leaching (N and S), denitrification (N), immobilization (N, P, K and S), and fixation (P and K).
+	145. blog_verb			blOga_kara			(Suggested by Chaitanya Sir	06-12-14) 	  
+					Ex: Are you blogging or thinking about starting one?
+	146. bike_verb			sAikila_calA/bAika_calA		(Suggested by Chaitanya Sir     23-01-15)
+	147. feverish_noun		halkA_buKAra			(Suggested by 14anu-ban-05      02-02-15)
+					Ex: Children become feverish.
+	148. feverish_adjective		uwwejiwa_ho_kara		(	"	"		  "	)
+					Ex: He worked with feverish haste.[oald]
+	149. one-favoured_adjective    	EsA_hI_eka			(	"	"		  "     )
+					Ex: Steel is one-favoured choice.
+	150. north-south_adjective      wwara-xakRiNa			(	"	"		  "     )
+					Ex: A thin long piece of a magnet, when suspended freely, pointed in the north-south direction.
+	151. dismayingly_adverb      	nirASAwmaka_rUpa_se		(Suggested by 14anu-ban-04      02-02-15)
+					Ex: Neverthless,his message is still dismayingly mixed.
+	152. smarten_verb    		AkarRaka_banA			(Suggested by 14anu-ban-01      03-02-15)
+					Ex: You should smarten yourself up.
+	153. hand-picking_adjective    	haswa_cayana			(Suggested by 14anu-ban-06      16-02-15)
+					Ex: They include simple hand-picking, barriers, traps, vacuuming and tillage to disrupt breeding.
+	154. subfamily_noun    		upaparivAra			(Suggested by 14anu-ban-01      16-02-15)
+					Ex: The date palm fruit stalk borer, Oryctes elegans Prell, from the subfamily Dynastinae, is a major
+					    pest of the date palm in southern parts of Persia.
+	155. low-volume_adjective	kama_mAwrA			(Suggested by 14anu-ban-08      16-02-15)
+					Ex: The use of low-volume spray equipment reduces overall pesticide use and labor cost.
+	156. semi-circular_adjective    arXavqwwAkara			(Suggested by 14anu-ban-01      16-02-15)
+					Ex: They move in a semi-circular path in one of the dees and arrive in the gap between the dees in a
+					    time interval T/2.
+	157. geographic_adjective   	BOgolika			(Suggested by 14anu-ban-06      16-02-15)
+					Ex: At such a point, the direction of the longitude circle determines the geographic north-south 
+					    direction, the line of longitude towards the north pole being the direction of true north.
+	158. rigorous_noun              pariSuxXa 			(Suggested by 14anu-ban-10      16-02-15)
+					Ex: However, this adhoc assumption is not satisfactory and the absence of the backwave is really
+					    justified from more rigorous wave theory.
+	159. Fig._noun			ciwra				(Suggested by Chaitanya Sir	06-03-15)
+					Ex: The electronic transitions corresponding to these series are shown in Fig. 12.9.
+	160. interatomic_adjective   	nwarA-paramANavika		(Suggested by 14anu-ban-06      11-04-15)
+					Ex: When a solid is deformed, the atoms or molecules are displaced from their equilibrium positions 
+					    causing a change in the interatomic (or intermolecular) distances.
+	161. preferred_adjective     	AXimawa				(Suggested by 14anu-ban-09      13-04-15)
+					Ex: In the same way isotropy of space (no intrinsically preferred direction in space) underlies the law
+					    of conservation of angular momentum.
+	162. pericarp_noun   		PalI				(Suggested by 14anu-ban-09      13-04-15)
+					Ex: As the ovules develop into seeds, the ovary begins to ripen and the ovary wall, the pericarp, may
+                                            become fleshy (as in berries or drupes), or form a hard outer covering (as in nuts). [wiki-fruits]
+	163. compiled_adjective      	safkaliwa			(Suggested by 14anu-ban-03      14-04-15)
+					Ex: His compiled data were analyzed later by his assistant Johannes Kepler (1571-1640).
+	164. chicken-run_noun        	murgI_kA_bAdZA			(Suggested by 14anu-ban-01      20-04-15)
+					Ex: She has a very big 'chicken-run' at her back yard.  
+	165. ski-run_noun    		skI-rana			(Suggested by 14anu-ban-01      20-04-15)
+					Ex: Generally people go to shimla for a special sport,'ski-run'.
+	166. pre-independence_adjective	svawanwrawA_pUrva/svawanwrawA_ke_pUrva	(By Shirisha Manju              23-07-15)
+					Ex: Prepare a list of goods and services that were available to people in pre-independence India in rural
+					    and urban areas.
+	167. socioeconomic_adjective 	sAmAjika_Ora_ArWika		( Suggested by Chaitanya Sir  25-08-15  )
+					Ex: He mourned the perennial poverty of Calcutta and the socioeconomic decline of Bengal.
+	168. restart_verb    		punaH_prAramBa_kara/Pira_se_Suru_kara	( Suggested by Chaitanya Sir  31-08-15  )
+					Ex: When Janata government collapsed, Vajpayee restarted the Jana Sangh as the Bharatiya Janata Party in
+					    1980.
 
-
-
-	
     4. Added new meaning to the existing word:
        ---------------------------------------
         1. inaudibly_adverb             XImI_Avaja_meM                  ( Suggested by Rajini   29-02-12        )
@@ -1444,8 +1645,132 @@ Removed:
 					    century. 
 	113. similarly_adverb		isI_prakAra		 (Suggested by Chaitanya Sir         08-10-14)
                                         Ex: Husband and wife were similarly successful in their chosen careers. (OALD)
+	114. Greek_adjective		yUnAnI			(Suggested by Chaitanya Sir         29-10-14)
+					Ex: The word Physics comes from a Greek word meaning nature.
+	115. Greek_noun			yUnAnI			(Suggested by Chaitanya Sir         29-10-14)
+	116. unstoppable_adjective   	abAXa			(Suggested by 14anu-ban-07	    17-10-14)
+					Ex: The progress of science is unstoppable!
+	117. thermometer_noun        	wApamApI		(Suggested by 14anu-ban-07          17-10-14)
+					Ex: To determine the temperature of a human body, a thermometer placed under the armpit will always 
+					    give a temperature lower than the actual value of the body temperature. 
+	118. notation_noun   		safkewa			(Suggested by 14anu-ban-08          17-10-14)
+					Ex: The scientific notation is ideal for reporting measurement.
+	119. cease_verb      		roka			(Suggested by 14anu-ban-03          17-10-14)
+					Ex: In other words, its motion never ceases.
+	120. accumulate_verb		ekawriwa_ho/ekawriwa_kara	(Suggested by Chaitanya Sir  04-11-14)
+					Ex: By the nineteenth century, enough evidence had accumulated in favor of atomic hypothesis of matter. 
+	121. electrically_adverb	vExyuwa_rUpa_se		(Suggested by Chaitanya Sir  04-11-14)
+					Ex: However, atoms on a whole are electrically neutral. 
+	122. mercury_noun    		buXa			(Suggested by 14anu-ban-08   05-11-14)
+					Ex: We note that the orbits of all planets except Mercury, Mars and Pluto are very close to being
+					    circular.
+	123. metal_adjective 		XAwu			(Suggested by 14anu-ban-08   13-11-14)
+					Ex: Metals, human and animal bodies and earth are conductors.
+	124. negatively_adverb       	qNAwmaka_rUpa_meM	(Suggested by 14anu-ban-08   13-11-14)
+					Ex: The middle portion becomes negatively charged.
+	125. conjunction_noun        	saMyojana		(Suggested by 14anu-ban-03   14-11-14)
+					Ex: Soybeans were first introduced to North America in 1765, by Samuel Bowen, a former East India 
+					    Company sailor who had visited China in conjunction with James Flint.
+	126. sailor_noun     		jahAjZI			(Suggested by 14anu-ban-01   14-11-14)
+					Ex: Soybeans were first introduced to North America in 1765, by Samuel Bowen, a former East India 
+					    Company sailor who had visited China in conjunction with James Flint.
+	127. continuum_noun  		sAMwawya		(Suggested by 14anu-ban-03   14-11-14)
+					Ex:If we intend to show streamline of every flowing particle,we would end up with a continuum of lines.
+	128. graduation_noun 		afkana			(Suggested by 14anu-ban-05   14-11-14)
+					Ex: If we use a metre scale for measurement of length, it may have graduations at 1 mm division scale
+				            spacing or interval.
+	129. increasingly_adverb	bahuwa_jyAxA		(Suggested by 14anu-ban-06   20-11-14)
+					Ex: The wild relatives of crop plants constitute an increasingly important resource for improving 						agricultural production and for maintaining sustainable agro-ecosystems.
+	130. unplanned_adjective	aniyojiwa		(Suggested by 14anu-ban-02   21-11-14)
+					Ex: Zero tillage is a fundamental management practice that promotes crop stubble retention under longer 					unplanned fallows when crops cannot be planted.
+	131. least_adjective		sabase_kama		(Suggested by 14anu-ban-08   21-11-14) 
+					Ex: From the results obtained it is clear that among the three bodies the sphere has the greatest and
+					 the ring has the least velocity of the center of mass at the bottom of the inclined plane.
+	132. momentarily_adverb      	Wodi_xera_ke_liye	(Suggested by 14anu03        20-07-14)
+					Ex: The flash from the atom bomb momentarily lit up the night sky.
+	133. favorite_adjective		manapasanxa		(Suggested by Chaitanya Sir 22-12-14)
+					Ex: For example, whenever we tune our radio to a favorite station, we are taking advantage of a special
+				            property of ac circuits — one of many that you will study in this chapter.
+	134. bike_UNDEFINED		sAikila/bAika						(Suggested by Chaitanya Sir 23-01-15)
+					Ex: There was no permission to take bike inside the park.
+	135. propaganda_noun		vipralipsA						(	"	"		"   )
+					संदेह को विप्रलिप्सा कहते हैं अथवा दूसरों की वंचना करने की इच्छा को भी विप्रलिप्सा कहते हैं
+					reference: http://navbharattimes.indiatimes.com/astro/holy-discourse/religious-discourse/-/astroshow/820812.cms
+	136. omission_noun   		aparAXa			(Suggested by 14anu-ban-09   02-02-15)
+					Ex: Can be convicted of a criminal offence .
+	137. provider_noun   		praxAwA			(Suggested by 14anu-ban-09   07-02-15)
+					Ex: From the ages Uttarakhand has been the provider of spiritual shelter and peace for the Indians.
+	138. entreat_verb    		nivexana_kara/anuroXa_kara/yAcanA_kara/vinawI_kara/gujAriSa_kara
+					(Suggested by 14anu-ban-04   07-02-15) She entreated him not to go.
+	139. elderly_adjective       	bujurga
+					On seeing houses turned to ruins on all four sides , burnt-half burnt buildings , amputated dead bodies
+					,the injured waiting for death, wailing children and women, crying elderly people, dead and injured 
+					animals , blood laced roads .
+	140. English_adjective       	britiSa			(Suggested by Chaitanya Sir  12-02-15   )
+					Ex: In 1897, the experiments on electric discharge through gases carried out by the English physicist
+					J.J.Thomson (1856 — 1940) revealed that atoms of different elements contain negatively charged 
+					constituents (electrons) that are identical for all atoms. [NCERT 12-12]
+	141. modify_verb		saMSoXana		(Suggested by 14anu-ban-09   16-02-15)
+					Ex: Science is a systematic attempt to understand natural phenomena in as much detail and depth as
+					    possible, and use the knowledge so gained to predict, modify and control phenomena.
+	142. picturesquely_adverb    	ciwramaya_rUpa_meM	(Suggested by Chaitanya Sir  19-02-15   )
+					Ex: This model was picturesquely called plum pudding model of the atom.
+	143. later_adverb		kuCa_samaya_paScAwa	(Suggested by Chaitanya Sir  28-02-15  )
+					Ex: This experiment was later performed around 1911 by Hans Geiger.
+	144. revolving_adjective	parikramA_karawA_huA/parikramA_karane_vAlA (Suggested by Chaitanya Sir  28-02-15  )
+					Ex: According to this the entire positive charge and most of the mass of the atom is concentrated in a 
+					    small volume called the nucleus with electrons revolving around the nucleus just as planets revolve                                            around the sun.
+	145. emit_verb			uwsarjiwa_kara		(Suggested by Chaitanya Sir 	06-03-15)
+					Ex: However, it could not explain why atoms emit light of only discrete wavelengths.
+	146. sullenly_adverb		KinnawA_se		(Suggested by 14anu-ban-02	10-03-15)
+					Ex: She glared at him sullenly.
+	147. schematic_adjective	vyavasWiwa		(Suggested by Chaitanya Sir	10-03-15)
+					Ex: Figure 12.2 shows a schematic diagram of this experiment.
+	148. conservationist_noun    	saMrakRaNakarwA		(Suggested by 14anu-ban-03      14-04-15)
+					Ex: The artist and conservationist says he visits each one twice every year - in the spring to prune 
+                                            and in late summer to graft - for three years, until the tree is established.
+	149. colossal_adjective      	BArI_mAwrA		(Suggested by 14anu-ban-03      14-04-15)
+					Ex: Theirs is a culture at risk of extinction – and the primary reason is the colossal 20th-century
+                                            grab of the waters of the Colorado River.
+	150. transportation_noun     	yAwAyAwa		(Suggested by 14anu-ban-03      14-04-15)
+					Ex: All wheels used in transportation have rolling motion.
+	151. overview_noun   		samagra_rUpa_se_avalokana/samagra_avalokana	(Suggested by Chaitanya Sir  21-07-15)
+					Ex: The two chapters in this unit give us an overview of the state of the Indian economy as it was at the					    eve of independence till after four decades of planned development, which was a path that India chose.
+	152. encouraging_adjective   	uwsAhavarXaka		(Suggested by Chaitanya Sir     31-07-15)		
+					Ex: The various social development indicators were also not quite encouraging .
 
+	153. overall_adjective		kula_milAkara		(Suggested by Chaitanya Sir     31-07-15)
+					Ex: The overall literacy level was less than 16 per cent..
+	154. stage_noun      		sopAna			(Suggested by Chaitanya Sir     31-07-15)
+					Ex: Before 1921, India was in the first stage of demographic transition. 
+	155. handicraft_noun 		haswakalA		(	By Shirisha Manju	01-08-15)
+					Ex: The traditional handicrafts industries were ruined under the British rule.
+	156. thus_adverb     		isa_waraha		(	By Shirisha Manju       11-08-15)
+					Ex: Thus a thicker rope of radius about 3 cm is recommended.
+	157. quantitatively_adverb   	mAwrAwmaka		(	By Shirisha Manju       11-08-15)
+					Ex:In the preceding Chapter,our concern was to describe the motion of a particle in space quantitatively.
+	158. together_adverb 		sAWa-sAWa		(       By Shirisha Manju       11-08-15)
+					Ex: Taken together, the product of mass and velocity, that is momentum, is evidently a relevant variable 
+					    of motion.
+	159. cancel_verb    		niraswa_kara		(       By Shirisha Manju       12-08-15)
+					Ex: The force of gravity (mg) is canceled by the normal reaction force (N) of the table.
+	160. diagram_noun    		AreKa			(       By Shirisha Manju       12-08-15)
+					Ex: The practice of drawing free-body diagrams is of great help in solving problems in mechanics.
+	161. depict_verb     		ciwraNa_kara		(       By Shirisha Manju       12-08-15)
+					Ex: Fig. 6.5 depicts a ball of mass m being dropped from a cliff of height H.
+	162. given_adjective 		praxawwa		(Suggested by Chaitanya Sir     17-08-15)
+					Ex:Multiplying a given vector A by negative numbers,say — 1 and — 1.5, gives vectors as shown in Fig 4.3
+	163. differentiate_verb      	viBexa_kara		(Suggested by Chaitanya Sir     27-08-15)
+					Ex: Poslad differentiates three different kinds of smart environments for systems, services and devices.
+	164. briefcase_noun		baswA{brIPZakesa}	(Suggested by Chaitanya Sir     02-09-15)
+				      	Ex: Memon was arrested with a briefcase which contained a recording of a conversation he had had in 
+					Karachi.
+	165. service_noun		nOkarI			(Suggested by Chaitanya Sir     09-10-15)
+					Ex: He knew that the flat had been occupied by a German clerk in the civil service, and his family. 
+	166. courtyard_noun		xAlAna			(Suggested by Chaitanya Sir     09-10-15)
+					Ex: There was a continual coming and going through the two gates and in the two courtyards of the house.
 
+	
     5. Modifying first meaning from the list :
        -------------------------------------
         1. establishment_noun   aXiRTAna                as      sWApanA         (Suggested by Meena  07-02-12   )
@@ -1788,7 +2113,98 @@ Removed:
 	155. circumstance_noun  hAlAwa			as	parisWiwi	(Suggested by 	14anu-ban-03	17-10-14)
 				Ex: Indeed, to be consistent, in that circumstance, we ourselves would crumble under our own weight.
 
-	
+	156. thinking_noun   	vicAra_karane_kI_kriyA	as	soca		(Suggested by 14anu-ban-07	29-10-14)
+				Ex: First, it was realized that for scientific progress, only qualitative thinking, though no doubt important,
+                                    is not enough.
+	157. curvature_noun  	teDApana	as	vakrawA			(Suggested by   14anu-ban-03    17-10-14)
+				Ex: Thus radio waves broadcast from an antenna can be received at points far away where the direct wave fail to 				   reach on account of the curvature of the earth.
+	158. decimal_noun    	xaSamika_praNAlI	as	xaSamalava	(Suggested by   14anu-ban-04    17-10-14)
+				Ex: It is often customary to write the decimal after the first digit.
+	159. cavity_noun     	koRTa			as	guhikA		(Suggested by   14anu-ban-03    17-10-14)
+				Ex: A bubble Fig 10.20 (c) differs from a drop and a cavity; in this it has two interfaces.
+	160. matter_noun     	wawva			as	xravya		(Suggested by   14anu-ban-08    17-10-14)
+				Ex: Matter, as we know, consists of elementary charged constituents like electrons and protons.
+	161. figure_noun     	afka			as	ciwra		(Suggested by   14anu-ban-05    17-10-14)
+				Ex: Figure 7.12 is a good illustration of Eq. (7.11).	
+	162. manifest_verb   	spaRta_ho_jA		as	prakata_ho	(Suggested by   14anu-ban-08    17-10-14)
+				Ex: Electric force manifests itself in atmosphere where the atoms are ionised and that leads to lightning.
+	163. head-on_adjective  Amane_sAmane		as	sIXA		(Suggested by   14anu-ban-06    05-11-14)
+				Ex: In practice, however, this number is smaller since head-on collisions are rare.
+	164. versus_preposition viparIwa		as	ke_mukAbale	(Suggested by   14anu-ban-07    13-11-14)
+				Ex: A hypothesis of the development of peanut allergy has to do with the way peanuts are processed in North 
+				    America versus other countries, such as Pakistan and China, where peanuts are widely eaten.
+	165. infectious_adjective  CUwa_se_laganevAlA	as 	safkrAmaka	(Suggested by   14anu-ban-06    13-11-14)
+				Ex: Another hypothesis, called the hygiene hypothesis, states that a lack of early childhood exposure to 
+			            infectious agents like germs and parasites could be causing the increase of food allergies.
+	166. kernel_noun     	sAra			as	xAnA		(Suggested by   14anu-ban-07    13-11-14)
+				Ex:The average amount of resveratrol in one ounce of commonly eaten peanuts (15 whole peanut kernels) is 73 μg.
+	167. null_adjective  	akRama			as	SUnya		(Suggested by Chaitanya Sir     13-11-14)
+				Ex: Since the magnitude of a null vector is zero, its direction can not be specified. 
+	168. nectar_noun	amqwa			as	parAga		(Suggested by 14anu-ban-08	20-11-14)
+				Ex: Arthropod abundance and biomass was also higher in the clover cover cropped fields throughout much of the 					songbird breeding season, which was attributed to an increased supply of flower nectar from the clover.
+	169. limitation_noun	parisImA		as	sImA		(Suggested by 14anu-ban-08	21-11-14)
+				Ex: Even a microscope has certain limitations.
+	170. recovery_noun	svAWya_lABa		as	punaH_prApwa	(Suggested by 14anu-ban-11	21-11-14)
+				Ex: About 50 per cent recovery of N in the above-ground plant in the first year.
+	171. unnoticed_adjective	axqRta		as	alakRiwa	(Suggested by Chaitanya Sir	09-01-15)
+				Ex: I remained unnoticed.
+	172. worried_adjective	pareSAna		as	cinwiwa		(	"		"	"	)
+	173. safari_noun	SikAra			as	saPArI 		(	"		"	23-01-15)
+				Ex: Somebody advised us that we should take safari for inside.
+	174. misuse_verb     	xurvyavahAra_kara	as	xurupayoga_kara	(	"	14anu-ban-08    02-02-15)
+				Ex: That can be misused with varying effects .
+	175. conversely_adverb  ulatA			as	isake_viparIwa	(	"	14anu-ban-03	  "     )
+				Ex:Conversely,there is an attractive force between the north pole of one magnet and the south pole of the other
+	176. neutralise_verb 	watasWa_GoRiwa_kara	as	niRpraBAviwa_kara ( Suggested by Chaitanya Sir  12-02-15)
+				Ex: Therefore, an atom must also contain some positive charge to neutralise the negative charge of the
+				    electrons. [necrt 12-12]
+	177. timing_noun     	wAla			as	samaya		(Suggested by 14anu-ban-07     16-02-15 )
+				Ex: The office timings were same for all but the breaks were arbitrary.
+	178. similarity_noun 	sAxqSya			as	samanawA	(Suggested by 14anu-ban-01     16-02-15 )
+				Ex: The Biot-Savart law for the magnetic field has certain similarities as well as differences with the 
+				    Coulomb's law for the electrostatic field.
+	179. diagnosis_noun  	roga_kI_pahacAna	as	nixAna		(Suggested by 14anu-ban-04     16-02-15 )
+				Ex: It is used in hospitals to produce radioactive substances which can be used in diagnosis and treatment.
+	180. leg_noun        	tAzga			as	pEra		(Suggested by 14anu-ban-08     16-02-15 )
+				Ex: 
+	181. exceedingly_adverb 	bahuwa_sA	as	awyanwa		(Suggested by 14anu-ban-04     16-02-15 )
+	182. regulate_verb   	niyamAnusAra_Tahara	as	niyanwriwa_kara	(Suggested by 14anu-ban-10     16-02-15 )
+				Ex: The vibrations of the cesium atom regulate the rate of this cesium atomic clock just as the vibrations of a 				   balance wheel regulate an ordinary wristwatch or the vibrations of a small quartz crystal regulate a quartz					  wristwatch.		
+	183. unification_noun	eka_ho_jAnA		as	ekIkaraNa	(Suggested by 14anu-ban-07     17-02-15 )
+				Ex: Great advances in physics often amount to unification of different theories and domains.
+	184. chubby_adjective	galaPulA		as	golamatola	(Suggested by 14anu-ban-03     17-02-15 )
+				Ex: It was a chastening experience. She has got chubby cheeks.
+	185. motor_noun      	preraka			as	motara		(Suggested by 14anu-ban-08     18-02-15 )
+				Ex: The motor must supply enough power to balance this force.
+	186. pointer_noun    	nirxeSaka		as	safkewaka	(Suggested by 14anu-ban-09     18-02-15 )
+				Ex: Take a laser pointer and shine its beam through the turbid water. [ncert]
+	187. glow_verb		rafga			as	camaka		(Suggested by Chaitanya Sir    28-02-15)
+	188. carelessly_adverb	XyAnahInawaH		as	lAparavAhI_se	(Suggested by 14anu-ban-03	10-03-15)
+				Ex: The prosecution alleges that she was driving carelessly.
+	189. most_adjective	sabase_aXika		as	aXikAMSa	(Suggested by 14anu-ban-08	"	)
+				Ex: Since the wavelength of light is much smaller than the dimensions of most obstacles
+	190. schematic_adjective	yojanA_baxXa	as	AreKIya		(Suggested by Chaitanya Sir	10-03-15)
+				Ex: Figure 12.2 shows a schematic diagram of this experiment.
+	191. electricity_noun	vixyuwa_Sakwi		as	vixyuwa		(Suggested by 14anu-ban-04	"	)
+				Ex: In 1864, the laws obeyed by electricity and magnetism were unified and formulated by James Maxwell who then 				realized that light was electromagnetic waves.
+	192. displace_verb   	apanI_jagaha_se_hatA_xe	as	visWApiwa_ho_jA	(Suggested by 14anu-ban-06      11-04-15)
+				Ex: When a solid is deformed, the atoms or molecules are displaced from their equilibrium positions causing a
+                                    change in the interatomic (or intermolecular) distances.
+	193. detailed_adjective	vyOrevAra		as	viswqwa		(Suggested by 14anu-ban-04   	14-04-15)
+				Ex: The detailed microscopic origin of these forces is, however, complex and not useful for handling problems
+				    in mechanics at the macroscopic scale. [ncert]
+	194. container_noun  	XAraka			as	pAwra		(Suggested by 14anu-ban-03      14-04-15)
+				Ex: As liquids have no definite shape but have a definite volume, they acquire a free surface when poured in a
+				    container.
+	195. transition_noun 	svara-sanXAna		as	parivarwana	(Suggested by Chaitanya Sir     31-07-15)
+				Ex: Before 1921, India was in the first stage of demographic transition.
+	196. missile_noun    	prakRepAswra		as	misAila		(Suggested by Sukhada           17-08-15)
+				Ex: Tulnerable to tens of thousands of missiles and rockets from neighboring countries.
+	197. devoted_adjective  vaPAxAra		as	samarpiwa	(Suggested by Chaitanya Sir     25-08-15)
+				Ex:And as a devoted leader,he gained support both at home and abroad, becoming known as 'the people's President'.
+	198. curative_adjective Arogyakara_paxArWa	as	Arogyakara	(Suggested by Chaitanya Sir     02-09-15)
+				Ex: Memon then filed a curative petition to the Supreme Court, which was rejected on 21 July 2015.
+
     6. Removed meaning from existing list:
        ----------------------------------
 	1. overdue_adjective 	jo_bahuwa_pahale_hI_ho_jAnA_cAhiye_WA,_vaha	( Suggested by Rajini		29-02-12)
@@ -1830,7 +2246,12 @@ Removed:
 	35. mark_noun		cinha						(	"	"		25-08-14)
 	36. mark_verb		cinha_lag					(	"	"		"	)
 	37. them_pronoun	unak/unheM_unako				(	"	"		17-10-14)
-
+	38. conjunction_UNDEFINED	saMyojana				(Suggested by 14anu-ban-03	14-11-14)
+	39. bike_noun		sAikil_calAa/bAika_calA				(Suggested by Chaitanya Sir     23-01-15)
+	40. bike_UNDEFINED	sAikila_calA					(	"	"		  "	)
+	41. spacing_noun	anwarAlana					(	"	"		24-02-15)
+	42. move_noun		upAya						(	"	"		06-03-15)
+	43. curative_adjective  Arogyakara_paxArWa				(	"	"		02-09-15)
 	
 
     7. Removed entry:
@@ -1904,6 +2325,7 @@ Removed:
 	9. focussed_UNDEFINED	as	focussed_verb		(By Roja 			16-10-13 )	
 	10. civilisation_UNDEFINED	as civilisation_noun	(Suggested by Sukhada 		26-11-13 )
 	11. doctorate_UNDEFINED as	doctorate_noun    	(Suggested by Pramila Banasthali 24-01-14)
+	12. english_UNDEFINED	as	english_noun		( Suggested by Chaitanya Sir     04-11-14)
 
 	
  changes in preposition.txt
@@ -1931,13 +2353,7 @@ Removed:
 	such_as			---	(		"	    18-01-14)
 	rather_than		---	(		"		"   )
 	at_the_behest_of	---	(		"		"   )
-
--------------------------- compound_phrase.txt -----------------------------------
- Based on the type of the phrase, compound_phrase.txt file has been splitted in to four different files,(Suggested by Chaitanya ji 23-04-12)
-        i) acronyms-common_noun_compounds.txt
-       ii) proper_noun-common_noun_compounds.txt
-      iii) named_entities.txt
-       iv) multi_word_expressions.txt
+	till_after		---	(		"	    21-07-15)	
 
   proper_noun-common_noun_compounds.txt 
   =====================================
@@ -1977,7 +2393,9 @@ Removed:
 	Democratic_National_Convention  prajAwAnwrika_rARtrajana_sammelana#PropN#3#RM		(		"	"	)
 				Ex: The Democratic National Convention will meet next week to announce their party's candidate for president.
 	Hawa_mahal      	havA_mahala#havA_mahala#PropN#2#RM				(		"	"	)
-				Ex:The Hawa mahal was built by the Maharaja Sawai Pratap Singh in 1799 AD and Lal Chand Usta was the architect.
+				Ex:The Hawa mahal was built by the Maharaja Sawai Pratap Singh in 1799 AD and Lal Chand Usta was the architect.	
+	Organic_Materials_Review_Institute      jEvika_paxArWa_samIkRA_saMsWAna#noun#4#RM	(Suggested by 14anu-ban-08 16-02-15)
+						Ex: These may or may not include materials listed on the Organic Materials Review Institute. 
 
     
  multi_word_expressions.txt
@@ -2034,6 +2452,17 @@ Removed:
 				Ex: I did not have any small change to leave as a tip.
 	24. a_certain		koI_eka#koI_eka#noun#2#RM		(Suggested by Preeti ji LTRC	10-05-14)
 				Ex: You have to have a certain amount of courage to perform in public.
+	25. in_relation_to  	ke_viRaya_meM#ke_viRaya_meM#noun#3#RM	(Suggested by Anita ji LTRC     15-04-14)
+				Ex: Its brain is small in relation to its body. 
+	26. relation_to     	ke_riSwe_mez#ke_riSwe_mez#noun#2#RM	(		"	"	  "     )
+				Ex: The fee they are offering bears no relation to the amount of work involved.
+	27. at_the_bottom_of    ke_nicale_wala_para#ke_nicale_wala_para#preposition#4#RM (Suggested by Garima Banasthali 02-10-14)	
+				Ex: I went to the school at the bottom of our street.
+	28. head_on 		Amane_sAmane#Amane_sAmane#noun#2#RM			 (	"	"		   "     )
+				Ex: He dived in and hit his head on the bottom.
+	29. good_books      	kqpA_xqRti#kqpA_xqRti#noun#2#RM		(Suggested by 14anu-ban-02	11-04-15)
+				Ex: We urge you to try to add many names and items to these tables with the help of your teachers, good books
+				    and websites on science. [ncert]
 
     Modified :
     --------
@@ -2067,7 +2496,11 @@ Removed:
 				Ex: People use espresso to make other coffee drinks.
 	in_advance		agrima	as	pahale_se	(Suggested by Soma Mam	24-07-14)
 				Ex: A paper scale may be put inside the bottle in advance to measure the separation of leaves. 
-
+	artificial_intelligence kqwrima_BARA	   as	kqwrima_buxXimawwA	(Suggested by Chaitanya Sir 15-09-15)
+				Ex: Ever since the incipient of computers and the very first introduction of artificial intelligence, machine 
+				    translation has been a target goal.
+	machine_translation     yaMwra_anuvAxa	   as	yAMwrika_anuvAxa	(Suggested by Chaitanya Sir 15-09-15)
+				Ex: above sentence
 		
     Added new entry:
     ----------------
@@ -2311,7 +2744,105 @@ Removed:
 	126. one_and_a_half	deDa#deDa#number#4#RM					(Suggested by Neha Arya Gurkul 13-07-2014)
 				Ex: It takes only one and a half to three hours to reach Munnar.
 	127. picnic_spot	pikanika_sWala#pikanika_sWala#noun#2#RM			(Suggested by Soshya joshi Banasthali 3-9-13) 
-				Ex: Fauyasagar reservoir is the nearest picnic spot of the citydwellers. 
+				Ex: Fauyasagar reservoir is the nearest picnic spot of the citydwellers.
+	128. nesting_sites	Gosale_kI_jagahoM#Gosale_kI_jagahoM#noun#2#RM		(Suggested by 14anu-ban-08	20-11-14)
+				Ex: The clover cover crop enhanced songbird habitat by providing cover and nesting sites, and an increased food 				   source from higher arthropod populations.
+	129. more_recently	hAla_hI_meM#hAla_hI_meM#adverb#2#RM			(Suggested by 14anu-ban-08	20-11-14)
+				Ex: More recently, plant breeders have utilised CWR genes to improve a wide range of crops like rice (Oryza 					   sativa), tomato (Solanum lycopersicum) and grain legumes. [Agriculture]
+	130. nutrient_cycling	poRaka_wawva_cakkara_prakiyA#poRaka_wawva_cakkara_prakiyA#2#RM	(Suggested by 14anu-ban-08	20-11-14)
+				Ex: The impact of residue placement (buried by tillage or left on the surface in zero tillage) on nutrient					   cycling and efficiency is under study. [Agriculture]
+	131. gaining_hold	prApwa_kara#prApwa_kara#verb#1#RM			(Suggested by 14anu-ban-06	20-11-14)
+				Ex: In scorched earth strategy, crops and other useful materials are destroyed to prevent the enemy from 					   gaining hold of them.(agriculture)
+				    Man: JulasI pqWvI raNanIwi  meM, PasaloM Ora anya upayogI paxArWo ko naRta kara xiyA jAwA hEM jisase ki 					   xuSmana ko unheM prApwa karane se rokA jA sake.
+	132. agro_ecosystems	kqRi_pariwaMwra#kqRi_pariwaMwra#noun#2#RM		(Suggested by 14anu-ban-02	21-11-14)
+				Ex: The wild relatives of crop plants constitute an increasingly important resource for improving agricultural 					production and for maintaining sustainable (agro-ecosystems).
+	133. government_regulated	sarakAra_viniyamiwa#sarakAra_viniyamiwa#noun#1#RM (Suggested by 14anu-ban-05	21-11-14)
+				Ex: In government-regulated agriculture, farmers can be required to destroy crops that exceed their production 						quota.
+	134. above_ground	jamIna_ke_Upara#jamIna_ke_Upara#noun#2#RM		(Suggested by 14anu-ban-05	21-11-14)
+				Ex: About 50 per cent recovery of N in the above-ground plant in the first year.
+	135. flower_nectar	PUla_ke_parAga# PUla_ke_parAga#noun#2#RM		(Suggested by 14anu-ban-05	22-11-14)
+				Ex: Arthropod abundance and biomass was also higher in the clover cover cropped fields throughout much of the 					songbird breeding season, which was attributed to an increased supply of flower nectar from the clover.
+	136. forestry_species	vanya_prajAwi#vanya_prajAwi#noun#2#RM			(Suggested by 14anu-ban-05	22-11-14)
+				Ex: Therefore CWRs are wild plants related to socio-economically important species including food, fodder and 					forage crops, medicinal plants, condiments, ornamental, and forestry species, as well as plants used for 					industrial purposes, such as oils and fibres, and to which they can contribute beneficial traits.
+	137. geographic_origin	BOgolika_mUla#BOgolika_mUla#noun#2#RM			(Suggested by 14anu-ban-05	22-11-14)
+				Ex: A crop wild relative (CWR) is a wild plant closely related to a domesticated plant, whose geographic 					origins can be traced to regions known as Vavilov Centers (named for the pioneering botanist Nikolai Vavilov).
+	138. purgator_of_the_fallen   pawiwa_pAvanI#pawiwa_pAvanI#adjective#4#RM	(Suggested by 14anu-ban-05 02-12-14)
+                                Ex: Ganges , the purgator of the fallen , enters the plains leaving mountainous areas in Haridwar .
+	139. fallen_purgator	pawiwa_pAvanI#pawiwa_pAvanI#adjective#1#RM		(Suggested by 14anu-ban-05 02-12-14)
+				Ex: All the sanskars will get completed with worship of the Mukteshwar Mahadev at a place called Shiv
+                                    Ballabhapur established by Lord Parashuram in Khandavi forest . yajna and a bath at the fallen purgator
+                                    Ganges and offering a pindadan there .
+	140. pith_ball       	sarakaNde_kI_golI#sarakaNde_kI_golI#noun#2#RM		(Suggested by 14anu-ban-09 02-12-14)
+				Ex: Suppose we connect one end of a copper wire to a neutral pith ball and the other end to a negatively
+                                    charged plastic rod.
+	141. saving_grace    	viSeRa_guNa#viSeRa_guNa#noun#2#RM			(Suggested by 14anu-ban-09 02-12-14)
+				Ex: A saving grace was that Johanna would be forced to reveal that Titus had the overwhelming weapon. 
+	142. free_of_cost    	muPZwa#muPZwa#noun#3#RM					(Suggested by 14anu-ban-09 17-12-14)
+				Ex: These plants are provided free of cost by Forest Department to the school children .
+	143. much_more       	Ora_aXika#Ora_aXika#adverb#2#RM				(Suggested by 14anu-ban-08 17-12-14)
+				Ex: Physics too, the term 'energy' is related to work in this sense, but as said above the term 'work' itself
+				    is defined much more precisely.
+	144. more_commonly    	aXikawara#aXikawara#abverb#2#RM				(Suggested by 14anu-ban-08 17-12-14)
+				Ex: It is the variable force, which is more commonly encountered.
+	145. biology_based   	jIva_vijFAna_AXAriwa#jIva_vijFAna_AXAriwa#noun#2#RM	(Suggested by 14anu-ban-09 18-02-15)
+				Ex: Further ('biology-based') or 'ecological' techniques are under evaluation.
+	146. date_palm_fruit    KajUra_ke_Pala#KajUra_ke_Pala#noun#3#RM			(Suggested by 14anu-ban-09 18-02-15)
+				Ex: The date palm fruit stalk borer, Oryctes elegans Prell, from the subfamily Dynastinae, is a major pest of
+				    the date palm in southern parts of Persia. [Agriculture]
+	147. strip_off_tree	vqkRa_vihIna_kara#vqkRa_vihIna_kara#noun#3#RM		(Suggested by 14anu-ban-01 10-03-15)
+				Ex: Our land is stripped off trees.
+	148. speed_guns		spIda_gana#spIda_gana#noun#2#RM				(Suggested by 	"		"  )
+				Ex: Radar also provides the basis for the speed guns used to time fast balls, tennis-serves, and automobiles.
+	149. closed_door_meeting	banxa_xaravAje_kI_bETaka#banxa_xaravAje_kI_bETaka#noun#2#RM	(Suggested by 14anu-ban-01 10-03-15)
+					Ex: We held closed door meetings cautioning one another against the slightest slip.
+	150. ill_effect		xuRpraBAva#xuRpraBAva#noun#2#RM				(Suggested by 14anu-ban-04 10-03-15)
+				Ex: The reason is that Jharkhand is such a state which is untouched to a large extent by the ill effects
+				 of urbanization .
+	151. watercolor_paper	jalaraMga_kAlajZanusa#jalaraMga_kAlajZanusa#noun#2#RM	(Suggested by 14anu-ban-09 10-03-15)
+				Ex: The pleasure can be even more enhanced if you are prepared to foregosome of the geometry accuracy of urban 					structures and allow your watercolor paper to pay a substantial role in the formation of your image.
+	152. ready_to_feed	KilAne_ke_lie_wEyAra#KilAne_ke_lie_wEyAra#adjective#3#RM (Suggested by 14anu-ban-11 10-03-15)
+				Ex: It is sold in powdered, ready-to-feed, and concentrated liquid forms.
+	153. by_a_stroke_of_fortune	kismawa_se#kismawa_se#noun#5#RM			(Suggested by 14anu-ban-05 10-03-15)
+				Ex: By a stroke of fortune he found work almost immediately.
+	154. raiding_team    	CApAmAra_xala#CApAmAra_xala#noun#2#RM			(Suggested by  AnitajI     28-06-2014)
+				Ex: I am looking to build a mid week raiding team, aimed at progression heroic (mythic) raiding.
+	155. stock_exchange  	Seyara_bAjZAra#Seyara_bAjZAra#noun#3#RM			(Suggested by  AnitajI     03-09-2014)
+				Ex: The stock exchange has registered huge losses this week.
+	156. wisdom_tooth    	akla_xADZa#akla_xADZa#noun#2#RM				(	"	"	     "       )
+				Ex: She's having her wisdom teeth out. [cambridge dictionary]
+	157. chicken_run     	murgI_kA_bAdZA#murgI_kA_bAdZA#noun#2#RM			(	"      14anu-ban-01 22-04-15 )
+				Ex: She has a very big 'chicken run' at her back yard.
+	158. ski_run 		skI-rana#skI-rana#noun#2#RM				(	"		"	"    )
+				Ex: Generally people go to shimla for a special sport, ski run.
+	159. committee_members 	samiti_saxasya#samiti_saxasya#noun#2#RM			(Suggested by manasa bomma  10-07-15 )
+	160. planned_development  niyojiwa_vikAsa#niyojiwa_vikAsa#noun#2#RM		(Suggested by Chaitanya sir 21-07-15 )
+				Ex: The two chapters in this unit give us an overview of the state of the Indian economy as it was at the eve of 
+				    independence till after four decades of planned development, which was a path that India chose.
+	161. till_after      	ke_bAxa_waka#ke_bAxa_waka#preposition#2#RM		(Suggested by Chaitanya sir 21-07-15 )
+				Ex: above sentence
+	162. in_both_the_cases  xonoM_hI_sWiwiyoM_meM/xonoM_hI_sWiwiyoM_meM#noun#4#WM	( By Shirisha Manju	    07-08-15 )
+				Ex: In both the cases, there is a change in the length of the cylinder.
+	163. manufacturing_units    Oxyogika_ikAI#Oxyogika_ikAI#noun#2#RM		(Suggested by Chaitanya sir 12-08-15 )
+				Ex: The establishment of a few manufacturing units here and there was no substitute to the near wholesale 
+                                    displacement of the country's traditional handicraft industries.
+	164. those_of_you    	Apa_meM_se#Apa_meM_se#pronoun#3#WM			(Suggested by Chaitanya sir 12-08-15 )
+				Ex: Those of you who will choose later to specialise in economics, for your higher studies, will know about the 
+				    more complex analyses that are used by economists to study macroeconomics today.
+	165. higher_studies  	ucca_aXyayana#ucca_aXyayana#noun#2#RM			(Suggested by Chaitanya sir 12-08-15 )
+				Ex: above example	
+	166. food_grain      	KAxyAnna#KAxyAnna#noun#2#RM				( "		"	    21-08-15 )
+				Ex: For example, if output of food grain is experiencing a growth, it is generally accompanied by a rise in the
+				    output level of industrial goods. 
+	167. curative_petition  nirNaya_saMSoXana_nivexanapawra#noun#2#RM		(Suggested by Chaitanya sir 02-09-15 )
+				Ex: Memon then filed a curative petition to the Supreme Court.
+	168. in_many_ways    	kaI_mAyanoM_meM/kaI_warIke_se#noun#3#RM			(Suggested by Soma Madam   15-09-15)
+				Ex: Languages differ in many ways. 
+	169. artificial_language     kqwrima_BARA#kqwrima_BARA#noun#2#RM		(Suggested by Chaitanya sir 15-09-15)
+	170. very_first      	pahale_hI#pahale_hI#noun#2#RM				(	"	"		"   )
+				Ex: He spoke a lot on the very first day of his job.
+	171. old_woman       	buDZiyA/vqxXA#buDZiyA/vqxXA#noun#2#RM			(	"	"	    06-10-15)
+				Ex: The old woman stood facing him in silence and looking inquiringly at him. 
+	
 
     Added new meaning to the existing word:
     --------------------------------------
@@ -2324,15 +2855,22 @@ Removed:
 				Ex: For this, we consider a plane circular loop of radius r whose plane is perpendicular to
 				    the direction of the current-carrying wire, and which is centred symmetrically with
 				    respect to the wire.
-	7. fresh_water		wAjA_pAnI		(Suggested by Chaitanya sir 20-3-14 	) Ex: We drained the pond and filled it with
-												      fresh water.
+	7. fresh_water		wAjA_pAnI		(Suggested by Chaitanya sir 20-3-14 	) 
+				Ex: We drained the pond and filled it with fresh water.
 	8. fatal_accident  	GAwaka_xurGatanA	(Suggested by Ratna purohit     21-03-14)
-	9. general_public  	Ama_AxamI		(Suggested by Chaitanya sir     22-03-14) Ex: For this reason the general public has to
-												      come forward.		
-	10. characteristic_features viSiRta_lakRaNa	(	"	"		3-04-14 ) Ex: With the BionicKangaroo,we have precisely 								  	     reproduced the most characteristic features of natural kangaroos.
+	9. general_public  	Ama_AxamI		(Suggested by Chaitanya sir     22-03-14)
+				Ex: For this reason the general public has to come forward.		
+	10. characteristic_features viSiRta_lakRaNa	(	"	"		3-04-14 ) 
+				Ex: With the BionicKangaroo,we have precisely reproduced the most characteristic features of natural kangaroos.
+	11. path_of_least_resistance	kama_avaroXa_kA_mArga (Suggested by Anita ji LTRC 28-04-14)
+				Ex: I took the path of least resistance and agreed with the others.
+	12. special_property	viSiRta_guNa		(Suggested by Chaitanya sir     22-03-14)
+				Ex: For example,whenever we tune our radio to a favorite station, we are taking advantage of a special property 				   of ac circuits — one of many that you will study in this chapter.
+	13. that_is_why         isalie#isalie#determiner#1#RM                           (Suggested by Soshya joshi Banasthali 02-12-14)
+                                Ex: That is why Haridwar is also called the Gate of the Ganges .
+	14. security_guard  	paharexAra		(Suggested by 14anu-ban-01      18-02-15)
+				Ex: The thief broke into the office while his accomplice stalled off the security guard.
 
-	11. path_of_least_resistance	kama_avaroXa_kA_mArga (Suggested by Anita ji LTRC 28-04-14) Ex: I took the path of least resistance and
-													agreed with the others.
 
    Modifying the head id:
    ---------------------
@@ -2445,6 +2983,114 @@ Removed:
 				    path of the object.
 	elasticity_noun    	prawyAsWA	(Suggested by Anshika Sharma Banasthali 14-08-14)
 				Ex: In 1676, he presented his law of elasticity, now called Hooke's law. 
+	electrochemical_adjective viGuwa_rAsAyanika	(Suggested by 14anu-ban-04	17-10-14)
+				Ex: The chemically resistant (but expensive) fluorinated ionomers are used as electrochemical cell membranes,
+				    of which the first and most prominent example is Nafion.
+	individually_adverb	pqWaka_rUpa_se 	(Suggested by 14anu-ban-06      17-10-14)
+				Ex: Individually the kinetic energy K and the potential energy V (x) may vary from point to point, but the sum
+				    is a constant.
+	external_adjective      bAhya		(Suggested by 14anu-ban-04      17-10-14)
+				Ex: Even the appreciably rigid steel bar can be deformed when a sufficiently large external force is applied on
+				    it.
+	relativity_noun 	ApekRikawA	(Suggested by 14anu-ban-10      17-10-14)
+				Ex: Until the advent of Einstein's theory of relativity, the law of conservation of mass was regarded as 
+				    another basic conservation law of nature, since matter was thought to be indestructible.
+	reacting_adjective      aBikarmaka	(Suggested by 14anu-ban-10      17-10-14)
+				Ex: If the total binding energy of the reacting molecules is less than the total binding energy of the product 
+				    molecules, the difference appears as heat and the reaction is exothermic. 
+	concurrent_adjective    safgAmI		(Suggested by 14anu-ban-03      17-10-14)
+				Ex: Since all these forces act on the single particle, they must be concurrent.
+	unaccelerated_verb   	awvariwa	(Suggested by 14anu-ban-05      17-10-14)
+				Ex: In that case, if we know that an object is unaccelerated (i.e. it is either at rest or in uniform linear 
+				    motion), we can infer from the first law that the net external force on the object must be zero.
+	neutral_adjective	uxAsIna		(Suggested by 14anu-ban-08      17-10-14)
+				Ex: At the neutral point N, the speed approaches zero.
+	translate_verb		rUpAnwariwa_ho	(Suggested by 14anu-ban-07      17-10-14)
+				Ex: Once again the final mass is less than the initial mass and the mass difference translates into energy,
+                                    which can be tapped to provide electrical energy as in nuclear power plants (controlled nuclear fission)
+                                    or can be employed in making nuclear weapons (uncontrolled nuclear fission).
+	dimensional_adjective   vimIya/vimiwIya	(Suggested by 14anu-ban-04      17-10-14)
+				Ex: Now we can test the dimensional consistency or homogeneity of the equation.
+	disc_noun       	cakawI 		(Suggested by 14anu-ban-04      17-10-14)
+				Ex: The disc can be considered to be a planar body.
+	rectangle_noun  	Ayawa		(Suggested by 14anu-ban-10      17-10-14)
+				Ex: For example, if the length and breadth of a rectangle are 1.0 m and 0.5 m respectively, then its perimeter
+			            is the sum of the lengths of the four sides.
+	ratio_noun      	anupAwa		(Suggested by 14anu-ban-10      17-10-14)
+				Ex: density is the ratio of the mass to the volume of the substance. 
+	macroscopic_noun	sWUla		(Suggested by 14anu-ban-08      17-10-14)
+				Ex: The law of conservation of energy is thought to be valid across all domains of nature, from the microscopic
+				    to the macroscopic.
+	regroup_verb    	punah_ekawra_kara	(Suggested by 14anu-ban-10      17-10-14)
+				Ex: Since vectors obey the commutative and associative laws, we can arrange and regroup the vectors in Eq. (4.1
+				    9a) as convenient to us.
+	vigorously_adverb       jora_se			(Suggested by 14anu-ban-07      17-10-14)
+				Ex: In winter, in order to feel warm, we generate heat by vigorously rubbing our palms together.
+	viscosity_noun  	SyAnawA			(Suggested by 14anu-ban-07      17-10-14)
+				Ex: It is called viscosity.
+	unstable_adjective      asanwuliwa		(Suggested by 14anu-ban-07      17-10-14)
+				Ex: It is evident that without some attractive force, a nucleus will be unstable due to the electric repulsion 
+				    between its protons.
+	median_adjective        mAXyikA			(Suggested by 14anu-ban-08      17-10-14)
+				Ex: If we join the midpoint of all the strips we get the median LP.
+	median_noun     	mAXyikA			(Suggested by 14anu-ban-08      17-10-14)
+				Ex: This means the center of mass lies on the point of concurrence of the medians, i.e. on the centroid G of
+				    the triangle.
+	geostationary_noun      wulyakAlI		(Suggested by 14anu-ban-05      17-10-14)
+				Ex: Satellites in a circular orbits around the earth in the equatorial plane with T = 24 hours are called
+				    Geostationary Satellites.
+	typical_adjective	prArUpika		(Suggested by 14anu-ban-07      17-10-14)
+				Ex: Table 2.5 gives the range and order of some typical time intervals.
+	neighbouring_adjective	nikatavarwI		(Suggested by 14anu-ban-08      17-10-14)
+				Ex: For example, the elastic spring force arises due to the net attraction/repulsion between the neighbouring
+				    atoms of the spring when the spring is elongated/compressed.
+	diametrically_adjective vyAsawa			(Suggested by 14anu-ban-04      05-11-14)
+				Ex: It is the angle between the two directions when two diametrically opposite points of the planet are viewed
+				    through the telescope.   
+	term_verb       	kahalA			(Suggested by 14anu-ban-07      13-11-14)
+				Ex: The line along which the body is fixed is termed as its axis of rotation.
+	together_adverb 	Apasa_meM		(Suggested by 14anu-ban-07      13-11-14)
+				Ex:These are bonded together by interatomic or intermolecular forces and stay in a stable equilibrium position.
+	traverse_verb		waya_kara		(Suggested by 14anu-ban-07      13-11-14)
+				Ex: Where u and v are the initial and final speeds and s the distance traversed.
+	term_noun       	Sabxa			(Suggested by 14anu-ban-07      13-11-14)
+				Ex: The terms 'work', 'energy' and 'power' are frequently used in everyday language.
+	vital_adjective 	mahawvapUrNa		(Suggested by 14anu-ban-07      13-11-14)
+				Ex:The early civilisations of Egypt, India, China, Greece, Mesopotamia and many others made vital contributions
+				   to its progress.
+	hotness_noun    	wapwawA			(Suggested by 14anu-ban-06      13-11-14)
+				Ex: Temperature is a relative measure, or indication of hotness or coldness.
+	usage_noun      	prayoga			(Suggested by 14anu-ban-07      13-11-14)
+				Ex: Thus, the meaning of work in physics is different from its usage in everyday language.
+	weights_noun       	bAta			(Suggested by 14anu-ban-11      02-12-14)
+				Ex: Weights are added till the plate just clears water.(ncert)
+	flash_noun      	PlESa			(Suggested by 14anu-ban-05      20-01-15)
+				Ex: These flashes may be viewed through a microscope and the distribution of the number of scattered particles 
+				    may be studied as a function of angle of scattering.
+	electric_noun   	vExyuwa			(Suggested by 14anu-ban-04      20-01-15)
+	electric_adjective      vExyuwa			(		"		"       )
+				Ex: Thus, according to Maxwell, light waves are associated with changing electric and magnetic fields.
+	iron-tipped_adjective   lohe_kI_topI_caDI	(Suggested by 14anu-ban-05      20-01-15)
+				Ex: Their iron-tipped rods were similarly affected.
+	bar-magnet_noun 	Cada_cumbaka		(Suggested by 14anu-ban-05      20-01-15)
+				Ex: 
+	urrent-carrying_adjective   XArAvAhI		(Suggested by 14anu-ban-05      20-01-15)
+	element_noun         	avayava			(Suggested by 14anu-ban-04      16-02-15)
+				Ex:We can imagine two equal and small elements of area placed at points R and S normal to the field lines there
+	longitudinal_adjective  anuxErGya		(Suggested by 14anu-ban-08      16-02-15)
+				Ex: Tensile or compressive stress can also be termed as longitudinal stress.
+	mono-molecular_adjective        ekANvika	(Suggested by 14anu-ban-08      16-02-15)
+				  Ex: If we assume that the film has mono-molecular thickness, then this becomes the size or diameter of a
+				      molecule of oleic acid.
+	drift_noun      	apavAha			(Suggested by 14anu-ban-04      18-02-15)
+				Ex: This is the phenomenon of drift and the velocity vd in Eq. (3.17) is called the drift velocity.
+	collimate_verb		saMreKiwa_kara		(Suggested by Chaitanya Sir	10-03-15)
+				Ex: Alpha-particles emitted by a Bi radioactive source were collimated into a narrow beam by their passage 					through lead bricks.
+        charge_adjective        AveSiwa                 (Suggested by Chaitanya Sir     17-03-15)
+	mass_adjective		xravyamAna 		(Suggested by 14anu-ban-08      14-04-15)
+				Ex: Consider a constant force F acting on an object of mass m.
+	parallatic_adjective 	lambanika		(Suggested by 14anu-ban-09      14-04-15)
+				Ex: The ∠ASB in Fig. 2.2 represented by symbol θ is called the parallax angle or parallactic angle.
 
     Modifying first meaning:
     -----------------------
@@ -2452,14 +3098,18 @@ Removed:
 			Ex: It is easier to calculate the value of velocity at different instants if we have data of positions at different 				   instants or exact expression for the position as a function of time.
 	prefix_noun 	pUrvalagna	as	upasarga	(Suggested by Anshika Sharma Banasthali 25-08-14)
 			Ex: Common SI prefixes and symbols for multiples and sub-multiples are given in Appendix A2.  
+	variable_noun   parivarwI	as	cara		(Suggested by 14anu-ban-07	17-10-14)
+			Ex: Taken together, the product of mass and velocity, that is momentum, is evidently a relevant variable of motion.
 
     Modifying spelling of the existing word :
     -----------------------------------------
    	1. rearrangement_Noun  		punavryavasWA  	as   	punarvyavasWA  	(Suggested by Chaitanya Sir 08-08-12)
 	2. corresponding_adjective  	waxnurUpa	as	waxanurUpa	(Suggested by Sukhada 29-05-13)
 	3. elongation_noun 	prasara_koNa/prasara_koNa_xEGryavqxXi/prasara_koNa_xErGyavqxXi  as  xErGyavqxXi
-					(Suggested by Pramila Banasthali 11-09-13) Ex: This force is usually proportional to
-					the compression or elongation (for small displacements).
+					(Suggested by Pramila Banasthali 11-09-13)
+					Ex: This force is usually proportional to the compression or elongation (for small displacements).
+	4. transmit_verb		preRiwa		as	preRiwa_kara	(Suggested by Chaitanya Sir 08-08-12)
+					Ex: Further, electrical energy can also be transmitted economically over long distances.
 
     Modifying pattern for the whole file :
     -------------------------------------
@@ -2478,18 +3128,80 @@ Removed:
 	5. interaction_noun        	pArasparika_kriyA	(Suggested by Aditi ji     	20-10-14)
 					Ex: A related effort is to derive the properties of a bigger, more complex, system from the properties
 					    and interactions of its constituent simpler parts.
-
+	6. kinematic_noun  		SuxXagawikI		(Suggested by 14anu-ban-07  17-10-14)
+					Ex: Just before it hits the ground, its speed is given by the kinematic relation.
+	7. terrestrial_adjective   	sWalIya			(Suggested by 14anu-ban-07  17-10-14)
+					Ex: This experience is common to most terrestrial motion.
+	8. upward_adjective        	Upara_kI_ora		(Suggested by 14anu-ban-07  17-10-14)
+					Ex: To throw a stone upwards, one has to give it an upward push.
+	9. transmission_noun       	saFcaraNa		(Suggested by 14anu-ban-07  17-10-14)
+					Ex: This is the Pascal's law for transmission of fluid pressure and has many applications in daily life
+	10. vibration_noun  		kampana			(Suggested by 14anu-ban-07  17-10-14)
+					Ex: The vibrations of the cesium atom regulate the rate of this cesium atomic clock just as the 
+					    vibrations of a balance wheel regulate an ordinary wristwatch or the vibrations of a small quartz 
+					    crystal regulate a quartz wristwatch. 
+	11. constitution_noun       	safGatana		(Suggested by 14anu-ban-03  17-10-14)
+					Ex: The microscopic domain of physics deals with the constitution and structure of matter at the minute 					   scales of atoms and nuclei (and even lower scales of length) and their interaction with different
+                                            probes such as electrons, photons and other elementary particles.
+	12. mercury_noun    		pArA			(Suggested by 14anu-ban-08  05-11-14)
+					Ex: Mercury and alcohol are the liquids used in most liquid-in-glass thermometers.
+	
+			
     Modifing category:
     -----------------
 	relative_noun		as	relative_adjective		(Suggested by Chaitanya Sir 		05-01-13)
 	nuclide_UNDEFINED	as	nuclide_noun			(Suggested by Swati Kanojia Banasthali 	27-08-14)
-	
+	dimensionless_UNDEFINED	as	dimensionless_noun		(Suggested by 14anu-ban-04	17-10-14	)
+ 	neutral_noun       	as	neutral_adjective       	(Suggested by AditiJi		04-11-14	)
+
+   Removed entry:
+   -------------
+	backward_noun	paScagAmI 	(Suggested by 14anu-ban-02	21-11-14) Ex: We get thrown backward with a jerk.
+	material_noun	xravya		(Suggested by 14anu-ban-02      16-02-15)  
+	mean_noun	mAXya		(Suggested by 14anu-ban-08      18-02-15) Ex:
+	addition_noun   kA_niyama/SaBuja_kA_niyama 			(Wrongly extracted entry)
+	maxwell-boltzamann_noun mEksavEla-boltSamAna_sAMKyikI		(	"		)	
+	thermodynamic_noun      URmAgawika_wApa				(	"		)
+
+   Modified:
+   ---------
+	energyisothermal_noun   samawApIya
+		to
+	isothermal_noun   samawApIya
 
  changes in phy_eng_multi_word_dic.txt
  =====================================
     Modified :
     --------
 	frame_of_reference      nirxeSa-waMwra	as	nirxeSa_waMwra
+	temperaturearbitraily_chosen    svecCagqhIwa#svecCagqhIwa#noun#2#RM
+                        to
+        arbitraily_chosen    svecCagqhIwa#svecCagqhIwa#noun#2#RM
+        temperatureabsolute_zero        parama_SUnya#parama_SUnya#noun#2#RM
+                        to
+        absolute_zero        parama_SUnya#parama_SUnya#noun#2#RM
+        capacitymolar_volume    grAma-aNuka_Ayawana#grAma-aNuka_Ayawana#noun#2#RM
+                to
+        molar_volume    grAma-aNuka_Ayawana#grAma-aNuka_Ayawana#noun#2#RM
+        adiabatic_wall  ruxXoRma_Biwwi/xIvAraxXa#ruxXoRma_Biwwi/xIvAraxXa#noun#2#RM
+                        to
+        adiabatic_wall  ruxXoRma_Biwwi/ruxXoRma_xIvAra#ruxXoRma_Biwwi/ruxXoRma_xIvAra#noun#2#RM
+        zig_zag teDAZ-meDAZ/teDZA-meDZA#teDAZ-meDAZ#noun#2#WM
+                        to
+        zig_zag teDZA-meDZA#teDZA-meDZA#noun#2#WM
+        vector-product_or_cross_product saxiSa_guNanaPala#saxiSa_guNanaPala#noun#2#RM
+                        to
+        vector_product  saxiSa_guNanapaPala#saxiSa_guNanapaPala#noun#2#RM
+        cross_product   saxiSa_guNanapaPala#saxiSa_guNanapaPala#noun#2#RM
+        statisticspauli_exclusion_principle     pAulI_apavarjana_sixXAMwa#pAulI_apavarjana_sixXAMwa#noun#2#RM
+                        to
+        pauli_exclusion_principle     pAulI_apavarjana_sixXAMwa#pAulI_apavarjana_sixXAMwa#noun#2#RM
+        viscous_force   SyAna_bala/SyAnawA/yAna_bala#SyAna_bala#noun#2#RM
+                        to
+        viscous_force   SyAna_bala/SyAnawA#SyAna_bala/SyAnawA#noun#2#RM
+        absolute_scale_of_temperature   parama_wApa_mAPavrama   to parama_wApa_mApakrama
+ 
+         
 
     Added new meaning to the existing word:
     ---------------------------------------
@@ -2497,20 +3209,64 @@ Removed:
  
     Added new entry:
     ----------------
-	charged_particles	AveSiwa_kaNa#AveSiwa_kaNa#noun#2#RM		(Suggested by Chaitanya Sir	 07-06-13)
-	discharge_tube		visarjana_nalI#visarjana_nalI#noun#2#WM	(Suggested by Pramila Banasthali 19-08-13)
-	discharge_valve		visarjana_vAlva#visarjana_vAlva#noun#2#WM 	(	"		"		 )
-	potential_difference	viBavAnwara#viBavAnwara#noun#1#RM		(	"		"	 23-08-13)
-	dynamically_stable_orbit gawiSIla_sWira_kakRA#gawiSIla_sWira_kakRA#noun#3#RM( 	"		"	 10-09-13)
-	double_slit		xviJirI#xviJirI#noun#2#RM			(	"		"    	    "    )
-	closed_loop		baMxa_paripaWa#baMxa_paripaWa#noun#2#RM	(Suggested by	Chaitanya Sir	 21-09-13)
-	sign_convention		cihna_paripAtI#cihna_paripAtI#noun#1#RM	(suggested by Preeti ji LTRC	 19-12-13)
+	1. charged_particles	AveSiwa_kaNa#AveSiwa_kaNa#noun#2#RM		(Suggested by Chaitanya Sir	 07-06-13)
+	2. discharge_tube	visarjana_nalI#visarjana_nalI#noun#2#WM	(Suggested by Pramila Banasthali 19-08-13)
+	3. discharge_valve	visarjana_vAlva#visarjana_vAlva#noun#2#WM 	(	"		"		 )
+	4. potential_difference	viBavAnwara#viBavAnwara#noun#1#RM		(	"		"	 23-08-13)
+	5. dynamically_stable_orbit gawiSIla_sWira_kakRA#gawiSIla_sWira_kakRA#noun#3#RM( 	"		"	 10-09-13)
+	6. double_slit		xviJirI#xviJirI#noun#2#RM			(	"		"    	    "    )
+	7. closed_loop		baMxa_paripaWa#baMxa_paripaWa#noun#2#RM	(Suggested by	Chaitanya Sir	 21-09-13)
+	8. sign_convention	cihna_paripAtI#cihna_paripAtI#noun#1#RM	(suggested by Preeti ji LTRC	 19-12-13)
 				Ex: We now apply the sign convention.
-	vernier_callipers	varniyara_kEliparsa#varniyara_kEliparsa#noun#2#WM	(Suggested by Prachi Banasthali 07-03-14)
+	9. vernier_callipers	varniyara_kEliparsa#varniyara_kEliparsa#noun#2#WM	(Suggested by Prachi Banasthali 07-03-14)
 				Ex: For example, a vernier callipers has the least count as 0.01 cm
-	vernier_scale		varniyara_pEmAnA#varniyara_pEmAnA#noun#2#RM		(	"		"		) 
+	10. vernier_scale	varniyara_pEmAnA#varniyara_pEmAnA#noun#2#RM		(	"		"		) 
 				Ex: In a vernier callipers the zero mark of vernier scale may not coincide with the zero mark of the main scale
-			
+	11. geographic_north_pole   BOgolika_uwwarI_Xruva#BOgolika_uwwarI_Xruva#noun#2#RM	(Suggested by 14anu-ban-05 02-12-14)
+				    Ex: The pole near the geographic north pole of the earth is called the north magnetic pole. 
+	12. iron_filings	lOha_rewana#lOha_rewana#noun#1#RM			(Suggested by 14anu-ban-05 02-12-14)
+				Ex: We begin our study by examining iron filings sprinkled on a sheet of glass placed over a short bar magnet.
+	13. arithmetic_mean	samAnwara_mAXya#samAnwara_mAXya#noun#2#RM		(Suggested by 14anu-ban-02 02-12-14)
+				Ex: As the arithmetic mean of all the absolute errors is 0.11s, there is already an error in the tenth of a 
+				    second.
+	14. pivotal_point    	keMxrIya_biMxu#keMxrIya_biMxu#noun#2#RM			(Suggested by 14anu-ban-09 02-12-14)
+				Ex: A compass needle consists of a magnetic needle which floats on a pivotal point.[NCERT]
+	15. negatively_charged_constituents qNAwmaka_AveSiwa_safGataka#noun#3#RM	(Suggested by Chaitanya Sir      12-02-15)
+				Ex: In 1897, the experiments on electric discharge through gases carried out by the English physicist J.J.
+                                    Thomson (1856 — 1940) revealed that atoms of different elements contain negatively charged constituents
+                                    (electrons) that are identical for all atoms. [NCERT 12-12]
+	16. positively_charged_constituents XanAwmaka_AveSiwa_safGataka#noun#3#RM	(Suggested by Chaitanya Sir      12-02-15)
+	17. neon_sign		nioYna-sAina#nioYna-sAina#noun#2#RM		       (	"	"		23-02-15)
+				Ex: In contrast, light emitted from rarefied gases heated in a flame, or excited electrically in a glow tube
+				    such as the familiar neon sign or mercury vapor light has only certain discrete wavelengths.	
+	18. mercury_vapor   	pAraxa-vARpa#pAraxa-vARpa#noun#2#RM			(Suggested by Chaitanya Sir      23-02-15)
+				Ex: 						"
+	19. glow_tube       	wApaxIpwa_nalikA#wApaxIpwa_nalikA#noun#2#RM		(	"	"		  "	 )
+				Ex:						"
+	20. temperature_scale	mApakrama#mApakrama#noun#1#RM				(Suggested by 14anu-ban-07	10-03-15) 
+				Ex: The two familiar temperature scales are the Fahrenheit temperature scale and the Celsius temperature scale.
+        21. positively_charged  XanAveSiwa#XanAveSiwa#noun#2#RM 		       	(Suggested by Chaitanya Sir     17-03-15)
+	22. negatively_charged  qNAveSiwa#qNAveSiwa#noun#2#RM 				(Suggested by Chaitanya Sir     17-03-15)
+	23. current_carrying    vixyuwa_XArAvAhI#vixyuwa XArAvAhI#noun#2#RM		(Suggested by 14anu-ban-09 	11-04-15)
+	24. alternating_voltage prawyAvarwI_voltawA#prawyAvarwI_voltawA#noun#2#RM	(	"	"		  "	)
+				Ex: Such a voltage is called  alternating voltage  (ac voltage) and the current driven by it in a circuit is
+                                    called the alternating current (ac current).
+	25. average_current	mAXya_XArA #mAXya_XArA #noun#2#RM			(Suggested by 14anu-ban-09      11-04-15)
+				Ex: Thus, the sum of the instantaneous current values over one complete cycle is zero, and the average current
+				    is zero.
+	26. boiling_points	kvaWanAMka#kvaWanAMka#noun#2#WM				(Suggested by 14anu-ban-02      14-04-15)
+				Ex: The ice point and the steam point of water are two convenient fixed points and are known as the freezing
+				    and boiling points.
+
+	Removed entry:
+	-------------	
+	absolute_scale_of		parama_wApa_mApavraPama#parama_wApa_mApavraPama#noun#2#RM       (Wrongly extracted entry)
+        coefficient_of_linear		reKIya_prasAra_guNAMka#reKIya_prasAra_guNAMka#noun#2#RM		(	"		)
+        constant_volume			sWira_Ayawana_wApamApI#sWira_Ayawana_wApamApI#noun#2#RM         (       "       	)
+        coefficient_of_volume		Ayawana_prasAra_guNAMka#Ayawana_prasAra_guNAMka#noun#2#RM       (       "       	)
+        viscous_force			yAnawA#yAnawA#noun#2#RM                 			(       "       	)
+        scalar_product_or_dot		axiSa_guNanapaPala#axiSa_guNanapaPala#noun#2#RM         	(       "       	)
+
 
  changes in causative_verb_mng.txt
  =================================
@@ -2639,6 +3395,11 @@ Removed:
 	Arthur		ArWara		(	"	"	"	"	"	)
 	Charles		cArlsa		(	"  by Muskaan Singh	"	"	)
 	Dennis		denisa		(	"	"	"	"	"	)
+	Ganges		gaMgA		(Suggested by Chaitanya Sir 	      15-12-14	)
+	Persia  	PArasa		(	"	14anu-ban-09	"     16-02-15  )	
+
+	Following entries are added from  wiki sentences by Shirisha Manju
+	Chidambaram     cixaMbarama	to	Sathasivam      sawyaSivama
 	
 
    Modified:
@@ -2654,6 +3415,9 @@ Removed:
    1. prakASiwa_kara  	ko     	(Suggested by Chaitanya Sir 28-09-13) Ex: Standing in the middle of the great epic like a lighthouse, it 
 									  illuminates the whole of the epic.
    2. ragada  		ko	(Suggested by Sukhada       02-06-14) Ex: Your cat keeps on rubbing itself against my leg. 
+   3. preraNA_xe      	ko	(Suggested by Chaitanya Sir 31-08-15) Ex: As a committed educator, he inspired millions of young people to
+									  achieve their very best.
+   4. preriwa_kara    	ko	(	"	"		"   )
 
  changes in human.txt
  ===================
@@ -2695,7 +3459,39 @@ Removed:
 	wife		(Suggested by Preeti ji LTRC	 09-05-14 ) Ex: He is cheating on his wife.
 	bouncer		(Suggested by Sukhada		 09-05-14 ) Ex: He had the bouncers throw them out of the club.
 	enemy		(Suggested by Preeti ji LTRC	 09-05-14 ) Ex: We charged at the enemy.  
-
+	farmer		(Suggested by Soma Mam		 21-11-14 ) Ex: In government-regulated agriculture, farmers can be required to destroy 									crops that exceed their production quota.
+	solicitor    	(Suggested by 14anu-ban-04       03-12-14 ) Ex: If your opponent employs a solicitor, you can not be charged the cost
+                                                                        even if you lose your case . 
+	lover           (By Manju from animate.txt       15-12-14 ) Ex: She discovered her lover in the arms of another woman.
+	killer          (By Manju from animate.txt       16-12-14 ) Ex: The police have failed to nail the killer.
+	firefighter     (Suggested by 14anu-ban-04       28-01-15 ) Ex: All four firefighters were decorated for bravery. 
+	swimmer		(Suggested by 14anu-ban-01       03-02-15 ) Ex: She was not a strong swimmer.
+	Suggested following entries by Soma Mam (03-02-15)
+	abuser		airhostess	anybody		assistant	astronaut	attendant	blacksmith	boyfriend	
+	captain		carpenter	champion	chef		consumer	cook		customer	diver		
+	employer	engineer	everybody	girlfriend	granddaugthter	grandfather	grandmother	grandson
+	herself		hijacker	himself		inspector	interviewee	interviewer	journalist	kid
+	lawyer		leader		master		member		myself		nobody		nurse		operator
+	ourself		patron		pilot		politician	public		reader		reporter	scholar
+	scientist	steward		subordinate	teen		themself	victim		viewer		voter
+	astronomer	
+	guard		(Suggested by 14anu-ban-09       07-02-15 ) Ex: Guards have been posted along the border. 
+	prisoner	(Suggested by 14anu-ban-04		" ) Ex: The prisoners were executed by firing squad.
+	staff   	(	"	"		 16-02-15 ) Ex: The company is reconsidering the way in which it deploys its staff. 
+	spokesman       (	"	"			" ) Ex: The spokesman refused to disclose details of the takeover to the press.	       parent	       (Suggested by 14anu-ban-03       18-02-15 ) Ex: He is playing up towards his parents.
+	baby		(Suggested by 14anu-ban-01       23-02-15 ) Ex:	The baby was screaming itself hoarse.
+	teenager	(	"	"		 28-02-15 ) Ex: Bob turned out to be a sullen teenager.
+	troop		(	"     14anu-ban-04       23-02-15 ) Ex: They embarked the troops by night.     
+	paparazzi       (By Manju from animate.txt        "       ) Ex: I love what you did to try to throw off the paparazzi.
+	guy             (Suggested by 14anu-ban-03       20-03-15 ) Ex: He was a cool guy.
+	crowd		(	"     14anu-ban-04	   "	  ) Ex: The crowd erupted in applause and cheering. 
+	nephew		(	"	 "		   "	  ) Ex: He entrusted the task to his nephew.  
+	volunteer	(	"	 "		 11-04-15 ) Ex: They're enlisting volunteers for an experiment.
+	me		(	"     14anu-ban-09	 11-04-15 ) Ex: My mother is always trying to organize me.
+	passenger       (       "     14anu-ban-04       30-04-15 ) Ex: The delayed commuter train disgorged hundreds of angry passengers.
+        someone         (       "        "                  "     ) Ex: Someone had been poisoning his food.
+	poor    	(	"     Jagriti Banasthali 10-03-14 )
+	government      (	"     14anu-ban-04	 25-04-15 ) Ex: Deposition of government is not in the interest of the country. 
 
  changes in named_entities.txt
  =============================
@@ -2711,3 +3507,147 @@ Removed:
  Added:
 	be	ho/raha		(Suggested by Chaitanya Sir 11-08-14)
 
+ changes in agriculture_multi_dic.txt:
+ =====================================
+  Added:
+  ------
+	1. peanut_soup	mUzgaPalI_se_banA_SorabA#mUzgaPalI_se_banA_SorabA#noun#2#RM 	(Suggested by 14anu-ban-09 12-11-14)
+			Ex: Peanut butter is one of the most popular peanut-based foods in the US, and for four hundred years, recipes for
+			    peanut soup have been present in the South, Virginia in particular.
+	2. peanut_milk	mUzgaPalI_kA_xUXa#mUzgaPalI_kA_xUXa#noun#2#RM			(Suggested by 14anu-ban-09 12-11-14)
+			Ex: Peanuts can be used like other legumes and grains to make a lactose-free milk-like beverage, peanut milk.	
+ 	3. oilcake_meal	KalI_kA_motA_AtA#KalI_kA_motA_AtA#noun#2#RM			(Suggested by 14anu-ban-09 12-11-14)
+			Ex: The protein cake (oilcake meal) residue from oil processing is used as an animal feed and as a soil fertilizer.
+	4. catch_crop   aMwaravarwI_Pasala#aMwaravarwI_Pasala#noun#2#RM			(Suggested by 14anu-ban-03 19-11-14)
+			Ex: Catch crops are also crops that are sown to prevent minerals being flushed away from the soil.
+	5. deep_rooted	gaharI_jadZa_vAlA#gaharI_jadZa_vAlA#adjective#2#RM		(Suggested by 14anu-ban-04 20-11-14)
+			Ex: Crop rotation also mitigates the build-up of pathogens and pests that often occurs when one species is continuously 			   cropped, and can also improve soil structure and fertility by alternating deep-rooted and shallow-rooted plants.
+	6. cane_growing gannA_uwpAxana#gannA_uwpAxana#adjective#2#RM			(Suggested by 14anu-ban-03 18-02-15)
+			Ex: The larvae also attack the roots of sugar cane, causing serious damage in cane-growing regions of Persia. 
+	7. scarab_beetle    gubarElA# gubarElA#noun#2#RM				(Suggested by 14anu-ban-01 18-02-15)
+			Ex: The larvae of the scarab beetle, Pentodon idiota Herbst, are polyphagous and feed on the roots of different plants.
+	8. nesting_sites    Gosale_kI_jagahoM#Gosale_kI_jagahoM#noun#2#RM		(Suggested by 14anu-ban-08 11-04-15)
+			Ex: The clover cover crop enhanced songbird habitat by providing cover and nesting sites, and an increased food source
+	                    from higher arthropod populations.
+	9. nutrient_cycling poRaka_wawv_cakkara_praNAlI#poRaka_wawv_cakkara_praNAlI#2#RM (Suggested by 14anu-ban-08 11-04-15)
+			Ex: The impact of residue placement (buried by tillage or left on the surface in zero tillage) on nutrient cycling and
+                            efficiency is under study.
+
+
+  Modified:
+	Added 1st meaning:
+	1. crop_rotation     PasaloM_kA_Avarwana					(Suggested by 14anu-ban-03 20-11-14)
+			Ex: Crop rotation gives various nutrients to the soil. फसलों का आवर्तन मिट्टी को विभिन्न पोषक तत्व देता है.
+
+  Added new meaning to existing list:
+  -----------------------------------
+	1. cover_crop	JAdZI_vAlI_Pasala						(Suggested by 14anu-ban-03 21-11-14)
+			Ex: The clover cover crop enhanced songbird habitat by providing cover and nesting sites, and an increased food 
+			source from higher arthropod populations.
+
+ changes in agriculture_dic.txt:
+ ==============================
+    Modified:
+    ---------
+	1. biological_noun 	jOvika		as	jEvika				(Suggested by 14anu-ban-02 27-11-14)
+				
+
+    Added:
+    ------ 
+	1. polysaccharides_noun		bahuSarkarAeda					(Suggested by 14anu-ban-09 14-11-14)
+					Ex: The insoluble carbohydrates in soybeans consist of the complex polysaccharides cellulose,
+				            hemicellulose, and pectin.
+	2. nutrient_adjective		poRaka_wawva					(Suggested by 14anu-ban-08 20-11-14)
+					Ex: Soil aggregation allows greater nutrient retention and utilization, decreasing the need for added 						   nutrients.
+	3. clover_noun			wipawiyA					(Suggested by 14anu-ban-03 20-11-14)
+					Ex: The clover cover crop enhanced songbird habitat by providing cover and nesting sites, and an increased food source from higher arthropod populations.तिपतिया झाडी वाली फसल गानेवाले पक्षी के प्राकृतिक वास को शरण और घोसले की जगहों को परिष्कृत करती/देती है और जो अधिक संधिपाद प्राणी की आबादी उनके खाद्य/आहार स्रोत  को बढाती हैं.(manual)
+	4. sustainable_adjective	vahanIya					(Suggested by 14anu-ban-11 21-11-14)
+					Ex: The wild relatives of crop plants constitute an increasingly important resource for improving 						agricultural production and for maintaining sustainable agro-ecosystems.
+	5. coloration_noun 		raMgAI						(Suggested by 14anu-ban-03 16-02-15)
+					Ex: The adult insects have often brilliant, metallic colorations, Although members of this family are
+					typically inhabitants of hot moist forests, several genera such as Sphenoptera, and Capnodis are of 
+					significant importance throughout Persia.
+	6. prothorax_noun  		agra_BAga					(Suggested by 14anu-ban-09 16-02-15)
+					Ex: The prothorax is large and broader than the remaining segments.
+	7. petioles_noun    		daMTala						(			"	"  )
+					Ex: While the larvae feed on the petioles in the crown and on sap from the base of the fronds.
+	8. prolegs_noun    		prapAxa						(			"	"  )
+					Ex: The larvae have three pairs of highly reduced thoracic legs, as well as nine pairs of prolegs, 
+					    which aid them in locomotion.
+
+    Removed:
+    -------
+	1. environment_noun	paryAvaraNa			(Suggested by 14anu-ban-04 20-11-14)
+				Ex: In addition, plants produce root exudates and other chemicals which manipulate their soil environment as well as their weed environment.
+	2. surplus_noun		awirikwa/BAga/bacawa/baDZowwarI	(Suggested by 14anu-ban-02 21-11-14)
+				Ex: A large portion of the Wine lake (European Union wine surplus) is converted to industrial ethanol.
+			    	    vAina JIla (yuropIya safGa SarAba aXiSeRa)kA eka bahuwa badZA BAga  Oxyogika iWenoYla meM parivarwiwa howA hE
+	3. weather_noun		mOsama				(Suggested by 14anu-ban-01 02-12-14)
+				Ex: Plant pathogens follow similar patterns of response to weather and season.
+	4. season_noun		mOsama				(Suggested by 14anu-ban-01 02-12-14)
+				Ex: Plant pathogens follow similar patterns of response to weather and season.
+	5. pesticides_noun 	kItanASI/nASIjIva		(	By Shirisha Manju  16-02-15)          
+
+	Added new meaning to existing list:
+	----------------------------------
+	1. impact_noun		praBAva				(Suggested by 14anu-ban-06	21-11-14) 
+				Ex: The impact of residue placement (buried by tillage or left on the surface in zero tillage) on
+				    nutrient cycling and efficiency is under study.
+	2. pesticide_noun  	kITanASaka/kItanASI/nASIjIva	(Suggested by 14anu-ban-09      16-02-15)
+				Ex: The use of low-volume spray equipment reduces overall pesticide use and labor cost.
+	3. critical_noun   	mahawvapUrNa			(Suggested by 14anu-ban-03      16-02-15)
+				Ex: Matching the application technique to the crop, the pest, and the pesticide is critical.
+
+	Modified first meaning:
+        -----------------------
+	1. selection_noun  	varaNa		as	cayana		(Suggested by 14anu-ban-01 02-12-14)
+                                    social consequences and is applicable to most agricultural, public health and amenity pest management 
+				    situations.
+
+ changes in transliterate_meaning.txt :
+ ==================================== 
+  Removed :
+
+	tube	tUba			(Suggested by Chaitanya Sir     13-11-14 )
+
+ changes in provisional_multi_word_dictionary.txt:
+ ===============================================
+  Removed:
+  -------
+	following_morning       agale_xina_subaha#agale_xina_subaha#noun#2#RM	(Suggested by Chaitanya Sir	10-03-15)
+
+  Modified:
+	following_morning       agalI_subaha#agalI_subaha#noun#1#RM		(Suggested by Chaitanya Sir     10-03-15)
+			to
+	following_morning       agalI_subaha#agalI_subaha#noun#2#RM
+
+
+ Added new files:
+ ===============
+ 1. ol_parser_unused_words.txt                  (Added by Roja 06-11-10 suggested by Chaitanya sir)
+ 2. month_day.txt                               (Added by Roja 20-11-10 suggested by Meena ji)
+ 3. place.txt                                   (Added by Roja 11-02-11. suggested by Sukhada)
+ 4. time.txt                                    (       "                  )
+ 5. transitive-verb-list.txt                    (       "                  )
+ 6. eng-animate-list.txt                        (       "                  )
+ 7. hindi_default_tam.txt                       (Added by Roja 11-03-11 . Suggested by Chaitanya Sir)
+ 8. default-iit-bombay-shabdanjali-dic.txt      (Added by Roja 31-01-12 . Suggested by Chaitanya Sir)
+ 9. preposition.txt                             (Added by Shirisha Manju 24-02-12.  Suggested by Chaitanya Sir)
+10. Physics-dictionary                          (Added by Roja 04-05-12. Suggested by Chaitanya Sir)
+     This file is splitted into two files
+     i. phy_dictionary.txt   and   ii. phy_eng_multi_word_dic.txt
+11. multi_word_expressions_from_iit_bombay.txt
+        Extracted from iit-bombay dictionary.   (Added by Roja 10-05-13. Suggested by Chaitanya Sir)
+12. proper_noun_dic.txt                         (Added by Manju Suggested by Chaitanya Sir)
+13. provisional_multi_word_dictionary.txt       (Added by Roja 21-02-14)
+14. social_science_dic.txt			(Added by Manju 14-08-15 Suggested by Chaitanya Sir)
+15. social_science_multi_dic.txt		(Added by Manju 14-08-15 Suggested by Chaitanya Sir)
+
+
+
+-------------------------- compound_phrase.txt -----------------------------------
+ Based on the type of the phrase, compound_phrase.txt file has been splitted in to four different files,(Suggested by Chaitanya ji 23-04-12)
+        i) acronyms-common_noun_compounds.txt
+       ii) proper_noun-common_noun_compounds.txt
+      iii) named_entities.txt
+       iv) multi_word_expressions.txt

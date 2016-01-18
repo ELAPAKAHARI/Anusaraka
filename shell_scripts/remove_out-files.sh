@@ -18,6 +18,10 @@
  cd $HOME_anu_test/Parsers/stanford-parser/src
  rm -f *.out lex.yy.c
 
+ echo "Removing logon out files"
+ cd $HOME_anu_test/Parsers/logon-parser/src
+ rm -f lex.yy.c y.tab.c y.output  y.tab.h dependency_parse derivation_parse add_info_for_no_parse.out
+
  echo "Removing RASP out files"
  cd $HOME_anu_test/Parsers/RASP/rasp3os/scripts/
  rm -f rasp_constituency_parse y.tab.c y.tab.h lex.yy.c
@@ -34,7 +38,7 @@
 
  echo "Removing CLIPS out files"
  cd $HOME_anu_test/CLIPS
- rm -f gdbm_lookup.h *.o
+ rm -f gdbm_lookup.h wx_utf8.lex *.o
 
  cd $HOME_anu_test/bin
  rm -f myclips
@@ -79,11 +83,11 @@
  rm -rf bllip-parser-master 
 
  echo "Removing Multifast out files"
- cd $HOME_anu_test/multifast-v1.0.0/ahocorasick/
+ cd $HOME_anu_test/multifast-v1.4.2/ahocorasick/
  make clean
 
- cd $HOME_anu_test/multifast-v1.0.0/src/
- rm -f get_word_count multi_word-dic.c  physics-dic.c  proper_noun-dic.c provisional_multi_dic.c
+ cd $HOME_anu_test/multifast-v1.4.2/src/
+ rm -f get_word_count get_word_count_single.out multi_word-dic.c  physics_multi_dic.c  proper_noun-dic.c provisional_multi_dic.c agriculture_multi_dic.c
  make clean 
 
  echo "Removing stanford-tregex"

@@ -37,12 +37,30 @@
  (assert (id-wsd_viBakwi))
  (assert (id-domain_type))
  (assert (compound_meaning_decided))
+ (assert (prep_id-relation-anu_ids))
+ (assert (conjunction-components))
+ (assert (id-cat))
+ (assert (id-cat_coarse)) 
  )
 
 (defglobal ?*hin_sen-file* = h_sen_fp)
 (defglobal ?*rmd_mng-file* = rm_mng_fp)
  
  (deftemplate pada_info (slot group_head_id (default 0))(slot group_cat (default 0))(multislot group_ids (default 0))(slot vibakthi (default 0))(slot gender (default 0))(slot number (default 0))(slot case (default 0))(slot person (default 0))(slot H_tam (default 0))(slot tam_source (default 0))(slot preceeding_part_of_verb (default 0)) (multislot preposition (default 0))(slot Hin_position (default 0))(slot pada_head (default 0)))
+
+(deffunction remove_character(?char ?str ?replace_char)
+                        (bind ?new_str "")
+                        (bind ?index (str-index ?char ?str))
+                        (if (neq ?index FALSE) then
+                        (while (neq ?index FALSE)
+                        (bind ?new_str (str-cat ?new_str (sub-string 1  (- ?index 1) ?str) ?replace_char))
+                        (bind ?str (sub-string (+ ?index 1) (length ?str) ?str))
+                        (bind ?index (str-index ?char ?str))
+                        )
+                        )
+                (bind ?new_str (explode$ (str-cat ?new_str (sub-string 1 (length ?str) ?str))))
+ )
+
  ;----------------------------------------------------------------------------------------------------------
  ;Added by Roja (29-06-11)
  ;To replace hyphen(-) with underscore(_) only in cases where we get underscore in the sentence. 
@@ -63,16 +81,60 @@
    	)
  )
  ;----------------------------------------------------------------------------------------------------------
+ ;Added by Shirisha Manju (19-02-15)
+ ;remove 'id-attach_eng_mng' if mng decided is not from WSD bcoz this fact is restricted to wsd
+ ;This model was picturesquely called plum pudding model of the atom. (physics domain)
+ (defrule rm_eng_fact
+ (declare (salience 2560))
+ ?f<-(id-attach_eng_mng ?id ?mng)
+ (id-HM-source ?id ? ?s&~WSD_root_mng&~WSD_word_mng)
+ =>
+	(retract ?f)
+ )
+ ;----------------------------------------------------------------------------------------------------------
+ ;Added by Shirisha Manju (25-07-15)
+ ;No politician is completely honest. 
+ ;koI BI rAjanIwijFa pUrI waraha se niRkapata nahIM hE.
+ ;We have no fruits in the house. 
+ ;hamAre Gara meM Pala nahIM hEM.
+ ;There is no 'final' theory in science and no unquestioned authority among scientists. 
+ ;vijFAna meM 'anwima' sixXAnwa Ora vEjFAnikoM ke bIca meM kuCa asanxigXa aXikArI nahIM hE.
+ ;No wonder, the overall mortality rate was very high.
+ ;koI axBuwawA nahIM, sampUrNawayaH mqwyu xara bahuwa UzcI WI.
+ (defrule move_nahIM_before_verb_or_after_noun
+ (declare (salience 2551))
+ ?f<-(id-Apertium_output ?id $?pre nahIM)
+ (id-word ?id no)
+ (prep_id-relation-anu_ids  -  ?r1  ?k ?id)
+ (prep_id-relation-anu_ids  -  ?r2  ?kri ?k)
+ (id-cat_coarse ?kri verb)
+ ?f1<-(id-Apertium_output ?kri $?mng)
+ (pada_info (group_head_id ?h) (group_ids $? ?id $?))
+ ?f0<-(id-Apertium_output ?h $?hmng)
+ (id-right_punctuation ?h ?punct)
+ =>
+	(retract ?f)
+	(assert (id-Apertium_output ?id $?pre))
+	(if (eq ?punct PUNCT-Comma) then
+		(assert (id-Apertium_output ?h $?hmng nahIM)) 
+		(retract ?f0)
+	else
+		(assert (id-Apertium_output ?kri nahIM $?mng))
+		(retract ?f1)
+	)
+ )
+ ;----------------------------------------------------------------------------------------------------------
  ;Add english meaning to the hindi mng
  ;Added by Shirisha Manju (19-09-13) 
  (defrule add_eng_mng
  (declare (salience 2550))
  ?f0<-(id-Apertium_output ?id $?wrd_analysis)
  ?f1<-(id-attach_eng_mng ?id ?mng)
- (pada_info (group_ids $? ?id $? ?))
+ (pada_info (group_ids $? ?id)(vibakthi 0))
  =>
 	(retract ?f0 ?f1)
-	(bind $?n_mng (create$ $?wrd_analysis PUNCT-OpenParen ?mng PUNCT-ClosedParen))
+	(bind $?n_mng (create$ $?wrd_analysis @PUNCT-OpenParen ?mng @PUNCT-ClosedParen)) ;Added '@'before PUNCT to avoid to convert into utf8.
+;Ex: This [model] was picturesquely called plum pudding model of the atom.
 	(assert (id-Apertium_output ?id $?n_mng))
  )
  ;----------------------------------------------------------------------------------------------------------
@@ -85,13 +147,16 @@
  ?f1<-(id-attach_eng_mng ?id ?mng)
  (pada_info (group_ids  $? ?id)(vibakthi ?vib))
  =>
-        (retract ?f0 ?f1)
-	(if (and (eq (str-index "_" (implode$ (create$ ?vib))) FALSE) (neq ?vib 0)) then
-	        (bind $?n_mng (create$ $?wrd_analysis PUNCT-OpenParen ?mng PUNCT-ClosedParen ?v_mng))
-        	(assert (id-Apertium_output ?id $?n_mng))
-	else 
-		(bind $?n_mng (create$ $?wrd_analysis ?v_mng PUNCT-OpenParen ?mng PUNCT-ClosedParen))
+	(retract ?f0 ?f1)
+	(if (neq (str-index "_" ?vib) FALSE) then
+		(bind ?v (remove_character "_" (implode$ (create$ ?vib)) " "))
+		(bind $?w (create$ $?wrd_analysis ?v_mng))
+		(bind $?w (delete-member$ $?w ?v))
+		(bind $?n_mng (create$ $?w @PUNCT-OpenParen ?mng @PUNCT-ClosedParen ?v))
                 (assert (id-Apertium_output ?id $?n_mng))
+	else
+		(bind $?n_mng (create$ $?wrd_analysis @PUNCT-OpenParen ?mng @PUNCT-ClosedParen ?v_mng))
+		(assert (id-Apertium_output ?id $?n_mng))
 	)
  )
  ;----------------------------------------------------------------------------------------------------------
@@ -280,21 +345,33 @@
        (assert (hindi_id_order $?var ?lid ?rp))
  )
  ;---------------------------------------------------------------------------------------------------------
- ;;Added by Shirisha Manju (23-11-13)
+ ;Added by Shirisha Manju (23-11-13)
  ;Your account of the accident does not agree [with hers].
  (defrule rm_repeated_mng_from_sentence
  (declare (salience 200))
  ?f<-(hindi_id_order $?pre ?mng ?mng $?post)
  (test (eq  (member$ ?mng (create$ bAra SurU kaBI XIre Binna karIba sAWa)) FALSE));The frequent sleeping of students is a big problem.
- (id-mng ?id $?m ?mng ?mng $?m1)
+ ?f1<-(id-mng ?id $?m ?mng ?mng $?m1)
  (id-word ?id ?wrd)
  (id-HM-source ?id ? ?src)
  =>
-	(retract ?f)
+	(retract ?f ?f1)
 	(assert (hindi_id_order $?pre ?mng $?post))
+	(assert (id-mng ?id $?m ?mng $?m1)) ;Added by Roja(18-11-14) To remove repeated mng in layered o/p
 	(printout t "Warning: Removed repeated meaning  : " ?mng" "?mng crlf)
 	(bind $?n_mng (create$ $?m ?mng ?mng $?m1))
         (printout ?*rmd_mng-file* "(id-word-mng-removed_mng-src	"?id"	"?wrd"	"(implode$ $?n_mng)"	"?mng"	"?src ")" crlf)
+ )
+ ;---------------------------------------------------------------------------------------------------------
+ ;Added by Roja (18-11-14)
+ ;To remove repeated mng in layered o/p
+ ;Rather, it deals with systems in macroscopic equilibrium and is [concerned] with changes in internal energy, temperature, entropy, etc., of the system through external work and transfer of heat.
+ ;'sambanXa huA huA hE' -> 'sambanXa huA hE'
+ (defrule modify_id-mng_fact
+ (declare (salience 150))
+ (id-mng ?id $?mng)
+ =>
+	(assert (id-Apertium_output ?id $?mng))
  )
  ;---------------------------------------------------------------------------------------------------------
  ;Added by Shirisha Manju (25-01-12)

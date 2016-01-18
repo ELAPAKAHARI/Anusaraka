@@ -33,9 +33,12 @@
  (load-facts "wsd_facts_output.dat")
  (load-facts "GNP_agmt_info.dat")
  (load-facts "hindi_meanings.dat")
+ (load-facts "cat_consistency_check.dat")
+ (load-facts "relations_tmp1.dat")
  (open "hindi_sentence_tmp.dat" h_sen_fp "w")
  (open "removed_repeated_mng.dat" rm_mng_fp "w")
  (run)
+ (save-facts "id_Apertium_output.dat" local id-Apertium_output)
  (clear)
  ;--------------------------------------------------------------------------
  (load "global_path.clp")

@@ -157,7 +157,7 @@
         (retract ?f0)
  	(bind ?kA_mng (get_kA_mng ?g ?n ?c))
         (printout ?*A_fp5* "(id-Apertium_input " ?id "  " ?mng"  " ?kA_mng " )" crlf)
-        (printout ?*aper_debug-file* "(id-Rule_name  "?id "  print_org_word_mng_for_head_id )" crlf)
+        (printout ?*aper_debug-file* "(id-Rule_name  "?id "  print_org_word_mng_with_kA_vib )" crlf)
  )
  ;----------------------------------------------------------------------------------------------------------------------- 
  ;The Hawa mahal was built by the Maharaja Sawai Pratap [Singh] in 1799 AD and Lal Chand [Usta] was the architect.
@@ -246,6 +246,24 @@
         (printout ?*aper_debug-file* "(id-Rule_name  " ?pada_id " Compound_mng_with_Prep_id1 )" crlf)
  )
  ;----------------------------------------------------------------------------------------------------------------------
+ ;Decorate with stucco work. There was one bathroom with a shower stall in the corner.
+ ;if group_id is considered as the main meaning
+ (defrule Compound_mng_with_grpid_head
+ (declare (salience 1003))
+ ?f1<-(id-HM-source ?pada_id - Database_compound_phrase_word_mng|Database_compound_phrase_root_mng|WSD_compound_phrase_root_mng|provisional_Database_compound_phrase_root_mng|provisional_Database_compound_phrase_word_mng)
+ (pada_info (group_head_id ?pada_id)(group_cat PP)(group_ids $? ?grpid ?pada_id)(vibakthi ?vib)(number ?num)(case ?case)(gender ?gen))
+ ?f0<-(id-HM-source ?grpid ?mng&~- Database_compound_phrase_word_mng|Database_compound_phrase_root_mng|WSD_compound_phrase_root_mng|provisional_Database_compound_phrase_root_mng|provisional_Database_compound_phrase_word_mng)
+ =>
+        (retract ?f0 ?f1)
+	(printout ?*A_fp5* "(id-Apertium_input "?pada_id " )" crlf)
+        (if (neq ?vib 0) then
+		(printout ?*A_fp5* "(id-Apertium_input "?grpid " ^"?mng "<cat:n><case:"?case"><gen:"?gen"><num:"?num">$  ^" ?vib "<cat:prsg>$)"  crlf)
+        else
+		(printout ?*A_fp5* "(id-Apertium_input "?grpid " ^"?mng "<cat:n><case:"?case"><gen:"?gen"><num:"?num">$ "  crlf)
+        )
+        (printout ?*aper_debug-file* "(id-Rule_name  " ?grpid " Compound_mng_with_grpid_head )" crlf)
+ )
+ ;----------------------------------------------------------------------------------------------------------------------
  ;Added 'provisional_Database_compound_phrase_root_mng' and 'provisional_Database_compound_phrase_word_mng' in the list by Roja(20-02-14)
  (defrule Compound_mng_with_Prep_id
  (declare (salience 1002))
@@ -294,15 +312,18 @@
        (printout ?*aper_debug-file* "(id-Rule_name  "?pada_id "  RaRTI_kA_vib_rule1 )" crlf)
  )
  ;======================================= KA vibakthi (kriyA_id-object_viBakwi) rules =====================================
+ ; added kriyA_id-subject_viBakwi -- suggested by Sukhada 05-05-2015 
+ ; Bansal is being hailed for saving a young child from drowning.
+ ; bAMsala [kI] eka waruNa bacce ko dUbane se bacAne ke lie jayajayakAra kI jA rahI hE .
  ; Added by Shirisha Manju (17-06-11) Suggested by Chaitanya Sir
  ; Clinton announced on Tuesday a bold new proposal. 
  ; kliMtana ne eka nirBIka naye praswAva kI mafgalavAra ko GoRaNA kI.
- (defrule kA_vib_from_obj_rule
+ (defrule kA_vib_from_sub_or_obj_rule
  (declare (salience 1000))
  (pada_info (group_head_id ?pada_id)(group_cat PP)(number ?num)(case ?case)(gender ?gen)(vibakthi kA))
  ?f0<-(id-HM-source ?pada_id ?h_word&~Ora&~yaha ?)
- (prep_id-relation-anu_ids - kriyA-object ?k_id ?pada_id)
- (kriyA_id-object_viBakwi ?k_id kA)
+ (or (prep_id-relation-anu_ids - kriyA-object ?k_id ?pada_id)(prep_id-relation-anu_ids - kriyA-subject ?k_id ?pada_id))
+ (or(kriyA_id-object_viBakwi ?k_id kA) (kriyA_id-subject_viBakwi ?k_id kA))
  (pada_info (group_head_id ?k_id)(number ?num1)(case ?case1))
  (id-HM-source ?k_id ?hmng&~upayoga_kara ?) 
  =>
@@ -313,7 +334,7 @@
                 (printout ?*A_fp5* "(id-Apertium_input "?pada_id " ^"?h_word"<cat:n><case:"?case"><gen:"?gen"><num:"?num">$  ^kA<cat:sh><case:d><gen:"?gen1"><num:"?num">$)"  crlf)
             )
             (retract ?f0)
-            (printout ?*aper_debug-file* "(id-Rule_name  "?pada_id "  kA_vib_from_obj_rule )" crlf)
+            (printout ?*aper_debug-file* "(id-Rule_name  "?pada_id "  kA_vib_from_sub_or_obj_rule )" crlf)
         )
  )
  ;------------------------------------------------------------------------------------------------------------------------
@@ -439,15 +460,51 @@
  (prep_id-relation-anu_ids ? kriyA-kqxanwa_karma|kriyA-kriyArWa_kriyA ?kri ?id)
  (make_verbal_noun ?id)
  (pada_info (group_head_id ?id)(vibakthi kA))
- ?f0<-(id-HM-source ?kri ?hmng ?)
- (id-HM-source ?id ?hmng1 ?)
+ (id-HM-source ?kri ?hmng ?)
+ ?f0<-(id-HM-source ?id ?hmng1 ?)
  (pada_info (group_head_id ?kri)(number ?num1)(case ?case1))
  =>
-       (bind ?gen1 (gdbm_lookup "kriyA_mUla-gender.gdbm" ?hmng))
+	(retract ?f0)
+	(bind ?gen1 (gdbm_lookup "kriyA_mUla-gender.gdbm" ?hmng))
         (printout ?*A_fp5* "(id-Apertium_input "?id " ^"?hmng1"<cat:vn><case:o>$ ^kA<cat:sh><case:d><gen:"?gen1"><num:"?num1">$)"  crlf)
         (printout ?*aper_debug-file* "(id-Rule_name  " ?id "  kA_vib_rule_for_verbal_noun  )"crlf)
  )
  ;------------------------------------------------------------------------------------------------------------------------
+ ;Added by Shirisha manju (27-07-15) -- suggested by Sukhada
+ ;I asked him not to wait for me. 
+ ;mEMne usako mere lie prawIkRA_nahIM karane ke lie kahA.
+ (defrule not_before_verbal_noun_with_vib
+ (declare (salience 906))
+ (pada_info (group_head_id ?pada_id)(group_cat infinitive)(vibakthi ?vib))
+ (or (make_verbal_noun ?pada_id)(id-cat_coarse ?pada_id verbal_noun))
+ ?f0<-(id-HM-source ?pada_id ?hmng ?)
+ (test (neq ?vib 0))
+ (id-word =(- ?pada_id 2) not)
+ ?f1<-(id-HM-source =(- ?pada_id 2) ?mng ?)
+ =>
+	(if (neq (str-index "_" ?hmng) FALSE) then
+                (bind ?len 0)
+                (bind ?str1 ?hmng)
+                (bind ?str_len (length ?hmng))
+                (while (neq (str-index "_" ?hmng) FALSE)
+                        (bind ?index (str-index "_" ?hmng))
+                        (bind ?hmng (sub-string (+ ?index (+ ?len 1)) ?str_len ?str1) )
+                        (bind ?len (+ ?index ?len))
+                )
+                (bind ?str4 (sub-string 1 ?len ?str1))
+                (bind ?str5 (str-cat ?str4 ?mng (sub-string ?len ?str_len ?str1)))
+        	(printout ?*A_fp5* "(id-Apertium_input "?pada_id " ^"?str5"<cat:vn><case:o>$ ^" ?vib "<cat:prsg>$)" crlf)
+                (printout ?*aper_debug-file* "(id-Rule_name  "?pada_id "  VP_rule_for_before_verb )" crlf)
+		(retract ?f0 ?f1)
+        else
+        	(printout ?*A_fp5* "(id-Apertium_input "?pada_id " ^"?mng"_"?hmng"<cat:vn><case:o>$ ^" ?vib "<cat:prsg>$)" crlf)
+                (printout ?*aper_debug-file* "(id-Rule_name  "?pada_id "  VP_rule_for_before_verb )" crlf))
+		(retract ?f0 ?f1)
+   )
+	
+
+
+
  ; He made a mistake in the inviting of John. 
  ;The game of life is played for winning .
  (defrule verbal_noun_with_vib
@@ -1182,13 +1239,20 @@
   (defrule default_kA_vib_rule
   (declare (salience 351))
   (pada_info (group_head_id ?pada_id)(group_cat PP)(number ?num)(person ?per)(vibakthi kA)(group_ids $?ids))
-  (id-word ?pada_id  ?w&he|she|their|i|those|your|you|our|my|me|they|its|we|it|him|this|mine)
+  (id-cat_coarse ?pada_id ?cat&pronoun|PropN)
+  (id-word ?pada_id  ?w)
   ?f0<-(id-HM-source ?pada_id ?h_word ?)
   (hindi_id_order  $?start $?ids ?foll_pada_id $?)
   (not (numberp ?foll_pada_id))
   =>
 	(retract ?f0)
-        (printout ?*A_fp5* "(id-Apertium_input "?pada_id " ^"?h_word "<cat:p><parsarg:kA><fnum:s><case:d><gen:m><num:"?num"><per:"?per ">$)"  crlf)
+	(if (eq ?cat pronoun) then
+	        (printout ?*A_fp5* "(id-Apertium_input "?pada_id " ^"?h_word "<cat:p><parsarg:kA><fnum:s><case:d><gen:m><num:"?num"><per:"?per ">$)"  crlf)
+ 	else
+		(bind ?kA_mng (get_kA_mng m s d))
+	        (printout ?*A_fp5* "(id-Apertium_input " ?pada_id "  " ?h_word"  " ?kA_mng " )" crlf)
+	)
+			
         (printout ?*aper_debug-file* "(id-Rule_name  "?pada_id "  default_kA_vib_rule )" crlf)
 	(printout t "Warning: Missing GNP for 'kA' for " ?w  crlf)
   )

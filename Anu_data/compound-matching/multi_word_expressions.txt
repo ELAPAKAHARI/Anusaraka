@@ -3810,7 +3810,8 @@ artificial_farm_manure	kqwrima_kqRi_KAxa#kqwrima_kqRi_KAxa#noun#3#RM
 artificial_humidification	kqwrima_namIkaraNa#kqwrima_namIkaraNa#noun#2#RM
 artificial_hybridisation	kqwrima_saMkaraNa#kqwrima_saMkaraNa#noun#2#RM
 artificial_insemination_officer	kqwrima_gaBArXAna_aXikArI#kqwrima_gaBArXAna_aXikArI#noun#3#RM
-artificial_intelligence	kqwrima_BARA#kqwrima_BARA#noun#2#RM
+artificial_intelligence	kqwrima_buxXimawwA#kqwrima_buxXimawwA#noun#2#RM
+artificial_language	kqwrima_BARA#kqwrima_BARA#noun#2#RM
 artificial_juridicial_person	kqwrima_viXika_vyikwa#kqwrima_viXika_vyikwa#noun#3#RM
 artificial_lake	kqwrima_JIla#kqwrima_JIla#noun#2#RM
 artificial_life	kqwrima_jIvana#kqwrima_jIvana#noun#2#RM
@@ -4228,7 +4229,6 @@ at_some_point	kisI_binxu_para#kisI_binxu_para#noun#3#RM
 at_source	srowa_para#srowa_para#noun#2#RM
 at_such_times	Ese_samaya_para#Ese_samaya_para#noun#3#RM
 at_the_best	acCe_se_acCA#acCe_se_acCA#noun#3#RM
-at_the_bottom_of	ke_nicale_wala_para#ke_nicale_wala_para#preposition#4#RM
 at_the_expense_of	ke_Karce_se#ke_Karce_se#noun#3#RM
 at_the_hand_of	ke_hAWa_se#ke_hAWa_se#noun#3#RM
 at_the_hands_of	ke_hAWoM_se#ke_hAWoM_se#noun#3#RM
@@ -14396,7 +14396,6 @@ golf_club	gAlPZa_klaba#gAlPZa_klaba#noun#2#RM
 gondola_car	bijalI_kI_trAlI#bijalI_kI_trAlI#noun#2#RM
 gong_buoy	GaMte_kA_cihna#GaMte_kA_cihna#noun#2#RM
 good_behaviour	saxvyavahAra#saxvyavahAra#noun#2#RM
-good_books	kqpA_xqRti#kqpA_xqRti#noun#2#RM
 good_bye	alvixA#alvixA#noun#2#RM
 good_cause	uwwma_areRTa_Xyeya_aakRya#uwwma_areRTa_Xyeya_aakRya#noun#2#RM
 good_character	saccariwrawA#saccariwrawA#noun#2#RM
@@ -15095,7 +15094,6 @@ head_of_the_household	parivAra_kA_praXAna#parivAra_kA_praXAna#noun#1#RM
 head_of_the_office	kAryAlaya_aXyakRa#kAryAlaya_aXyakRa#noun#1#RM
 head_office	praXAna_kAryAlaya#praXAna_kAryAlaya#noun#2#RM
 head_office_account	praXAna_kAryAlaya_leKA#praXAna_kAryAlaya_leKA#noun#3#RM
-head_on	Amane_sAmane#Amane_sAmane#noun#2#RM
 head_parcel_clerk	praXAna_pArsala_klarka#praXAna_pArsala_klarka#noun#3#RM
 head_passenger_attendant	praXAna_yAwrI_paricara#praXAna_yAwrI_paricara#noun#3#RM
 head_pilot	praXAna_pAilata#praXAna_pAilata#noun#2#RM
@@ -16033,7 +16031,6 @@ in_pursuance_of	ke_anusaraNa_meM#ke_anusaraNa_meM#noun#2#RM
 in_question	vivAxagraswa#vivAxagraswa#noun#2#RM
 in_reference_to	ke_sambanXa_meM#ke_sambanXa_meM#noun#3#RM
 in_regard_to	ke_viRaya_meM#ke_viRaya_meM#noun#3#RM
-in_relation_to	ke_viRaya_meM#ke_viRaya_meM#noun#3#RM
 in_reply_to	ke_uwwara_meM#ke_uwwara_meM#noun#3#RM
 in_respect_of	ke_viRaya_meM#ke_viRaya_meM#noun#2#RM
 in_restraint_of	ke_avaroXa_meM#ke_avaroXa_meM#noun#2#RM
@@ -18867,7 +18864,7 @@ machine_tool_order	maSIna_upakaraNa_AxeSa#maSIna_upakaraNa_AxeSa#noun#3#RM
 machine_tool_plant	maSInI_upakaraNa_kAraKAna#maSInI_upakaraNa_kAraKAna#noun#3#RM
 machine_tool_producer	maSInI_upakaraNa_kA_uwpAxaka#maSInI_upakaraNa_kA_uwpAxaka#noun#3#RM
 machine_tool_shipment	maSInI_upakaraNa_nOBaraNa#maSInI_upakaraNa_nOBaraNa#noun#3#RM
-machine_translation	yaMwra_anuvAxa#yaMwra_anuvAxa#noun#2#RM
+machine_translation	yAMwrika_anuvAxa#yAMwrika_anuvAxa#noun#2#RM
 machine_usage_time	yaMwra_upayoga_kAla#yaMwra_upayoga_kAla#noun#3#RM
 machinery_ORG	waMwra_oArajI#waMwra_oArajI#noun#2#RM
 machinery_PCT	waMwra_pIsItI#waMwra_pIsItI#noun#2#RM
@@ -25797,7 +25794,6 @@ rejected_note	asvIkqwa_nota#asvIkqwa_nota#noun#2#RM
 rejection_memo	asvIkqwi_pawra#asvIkqwi_pawra#noun#2#RM
 relation_character	saMbaMXa_saMprawIka#saMbaMXa_saMprawIka#noun#2#RM
 relation_condition	saMbaMXa_prawibaMXa#saMbaMXa_prawibaMXa#noun#2#RM
-relation_to	ke_riSwe_mez#ke_riSwe_mez#noun#2#RM
 relational_data_base_management	saMbaMXaparaka_AMkadZA_saMcaya#saMbaMXaparaka_AMkadZA_saMcaya#noun#4#RM
 relational_data_structure	saMbaMXaparaka_AMkadZA_saMracanA#saMbaMXaparaka_AMkadZA_saMracanA#noun#3#RM
 relational_database	saMbaXaparaka_AMkadZAsaMcaya#saMbaXaparaka_AMkadZAsaMcaya#noun#2#RM
@@ -27112,7 +27108,7 @@ security_cover	surakRA_kavaca#surakRA_kavaca#noun#2#RM
 security_deposit	prawiBUwi-jamA#prawiBUwi-jamA#noun#2#RM
 security_deposit_account	jamAnawa_arawiBUwi_jamA_leKA#jamAnawa_arawiBUwi_jamA_leKA#noun#3#RM
 security_director	surakRA_nirxeSaka#surakRA_nirxeSaka#noun#2#RM
-security_guard	surakRA_gAraxa#surakRA_gAraxa#noun#2#RM
+security_guard	paharexAra/surakRA_gAraxa#paharexAra/surakRA_gAraxa#noun#2#RM
 security_instructio	surakRA_anuxeSa#surakRA_anuxeSa#noun#2#RM
 security_instruction	surakRA-anuxeSa#surakRA-anuxeSa#noun#2#RM
 security_longer_dated	xIxarkAlika_prawiBUwi#xIxarkAlika_prawiBUwi#noun#3#RM
@@ -28495,7 +28491,7 @@ special_permission	viSeRa_anumawi#viSeRa_anumawi#noun#2#RM
 special_points	viSiRta_bAweM#viSiRta_bAweM#noun#2#RM
 special_power_of_attorney	muKwAranAmA_KZAsa#muKwAranAmA_KZAsa#noun#2#RM
 special_procedure	viSeRa_prakriyA_AriyAviXi#viSeRa_prakriyA_AriyAviXi#noun#2#RM
-special_property	viSeRa_saMpwwi#viSeRa_saMpwwi#noun#2#RM
+special_property	viSiRta_guNa/viSeRa_saMpawwi#viSiRta_guNa/viSeRa_saMpawwi#noun#2#RM
 special_protection	viSeRa_surakRA_xala#viSeRa_surakRA_xala#noun#2#RM
 special_purpose_computer	viSeRa_uxxeSya_aBikaliwra#viSeRa_uxxeSya_aBikaliwra#noun#3#RM
 special_recovery_register	viSeRa_vasUlI_rajistara#viSeRa_vasUlI_rajistara#noun#3#RM
@@ -30311,7 +30307,7 @@ that_does_not_matter	usase_koI_Parka_nahIM_padawA#usase_koI_Parka_nahIM_padawA#n
 that_is_to_say	arWAwa#arWAwa#noun#4#RM
 that_is_what	yahI_vaha_hE_jo#yahI_vaha_hE_jo#noun#3#RM
 that_is_where	yahI_vaha_jagaha_hE_jahAz#yahI_vaha_jagaha_hE_jahAz#noun#3#RM
-that_is_why	isIliye#isIliye#noun#3#RM
+that_is_why	isalie/isIliye#isalie/isIliye#noun#3#RM
 that_means	yAne_ki#yAne_ki#noun#2#RM
 the_Almighty	BagavAna#BagavAna#noun#2#RM
 the_First_World_War	praWama_mahAyuxXa#praWama_mahAyuxXa#noun#4#RM
@@ -33239,6 +33235,43 @@ ply_board	plAI_borda#plAI_borda#noun#2#RM
 two_and_a_half	DAI#DAI#number#4#RM
 one_and_a_half	deDa#deDa#number#4#RM
 picnic_spot	pikanika_sWala#pikanika_sWala#noun#2#RM
+nesting_sites	Gosale_kI_jagahoM#Gosale_kI_jagahoM#noun#2#RM
+more_recently	hAla_hI_meM#hAla_hI_meM#adverb#2#RM
+nutrient_cycling	poRaka_wawva_cakkara_prakiyA#poRaka_wawva_cakkara_prakiyA#2#RM
+gaining_hold	prApwa_kara#prApwa_kara#verb#1#RM
+agro_ecosystems	kqRi_pariwaMwra#kqRi_pariwaMwra#noun#2#RM
+government_regulated	sarakAra_viniyamiwa#sarakAra_viniyamiwa#noun#1#RM 
+above_ground	jamIna_ke_Upara#jamIna_ke_Upara#noun#2#RM
+flower_nectar	PUla_ke_parAga# PUla_ke_parAga#noun#2#RM
+forestry_species	vanya_prajAwi#vanya_prajAwi#noun#2#RM
+geographic_origin	BOgolika_mUla#BOgolika_mUla#noun#2#RM
+purgator_of_the_fallen	pawiwa_pAvanI#pawiwa_pAvanI#adjective#4#RM
+fallen_purgator	pawiwa_pAvanI#pawiwa_pAvanI#adjective#1#RM
+pith_ball	sarakaNde_kI_golI#sarakaNde_kI_golI#noun#2#RM
+saving_grace	viSeRa_guNa#viSeRa_guNa#noun#2#RM
+strip_off_tree	vqkRa_vihIna_kara#vqkRa_vihIna_kara#noun#3#RM
+speed_guns	spIda_gana#spIda_gana#noun#2#RM
+closed_door_meeting	banxa_xaravAje_kI_bETaka#banxa_xaravAje_kI_bETaka#noun#2#RM
+ill_effect	xuRpraBAva#xuRpraBAva#noun#2#RM
+watercolor_paper	jalaraMga_kAlajZanusa#jalaraMga_kAlajZanusa#noun#2#RM
+ready_to_feed	KilAne_ke_lie_wEyAra#KilAne_ke_lie_wEyAra#adjective#3#RM
+by_a_stroke_of_fortune	kismawa_se#kismawa_se#noun#5#RM
+raiding_team	CApAmAra_xala#CApAmAra_xala#noun#2#RM
+stock_exchange	Seyara_bAjZAra#Seyara_bAjZAra#noun#3#RM
+wisdom_tooth	akla_xADZa#akla_xADZa#noun#2#RM
+chicken_run	murgI_kA_bAdZA#murgI_kA_bAdZA#noun#2#RM
+ski_run	skI-rana#skI-rana#noun#2#RM
+committee_members	samiti_saxasya#samiti_saxasya#noun#2#RM
+till_after	ke_bAxa_waka#ke_bAxa_waka#preposition#2#RM
+in_both_the_cases	xonoM_hI_sWiwiyoM_meM/xonoM_hI_sWiwiyoM_meM#xonoM_hI_sWiwiyoM_meM/xonoM_hI_sWiwiyoM_meM#noun#4#WM
+manufacturing_units	Oxyogika_ikAI#Oxyogika_ikAI#noun#2#RM
+those_of_you	Apa_meM_se#Apa_meM_se#pronoun#3#WM
+higher_studies	ucca_aXyayana#ucca_aXyayana#noun#2#RM
+food_grain	KAxyAnna#KAxyAnna#noun#2#RM
+curative_petition	nirNaya_saMSoXana_nivexanapawra#nirNaya_saMSoXana_nivexanapawra#noun#2#RM
+in_many_ways	kaI_mAyanoM_meM/kaI_warIke_se#kaI_mAyanoM_meM/kaI_warIke_se#noun#3#RM
+very_first	pahale_hI#pahale_hI#noun#2#RM
+old_woman	buDZiyA/vqxXA#buDZiyA/vqxXA#noun#2#RM
 ################################################################################################################
 #Following entries are manually corrected by LTRC
 #By Sarita ji (LTRC)
@@ -33767,4 +33800,8 @@ share_market	prawiBUwi_bAjAra#prawiBUwi_bAjAra#noun#2#RM
 President_of_the_District_Art_Teachers'_association	jilA_kalAXyApaka_saMGa_ke_aXyakRa#jilA_kalAXyApaka_saMGa_ke_aXyakRa#noun#2#RM
 gold_bars	sone_kI_IMteM#sone_kI_IMteM#noun#2#RM
 Panchayat_level_committee_officer	paMcAyawa_samiwi_swarIya_paxAXikArI#paMcAyawa_samiwi_swarIya_paxAXikArI#noun#2#RM
-
+free_of_cost	muPZwa#muPZwa#noun#3#RM
+much_more	Ora_aXika#Ora_aXika#adverb#2#RM
+more_commonly	aXikawara#aXikawara#abverb#2#RM
+biology_based	jIva_vijFAna_AXAriwa#jIva_vijFAna_AXAriwa#noun#2#RM
+date_palm_fruit	KajUra_ke_Pala#KajUra_ke_Pala#noun#3#RM

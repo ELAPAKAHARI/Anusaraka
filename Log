@@ -1,11 +1,314 @@
- 24-10-14
+ 12-01-16
+ ========
+  1. hindi_meaning.clp:
+	Added: mixed_dom_hindi_mng-same-cat, mixed_domain_hindi_mng-different-cat
+  2. create_eng_ord_html.clp:
+	Modified:  print_caution_row function
+  3. this1.py:
+	Added code to open mixed domain dictionary file
+  4. Added unique_entries.py 
+  5. Added '...' in punctuations list in following files:
+	multi_word_expression_for_proper_nouns.c	multi_word_expression_for_prov.c
+	multi_word_expression_for_domain.c		multi_word_expression.c		
+  6. Updated Stanford version 3.4.1 to 3.6.0
+  7. Following files are modified accordingly:
+	constituency_to_dependency.sh	stanford-parser/README	get_latest_version_stanford_parser.sh
+	run_lexicalize.sh		run_stanford.sh		run_multiple_parse_penn.sh
+	run_penn-factored.sh		run_penn-pcfg.sh	run_penn-rnn.sh
+	Anusaaraka_bllip_parser.sh	Anusaaraka_ace.sh	Anusaaraka_all.sh
+	Anusaaraka_berkeley.sh		Anusaaraka_logon.sh	Anusaaraka_bllip_parser_minion.sh
+	Anusaaraka_logon.sh		Anusaaraka_rasp.sh	Anusaaraka_site.sh
+	Anusaaraka_stanford-Factored.sh	Anusaaraka_stanford.sh	Anusaaraka_stanford_align_man_ord.sh
+	Anusaaraka_stanford_minion.sh	run_sentence_link.sh	run_sentence_logon.sh
+	run_stanford-gui-pcfg.sh	run_sentence_ol.sh	run_sentence_stanford_align_man.sh
+	run_stanford-gui-factored.sh	run_sentence_stanford_minion.sh
+	sd_combining_apostrophe.clp	sd_relation_rules.clp	stnford_relations.lex
+  8. Updated following lex files:
+	tagger.lex -> Modified pattern for sent end.
+  9. Updated following shell files:
+	get_dictionary_in_canonical_form.sh	-> Added code to generate mixed domain dictionary
+	anu_compile.sh				-> Added code to generate mixed domain dictionary gdbm
+ 10. Updated following dictionaries:
+	provisional_multi_word_dictionary.txt
+ 11. Updated Log.
+
+ 19-11-15
+ ========
+ 1. WSD:
+	substantially.clp 
+	seize.clp -- fixed bug in assert stmt
+ 2. adjective.clp:
+	Added example sentence in 'check_whether_mng_dcd' rule
+	Modified warning message
+ 3. hindi_sentence.clp:
+	Modified : add_eng_mng, add_eng_mng1 rule
+        Added    : rm_eng_fact and move_nahIM_before_verb_or_after_noun
+ 4. tam_meaning.clp:
+	Added : change_tam_source_for_WSD and modify_vib_for_conjunction -- infinitive case
+ 5. number.clp
+        Added    : get_num_using_det
+	Modified : verb_rule  -- added no. info for subject
+ 6. hindi_meaning.clp
+	Added :  rm_infinitive_to_id
+	Modified the hierarchy for default mng
+ 7. hindi_compound_meaning.clp
+        Modified : get_default_domain_compound_root_mng and get_default_domain_compound_word_mng [fixed bug to get domain dic name]
+ 8. sd_relation_rules.clp
+	Modified: conj+cc,  rcmod -- commented test condition, insert-which1 --added who|that|whom|whoever|whichever|whomever
+ 9. H_ordering_rules.clp
+	Added    : move_negation_before_inf_verb, dont_reverse_NP, dont_separate_sbar_for_jo_samAnAXikaraNa and rm_not_id_b4_inf_in_order 
+		   move_more_than_after_head
+	Modified : move_negation_before_verb, 
+		   dont_rev_VP_if_immediate_sis_sbar -- added 'add confirm agree doubt worry believe estimate ' to the list
+		   reverse-NP-Daughters -- added ADJP and 'dozens' to the list
+                   rmv_sbar_from_root   -- added not condition
+ 10. vibakthi.clp
+        Added 	 : saMjFA_vib_to_saMjFA_samA_vibakthi_rule  and ko_vib_using_kAlavAcI rules
+	Modified : vib_for_multiple_prep -- added not condition
+		   default_kA_vib  	 -- added 'their' in the list
+ 11. prepare_apertium_input.clp
+	Added    : not_before_verbal_noun_with_vib
+        Modified : kA_vib_from_sub_or_obj_rule
+ 12. sd_pada.clp
+	Added	 : get_zero_level_mul_inf, rm_pp_id_form_inf_conj and print_conj_for_inf
+	Modified : get_conj_group -- added conj last id fact
+		   get_zero_level_prep -- used above generated fact to share prep
+		   get_infinitive_pada -- to handle adverb b4 infinitive, added not condition
+		   multiple_prep_rule  -- asserted control fact for prep decided
+                   get_zero_level_conj_pada -- added test condition to check zero level , added not condition
+ 13.  hindi_sent_reorder.clp
+	Modified : rule_for_ki -- added 'doubt' , insert_aXika_for_adj_er -- added not and test  condition
+	 Added   : insert_kyA and interchange_date_and_month rules
+	Removed  : insert_wo_when
+ 14.  GNP_agreement.clp
+	Added : case_for_saMjFA
+	Modified: modify_case_for_and_grp -- shared case for all the components of and
+ 15. sd_category.clp :   Added 	: modify_VBN_cat1
+ 16. tam_id.clp      : 	 Added	: tam_id_frm_cau_vb3
+ 17. get_dbase_mng.clp
+	Modified : print_dic_mng and dic_lookup functions to add group_ids
+ 18. Updated alignment files
+	alignment.clp		get_heuristics.clp	get_score.clp	modify_chunk_and_morph_info.clp		
+	create_eng_align_html_phrasal.clp
+ 19. run_modules_std.bat 
+	Loaded "relations_tmp1.dat" file in number module
+	Loaded  E_constituents_info_tmp5.dat and parserid_wordid_mapping.dat files and added save-facts for GNP_agmt_info.dat in
+	        hindi_sent_reorder module
+ 20. run_H_gen_sen.bat
+        Loaded relations_tmp1.dat and cat_consistency_check.dat files in hindi_sentence module
+ 21. run_H_gen_sen_eng.bat
+ 	Loaded word.dat file in get_dbase_mng module
+	Removed get_manual_id_en_hi, word_alignment , manual_lwg_new, word_alignment1 modules
+	Added template_after_mng, get_manual_id_and_group, get_verb_and_phrasal_grp.clp and alignment1 modules
+	Loaded relations_tmp1.dat and cat_consistency_check.dat files in hindi_sentence module
+ 22. Modified following bat files to show tooltop for WSD tam along with rule name:
+	run_modules_ace.bat	run_modules_link.bat	run_modules_ol.bat	run_modules_std.bat
+ 23. Modified the following files to add social_science_multi_dic.txt and social_science_dic.txt
+        list-right                              multifast-v1.4.2/src/run.sh
+        list_Anu_data_domain                    anu_compile.sh
+        list_Anu_data_multi_domain
+ 24.  Added the following files for alignment
+	get_manual_id_and_group.clp  	--- to get manual_word fact and noun group info
+	get_verb_and_phrasal_grp.clp 	--- to get verb group and phrasal group info
+	alignment1.clp 			--- align after heuristics
+ 25. Added ace-parser dir in Parsers folder
+	Readme_to_install_ace_parser.txt
+	src/extract_mrs_output.py
+	src/get_cat_root_info.py
+	src/get_mrs.sh
+	src/map-relations.py
+	src/get_tree.sh
+ 26. Added following files to run Ace parser:
+	bin/Anusaaraka_ace.sh
+	bin/run_sentence_ace.sh
+	Anu_clp_files/run_modules_ace.bat
+ 27. Integrated logon parser with anusaaraka system below files have been
+     Added:
+             bin/Anusaaraka_logon.sh
+	     bin/run_sentence_logon.sh
+             Anu_clp_files/run_modules_logon.bat
+             Anu_clp_files/logon_relation_rules.clp
+             Parsers/logon-parser
+     Modified:
+             shell_scripts/anu_compile.sh
+	     shell_scripts/remove_out-files.sh
+ 28. Moved domain dictionaries(physics and science) from miscellaneous/SMT/MINION/dictionaries/ to Anu_data/domain/ and 
+     Modified the following files accordingly :
+	Anu_data/canonical_form_dictionary/list_SMT
+	Anu_data/canonical_form_dictionary/list_Anu_data_domain
+	Anu_data/canonical_form_dictionary/list_Anu_data_multi_domain
+ 29. Updated following files related to phrasal alignment:
+	Anusaaraka_alignment.sh		phrasal_alignment.css	
+        run_alignment-hi-en.sh		phrasal_alignment.js
+        run_alignment.sh		mapping.py
+	get_phrasal_dic-en-hi.sh 	
+	get_phrasal_dic-hi-en-en.sh
+ 30. Updated following dictionaries:
+        changes_in_databases		apertium-en-hi.en.metadix		provisional_multi_word_dictionary.txt
+        phy_dictionary.txt		multi_word_expressions.txt
+        phy_eng_multi_word_dic.txt	preposition.txt
+ 31. Updated following files:
+	INSTALL
+	README
+	tree_viewer/README
+	tree_viewer/remove-out-files.sh
+	tree_viewer/view_trees.sh
+	Anu_data/canonical_form_dictionary/Readme
+ 32. Modified style.css , create_eng_align_html_phrasal.clp and run_alignment.sh files for text wrapping in html.
+ 33. Updated Log.
+ 34. Updated  
+	sd_verified (855)	small_sent_verified_sd (172) 	phy_verified (164)
+
+ 18-02-15
+ ========
+ 1. causative_verb_mng.clp: 
+	Added 	: combine_viSeRya-viSeRaNa_mng_with_vib
+	Modified: get_rule_info
+	Added: 'dir_name-file_name-rule_name-id-tam_type' in never-called ()
+ 2. check_for_best_match_in_multi-word.clp:
+	Renamed:  load_phy_multi_word_file to load_domain_multi_word_file
+		  chk_for_best_match_in_phy_domain to chk_for_best_match_in_domain
+	Modified: load_domain_multi_word_file (to handle for any domain)
+		  chk_for_best_match_in_domain ( "	"	"      )
+ 3. hindi_compound_meaning.clp:
+	Renamed:  get_default_phy_compound_word_mng to get_default_domain_compound_word_mng
+		  get_default_phy_compound_root_mng to get_default_domain_compound_root_mng
+	Modified: get_default_domain_compound_word_mng, get_default_domain_compound_root_mng (to handle for any domain mwe) 
+	Modified the rules to get domain specific dic meaning (generalised for all domains)
+ 4. hindi_meaning.clp:
+	Added 	: get_wsd_first_mng, get_mng_from_domain_dic_with_diff_cat1
+	Removed : default_hindi_mng-same-cat_with-org_wrd,  default_hindi_mng-different-cat_with_org_wrd
+	Modified the rules to add 'get_wsd_first_mng' for domain specific rules
+ 5. sd_pada.clp:
+	Added : get_tam_type (to get tam type info ex: passive)
+ 6. vibakthi.clp:
+	Renamed: In never-called(), (ids-phy_cmp_mng-head-cat-mng_typ-priority) to (ids-domain_cmp_mng-head-cat-mng_typ-priority)
+ 7. hindi_sent_reorder.clp:
+	Added 	: since_rule1, add_vib_for_er
+	Modified: since_rule , insert_aXika_for_adj_er
+ 8. hindi_sentence.clp:
+	Added: modify_id-mng_fact (To remove repeated mng in layered o/p)
+	Modified: rm_repeated_mng_from_sentence 
+ 9. parser_tree_correction_rules.clp
+	Added : modify_NN_as_JJ
+ 10. prepare_apertium_input.clp:
+	Corrected rule name in debug info in print statement in 'print_org_word_mng_with_kA_vib' rule
+ 	Modified : default_kA_vib_rule
+	Added 	 : Compound_mng_with_grpid_head
+ 11. sd_relation_rules.clp:
+	Modified: decide_conj_rel,  conj-comp-rule
+ 12. get_dbase_mng.clp
+	Modified : get_mng_from_all_dic , get_mng_from_all_dic1 (to add phy and agriculture domain)
+	Removed  : get_mng_from_phy_dic , get_mng_from_phy_dic1 and get_mng_from_phy_dic2 (generalised in one rule)
+	Added    : get_mng_from_all_dic_with_diff_cat
+ 13. get_manual_id_en_hi.clp
+	Added: verb_group_using_anu_out, rm_underscore_M_layer
+	Renamed: 'rm_underscore' to 'rm_underscore_L_layer'
+ 14. run_modules_std.bat:
+	In check_for_best_match_in_multi-word.clp module:
+	Modified: ids-phy_cmp_mng-head-cat-mng_typ-priority to ids-domain_cmp_mng-head-cat-mng_typ-priority (in save facts)
+	Added "save-facts" to generate "tam_id.dat" (to get : id-tam_type) in sd_pada module
+	Opened tam_id.dat 		file in append mode in tam_id module
+	Loaded tam_id.dat 		file in WSD module
+	Loaded 'wsd_facts_output.dat' 	file in wsd_tam_meaning module (to use hindi meaning in rule part)
+	Loaded 'E_constituents_info.dat' and 'Node_category.dat' files in causative_verb_mng module
+ 15. run_H_gen_sen.bat:
+	Added: (save-facts "id_Apertium_output.dat" local id-Apertium_output) in hindi_sentence module
+ 16. this1.py:
+	Handled domain type source (to open specifc domain dic)
+	Handled Default_meaning_for_adjective type source 
+	Added try and ValueError to handle errors.
+ 17. mapping.py:
+	Removed '=', '$' from the punctuation list and added '{', '}', '[', ']'
+ 18. FinalGenerate.pl:
+	Added code to stop english words (ie. which starts with '@') to go to lt-proc
+ 19. Added comments in multi_word_expression_for_proper_nouns.c
+ 20. gdbm_lookup_p.c:
+	Modified return statement incase of database found empty.
+ 21. wx_utf8.c:
+	corrected the mistake [ ्जाँच_कर ] in wx_utf8.c functiion.
+ 22. gdbm-open.c:
+	Modified to avoid junk characters to print in the output.
+ 23. Added new folder Anu_data/domain:
+	'agriculture' related dictionaries
+ 24. Added new files:
+	list_Anu_data_domain, list_Anu_data_multi_domain (to get canonical form)
+	run_penn-rnn.sh in stanford src directory.
+ 25. Added  phrasal_mwe folder (Separated alignment related mwe's in phrasal_mwe folder)
+	extract_hindi_key.c
+	extract_key_using_multifast.c
+	extract_key_using_multifast-hi-en-hi.c
+	extract_key_in_hindi_phrase.c
+	extract_key_using_multifast-hi-en.c
+	Makefile
+ 26. Modified following shell files:
+	shell_scripts/anu_compile.sh	(to create agriculture gdbm, removed touch extract_hindi_key.c)
+	dic_compile.sh			(	"	"	   	"	"	)
+	get_txt_files.sh		(to get canonical form for agriculture domain)
+	Anusaaraka_stanford.sh		(removed 'physics','agriculture' related code, instead generalised the code for any domain)
+	Anusaaraka_alignment.sh		(Modified path of alignment related mwe programe)
+	run_alignment.sh
+	multifast-v1.0.0/src/run.sh	(Modified 'physics-dic.c' to 'physics_multi_dic.c')
+	compile.sh			('phrasal_mwe' path for alignment related mwe programs)	
+	run_alignment.sh		(	"		"	)
+	run_alignment-hi-en.sh		(	"		"	)
+        get_phrasal_dic-en-hi.sh	(	"		"	)
+	get_phrasal_dic-hi-en-en.sh	(	"		"	)
+ 27. Modified following lex files:
+	non_canonical_form.lex
+	add_snt_tag.lex -> Added </s> in ending pattern
+	replace-mapping-symbols.lex 
+ 28. Modified following files:
+	Makefile 
+	list-right in canonical form (to get canonical form for agricultural domain)
+ 29. Modified path of provisional wsd rules in wsd module and wsd tam module for following files:
+	run_modules_link.bat
+	run_modules_ol.bat
+	run_modules_std.bat
+ 30. Modified following files to update stanford directory path:
+	constituency_to_dependency.sh		run_lexicalize.sh	run_multiple_parse_penn.sh	run_penn-factored.sh
+	run_penn-pcfg.sh			run_stanford-parser.sh	run_stanford.sh			Anusaaraka_stanford.sh
+	std_tregex/run_tregex.sh		anu_compile.sh		run_tregex_for_multiparse.sh	tree_viewer/view_trees.sh
+	Anusaaraka.sh				Anusaaraka_all.sh	Anusaaraka_berkeley.sh		Anusaaraka_bllip_parser.sh
+	Anusaaraka_bllip_parser_minion.sh	Anusaaraka_rasp.sh	Anusaaraka_site.sh		Anusaaraka_stanford-Factored.sh
+	Anusaaraka_stanford_align_man_ord.sh	Anusaaraka_stanford_minion.sh
+ 31. apertium/tagger.c
+    -For easy maintainance and for faster execution replaced tagger.c program with tagger.lex ,
+     Modified the following files:
+     apertium/compile.sh		run_chunker_and_tagger.sh	  Anusaaraka_bllip_parser_minion.sh	Anusaaraka_all.sh 
+     Anusaaraka_bllip_parser.sh		Anusaaraka_rasp.sh		  Anusaaraka_stanford.sh		Anusaaraka.sh
+     Anusaaraka_site.sh			Anusaaraka_stanford-Factored.sh	  Anusaaraka_stanford_align_man_ord.sh
+     Anusaaraka_stanford_minion.sh      removed_files/README    	  Anusaaraka_berkeley.sh
+ 32. Removed following files in multifast-v1.0.0/src/ folder:
+	multi_word_expression_for_agriculture.c
+	multi_word_expression_for_physics.c
+ 33. Renamed 'multi_word_expression_for_physics.c' to 'multi_word_expression_for_domain.c'
+	-> This works for any domain
+	-> Replaced (ids-phy_cmp_mng-head-cat-mng_typ-priority) to (ids-domain_cmp_mng-head-cat-mng_typ-priority)
+ 34. Updated following dictionaries: 
+	changes_in_databases	provisional_multi_word_dictionary.txt	apertium-en-hi.en.metadix	apertium_hn.dix
+ 35. Updation of new versions:
+	multifast-v1.0.0 to multifast-v1.4.2 
+ 36. Updated multifast new version in following programs:
+	Anusaaraka_alignment.sh		Anusaaraka_stanford.sh		dic_compile.sh		phrasal_alignment/compile.sh
+	phrasal_alignment/run_alignment.sh	anu_compile.sh	remove_out-files.sh	Anusaaraka.sh	Anusaaraka_all.sh
+	Anusaaraka_berkeley.sh	Anusaaraka_bllip_parser.sh	Anusaaraka_bllip_parser_minion.sh	Anusaaraka_link.sh
+	Anusaaraka_ol.sh	Anusaaraka_rasp.sh		Anusaaraka_site.sh	Anusaaraka_stanford-Factored.sh
+	Anusaaraka_stanford.sh	Anusaaraka_stanford_align_man_ord.sh			Anusaaraka_stanford_minion.sh
+	get_mul_pat.sh		get_phrasal_dic-en-hi.sh	get_phrasal_dic-hi-en-en.sh	run_alignment-hi-en.sh
+ 37. Updated following files:
+	INSTALL
+	README
+ 38. Updated Log.
+
+ 06-11-14
  ========
  1. WSD:
 	Modified : have.clp	president.clp	admire.clp	distinguish.clp		update.clp
 		   who.clp	roundabout.clp	on.clp		add.clp			excess.clp
 		   both.clp	consist.clp	reflect.clp	point.clp		till.clp
 		   be.clp	describe.clp	call.clp   	drink.clp   		rude.clp 
-		   to.clp
+		   to.clp	evidence.clp	move.clp
 	Added	 : dissolve.clp
 	Moved provisional wsd rules into WSD
  2. sd_category.clp
@@ -60,23 +363,25 @@
  18. prepare_apertium_input.clp :
         Added    : kA_vib_rule_for_verbal_noun ,default_kA_vib_rule
 	Modified : kA_vib_from_obj_rule, kA_vib_from_obj_rule1 and kA_vib_rule_for_verbal_noun [changed 'case' info from variable to 'd']
- 19. get_dbase_mng.clp:
+ 19. sd_pada.clp:
+	Modified : get_prep (added not condition)
+ 20. get_dbase_mng.clp:
 	Added 'proper_noun_dic.gdbm in rules 'get_mng_from_all_dic' and 'get_mng_from_all_dic1'   
- 20. run_modules_std.bat
+ 21. run_modules_std.bat
         Loaded  parserid_wordid_mapping.dat and word2.dat in sd_category module
 	Loaded  root.dat file in H_ordering_rules module
 	Added 	new module 'hindi_compound_meaning.clp'
- 21. hnd_translation.pl:
+ 22. hnd_translation.pl:
         Modified 'hindi_sentence_tmp.dat' to 'hindi_sentence_tmp2.dat'
 		 '$ARGV[0]_trnsltn.html' to '$ARGV[0]_trnsltn_tmp.html'	
- 22. Added relation_table/ folder in Doc contains following files:
+ 23. Added relation_table/ folder in Doc contains following files:
 	relation-table-for-WSD-wx.html  
 	style.css
- 23. Added align_output/ folder in phrasal_alignment which contains
+ 24. Added align_output/ folder in phrasal_alignment which contains
 	verified			phy_verified
 	verified_hnd			phy_verified_hnd
        	verified_eng_align.html		phy_verified_eng_align.html
- 24. Added align_debug/ folder in phrasal_alignment which contains
+ 25. Added align_debug/ folder in phrasal_alignment which contains
 	alignment_debug.sh
 	create-html-table.pl
 	print_matrix.py
@@ -85,7 +390,7 @@
 	parserid_wordid_mapping.clp
 	run_parser_mapping.bat
 	README
- 25. Added following files related to phrasal alignment:
+ 26. Added following files related to phrasal alignment:
 	count.py
 	sort.sh
 	bin/Anusaaraka_alignment.sh 
@@ -106,34 +411,38 @@
 	get_heuristics.clp
 	alignment.clp
 	get_score.clp
- 26. Added dummy fact
+ 27. Added dummy fact
         1. 'parser_id-cat' ---  cat_rule.clp, parser_id_mapping.clp, root_rule.clp and sd_relation_rules.clp
 	2. '(id-domain_type) and (compound_meaning_decided)'
 		causative_verb_mng.clp		hindi_meaning.clp		hindi_sent_reorder.clp
 		hindi_sentence.clp		number.clp			prepare_apertium_input.clp
 		tam_meaning.clp			vibakthi.clp			preferred_morph_consistency_check.clp
- 27. Added following files:
+ 28. Added following files:
 	-> check_for_TITLE.c programme to check whether input file contains TITLE or not.
 	-> get_latest_version_stanford_parser.sh in stanford-parser dir 
 	-> src folder in stanford-parser dir (Separated source files related to stanford-parser)
  	-> transliterate_meaning.txt file in Anu_data
 	-> get_rev_alltam.sh file to generate Alltam in reverse format
 	-> hindi_compound_meaning.clp in Anu_clp_files  (to handle all compound meanings)
- 28. Added:
+ 29. Added:
 	iit-bombay-UNL-hi-en dictionary in goldendict format(reverse of en-hi)
- 29. Removed : 
+ 30. Removed : 
 	miscellaneous/SMT/phrasal_alignment/replace-mapping-symbols_for_align.lex
 	Stanford parser version 3.3.1
- 30. Renamed iit-bombay dictionary has iit-bombay-UNL-en-hi
- 31. Modified get_word_count.c and get_word_count_single.c 
- 32. Updated following lex files:
+ 31. Renamed iit-bombay dictionary has iit-bombay-UNL-en-hi
+ 32. Modified following C programmes:
+	get_canonical_form-dic.c -> Modified variable names
+        myeq.c                   -> increased array size in canonical_form function
+	get_word_count.c
+	get_word_count_single.c 
+ 33. Updated following lex files:
 	add_snt_tag.lex	-> Included <string.h> header file to avoid warnings in CentOs.
 	mapping-symbols.lex -> 	Added code to handle '|'
 	replace-mapping-symbols.lex -> Modified SYMBOL-LESSTHAN and SYMBOL-GREATERTHAN pattern, Added code to handle '|'
 	morph.lex:	-> Modified to get tam info from morph.
-	wx_utf8.lex:	-> Handled 'eV', 'eY', 'oV'
+	wx_utf8.lex:	-> Handled 'eV', 'eY', 'oV' and added -[hypen] to Roman list
 	phrasal_alignment/replace-punctuation.lex	-> 	Added '~' 
- 33. Updated phrasal alignement related files , Major changes is separated code to work with each sentence separately.
+ 34. Updated phrasal alignement related files , Major changes is separated code to work with each sentence separately.
 	Word-to-Word-dict.txt			run_alignment.sh			align-left-over-wrds.py
 	en-hi-gdbm-dict.txt			run_alignment-hi-en.sh			get_word_align.py
 						run_alignment-hi-en-hi.sh		match_value_in_hnd.py
@@ -147,9 +456,9 @@
 	Readme 
 	phrasal_alignment.css
 	phrasal_alignment.js
- 34. Updated following dictionarie related files:
+ 35. Updated following dictionarie related files:
 	changes_in_databases	apertium-en-hi.en.metadix	apertium_hn.dix		provisional_multi_word_dictionary.txt 
- 35. Updated following shell files:
+ 36. Updated following shell files:
 	Anusaaraka_stanford_align_eng_ord.sh
 	replace-abbrevations.sh
 	abbr.sh
@@ -159,21 +468,31 @@
 	get_multi_word-dic.sh
 	stdenglish.sh	-> 	Added code to run  check_for_TITLE.c programme
 	run_align_browser_eng.sh to work email concept in alignment layered o/p
- 36. Updated following files:
+ 37. Updated following files:
 	create_eng_align_html_phrasal.clp to work email concept in alignment layered o/p
 	this1.py
 	stanford-parser/README
  	Readme_to_use_email_in_firefox.txt
 	Dictionaries/Readme
 	create_binary_files.clp	-- added hindi_compound_meaning.clp
- 37. Updated Stanford parser version from 3.3.1 to 3.4.1 in following files:
+ 38. Updated Stanford parser version from 3.3.1 to 3.4.1 in following files:
 	Anusaaraka_bllip_parser.sh	Anusaaraka_bllip_parser_minion.sh	Anusaaraka_rasp.sh	Anusaaraka_site.sh
 	Anusaaraka_stanford-Factored.sh	Anusaaraka_stanford_align_man_ord.sh	Anusaaraka.sh		Anusaaraka_all.sh	
 	Anusaaraka_berkeley.sh		run_stanford-gui-factored.sh		run_stanford-gui-pcfg.sh
 	Anusaaraka_stanford.sh		shell_scripts/anu_compile.sh		shell_scripts/remove_out-files.sh
- 38. Updated following verifieds:
+ 39. Modified CLIPS/wx_utf8.c
+   - For easy maintaince modified the total concept but the file name is not changed.
+   - Calling the lex wx_utf8.lex  from the c-program ( Anu_src/wx_utf.lex which is already used in anusaaraka)
+     (previously wx_utf8.c the whole conversion wx-notation to utf8 was done by the c program)
+   - Updated  CLIPS/compile.sh.
+   - Added the older file wx_utf8.c in "miscellaneous/Programs/removed_files/" and updated README.
+   - Added code for generating CLIPS/wx_utf8.lex in shell_scripts/anu_compile.sh
+   - Added code for removing CLIPS/wx_utf8.lex in shell_scripts/remove_out-files.sh
+ 
+ 40. Updated  Anu_src/wx_utf8.lex
+ 41. Updated following verifieds:
 	sd_verified (846)
- 39. Updated Log. 
+ 42. Updated Log. 
 
 
  05-06-14

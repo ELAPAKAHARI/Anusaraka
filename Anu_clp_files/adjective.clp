@@ -87,7 +87,7 @@
 		(assert (id-eng-src  ?id  ?org_wrd Word_mng)) ;As Mng is decided on word
                 (assert (meaning_has_been_decided ?id))
                 (assert (file_loaded ?id))
-		(printout t "Warning: Multiple adjective senses are available for "?org_wrd ". WSD rule is required " crlf)
+		(printout t "Warning: Multiple adjective senses are available for "?org_wrd " . WSD rule is required " crlf)
 		(if ?*debug_flag* then
 		(printout wsd_fp "(default-iit-bombay-shabdanjali-dic.gdbm  " ?id " " ?org_wrd "  "?h_mng ")" crlf)) ;Added ?id for debug purpose.
             else
@@ -122,7 +122,7 @@
 		(assert (id-eng-src  ?id  ?wrd Word_mng)) ;As Mng is decided on word
 		(assert (meaning_has_been_decided ?id))
 		(assert (file_loaded ?id))
-		(printout t "Warning: Multiple adjective senses are available for "?wrd ". WSD rule is required " crlf)
+		(printout t "Warning: Multiple adjective senses are available for "?wrd " . WSD rule is required " crlf)
 		(if ?*debug_flag* then
                 (printout wsd_fp "(default-iit-bombay-shabdanjali-dic.gdbm  " ?id " " ?wrd "  "?h_mng ")" crlf));Added ?id for debug purpose.
             else
@@ -150,7 +150,10 @@
  (not (mng_need_to_be_decided_on_verb_root ?id))
  =>
 	(bind ?file (str-cat ?*provisional_wsd_path* "/canonical_form_prov_wsd_rules/" ?root ".clp"))
-	(assert (mng_need_to_be_decided_on_verb_root ?id))
+	(if (neq (load* ?file) FALSE) then
+                (assert (file_loaded ?id))
+		(assert (mng_need_to_be_decided_on_verb_root ?id))
+	)
  )
  ;---------------------------------------------------------------------------------------------------------
  ;loading user word with verb root
@@ -164,7 +167,10 @@
  (not (mng_need_to_be_decided_on_verb_root ?id))
  =>
         (bind ?file (str-cat ?*provisional_wsd_path* "/canonical_form_prov_wsd_rules/" ?root ".clp"))
-	(assert (mng_need_to_be_decided_on_verb_root ?id))
+	(if (neq (load* ?file) FALSE) then
+                (assert (file_loaded ?id))
+		(assert (mng_need_to_be_decided_on_verb_root ?id))
+	)
  )
  ;---------------------------------------------------------------------------------------------------------
  ;loading original word with verb root
@@ -178,7 +184,10 @@
  (not (mng_need_to_be_decided_on_verb_root ?id))
  =>
 	(bind ?file (str-cat ?*path* "/WSD/wsd_rules/canonical_form_wsd_rules/" ?root ".clp"))
-	(assert (mng_need_to_be_decided_on_verb_root ?id))
+	(if (neq (load* ?file) FALSE) then
+                (assert (file_loaded ?id))
+		(assert (mng_need_to_be_decided_on_verb_root ?id))
+	)
  ) 
  ;---------------------------------------------------------------------------------------------------------
  ;loading word with verb root
@@ -192,10 +201,14 @@
  (not (mng_need_to_be_decided_on_verb_root ?id))
  =>
 	(bind ?file (str-cat ?*path* "/WSD/wsd_rules/canonical_form_wsd_rules/" ?root ".clp"))
-	(assert (mng_need_to_be_decided_on_verb_root ?id))
+	(if (neq (load* ?file) FALSE) then
+                (assert (file_loaded ?id))
+		(assert (mng_need_to_be_decided_on_verb_root ?id))
+	)
  )
  ;---------------------------------------------------------------------------------------------------------
- ;To check whether file the file is loaded  
+ ;To check whether file the file is loaded 
+ ;Newton [unified] terrestrial and celestial domains under a common law of gravitation.  
  (defrule check_whether_mng_dcd
  (declare (salience -9955))
 ?f<-(mng_need_to_be_decided_on_verb_root ?id)
