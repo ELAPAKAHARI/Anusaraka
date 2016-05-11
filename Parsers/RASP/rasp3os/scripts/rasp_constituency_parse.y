@@ -72,7 +72,8 @@ expression: LEFT_PAREN   {found=0;my_level++;
                            strcpy(token,$3);
                            my_token_count++;
                            //sprintf(str2,"\t%d\t%d\t\0",my_token_count,my_level);
-                           sprintf(str2,"-%d\0",my_token_count);
+			   //Modified above step as shown below by Roja(11-05-16). To avoid warnings in Ubuntu 14.04 and above
+                           sprintf(str2,"-%d",my_token_count); str2[strlen(str2)] = '\0';
                            strcat($3,str2);
                            sprintf(str3,"(Node-Category  %s  %s)\n",$3,token);
                            sprintf(str4,"(Node-level  %s  %d)\n",$3,my_level);
