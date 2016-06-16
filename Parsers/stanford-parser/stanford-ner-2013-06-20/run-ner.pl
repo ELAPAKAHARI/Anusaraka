@@ -4,16 +4,16 @@ $text=<STDIN>;
 
 foreach $line (@lines){
 	@words=split(/\s+/,$line);
-#	$id=1;
+	$id=1;
 	foreach $wd(@words){
 		if($wd =~ /([^\/]+)\/ORGANIZATION|LOCATION|PERSON/){
 			$wd =~ /([^\/]+)\/([^\/]+)/;
 			$ner=$1;
 			$nertg=$2;
-#			print "(word-wordid-nertype $ner $id $nertg)\n";
-			print "(word-nertype	$ner	$nertg)\n";
+			print "(word-wordid-nertype $ner $id $nertg)\n";
+#			print "(word-nertype	$ner	$nertg)\n";
 		}
-#		$id++;
+		$id++;
 	}
-#	print ";~~~~~~~~~~\n";
+	print ";~~~~~~~~~~\n"; #Adding separator to split each sentence information
 }
